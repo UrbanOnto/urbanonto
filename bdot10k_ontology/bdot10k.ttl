@@ -751,7 +751,7 @@ bdot10k:object_131 rdf:type owl:Class ;
 
 ###  https://purl.org/bdot10k#object_132
 bdot10k:object_132 rdf:type owl:Class ;
-                   rdfs:subClassOf bdot10k:class_41 ;
+                   rdfs:subClassOf bdot10k:class_31 ;
                    rdfs:label "tunel"^^xsd:string ;
                    bdot10k:hasBdot10kCode "BUIN06"^^xsd:string .
 
