@@ -10,7 +10,7 @@
 @base <https://purl.org/urbanonto> .
 
 <https://purl.org/urbanonto> rdf:type owl:Ontology ;
-                              owl:imports <http://purl.org/ontohgis> ,
+                              owl:imports <https://raw.githubusercontent.com/ontogeohist/ontology/master/ontohgis_pure.ttl> ,
                                           <https://purl.org/bdot10k> .
 
 #################################################################
