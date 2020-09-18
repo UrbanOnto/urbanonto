@@ -255,7 +255,7 @@ bdot10k:class_3 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_30
 bdot10k:class_30 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budynek  "^^xsd:string ;
+                 rdfs:label "budynek"^^xsd:string ;
                  bdot10k:hasBdot10kCode "BUBD"^^xsd:string .
 
 
