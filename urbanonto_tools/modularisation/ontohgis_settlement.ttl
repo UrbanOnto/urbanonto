@@ -1,0 +1,39 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/ontohgis#administrativeUnitAdministerSettlementPart> rdfs:range <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#isAdditionalyDenotedBy> rdfs:domain <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#isDefinedBy> rdfs:domain <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#object_100> rdfs:subClassOf <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#object_200> ns1:disjointWith <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#object_32> rdfs:subClassOf <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#settlementHasSettlementPart> rdfs:domain <http://purl.org/ontohgis#object_40> ;
+    rdfs:range <http://purl.org/ontohgis#object_40> .
+
+<http://purl.org/ontohgis#object_40> a ns1:Class ;
+    rdfs:label "human settlement manifestation"@en,
+        "manifestacja jednostki osadniczej"@pl ;
+    rdfs:comment "We assume that each settlement manifests itself as of a certain type, e.g., as a village."@en ;
+    rdfs:subClassOf [ ],
+        [ ],
+        [ ],
+        [ ],
+        <http://ontologies.makolab.com/oc/VariableEntityManifestation> ;
+    ns1:disjointUnionOf [ ] ;
+    ns1:equivalentClass [ ] .
+
+[] rdf:first <http://purl.org/ontohgis#object_40> .
+
+[] rdf:first <http://purl.org/ontohgis#object_40> .
+
+[] ns1:onClass <http://purl.org/ontohgis#object_40> .
+
+[] ns1:someValuesFrom <http://purl.org/ontohgis#object_40> .
+
