@@ -1,6 +1,6 @@
 @prefix cidoc_crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ontohgis: <http://purl.org/ontohgis#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,22 +13,43 @@
     owl:imports <http://purl.org/ontohgis>,
         <https://purl.org/bdot10k> .
 
-urbanonto:object_type_0 a owl:Class ;
+urbanonto:object_type_1 a owl:Class ;
     rdfs:label "urban plot"@en,
         "działka miejska"@pl ;
-    ns2:creator "https://orcid.org/0000-0002-0489-3171"^^xsd:url ;
+    ns1:creator "https://orcid.org/0000-0002-0489-3171"^^xsd:url ;
     rdfs:comment "Działki różnią się pod względem wielkości. Mają różne typy zabudowy lub brak zabudowy. Pełnią różne funkcje."@en,
         "Działki różnią się pod względem wielkości. Mają różne typy zabudowy lub brak zabudowy. Pełnią różne funkcje."@pl ;
     rdfs:isDefinedBy "Jest to część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym."@en,
         "Jest to część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym."@pl ;
-    ns1:altLabel "Stadtgrundstück"@de,
+    ns2:altLabel "Stadtgrundstück"@de,
         "urban plot"@en,
         "parcela"@pl .
 
-urbanonto:object_type_1 a owl:Class ;
+urbanonto:object_type_10 a owl:Class ;
+    rdfs:label "wartownia"@pl ;
+    ns2:hiddenLabel "kordegarda"@pl,
+        "odwach"@pl .
+
+urbanonto:object_type_11 a owl:Class ;
+    rdfs:label "młyn"@pl .
+
+urbanonto:object_type_12 a owl:Class ;
+    rdfs:label "fosa wypełniona wodą"@pl .
+
+urbanonto:object_type_13 a owl:Class ;
+    rdfs:label "planty"@pl .
+
+urbanonto:object_type_14 a owl:Class ;
+    rdfs:label "sukiennice"@pl .
+
+urbanonto:object_type_15 a owl:Class ;
+    rdfs:label "ogród zoologiczny"@pl ;
+    ns2:hiddenLabel "Tiergarten"@pl .
+
+urbanonto:object_type_2 a owl:Class ;
     rdfs:label "street"@en,
         "ulica"@pl ;
-    ns2:creator "https://orcid.org/0000-0002-0489-3171"^^xsd:url ;
+    ns1:creator "https://orcid.org/0000-0002-0489-3171"^^xsd:url ;
     rdfs:comment "Ulice różnią się pod wzgledem długości i szerokości. Mają różne typy nawierzchni. Mogą być wykorzystywane jak plac lub targowisko."@en,
         "Ulice różnią się pod wzgledem długości i szerokości. Mają różne typy nawierzchni. Mogą być wykorzystywane jak plac lub targowisko."@pl ;
     rdfs:isDefinedBy "Jest to droga lub część drogi w terenie zabudowanym, do której budynki, budowle, urządzenia lub inne obiekty przylegają lub nie. "@en,
@@ -37,12 +58,12 @@ urbanonto:object_type_1 a owl:Class ;
         "USTAWA z dnia 21 marca 1985 r. o drogach publicznych: Art. 4 [Słowniczek] Użyte w ustawie określenia oznaczają [...] 3)  ulica - drogę na terenie zabudowy lub przeznaczonym do zabudowy zgodnie z przepisami o planowaniu i zagospodarowaniu przestrzennym, w której ciągu może być zlokalizowane torowisko tramwajowe."@pl,
         "https://www.wikidata.org/wiki/Q79007"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#class_5> ;
-    ns1:altLabel "Strasse"@de,
+    ns2:altLabel "Strasse"@de,
         "street"@en,
         "rue"@fr,
         "via"@la,
         "ulitsa"@ru ;
-    ns1:hiddenLabel "aleja"@pl,
+    ns2:hiddenLabel "aleja"@pl,
         "bulwar"@pl,
         "droga"@pl,
         "jezdnia"@pl,
@@ -52,68 +73,52 @@ urbanonto:object_type_1 a owl:Class ;
         "zaułek"@pl,
         "ścieżka"@pl .
 
-urbanonto:object_type_10 a owl:Class ;
-    rdfs:label "młyn"@pl .
-
-urbanonto:object_type_11 a owl:Class ;
-    rdfs:label "fosa wypełniona wodą"@pl .
-
-urbanonto:object_type_12 a owl:Class ;
-    rdfs:label "planty"@pl .
-
-urbanonto:object_type_13 a owl:Class ;
-    rdfs:label "sukiennice"@pl .
-
-urbanonto:object_type_14 a owl:Class ;
-    rdfs:label "ogród zoologiczny"@pl ;
-    ns1:hiddenLabel "Tiergarten"@pl .
-
-urbanonto:object_type_2 a owl:Class ;
+urbanonto:object_type_3 a owl:Class ;
     rdfs:label "school"@en,
         "szkoła"@pl ;
-    ns2:creator "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@en,
         "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@pl ;
     rdfs:isDefinedBy "Jest to budynek mieszczący instytucję wychowawczo-edukacyjną."@en,
         "Jest to budynek mieszczący instytucję wychowawczo-edukacyjną."@pl ;
     rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
+    ns2:altLabel "Lehranstalt"@de,
         "Schule"@de,
         "school"@en,
         "école"@fr,
         "scholae"@la,
         "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
+    ns2:hiddenLabel "szkoła wyższa"@pl,
         "uniwersytet"@pl .
 
-urbanonto:object_type_3 a owl:Class ;
+urbanonto:object_type_4 a owl:Class ;
     rdfs:label "kompleks szkolny"@en,
         "kompleks szkolny"@pl ;
-    ns2:creator "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@en,
         "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@pl ;
     rdfs:isDefinedBy "Jest to kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną."@en,
         "Jest to kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną."@pl ;
     rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#class_48> ;
-    ns1:altLabel "Lehranstalt"@de,
+    ns2:altLabel "Lehranstalt"@de,
         "Schule"@de,
         "school"@en,
         "école"@fr,
         "scholae"@la,
         "kompleks oświatowy"@pl,
         "ucziliszcze"@ru ;
-    ns1:hiddenLabel "ochronka"@pl,
+    ns2:hiddenLabel "ochronka"@pl,
         "przedszkole"@pl,
         "szkoła wyższa"@pl,
         "uniwersytet"@pl,
         "zespół szkół"@pl .
 
-urbanonto:object_type_4 a owl:Class ;
+urbanonto:object_type_5 a owl:Class ;
     rdfs:label "chapel"@en,
         "kaplica wolnostojąca"@pl ;
-    ns2:creator "https://orcid.org/0000-0003-0634-7614"^^xsd:url ;
+    ns1:creator "https://orcid.org/0000-0003-0634-7614"^^xsd:url ;
     rdfs:comment "Kaplice wolnostrojące są widoczne na planach miast, w przestrzeni miejskiej wyróżnia je forma architektoniczna charakterystyczna dla budynków sakralnych."@en,
         "Kaplice wolnostrojące są widoczne na planach miast, w przestrzeni miejskiej wyróżnia je forma architektoniczna charakterystyczna dla budynków sakralnych."@pl ;
     rdfs:isDefinedBy "Jest to niewielka chrześcijańska budowla sakralna służąca do odprawiania kultu (np. celebracja mszy, modlitwa) lub będąca (rzadko) miejscem pochówku, zawierająca ołtarz lub ołtarze."@en,
@@ -128,21 +133,21 @@ urbanonto:object_type_4 a owl:Class ;
 #Prawo kanoniczne (katolicyzm): Kan. 1223 – Przez kaplicę rozumie się miejsce przeznaczone, za zezwoleniem ordynariusza, do sprawowania kultu Bożego, dla pożytku jakiejś wspólnoty lub grupy wiernych, którzy się w nim zbierają, do którego za zgodą kompetentnego przełożonego mogą przychodzić także inni wierni."""@pl,
         "https://www.wikidata.org/wiki/Q108325"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Kapelle"@de,
+    ns2:altLabel "Kapelle"@de,
         "chapel"@en,
         "capella"@la,
         "oratorium"@la,
         "kaplica"@pl,
         "kapliczka"@pl ;
-    ns1:hiddenLabel "kapliczka"@pl,
+    ns2:hiddenLabel "kapliczka"@pl,
         "kościół"@pl,
         "kościółek"@pl,
         "świątynia"@pl .
 
-urbanonto:object_type_5 a owl:Class ;
+urbanonto:object_type_6 a owl:Class ;
     rdfs:label "esplanada forteczna"@en,
         "esplanada forteczna"@pl ;
-    ns2:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie."@en,
         "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie."@pl ;
     rdfs:isDefinedBy "Jest to teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@en,
@@ -151,17 +156,17 @@ urbanonto:object_type_5 a owl:Class ;
         "#Orgelbrand 1861: \"miejsce wygładzone przed fortem / wszelka sztucznie wzniesiona płaszczyzna\"; #SJP: \"niezabudowana przestrzeń przed fortyfikacjami\"; "@pl,
         "https://www.wikidata.org/wiki/Q88372"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "Esplanade"@de,
+    ns2:altLabel "Esplanade"@de,
         "Festungspromenade"@de,
         "esplanade"@en,
         "esplanade"@fr,
         "przedmurze"@pl,
         "przedpole twierdzy"@pl .
 
-urbanonto:object_type_6 a owl:Class ;
+urbanonto:object_type_7 a owl:Class ;
     rdfs:label "dworzec kolejowy"@en,
         "dworzec kolejowy"@pl ;
-    ns2:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Istniały dworce czołowe (gdzie tory kończyły swój bieg) lub przelotowe. "@en,
         "Istniały dworce czołowe (gdzie tory kończyły swój bieg) lub przelotowe. "@pl ;
     rdfs:isDefinedBy "Jest to zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem."@en,
@@ -176,7 +181,7 @@ urbanonto:object_type_6 a owl:Class ;
             owl:hasValue ontohgis:function8 ;
             owl:onProperty ontohgis:hasProperFunction ],
         <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Bahnhof"@de,
+    ns2:altLabel "Bahnhof"@de,
         "railway station"@en,
         "gare"@fr,
         "station ferroviaire"@fr,
@@ -185,12 +190,12 @@ urbanonto:object_type_6 a owl:Class ;
         "dworzec drogi żelaznej (np. Fryze i Chodorowicz 1873: 38-39)"@pl,
         "galeria (wcześniej)"@pl,
         "zheleznodorozhnyj woksal"@ru ;
-    ns1:hiddenLabel "stacja kolejowa"@pl .
+    ns2:hiddenLabel "stacja kolejowa"@pl .
 
-urbanonto:object_type_7 a owl:Class ;
+urbanonto:object_type_8 a owl:Class ;
     rdfs:label "park"@en,
         "park"@pl ;
-    ns2:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Parki występują jako większa, niepodzielona na drobne parcele połać zieleni z elementami leśnymi, jeziorami i stawami oraz drobną architekturą parkową. Parki stanowią całość prawną, a na ich terenie pojawiają się różne funkcje: obok rekreacyjnej i drobnych usług (stoiska z napojami itp.) w ciągu XIX w. pojawia się rozległa oferta komercyjna, która ma przynosić dochód podmiotom utrzymującym park (miasto, instytucja, prywatny właściciel). "@en,
         "Parki występują jako większa, niepodzielona na drobne parcele połać zieleni z elementami leśnymi, jeziorami i stawami oraz drobną architekturą parkową. Parki stanowią całość prawną, a na ich terenie pojawiają się różne funkcje: obok rekreacyjnej i drobnych usług (stoiska z napojami itp.) w ciągu XIX w. pojawia się rozległa oferta komercyjna, która ma przynosić dochód podmiotom utrzymującym park (miasto, instytucja, prywatny właściciel). "@pl ;
     rdfs:isDefinedBy "Jest to wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym."@en,
@@ -198,7 +203,7 @@ urbanonto:object_type_7 a owl:Class ;
     rdfs:seeAlso "#SJP 1811: brak hasła \"park\" i \"przechadzka\" (w tym znaczeniu), jedynie jest \"ogród\". #Orgelbrand 1861: oznaczony jako wyraz obcy i odesłanie do wyrazów \"ogród\" i \"zwierzyniec\";# SJP 1908: \"wielki ogród ozdobny urządzony na kształt lasku\"; #PWN 1979: \"duży ogród powiązany przestrzennie i kompozycyjnie z warunkami naturalnymi i otaczającym krajobrazem, z alejkami i ścieżkami spacerowymi\""@en,
         "#SJP 1811: brak hasła \"park\" i \"przechadzka\" (w tym znaczeniu), jedynie jest \"ogród\". #Orgelbrand 1861: oznaczony jako wyraz obcy i odesłanie do wyrazów \"ogród\" i \"zwierzyniec\";# SJP 1908: \"wielki ogród ozdobny urządzony na kształt lasku\"; #PWN 1979: \"duży ogród powiązany przestrzennie i kompozycyjnie z warunkami naturalnymi i otaczającym krajobrazem, z alejkami i ścieżkami spacerowymi\""@pl,
         "https://www.wikidata.org/wiki/Q22698"^^xsd:url ;
-    ns1:altLabel "Garten"@de,
+    ns2:altLabel "Garten"@de,
         "Parkanlage"@de,
         "Promenade"@de,
         "garden"@en,
@@ -213,21 +218,21 @@ urbanonto:object_type_7 a owl:Class ;
         "sadź"@pl,
         "zwierzyniec (dawniej)"@pl,
         "sad"@ru ;
-    ns1:hiddenLabel "ogród"@pl,
+    ns2:hiddenLabel "ogród"@pl,
         "pole"@pl,
         "zieleniec"@pl .
 
-urbanonto:object_type_8 a owl:Class ;
+urbanonto:object_type_9 a owl:Class ;
     rdfs:label "szkoła XIX wieku"@en,
         "szkoła XIX wieku"@pl ;
-    ns2:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
+    ns1:creator "orcid.org/0000-0002-7568-7455"^^xsd:url ;
     rdfs:comment "Szkoły były ważnym elementem przestrzeni miasta, ich istnienie było zaznaczone w przestrzeni wyraźnie (szkoły publiczne) lub przynajmniej tablicą (prywatne), przestrzeń podwórza/y i przejazdu bramnego nabierała charakteru publicznego (a nie półpublicznego jak w przypadku prywatnych kamienic czynszowych). Uczniowie nosili mundurki, co dodatkowo wyróżniało ich (a tym samym i budynek, gdzie przybywali) w przestrzeni. Ważną kwestią było zmieniające się ustawodawstwo, ograniczające polski charakter szkół w Warszawie w XIX w. i ich rusyfikacja, co objawiało się w przestrzeni w treści tablic informujących. Z jednym słynnym wyjątkiem: rusyfikacji wyglądu budynku pierwszego państwowego gimnazjum humanistycznego w tzw. pałacu Staszica, co wynikało nb. z faktu, że w środku była też kaplica prawosławna."@en,
         "Szkoły były ważnym elementem przestrzeni miasta, ich istnienie było zaznaczone w przestrzeni wyraźnie (szkoły publiczne) lub przynajmniej tablicą (prywatne), przestrzeń podwórza/y i przejazdu bramnego nabierała charakteru publicznego (a nie półpublicznego jak w przypadku prywatnych kamienic czynszowych). Uczniowie nosili mundurki, co dodatkowo wyróżniało ich (a tym samym i budynek, gdzie przybywali) w przestrzeni. Ważną kwestią było zmieniające się ustawodawstwo, ograniczające polski charakter szkół w Warszawie w XIX w. i ich rusyfikacja, co objawiało się w przestrzeni w treści tablic informujących. Z jednym słynnym wyjątkiem: rusyfikacji wyglądu budynku pierwszego państwowego gimnazjum humanistycznego w tzw. pałacu Staszica, co wynikało nb. z faktu, że w środku była też kaplica prawosławna."@pl ;
     rdfs:isDefinedBy "Jest to instytucja edukacyjno-wychowawcza"@en,
         "Jest to instytucja edukacyjno-wychowawcza"@pl ;
     rdfs:seeAlso "https://www.wikidata.org/wiki/[brak numeru dla szkoły jako takiej, są tylko konkretne obiekty]"^^xsd:url ;
     rdfs:subClassOf <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
+    ns2:altLabel "Lehranstalt"@de,
         "Schule"@de,
         "school"@en,
         "école"@fr,
@@ -235,11 +240,6 @@ urbanonto:object_type_8 a owl:Class ;
         "schola"@la,
         "zakład naukowy"@pl,
         "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
+    ns2:hiddenLabel "szkoła wyższa"@pl,
         "uniwersytet"@pl .
-
-urbanonto:object_type_9 a owl:Class ;
-    rdfs:label "wartownia"@pl ;
-    ns1:hiddenLabel "kordegarda"@pl,
-        "odwach"@pl .
 

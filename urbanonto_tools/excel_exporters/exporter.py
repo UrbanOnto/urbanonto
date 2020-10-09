@@ -18,12 +18,15 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
 
     object_count = 0
     for excel_sheet_dataframe in excel_sheet_dataframes.values():
-        entity = URIRef('https://purl.org/urbanonto#object_type' + '_' + str(object_count))
-        ontology.add((entity,RDF.type, OWL.Class))
         object_count += 1
         for index, row in excel_sheet_dataframe.iterrows():
             ontology = \
-                __export_row(index=index, row=row, ontology=ontology, ontology_with_imports=ontology_with_imports, entity=entity)
+                __export_row(
+                    index=index,
+                    row=row,
+                    ontology=ontology,
+                    ontology_with_imports=ontology_with_imports,
+                    object_count=object_count)
 
     ontology.commit()
     ontology.serialize(ontology_file_path, format='turtle')
@@ -37,9 +40,16 @@ def __split_cell_into_literals(cell: str, subject, predicate, lang: str, ontolog
         ontology.add((subject,predicate,object))
 
 
-def __export_row(index, row, ontology: Graph, ontology_with_imports: Graph, entity: URIRef):
+def __export_row(index, row, ontology: Graph, ontology_with_imports: Graph, object_count: int):
     pl_row_value = str(row[1]).replace('nan', '')
     en_row_value = str(row[2]).replace('nan', '')
+
+    if len(pl_row_value) == 0 and len(pl_row_value) == 0:
+        return ontology
+
+    entity = URIRef('https://purl.org/urbanonto#object_type' + '_' + str(object_count))
+    ontology.add((entity, RDF.type, OWL.Class))
+
     if index == NAME_ROW_NO:
         if len(pl_row_value) > 0:
             name_pl_literal = Literal(pl_row_value, lang='pl')
@@ -107,10 +117,10 @@ def __export_row(index, row, ontology: Graph, ontology_with_imports: Graph, enti
             bdot_label = Literal(pl_row_value, datatype=XSD.string)
             bdot_objects = list(ontology_with_imports.subjects(predicate=RDFS.label, object=bdot_label))
             if len(bdot_objects) == 0:
-                print('Was not able to find BDOT name', bdot_label)
+                print('Creating', str(entity), 'I was not able to find BDOT name', bdot_label)
             else:
                 if len(bdot_objects) > 1:
-                    print('Multiple BDOT10K objects found for', bdot_label)
+                    print('Creating', str(entity), 'multiple BDOT10K objects were found for', bdot_label)
                 else:
                     bdot_object = bdot_objects[0]
                     ontology.add((entity, RDFS.subClassOf, bdot_object))
@@ -134,10 +144,10 @@ def __add_functions_to_entity(functions_string:str, entity: URIRef, ontology: Gr
         function_label = Literal(function_stripped, lang='pl')
         function_objects = list(ontology_with_imports.subjects(predicate=RDFS.label, object=function_label))
         if len(function_objects) == 0:
-            print('Was not able to find function with name', function)
+            print('Creating', str(entity), 'I was not able to find function with name', function)
         else:
             if len(function_objects) > 1:
-                print('Multiple functions found for name', function)
+                print('Creating', str(entity), 'multiple functions were found for name', function)
             else:
                 function_object = function_objects[0]
                 owl_value_restriction_for_function, ontology = \
