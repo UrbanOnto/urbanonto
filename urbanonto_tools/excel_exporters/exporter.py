@@ -131,8 +131,9 @@ def __export_row(index, row, ontology: Graph, ontology_with_imports: Graph, obje
 
     if index == AUTHOR_ROW_NO:
         if len(pl_row_value) > 0:
-            author_literal = Literal(pl_row_value, datatype=XSD.url)
-            ontology.add((entity, URIRef('http://purl.org/dc/terms/creator'), author_literal))
+            author = URIRef(pl_row_value)
+            ontology.add((author, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E21_Person')))
+            ontology.add((entity, URIRef('http://purl.org/dc/terms/creator'), author))
 
     return ontology
 
