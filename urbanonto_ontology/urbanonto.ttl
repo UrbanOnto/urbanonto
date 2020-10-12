@@ -13,7 +13,7 @@
                               owl:imports <http://purl.org/ontohgis> ,
                                           <https://purl.org/bdot10k> ;
                               rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
-                              rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/"@en ;
+                              rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/" ;
                               owl:versionInfo 0.1 .
 
 #################################################################
