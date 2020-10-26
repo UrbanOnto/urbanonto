@@ -2,7 +2,7 @@ import pandas
 from rdflib import Graph, Literal, URIRef, RDFS, OWL, RDF, SKOS, XSD
 
 from excel_exporters.excel_file_constants import *
-from excel_exporters.export_helpers import create_iri_for_object_type
+from excel_exporters.export_helpers import create_iri_for_object_type, create_iri
 from excel_exporters.function_exporter import add_functions_to_entity
 from excel_exporters.mereology_exporter import add_parts_to_object_type, add_wholes_to_object_type
 from owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
@@ -21,15 +21,15 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     for excel_sheet_name, excel_sheet_dataframe in excel_sheet_dataframes.items():
         object_count += 1
         for index, row in excel_sheet_dataframe.iterrows():
-            ontology = \
-                __export_row(
-                    excel_sheet_name=excel_sheet_name,
-                    index=index,
-                    row=row,
-                    ontology=ontology,
-                    ontology_with_imports=ontology_with_imports,
-                    object_type_count=object_count,
-                    object_type_register=object_type_register)
+            __export_row(
+                excel_sheet_name=excel_sheet_name,
+                index=index,
+                row=row,
+                ontology=ontology,
+                ontology_with_imports=ontology_with_imports,
+                object_type_count=object_count,
+                object_type_register=object_type_register)
+
 
     ontology.commit()
     ontology.serialize(ontology_file_path, format='turtle')
@@ -48,11 +48,10 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
     en_row_value = str(row[2]).replace('nan', '')
 
     if len(pl_row_value) == 0 and len(pl_row_value) == 0:
-        return ontology
+        return
 
     object_type = create_iri_for_object_type(object_type_index=object_type_count)
     ontology.add((object_type, RDF.type, OWL.Class))
-
 
     if index == NAME_ROW_NO:
         if len(pl_row_value) > 0:
@@ -172,12 +171,11 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
 
     if index == AUTHOR_ROW_NO:
         if len(pl_row_value) > 0:
-            author = URIRef(pl_row_value)
+            author = create_iri(iri_string=pl_row_value)
+            if author == None:
+                return
             ontology.add((author, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E21_Person')))
             ontology.add((object_type, URIRef('http://purl.org/dc/terms/creator'), author))
         else:
             print('No author in', excel_sheet_name)
-
-    return ontology
-
 

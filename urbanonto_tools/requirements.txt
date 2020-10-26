@@ -1,3 +1,4 @@
 rdflib
 pandas
 xlrd
+validators
