@@ -1,17 +1,16 @@
 import re
 
-from rdflib import URIRef, Graph, Literal, RDFS
+from rdflib import URIRef, Graph, Literal, RDFS, RDF
 
 from excel_exporters.export_helpers import create_iri_for_object_in_type
-from excel_exporters.ontology_constants import HAS_OTHER_DEFINITION
+from excel_exporters.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
 from excel_exporters.owl_axiom_creator import add_owl_annotation_axiom_to_graph
 from excel_exporters.re_constants import *
 
-other_definitions_re = re.compile(DEFINITION_START + '(.+)' + DEFINITION_SEPARATOR + '(.+)' + DEFINITION_END)
+other_definitions_re = re.compile(DEFINITION_START + '(.+?)' + DEFINITION_SEPARATOR + '(.+?)' + DEFINITION_END)
 
 
-def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_string: str, entity: URIRef,
-                                    ontology: Graph, created_entities_register: dict):
+def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_string: str, entity: URIRef, ontology: Graph, created_entities_register: dict):
     other_definitions = __get_other_definitions_from_string(other_definitions_string=other_definitions_string)
     for other_definition in other_definitions:
         other_definition_source_string = other_definition[0].strip()
@@ -20,11 +19,10 @@ def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_str
         if other_definition_source_label in created_entities_register:
             other_definition_source = created_entities_register[other_definition_source_label]
         else:
-            other_definition_source = create_iri_for_object_in_type(type_local_fragment='source',
-                                                                    index=other_definition_source_iri_string)
+            other_definition_source = create_iri_for_object_in_type(type_local_fragment='source', index=other_definition_source_iri_string)
+            ontology.add((other_definition_source, RDF.type, SOURCE_CLASS))
         if other_definition_source is None:
-            print('Exporting other definitions from', excel_sheet_name, 'Cannot create iri for',
-                  other_definition_source_iri_string)
+            print('Exporting other definitions from', excel_sheet_name, 'was not able to create iri for', other_definition_source_iri_string)
             continue
         other_definition_string = other_definition[1].strip()
         other_definition = Literal(other_definition_string)
