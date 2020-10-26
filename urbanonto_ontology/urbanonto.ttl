@@ -21,14 +21,14 @@
 #################################################################
 
 ###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
-rdfs:isDefinedBy rdfs:label "is defined in"@en ,
-                            "jest zdefiniowany w"@pl .
+rdfs:isDefinedBy rdfs:label "is defined by"@en ,
+                            "jest zdefiniowany przez"@pl .
 
 
 ###  https://purl.org/urbanonto#isAlsoDefinedBy
 urbanonto:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
                           rdfs:label "is also defined in"@en ,
-                                     "ma inną definicję w"@pl ;
+                                     "jest również zdefiniowany przez"@pl ;
                           rdfs:subPropertyOf rdfs:isDefinedBy .
 
 
