@@ -21,7 +21,7 @@ def get_owl_some_values_restriction_to_graph(owl_object_property: URIRef, value:
     return some_values_restriction
 
 
-def get_owl_all_values_restriction_to_graph(owl_object_property: object, value: object, ontology: object) -> object:
+def get_owl_all_values_restriction_to_graph(owl_object_property: object, value: object, ontology: Graph) -> object:
     all_values_restriction = BNode()
 
     ontology.add((all_values_restriction, RDF.type, OWL.Restriction))

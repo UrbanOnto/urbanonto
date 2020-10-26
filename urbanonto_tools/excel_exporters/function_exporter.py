@@ -4,7 +4,8 @@ from excel_exporters.ontology_constants import HAS_FUNCTION
 from owl_handlers.owl_constructors import get_owl_has_value_restriction_to_graph
 
 
-def add_functions_to_entity(excel_sheet_name: str, functions_string:str, object_type: URIRef, ontology: Graph, ontology_with_imports: Graph):
+def add_functions_to_entity(excel_sheet_name: str, functions_string: str, object_type: URIRef, ontology: Graph,
+                            ontology_with_imports: Graph):
     functions = functions_string.split(',')
     for function in functions:
         function_stripped = function.strip()
