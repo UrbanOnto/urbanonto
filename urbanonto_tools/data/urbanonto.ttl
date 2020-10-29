@@ -1,7 +1,6 @@
 @prefix cidoc_crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ontohgis: <http://purl.org/ontohgis#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix urbanonto: <https://purl.org/urbanonto#> .
@@ -17,210 +16,79 @@
         <http://purl.org/ontohgis> ;
     owl:versionInfo 0.1 .
 
-<https://purl.org/urbanonto/object_type_2569b24a-b1fd-4484-a6d8-5e99278a3a2e> a owl:Class ;
-    rdfs:label "fosa wypełniona wodą"@pl ;
+urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
+    rdfs:label "is also defined in"@en,
+        "jest również zdefiniowany przez"@pl ;
+    rdfs:subPropertyOf rdfs:isDefinedBy .
+
+<https://purl.org/urbanonto/object_type_472e2cc5-1551-4b19-b9f5-00f86078f1ab> a owl:Class ;
+    rdfs:label "planty"@en,
+        "planty"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:isDefinedBy "Jest to rodzaj fortyfikacji w postaci głębokiwgo rowu."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q88480"^^xsd:url ;
+    rdfs:comment "Rodzaj parków (terenów zielonych) otaczających teren miasta lokacyjnego/starego miasta."@en,
+        "Rodzaj parków (terenów zielonych) otaczających teren miasta lokacyjnego/starego miasta."@pl ;
+    rdfs:isDefinedBy "typ parku zakładanego na obszarze zlikwidowanych fortyfikacji miejskich"@en,
+        "typ parku zakładanego na obszarze zlikwidowanych fortyfikacji miejskich"@pl ;
+    rdfs:seeAlso """#Słowosieć: "rodzaj miejskich terenów zielonych zwykle zakładanych w miejscu likwidowanych fortyfikacji miejskich (murów obronnych, wałów ziemnych, fos), czy dawnego koryta rzecznego"
+#SJPPWN: "tereny zielone zakładane wokół ośrodków staromiejskich po zniwelowaniu wałów fortyfikacyjnych, fos lub dawnych koryt rzecznych"
+#SJPDoroszewski: "2. teren obsadzonny drzewami, krzewami, przeznaczony do przechadzek"
+#EncPWN: "[łac.], miejskie zieleńce publiczne oraz ciągi spacerowe, zakładane na miejscu zlikwidowanych i zniwelowanych (splantowanych) murów obronnych, fortyfikacji, wałów i fos lub dawnych koryt rzecznych (np. Planty w Krakowie; esplanada); rozpowszechnione od końca XVIII w.; nazwa przyjęta w Polsce od początku XIX w., używana była wymiennie z terminem plantacje"
+#wiki.cz: "Planty is the name used in Poland for one of the types of city parks. These are usually parks or strips of greenery based on the sites of former fortification systems - walls , ramparts, moats or a former riverbed . The name is derived from the words splantować ( plan , level, settle) or plantacja (plantation)"""@pl ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_e5ace087-5ed2-4867-8504-c8db52956ce9> ] ;
-    ns1:altLabel "Burggraben"@de,
-        "fosse"@en,
-        "moat"@en,
-        "douve"@fr,
-        "Fossa castrensis"@la,
-        "rów forteczny"@pl,
-        "Ров"@ru .
+            owl:hasValue <http://purl.org/ontohgis#function7> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        <https://purl.org/bdot10k#object_226> ;
+    ns1:altLabel "promenada"@pl .
 
-<https://purl.org/urbanonto/object_type_25c2c569-3278-4a41-87e2-c61a270b0752> a owl:Class ;
-    rdfs:label "klasztor"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
-    rdfs:comment "Klasztor zwykle był architekonicznie połączony z kościołem; często się zdarzało, że po zburzeniu klasztoru kościół nadal funkcjonował, znacznie rzadziej bywało odwrotnie, że pozostawał budynek klasztorny bez kościoła. Po kasacjach z przełomu XVIII i XIX w. wiele budynków klasztornych pełniło inne funkcje."@pl ;
-    rdfs:isDefinedBy "budynek mieszkalny wspólnoty zakonnej"@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2727f5d0-81ee-474d-af47-d230e0ab89c4> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2f649ebb-0374-495d-b8c2-aca3bc6ae644> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_29ca5fd8-5e63-42ec-8f91-4bf25dad33f8> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_86106db9-6fa0-4551-98a1-c36b4f790582> ],
-        <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Kloster"@de,
-        "monastery"@en,
-        "claustrum"@la,
-        "monasterium"@la ;
-    ns1:hiddenLabel "konwent"@pl,
-        "opactwo"@pl .
-
-<https://purl.org/urbanonto/object_type_59435e1f-67ae-4d41-a863-61e19b037384> a owl:Class ;
-    rdfs:label "ogród zoologiczny"@pl ;
+<https://purl.org/urbanonto/object_type_4d7aeb4e-0e8a-4c0c-9e78-3c1a738f7bd8> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "staw"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:isDefinedBy "Jest to teren zajmowany przez placówkę naukowo-dydaktyczną, na którym eksponowane są zwierzęta mogące pochodzą z różnych regionów geograficznych. Zwykle jest to teren o charakterze parkowym, udostępniony zwiedzającym. (BDOT)"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q43501"^^xsd:url ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Stawy jako miejsce rekreacji wstępują w parkach, zespołach pałacowych. Miewają także funkcję rolniczą na obrzeżach miasta (hodowla ryb)."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "płytki zbiornik wodny"@pl ;
+    rdfs:seeAlso """#Wikidata: "body of standing water, either natural or man-made, that is usually smaller than a lake"
+#Słowosieć: "zbiornik wodny, stosunkowo płytki - pozbawiony strefy głębinowej (na całej powierzchni występuje roślinność zakorzeniona, jak w strefie przybrzeżnej), zarośnięty, zazwyczaj mniejszy od jeziora"
+#SJPPWN: "śródlądowy zbiornik stojącej wody"
+#SJPDoroszewski: "śródlądowy zbiornik wód powierzchniowych powstały w sposób naturalny lub utworzony sztucznie"
+#EncPWN: "hydrol. płytki (głębokość 0,25–4 m), śródlądowy zbiornik wody zastawionej, stojącej lub przepływającej, o zróżnicowanej powierzchni (od kilkunastu m2 do kilkuset ha)\""""@pl,
+        "https://www.wikidata.org/wiki/Q3253281"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a15a8fcc-7ae3-4ad5-953c-8b582b9931da> ],
+            owl:hasValue <http://purl.org/ontohgis#function7> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#class_46> ;
-    ns1:altLabel "Zoo"@de,
-        "zoo"@en,
-        "zoological garden"@en,
-        "zoological park"@en,
-        "parc zoologique"@fr,
-        "Hortus zoologicus"@la,
-        "zoo"@pl,
-        "зоопарк"@ru ;
-    ns1:hiddenLabel "menażeria"@pl,
-        "zwierzyniec"@pl .
+            owl:hasValue <http://purl.org/ontohgis#function1> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        <https://purl.org/bdot10k#object_46> ;
+    ns1:altLabel "Weiher"@de,
+        "pond"@en,
+        "étang"@fr,
+        "piscina"@la,
+        "пруд"@ru ;
+    ns1:hiddenLabel "oczko wodne"@pl,
+        "sadzawka"@pl .
 
-<https://purl.org/urbanonto/object_type_7f7991c1-333a-428b-9cbe-e7aff86d97c9> a owl:Class ;
-    rdfs:label "sukiennice"@pl .
-
-<https://purl.org/urbanonto/object_type_9e9232fc-cb7a-466f-a2a7-151c3c403f2a> a owl:Class ;
-    rdfs:label "szkoła XIX wieku"@en,
-        "szkoła XIX wieku"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Szkoły były ważnym elementem przestrzeni miasta, ich istnienie było zaznaczone w przestrzeni wyraźnie (szkoły publiczne) lub przynajmniej tablicą (prywatne), przestrzeń podwórza/y i przejazdu bramnego nabierała charakteru publicznego (a nie półpublicznego jak w przypadku prywatnych kamienic czynszowych). Uczniowie nosili mundurki, co dodatkowo wyróżniało ich (a tym samym i budynek, gdzie przybywali) w przestrzeni. Ważną kwestią było zmieniające się ustawodawstwo, ograniczające polski charakter szkół w Warszawie w XIX w. i ich rusyfikacja, co objawiało się w przestrzeni w treści tablic informujących. Z jednym słynnym wyjątkiem: rusyfikacji wyglądu budynku pierwszego państwowego gimnazjum humanistycznego w tzw. pałacu Staszica, co wynikało nb. z faktu, że w środku była też kaplica prawosławna."@en,
-        "Szkoły były ważnym elementem przestrzeni miasta, ich istnienie było zaznaczone w przestrzeni wyraźnie (szkoły publiczne) lub przynajmniej tablicą (prywatne), przestrzeń podwórza/y i przejazdu bramnego nabierała charakteru publicznego (a nie półpublicznego jak w przypadku prywatnych kamienic czynszowych). Uczniowie nosili mundurki, co dodatkowo wyróżniało ich (a tym samym i budynek, gdzie przybywali) w przestrzeni. Ważną kwestią było zmieniające się ustawodawstwo, ograniczające polski charakter szkół w Warszawie w XIX w. i ich rusyfikacja, co objawiało się w przestrzeni w treści tablic informujących. Z jednym słynnym wyjątkiem: rusyfikacji wyglądu budynku pierwszego państwowego gimnazjum humanistycznego w tzw. pałacu Staszica, co wynikało nb. z faktu, że w środku była też kaplica prawosławna."@pl ;
-    rdfs:isDefinedBy "Jest to instytucja edukacyjno-wychowawcza"@en,
-        "Jest to instytucja edukacyjno-wychowawcza"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/[brak numeru dla szkoły jako takiej, są tylko konkretne obiekty]"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_efe289c7-65b9-4f9f-9e55-bd86d7cfff4c> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_5430decc-3974-45ae-8e0a-2dd0d10294f9> ],
-        <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "academia"@la,
-        "schola"@la,
-        "zakład naukowy"@pl,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
-        "uniwersytet"@pl .
-
-<https://purl.org/urbanonto/object_type_a1dcf326-6521-4821-922c-ed262ec55af9> a owl:Class ;
-    rdfs:label "school"@en,
-        "szkoła"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@en,
-        "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@pl ;
-    rdfs:isDefinedBy "Jest to budynek mieszczący instytucję wychowawczo-edukacyjną."@en,
-        "Budynek mieszczący instytucję wychowawczo-edukacyjną."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_10c63f1a-6311-4379-90ea-b3ce10a00246> ],
-        <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "scholae"@la,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
-        "uniwersytet"@pl .
-
-<https://purl.org/urbanonto/object_type_a5ca03f4-e908-4fc3-823d-c613deaafea9> a owl:Class ;
-    rdfs:label "szpital przednowoczesny"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
-    rdfs:comment "Szpital w XIX i XX w. był instytucją o zupełnie odmiennych funkcjach i statusie prawnym; mimo to zdarzało się, że nadal działał w tym samym budynku i stanowił w sensie instytucjonalnym kontynuację szpitala nowożytnego i nawet średniowiecznego. Niektóre instytucje szpitale składały się z całego kompleksu budynków położonego na wydzielonym terenie, stanowiący w kompleks użytkowania terenu - zespół sakralny lub klasztorny. Potrydencki szpital parafialny był określany tą samą nazwą  i pełnił podobne funkcje opiekuńcze, co szpitale o rodowodzie średniowiecznym, samodzielne instytucjonalnie i pełniące ważną rolę w przestrzeni miejskiej, ale nie miał już obu tych cech."@pl ;
-    rdfs:isDefinedBy "szpital - budynek przenaczony do kompleksowej opieki nad potrzebującymi, obejmującej m.in. mieszkanie i wyżywienie"@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ef43f013-b315-4653-8da2-dc94edad58b7> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a027a1a3-1efc-482a-88fd-73960e7decf0> ],
-        <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Spital"@de ;
-    ns1:hiddenLabel "dom ubogich"@pl,
-        "przytułek"@pl .
-
-<https://purl.org/urbanonto/object_type_b0f6791c-9c9e-4375-ade6-57873739e689> a owl:Class ;
-    rdfs:label "kompleks szkolny"@en,
-        "kompleks szkolny"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@en,
-        "Szkoły publiczne istnieją przez cały okres XIX w., ich istnienie reguluje ustawodawstwo, które mówi o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba jest dużo niższa od prywatnych. Szkoły prywatne istnieją także przez cały okres, wpierw głównie jako szkoły wyziowe (które potem włączane w sieć placówek publicznych utrzymywanych przez państwo), potem rośnie liczba laickich szkół prywatnych, których właściciele wynajmują przestrzeń w kamienicach czynszowych na cele szkolne."@pl ;
-    rdfs:isDefinedBy "Jest to kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną."@en,
-        "Jest to kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_10c63f1a-6311-4379-90ea-b3ce10a00246> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2c83a737-daf7-4f8c-9c9f-6604acfc3d75> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_f096d833-6437-41b2-84f3-a7f49469f49a> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_efe289c7-65b9-4f9f-9e55-bd86d7cfff4c> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_3479979f-4c52-45b3-b0b4-a753099a8a4b> ],
-        <https://purl.org/bdot10k#class_48> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "scholae"@la,
-        "kompleks oświatowy"@pl,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "ochronka"@pl,
-        "przedszkole"@pl,
-        "szkoła wyższa"@pl,
-        "uniwersytet"@pl,
-        "zespół szkół"@pl .
-
-<https://purl.org/urbanonto/object_type_dabbbfbb-1c00-4e65-ab86-5b7063a0e547> a owl:Class ;
-    rdfs:label "urban plot"@en,
-        "działka miejska"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
-    rdfs:comment "Działki różnią się pod względem wielkości. Mają różne typy zabudowy lub brak zabudowy. Pełnią różne funkcje."@en,
-        "Działki różnią się pod względem wielkości. Mają różne typy zabudowy lub brak zabudowy. Pełnią różne funkcje."@pl ;
-    rdfs:isDefinedBy "Jest to część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym."@en,
-        "Część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym."@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6bfe066c-6602-4543-a524-38365ee3e051> ] ;
-    ns1:altLabel "Stadtgrundstück"@de,
-        "urban plot"@en,
-        "parcela"@pl .
-
-<https://purl.org/urbanonto/object_type_e0220f6d-b4f5-445f-ae5b-a64c62c52f99> a owl:Class ;
-    rdfs:label "street"@en,
+<https://purl.org/urbanonto/object_type_61f16836-b035-4af9-918d-4a526c5b5170> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
         "ulica"@pl ;
-    rdfs:comment "Ulice różnią się pod wzgledem długości i szerokości. Mają różne typy nawierzchni. Mogą być wykorzystywane jak plac lub targowisko."@en,
-        "Ulice różnią się pod względem długości i szerokości. Mają różne typy nawierzchni. Mogą być wykorzystywane jak plac lub targowisko."@pl ;
-    rdfs:isDefinedBy "Jest to droga lub część drogi w terenie zabudowanym, do której budynki, budowle, urządzenia lub inne obiekty przylegają lub nie. "@en,
-        "Droga lub część drogi w terenie zabudowanym, do której przylegają budynki, budowle, urządzenia lub inne obiekty. "@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "droga lub część drogi w terenie zabudowanym, do której przylegają budynki, budowle, urządzenia lub inne obiekty"@pl ;
+    rdfs:seeAlso "USTAWA z dnia 21 marca 1985 r. o drogach publicznych: Art. 4 [Słowniczek] Użyte w ustawie określenia oznaczają [...] 3)  ulica - drogę na terenie zabudowy lub przeznaczonym do zabudowy zgodnie z przepisami o planowaniu i zagospodarowaniu przestrzennym, w której ciągu może być zlokalizowane torowisko tramwajowe."@pl,
+        "https://www.wikidata.org/wiki/Q79007"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_72c0c6a0-1e9b-4696-9996-da26b802568d> ],
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_3c2766ab-5838-4d37-abd3-dd7d97b75f15> ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_405 ;
-            owl:onProperty ontohgis:hasProperFunction ],
+            owl:hasValue <http://purl.org/ontohgis#object_405> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:function9 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
+            owl:hasValue <http://purl.org/ontohgis#function9> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        <https://purl.org/bdot10k#class_5> ;
     ns1:altLabel "Strasse"@de,
         "street"@en,
         "rue"@fr,
@@ -234,353 +102,28 @@
         "zaułek"@pl,
         "ścieżka"@pl .
 
-<https://purl.org/urbanonto/object_type_ee3953d9-e513-4398-bfbf-3adf28239edb> a owl:Class ;
-    rdfs:label "młyn"@pl .
-
-rdfs:isDefinedBy rdfs:label "is defined in"@en,
-        "jest zdefiniowany w"@pl .
-
-<https://purl.org/urbanonto/object_type_239182a6-74da-4490-bbee-ff6a9745f2b9> a owl:Class ;
-    rdfs:label "założenie pałacowe"@pl .
-
-<https://purl.org/urbanonto/object_type_2727f5d0-81ee-474d-af47-d230e0ab89c4> a owl:Class ;
-    rdfs:label "W klasie budynków klasztor nie ma części składowych; funkcjonalnie składa się m.in. z części sypialnej"@pl .
-
-<https://purl.org/urbanonto/object_type_29ca5fd8-5e63-42ec-8f91-4bf25dad33f8> a owl:Class ;
-    rdfs:label "jadalni (refektarz)"@pl .
-
-<https://purl.org/urbanonto/object_type_2c83a737-daf7-4f8c-9c9f-6604acfc3d75> a owl:Class ;
-    rdfs:label "plac zabaw"@pl .
-
-<https://purl.org/urbanonto/object_type_2f649ebb-0374-495d-b8c2-aca3bc6ae644> a owl:Class ;
-    rdfs:label "pomieszczeń gospodarczych i innych."@pl .
-
-<https://purl.org/urbanonto/object_type_3479979f-4c52-45b3-b0b4-a753099a8a4b> a owl:Class ;
-    rdfs:label "budynek"@pl .
-
-<https://purl.org/urbanonto/object_type_417cdbe4-6335-44ca-9926-c6ae128c01e6> a owl:Class ;
-    rdfs:label "teatr"@pl .
-
-<https://purl.org/urbanonto/object_type_47e7d431-abd8-4933-b03f-6c73245eb712> a owl:Class ;
-    rdfs:label "fontanna"@pl .
-
-<https://purl.org/urbanonto/object_type_528fd920-7e1e-4017-a9bc-86b10787acf2> a owl:Class ;
-    rdfs:label "sieć kolejowa"@pl .
-
-<https://purl.org/urbanonto/object_type_5430decc-3974-45ae-8e0a-2dd0d10294f9> a owl:Class ;
-    rdfs:label "kaplica"@pl .
-
-<https://purl.org/urbanonto/object_type_6905d336-3ff5-4c06-9486-bded77988220> a owl:Class ;
-    rdfs:label "alejka"@pl .
-
-<https://purl.org/urbanonto/object_type_6a9c2a02-e823-4a43-8d36-f8f75018560f> a owl:Class ;
-    rdfs:label "inne"@pl .
-
-<https://purl.org/urbanonto/object_type_6e29489b-53e0-41f0-8235-2087f48f7cd4> a owl:Class ;
-    rdfs:label "restauracja"@pl .
-
-<https://purl.org/urbanonto/object_type_72c0c6a0-1e9b-4696-9996-da26b802568d> a owl:Class ;
-    rdfs:label "droga"@pl .
-
-<https://purl.org/urbanonto/object_type_7a9f44e6-4731-46bd-9b40-c250e1aa2963> a owl:Class ;
-    rdfs:label "planty"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Wyodrębione jako typ parku ze względu na genezę - założenie parkowe na obszarze po fortyfikacjach."@pl ;
-    rdfs:isDefinedBy "Jest to typ parku zakładanego na obszarze zlikwidowanych fortyfikacji miejskich."@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6905d336-3ff5-4c06-9486-bded77988220> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#class_46> ;
-    ns1:altLabel "promenada"@pl ;
-    urbanonto:isAlsoDefinedBy "\"[łac.], miejskie zieleńce publiczne oraz ciągi spacerowe, zakładane na miejscu zlikwidowanych i zniwelowanych (splantowanych) murów obronnych, fortyfikacji, wałów i fos lub dawnych koryt rzecznych (np. Planty w Krakowie" .
-
-<https://purl.org/urbanonto/object_type_7f527c97-50d5-4363-a249-3a5ae07070d7> a owl:Class ;
-    rdfs:label "molo"@pl .
-
-<https://purl.org/urbanonto/object_type_86106db9-6fa0-4551-98a1-c36b4f790582> a owl:Class ;
-    rdfs:label "W klasie budynków klasztor nie jest częścią większej całości; przestrzennie często mieści się w obrębie  obiektu \"zespół sakralny lub klasztorny\" (KUSC02)"@pl .
-
-<https://purl.org/urbanonto/object_type_9310c4d7-4ae4-48ef-bd32-6b109a08257d> a owl:Class ;
-    rdfs:label "forteca"@pl .
-
-<https://purl.org/urbanonto/object_type_93f8c083-e1e4-4d2b-9c86-90ce8bfc27eb> a owl:Class ;
-    rdfs:label "twierdza"@pl .
-
-<https://purl.org/urbanonto/object_type_a027a1a3-1efc-482a-88fd-73960e7decf0> a owl:Class ;
-    rdfs:label "W klasie budynków szpital nie ma części składowych."@pl .
-
-<https://purl.org/urbanonto/object_type_a15a8fcc-7ae3-4ad5-953c-8b582b9931da> a owl:Class ;
-    rdfs:label "Budynek ogrodu zoologicznego lub botanicznego."@pl .
-
-<https://purl.org/urbanonto/object_type_abc1df03-8e9c-4353-9f3e-d43c748dd928> a owl:Class ;
-    rdfs:label "doki"@pl .
-
-<https://purl.org/urbanonto/object_type_c3689b50-54ae-4f04-b969-9d2729bd7973> a owl:Class ;
-    rdfs:label "otulina wokół miasta"@pl .
-
-<https://purl.org/urbanonto/object_type_c61df6fa-f215-4169-a87f-c8bc31d64ae8> a owl:Class ;
-    rdfs:label "cmentarz"@pl .
-
-<https://purl.org/urbanonto/object_type_ccf485b6-af2f-45cf-8d7d-2336b04fab08> a owl:Class ;
-    rdfs:label "peron"@pl .
-
-<https://purl.org/urbanonto/object_type_d21b2d2f-18f3-41b3-999a-c7151c70e867> a owl:Class ;
-    rdfs:label "pawilon"@pl .
-
-<https://purl.org/urbanonto/object_type_d58e0a48-af1f-4ca5-86eb-3333c89afe8d> a owl:Class ;
-    rdfs:label "Fabryka"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Fabryka może stanowić kompleks użytkowania terenu, który składa się z budynków produkcyjnych, magazynowych i administracyjnych."@pl ;
-    rdfs:isDefinedBy "Jest to budynek, w którym masowa produkcja jest oparta na pracy maszyn."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q83405"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_404 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a76a9b54-e01e-44e6-b7ee-9d9df73d5e67> ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Fabrik"@de,
-        "Fabrikanlage"@de,
-        "Fabrikgebäude"@de,
-        "factory"@en,
-        "plant"@en,
-        "usine"@fr,
-        "Fabrica (officina)"@la,
-        "warsztat fabryczny"@pl,
-        "фабрика"@ru ;
-    ns1:hiddenLabel "kombinat"@pl ;
-    urbanonto:isAlsoDefinedBy "\"budowanie, wystawienie budowli”" .
-
-<https://purl.org/urbanonto/object_type_d87ecf17-7764-4e96-b359-2f9356d9cc51> a owl:Class ;
-    rdfs:label "dworzec kolejowy"@en,
-        "dworzec kolejowy"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Istniały dworce czołowe (gdzie tory kończyły swój bieg) lub przelotowe. "@en,
-        "Istniały dworce czołowe (gdzie tory kończyły swój bieg) lub przelotowe. "@pl ;
-    rdfs:isDefinedBy "Jest to zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem."@en,
-        "Jest to zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/tylko konkretne obiekty"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_528fd920-7e1e-4017-a9bc-86b10787acf2> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ccf485b6-af2f-45cf-8d7d-2336b04fab08> ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Bahnhof"@de,
-        "railway station"@en,
-        "gare"@fr,
-        "station ferroviaire"@fr,
-        "brak"@la,
-        "banhof"@pl,
-        "dworzec drogi żelaznej (np. Fryze i Chodorowicz 1873: 38-39)"@pl,
-        "galeria (wcześniej)"@pl,
-        "zheleznodorozhnyj woksal"@ru ;
-    ns1:hiddenLabel "stacja kolejowa"@pl ;
-    urbanonto:isAlsoDefinedBy "1) dwór we wsi, folwark" .
-
-<https://purl.org/urbanonto/object_type_dd870130-b313-45ad-8fc7-a98fe55980a3> a owl:Class ;
-    rdfs:label "bastion"@pl .
-
-<https://purl.org/urbanonto/object_type_e5ace087-5ed2-4867-8504-c8db52956ce9> a owl:Class ;
-    rdfs:label "twierdza lub forteca"@pl .
-
-<https://purl.org/urbanonto/object_type_ef43f013-b315-4653-8da2-dc94edad58b7> a owl:Class ;
-    rdfs:label "W klasie budynków szpital nie jest częścią większej całości; przestrzennie czasem mieści się w obrębie obiektu \"zespół sakralny lub klasztorny\" (KUSC02)"@pl .
-
-<https://purl.org/urbanonto/object_type_f096d833-6437-41b2-84f3-a7f49469f49a> a owl:Class ;
-    rdfs:label "ogród"@pl .
-
-<https://purl.org/urbanonto/object_type_f26304b5-a2e5-4a92-915d-5ef3827077f8> a owl:Class ;
-    rdfs:label "kompleks handlowo-usługowy"@pl .
-
-<https://purl.org/urbanonto/object_type_f34c64b2-1e58-4874-bca5-0fdad2eaa1b4> a owl:Class ;
-    rdfs:label "magazyny"@pl .
-
-<https://purl.org/urbanonto/object_type_f7cc97ec-4b7c-4a98-9951-4cb28b593858> a owl:Class ;
-    rdfs:label "cytadela"@pl .
-
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> a cidoc_crm:E21_Person .
-
-<https://purl.org/urbanonto/source_DictionaryofArchitecture2008> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_EncPWN> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_EncyklopediaPWN> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Encyklopedia_Orgelbrandta> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Encyklopedia_historii_gospodarczej_Polski_do_1945_roku> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Konarski,_Warszawa_w_jej_pierwszym_stołęcznym_okresie,_s._64> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Orgelbrand_1861> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Orgelbrand_1861_jako> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Orgelbrand_1900-1903> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJP> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJP1807> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJPDoroszewski> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJP_1811> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJP_1908> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_SJP_Doroszewski> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Słownik_Języka_Polskiego_PWN_on-line> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Słownik_języka_polskiego_pod_red._W._Doroszewskiego> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Wikisłownik> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/object_type_6bfe066c-6602-4543-a524-38365ee3e051> a owl:Class ;
-    rdfs:label "miasto"@pl .
-
-<https://purl.org/urbanonto/object_type_73c45d9d-a579-416e-81c2-eb1dee828e1b> a owl:Class ;
-    rdfs:label "jurydyka"@en,
-        "jurydyka"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Powstawanie jurydyk jest podobne do powstawania miast, jurydyki mogą mieć własne przywileje fundacyjne."@en,
-        "Powstawanie jurydyk jest podobne do powstawania miast, jurydyki mogą mieć własne przywileje fundacyjne."@pl ;
-    rdfs:isDefinedBy "Jest to osada obok miasta królewskiego, rzadziej enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu."@en,
-        "Jest to osada obok miasta królewskiego, rzadziej enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q1714048"^^xsd:url ;
-    rdfs:subClassOf <https://purl.org/bdot10k#category_6> ;
-    ns1:altLabel "jurydyka"@de,
-        "jurydyka"@en,
-        "Юридика"@ru ;
-    ns1:hiddenLabel "miasteczko"@pl,
-        "miasto"@pl,
-        "osada"@pl ;
-    urbanonto:isAlsoDefinedBy "jurydyki - osady zakładane jako prywatne enklawy miast królewskich na gruntach miejskich, niepodlegające magistratom i ich sądownictwu",
-        "jurydyki - wydzielone osady, kościelne lub magnackie, które nie podlegały jurysdykcji miejskiej" .
-
-<https://purl.org/urbanonto/object_type_7ab50d73-a12e-4c41-a6aa-a94303f37a20> a owl:Class ;
-    rdfs:label "park"@en,
-        "park"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Parki występują jako większa, niepodzielona na drobne parcele połać zieleni z elementami leśnymi, jeziorami i stawami oraz drobną architekturą parkową. Parki stanowią całość prawną, a na ich terenie pojawiają się różne funkcje: obok rekreacyjnej i drobnych usług (stoiska z napojami itp.) w ciągu XIX w. pojawia się rozległa oferta komercyjna, która ma przynosić dochód podmiotom utrzymującym park (miasto, instytucja, prywatny właściciel). "@en,
-        "Parki występują jako większa, niepodzielona na drobne parcele połać zieleni z elementami leśnymi, jeziorami i stawami oraz drobną architekturą parkową. Parki stanowią całość prawną, a na ich terenie pojawiają się różne funkcje: obok rekreacyjnej i drobnych usług (stoiska z napojami itp.) w ciągu XIX w. pojawia się rozległa oferta komercyjna, która ma przynosić dochód podmiotom utrzymującym park (miasto, instytucja, prywatny właściciel). "@pl ;
-    rdfs:isDefinedBy "Jest to wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym."@en,
-        "Jest to wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q22698"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_47e7d431-abd8-4933-b03f-6c73245eb712> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6a9c2a02-e823-4a43-8d36-f8f75018560f> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_d21b2d2f-18f3-41b3-999a-c7151c70e867> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_417cdbe4-6335-44ca-9926-c6ae128c01e6> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_239182a6-74da-4490-bbee-ff6a9745f2b9> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6e29489b-53e0-41f0-8235-2087f48f7cd4> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_c3689b50-54ae-4f04-b969-9d2729bd7973> ] ;
-    ns1:altLabel "Garten"@de,
-        "Parkanlage"@de,
-        "Promenade"@de,
-        "garden"@en,
-        "park"@en,
-        "jardin"@fr,
-        "parque"@fr,
-        "hortus"@la,
-        "ogród"@pl,
-        "ogród spacerowy"@pl,
-        "promenada"@pl,
-        "przechadzki"@pl,
-        "sadź"@pl,
-        "zwierzyniec (dawniej)"@pl,
-        "sad"@ru ;
-    ns1:hiddenLabel "ogród"@pl,
-        "pole"@pl,
-        "zieleniec"@pl ;
-    urbanonto:isAlsoDefinedBy "\"wielki ogród ozdobny urządzony na kształt lasku\"",
-        "brak hasła \"park\" i \"przechadzka\" (w tym znaczeniu), jedynie jest \"ogród\". #Orgelbrand 1861: oznaczony jako wyraz obcy i odesłanie do wyrazów \"ogród\" i \"zwierzyniec\"" .
-
-<https://purl.org/urbanonto/object_type_a03d335b-28f2-4fb3-a3ef-0d9164a9c9f9> a owl:Class ;
-    rdfs:label "esplanada forteczna"@en,
-        "esplanada forteczna"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie."@en,
-        "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie."@pl ;
-    rdfs:isDefinedBy "Jest to teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@en,
-        "Jest to teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q88372"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_9310c4d7-4ae4-48ef-bd32-6b109a08257d> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_dd870130-b313-45ad-8fc7-a98fe55980a3> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_f7cc97ec-4b7c-4a98-9951-4cb28b593858> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_93f8c083-e1e4-4d2b-9c86-90ce8bfc27eb> ],
-        <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "Esplanade"@de,
-        "Festungspromenade"@de,
-        "esplanade"@en,
-        "esplanade"@fr,
-        "przedmurze"@pl,
-        "przedpole twierdzy"@pl ;
-    urbanonto:isAlsoDefinedBy "\"miejsce wygładzone przed fortem / wszelka sztucznie wzniesiona płaszczyzna\"",
-        "\"niezabudowana przestrzeń przed fortyfikacjami\"" .
-
-<https://purl.org/urbanonto/object_type_a76a9b54-e01e-44e6-b7ee-9d9df73d5e67> a owl:Class ;
-    rdfs:label "kompleks przemysłowo-gospodarczy"@pl .
-
-<https://purl.org/urbanonto/object_type_efe289c7-65b9-4f9f-9e55-bd86d7cfff4c> a owl:Class ;
-    rdfs:label "boisko"@pl .
-
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> a cidoc_crm:E21_Person .
-
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> a cidoc_crm:E21_Person .
-
-<https://purl.org/urbanonto/source_SJP_PWN_on-line> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/source_Wikipedia> a cidoc_crm:E31_Document .
-
-<https://purl.org/urbanonto/object_type_10c63f1a-6311-4379-90ea-b3ce10a00246> a owl:Class ;
-    rdfs:label "teren zabudowany"@pl .
-
-<https://purl.org/urbanonto/object_type_6f81157b-fd1d-472d-b0e7-71e4f84a5daf> a owl:Class ;
-    rdfs:label "chapel"@en,
+<https://purl.org/urbanonto/object_type_6b92b586-742c-42ea-9a8e-ab48cb77b140> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
         "kaplica wolnostojąca"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Kaplice wolnostrojące są widoczne na planach miast, w przestrzeni miejskiej wyróżnia je forma architektoniczna charakterystyczna dla budynków sakralnych."@en,
-        "Kaplice wolnostrojące są widoczne na planach miast, w przestrzeni miejskiej wyróżnia je forma architektoniczna charakterystyczna dla budynków sakralnych."@pl ;
-    rdfs:isDefinedBy "Jest to niewielka chrześcijańska budowla sakralna służąca do odprawiania kultu (np. celebracja mszy, modlitwa) lub będąca (rzadko) miejscem pochówku, zawierająca ołtarz lub ołtarze."@en,
-        "Jest to niewielka chrześcijańska budowla sakralna służąca do odprawiania kultu (np. celebracja mszy, modlitwa) lub będąca (rzadko) miejscem pochówku, zawierająca ołtarz lub ołtarze."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q108325"^^xsd:url ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Kaplice wolnostojące pojawiające się w przestrzeni miejskiej mogą stanowić samodzielne ośrodki kultu, poprzedzać istnienie kościołów (np. kaplica Świętego Krzyża na przedmieściach Warszawy), służyć jako miejsce pochówku (kaplice grobowe-mauzolea), towarzyszyć innym budowlom lub wydzielonym przestrzeniom (kaplice wolnostojące przy szpitalach, kaplice cmentarne). Kaplice pojawiają się w różnym czasie i mają różną proweniencję (np. kaplice powstałe z fundacji mieszczańskich, szlacheckich, duchowieńśtwa, książęcych, królewskich itp.), mogą świadczyć o rozwoju kultury i sztuki, religijności mieszkańców lub fundatorów."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "niewielka chrześcijańska budowla sakralna służąca do odprawiania kultu (np. celebracja mszy, modlitwa) lub będąca (rzadko) miejscem pochówku, zawierająca ołtarz lub ołtarze"@pl ;
+    rdfs:seeAlso """#SJP PWN on-line: 1.  niewielka budowla sakralna; 
+#Słownik języka polskiego pod red. W. Doroszewskiego: mały kościółek; boczna część kościoła mająca ołtarz i tworząca oddzielną całość; oddzielny pokój z ołtarzem do odprawiania nabożeństwa; 
+#Encyklopedia PWN on-line: kaplica [czes. < łac.], arch. niewielka budowla sakralna, wolno stojąca lub połączona z większym kompleksem architektonicznym (głównie kościołem), bądź też wydzielone pomieszczenie z ołtarzem, stanowiące część większej budowli; 
+#Prawo kanoniczne (katolicyzm): Kan. 1223 – Przez kaplicę rozumie się miejsce przeznaczone, za zezwoleniem ordynariusza, do sprawowania kultu Bożego, dla pożytku jakiejś wspólnoty lub grupy wiernych, którzy się w nim zbierają, do którego za zgodą kompetentnego przełożonego mogą przychodzić także inni wierni."""@pl,
+        "https://www.wikidata.org/wiki/Q108325"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function12 ;
-            owl:onProperty ontohgis:hasProperFunction ],
+            owl:hasValue <http://purl.org/ontohgis#function12> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_10c63f1a-6311-4379-90ea-b3ce10a00246> ],
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_bc219380-8e76-4c9d-b9ca-2980d194cec6> ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_c61df6fa-f215-4169-a87f-c8bc31d64ae8> ],
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1e56acd2-f788-43d0-b26a-3129bfde5d51> ],
         <https://purl.org/bdot10k#class_30> ;
     ns1:altLabel "Kapelle"@de,
         "chapel"@en,
@@ -590,27 +133,112 @@ rdfs:isDefinedBy rdfs:label "is defined in"@en,
         "świątynia"@pl ;
     ns1:hiddenLabel "kapliczka"@pl,
         "kościół"@pl,
-        "kościółek"@pl ;
-    urbanonto:isAlsoDefinedBy "1.  niewielka budowla sakralna",
-        "kaplica [czes. < łac.], arch. niewielka budowla sakralna, wolno stojąca lub połączona z większym kompleksem architektonicznym (głównie kościołem), bądź też wydzielone pomieszczenie z ołtarzem, stanowiące część większej budowli",
-        "mały kościółek" .
+        "kościółek"@pl .
 
-<https://purl.org/urbanonto/object_type_834b0320-be1f-4dd9-a7dd-184846a6b225> a owl:Class ;
-    rdfs:label "Magazyn"@pl ;
+<https://purl.org/urbanonto/object_type_8e7889b8-af34-457b-ac1d-cb69504da7e5> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "manufaktura"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Budynek magazynowy to jeden z rodzajów obiektów z funkcją magazynową (zob. terminy bliskoznaczne).; Niektóre magazyny są przeznaczone (wyspecjalizowane) do przechowywania jednego rodzaju towarów, np. spichlerze, magazyny solne (Salzmagazine), prochownia (Pulver Magazin) (2 ostatnie przykłady z HAT Wrocław)"@pl ;
-    rdfs:isDefinedBy "Jest to budynek przeznaczony do przechowywania towarów."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q1362225"^^xsd:url ;
+    rdfs:comment "Lorem ipsum"@en,
+        "SJP Doroszewski \"faza przejściowa pomiędzy warsztatem rzemieślniczym a fabryką\"; Manufaktura jako przedsiębiorstwo mogła być scentralizowana lub rozproszona (kilka małych warsztatów)."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym produkcja jest oparta na podziale pracy (zadań) i pracy rękodzielniczej"@pl ;
+    rdfs:seeAlso """#SJPDoroszewski: "1. przedsiębiorstwo przemysłowe we wczesnej fazie produkcji kapitalistycznej, oparte na pracy rękodzielniczej, będące fazą przejściową między warsztatem rzemieślniczym a fabryką; 2. praca rękodzielnicza, rękodzielnictwo"
+#EncPWN: "[łac.], forma produkcji przemysłowej oparta na podziale pracy i technice ręcznej”
+#wiki.pl: "(łac. manus „ręka”, manufactura „rękodzieło”) – zakład produkcyjny, w którym produkcja masowa złożonego produktu końcowego odbywa się ręcznie i oparta jest na podziale pracy: poszczególne etapy produkcji wykonywane są przez pracowników wyspecjalizowanych w ich wykonywaniu"
+#CambridgeDictionary: "a word used in the past for a factory, sometimes still used in the names of companies\""""@pl,
+        "https://www.wikidata.org/wiki/Q380342"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function8 ;
-            owl:onProperty ontohgis:hasProperFunction ],
+            owl:hasValue <http://purl.org/ontohgis#object_404> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a76a9b54-e01e-44e6-b7ee-9d9df73d5e67> ],
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ef7f0987-eca5-446e-bb09-73356ee269d6> ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Manufaktur"@de,
+        "manufactory"@en,
+        "manufacture"@fr,
+        "Мануфактура"@ru ;
+    ns1:hiddenLabel "atelier"@pl .
+
+<https://purl.org/urbanonto/object_type_a92d44ac-0325-461e-84a0-6ef47a223a03> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "warsztat"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Budynek produkcyjny z epoki przed manufakturami i fabrykami, ale występujący również później. Warsztat może również działać w jednym z pomieszczeń budynku, którego główna funkcja jest inna. "@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym produkcja jest oparta na pracy rękodzielniczej"@pl ;
+    rdfs:seeAlso """#SJP1814: "robotnia, miejsce, w którym rzemieślnicy pracują; i także stół etc., na którym pracują”
+#SJPDoroszewski: "1. rodzaj stołu specjalnie wyposażonego pod względem technicznym, służącego do wykonywania różnego rodzaju prac; 2. pomieszczenie wyposażone w odpowiednie urządzenia i przyrządy, w którym wykonywane są różnego rodzaju prace rzemieślnicze [...]; zakład wykonujący tego rodzaju prace 3. oddział zgormadzenia wolnomularzy"
+#wiki.pl: "pomieszczenie przeznaczone do wykonywania pracy o charakterze wytwórczym lub usługowym z niezbędnym wyposażeniem"
+#CambridgeDictionary: "a room or building where things are made or repaired using machines and/or tools”"""@pl,
+        "https://www.wikidata.org/wiki/Q656720"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#object_402> ;
+            owl:onProperty <http://purl.org/ontohgis#hasImproperFunction> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#object_404> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Werkstatt"@de,
+        "workshop"@en,
+        "atelier"@fr,
+        "zakład rzemieślniczy"@pl,
+        "мастерская"@ru ;
+    ns1:hiddenLabel "pracownia"@pl .
+
+<https://purl.org/urbanonto/object_type_ab5783f8-5a9b-433e-99f5-66ef3db38b82> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "szkoła"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek mieszczący instytucję wychowawczo-edukacyjną"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1e56acd2-f788-43d0-b26a-3129bfde5d51> ],
+        <https://purl.org/bdot10k#object_120> ;
+    ns1:altLabel "Lehranstalt"@de,
+        "Schule"@de,
+        "school"@en,
+        "école"@fr,
+        "scholae"@la,
+        "ucziliszcze"@ru ;
+    ns1:hiddenLabel "szkoła wyższa"@pl,
+        "uniwersytet"@pl .
+
+<https://purl.org/urbanonto/object_type_bce9fde2-4b01-4975-8267-e88a593ee555> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "magazyn"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Może występować np. na terenie kompleksu fabrycznego, handlowo-magazynowego, czy militarnego lub samodzielnie.; Słowo 'magazyn' może określać również sklep lub miejsce wyrobu i sprzadaży ubiorów (SJP Doroszewski, Encyklopedia PWN)."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek przeznaczony do przechowywania towarów"@pl ;
+    rdfs:seeAlso """#SJPDoroszewski: "1. pomieszczenie do przechowywania towarów, zapasów, sprzętu itp.; skład, składnica; 2. duży, dobrze zaopatrzony sklep z jakiejkolwiek branży lub wielobranżowy; także pracownia i miejsce sprzedaży ubiorów (zwłaszcza damskich); salon mody"
+#EncyklopediaPWN: "magazyn: 1) pomieszczenie do przechowywania towarów, surowców, różnego rodzaju zapasów, sprzętu itp.; także skład, składnica; 2) duży, dobrze zaopatrzony sklep jedno- lub wielobranżowy; 3) pracownia i miejsce sprzedaży ubiorów (zwłaszcza damskich)"
+#wiki.pl: "Magazyn – część składowa infrastruktury magazynowej. Miejsce przeznaczone do składowania i przemieszczania zapasów na wyodrębnionej przestrzeni, która może zajmować plac nieosłonięty (składowisko, składnica), plac półosłonięty (wiata), część budowli, całą budowlę lub kilka budowli magazynowych"
+#DictionaryofArchitecture2008: "warehouse: a large building for storing goods and products prior to distribution; a storehouse"
+#CambridgeDictionary: "a large building for storing goods that are going to be sold\""""@pl,
+        "https://www.wikidata.org/wiki/Q1362225"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ef7f0987-eca5-446e-bb09-73356ee269d6> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#function8> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#function2> ;
+            owl:onProperty <http://purl.org/ontohgis#hasImproperFunction> ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_f26304b5-a2e5-4a92-915d-5ef3827077f8> ],
-        <https://purl.org/bdot10k#category_7> ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_045b1112-2b38-4977-b92f-5d7f96e48c5f> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#object_402> ;
+            owl:onProperty <http://purl.org/ontohgis#hasImproperFunction> ] ;
     ns1:altLabel "Bodenspeicher"@de,
         "Fruchtkasten"@de,
         "Lagerhalle"@de,
@@ -634,239 +262,194 @@ rdfs:isDefinedBy rdfs:label "is defined in"@en,
         "skład"@pl,
         "spichrz"@pl,
         "szopa"@pl,
-        "wiata"@pl ;
-    urbanonto:isAlsoDefinedBy "\"1. pomieszczenie do przechowywania towarów, zapasów, sprzętu itp.",
-        "\"magazyn: 1) pomieszczenie do przechowywania towarów, surowców, różnego rodzaju zapasów, sprzętu itp.",
-        "\"warehouse: a large building for storing goods and products prior to distribution" .
+        "wiata"@pl .
 
-<https://purl.org/urbanonto/source_Encyklopedia_PWN_on-line> a cidoc_crm:E31_Document .
+<https://purl.org/urbanonto/object_type_ce55f133-1f0f-445e-8f5a-ec961ce16125> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "działka miejska"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym"@pl ;
+    ns1:altLabel "Stadtgrundstück"@de,
+        "urban plot"@en,
+        "parcela"@pl .
+
+<https://purl.org/urbanonto/object_type_d03b9fbb-20fe-4e98-bc7a-2df87692afb2> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "fabryka"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Powstawały od XVIII wieku (rewolucja przemysłowa), kiedy to zaczęły zastępować/wypierać zakłady rzemieślnicze i manufaktury."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym masowa produkcja jest oparta na pracy maszyn"@pl ;
+    rdfs:seeAlso """#SJP1807: "budowanie, wystawienie budowli”; „gmach”, a także „warsztat rękodzielny"
+#SJPDoroszewski: "zakład przemysłowy wytwarzający maszynowo na wielką skalę środki spożycia i produkcji, wytwórnia"
+#EncPWN: "[łac. fabrica ‘warsztat rzemieślniczy’], ekon. forma organizacji produkcji przemysłowej oparta na pracy maszyn"
+#Dz.U. z 2016 r. poz. 879: "Zakład przemysłowy – zespół budynków i urządzeń wraz z terenem, na którym prowadzi się działalność wytwórczą polegającą na przekształcaniu mechanicznym, fizycznym lub chemicznym materiału, substancji lub ich części składowych w nowy produkt"
+#CambridgeDictionary: "a building or set of buildings where large amounts of goods are made using machines"
+#AHMPWrocław "zakład zmechanizowanej produkcji przemysłowej\""""@pl,
+        "https://www.wikidata.org/wiki/Q83405"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#object_404> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ef7f0987-eca5-446e-bb09-73356ee269d6> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#function2> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Fabrik"@de,
+        "Fabrikanlage"@de,
+        "Fabrikgebäude"@de,
+        "factory"@en,
+        "plant"@en,
+        "usine"@fr,
+        "Fabrica (officina)"@la,
+        "warsztat fabryczny"@pl,
+        "фабрика"@ru ;
+    ns1:hiddenLabel "kombinat"@pl .
+
+<https://purl.org/urbanonto/object_type_d241cec6-8802-4b3d-970c-029c6c2bf04b> a owl:Class ;
+    rdfs:label "ogród zoologiczny"@en,
+        "ogród zoologiczny"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Ogrody zoologiczne zaczęto zakładać w miastach na przełomie XVIII i XIX wieku. Wcześniej podobną funkcję pełniły zwierzyńce i menażerie."@en,
+        "Ogrody zoologiczne zaczęto zakładać w miastach na przełomie XVIII i XIX wieku. Wcześniej podobną funkcję pełniły zwierzyńce i menażerie."@pl ;
+    rdfs:isDefinedBy "teren zajmowany przez placówkę naukowo-dydaktyczną, na którym eksponowane są zwierzęta mogące pochodzą z różnych regionów geograficznych; zwykle jest to teren o charakterze parkowym, udostępniony zwiedzającym (BDOT)"@en,
+        "teren zajmowany przez placówkę naukowo-dydaktyczną, na którym eksponowane są zwierzęta mogące pochodzą z różnych regionów geograficznych; zwykle jest to teren o charakterze parkowym, udostępniony zwiedzającym (BDOT)"@pl ;
+    rdfs:seeAlso """#Wikidata: "collection of assorted wild animal species kept for purposes like: study, conservation and, or, commercial exhibition"
+#BDOT10k: "Teren zajmowany przez placówkę naukowo-dydaktyczną, na którym eksponowane są zwierzęta mogące pochodzą z różnych regionów geograficznych. Zwykle jest to teren o charakterze parkowym, udostępniony zwiedzającym"
+#Słowosieć: "teren udostępniony odwiedzającym, na którym hodowane są zwierzęta, najczęściej pochodzące z różnych obszarów geograficznych"
+#SJPPWN: "teren przystosowany do hodowli i aklimatyzacji zwierząt pochodzących z różnych rejonów geograficznych, udostępniony dla zwiedzających"
+#EncPWN: "placówka naukowo-dydaktyczna, pokazująca na terenie dostępnym dla zwiedzających zwierzęta z różnych regionów kuli ziemskiej, w tym również zwierzęta krajowe\""""@pl,
+        "https://www.wikidata.org/wiki/Q43501"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#function7> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a7d60309-ba50-4012-9ac8-33744362caa1> ],
+        <https://purl.org/bdot10k#class_46> ;
+    ns1:altLabel "Zoo"@de,
+        "zoo"@en,
+        "zoological garden"@en,
+        "zoological park"@en,
+        "parc zoologique"@fr,
+        "Hortus zoologicus"@la,
+        "zoo"@pl,
+        "зоопарк"@ru ;
+    ns1:hiddenLabel "menażeria"@pl,
+        "zwierzyniec"@pl .
+
+<https://purl.org/urbanonto/object_type_d96bf17b-be2e-4ff3-8297-a0d1520ce9da> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "kompleks szkolny"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ddab0972-550a-4a8d-84bd-6630967e6805> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_b3e943d1-f54e-4b5d-92f9-a45f6332d2af> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_d35e5d72-ff54-4a24-b21a-7dc79928bada> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_eb5ebfd2-f624-4264-8bea-9133bd2f898c> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1e56acd2-f788-43d0-b26a-3129bfde5d51> ],
+        <https://purl.org/bdot10k#class_48> ;
+    ns1:altLabel "Lehranstalt"@de,
+        "Schule"@de,
+        "school"@en,
+        "école"@fr,
+        "scholae"@la,
+        "kompleks oświatowy"@pl,
+        "ucziliszcze"@ru ;
+    ns1:hiddenLabel "ochronka"@pl,
+        "przedszkole"@pl,
+        "szkoła wyższa"@pl,
+        "uniwersytet"@pl,
+        "zespół szkół"@pl .
+
+<https://purl.org/urbanonto/object_type_eb2a4c87-826a-46b5-804e-036f8938af44> a owl:Class ;
+    rdfs:label "fosa"@en,
+        "fosa"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "W średniowieczu były często stosowanym rodzajem fortyfikacji. Okalały mury obronne. Współcześnie są spotykane w kompleksach zabytkowo-historycznych."@en,
+        "W średniowieczu były często stosowanym rodzajem fortyfikacji. Okalały mury obronne. Współcześnie są spotykane w kompleksach zabytkowo-historycznych."@pl ;
+    rdfs:isDefinedBy "rodzaj fortyfikacji w postaci głębokiego rowu"@en,
+        "rodzaj fortyfikacji w postaci głębokiego rowu"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q88480"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#function5> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        [ a owl:Restriction ;
+            owl:hasValue <http://purl.org/ontohgis#object_401> ;
+            owl:onProperty <http://purl.org/ontohgis#hasProperFunction> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a7bb21e2-25aa-4b63-a58c-79b4ceb29d95> ],
+        <https://purl.org/bdot10k#class_37> ;
+    ns1:altLabel "Burggraben"@de,
+        "fosse"@en,
+        "moat"@en,
+        "douve"@fr,
+        "Fossa castrensis"@la,
+        "rów forteczny"@pl,
+        "Ров"@ru .
+
+rdfs:isDefinedBy rdfs:label "is defined by"@en,
+        "jest zdefiniowany przez"@pl .
+
+<https://purl.org/urbanonto/object_type_045b1112-2b38-4977-b92f-5d7f96e48c5f> a owl:Class ;
+    rdfs:label "kompleks handlowo-usługowy"@pl .
+
+<https://purl.org/urbanonto/object_type_3c2766ab-5838-4d37-abd3-dd7d97b75f15> a owl:Class ;
+    rdfs:label "droga"@pl .
+
+<https://purl.org/urbanonto/object_type_a7bb21e2-25aa-4b63-a58c-79b4ceb29d95> a owl:Class ;
+    rdfs:label "twierdza"@pl .
+
+<https://purl.org/urbanonto/object_type_a7d60309-ba50-4012-9ac8-33744362caa1> a owl:Class ;
+    rdfs:label "budynek ogrodu zoologicznego lub botanicznego"@pl .
+
+<https://purl.org/urbanonto/object_type_b3e943d1-f54e-4b5d-92f9-a45f6332d2af> a owl:Class ;
+    rdfs:label "budynek"@pl .
+
+<https://purl.org/urbanonto/object_type_bc219380-8e76-4c9d-b9ca-2980d194cec6> a owl:Class ;
+    rdfs:label "cmentarz"@pl .
+
+<https://purl.org/urbanonto/object_type_d35e5d72-ff54-4a24-b21a-7dc79928bada> a owl:Class ;
+    rdfs:label "plac zabaw"@pl .
+
+<https://purl.org/urbanonto/object_type_ddab0972-550a-4a8d-84bd-6630967e6805> a owl:Class ;
+    rdfs:label "ogród"@pl .
+
+<https://purl.org/urbanonto/object_type_eb5ebfd2-f624-4264-8bea-9133bd2f898c> a owl:Class ;
+    rdfs:label "boisko"@pl .
 
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> a cidoc_crm:E21_Person .
 
-<https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> a cidoc_crm:E21_Person .
+<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> a cidoc_crm:E21_Person .
 
-<https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> a owl:Class ;
-    rdfs:label "wartownia"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Wśród polskich, historycznych nazw wartowni można wyróżnić: odwach - mający zwykle związki z aresztem (niektóre słowniki podają, że odwach był synonimem aresztu) oraz kordegarda - będąca budynkiem stanowiącym część kompleksu pałacowego. Przy czym każde z tych określeń (odwach, kordegarda, wartownia) może oznaczać również samo pomieszczenie dla osób pełniących wartę. We współczesnej polszczyźnie wartownia jest budynkiem wojskowym, którego funkcjonowanie określa Regulamin Ogólny Sił Zbrojnych Rzeczypospolitej Polskiej (regulamin wprowadzony Decyzją Nr 445 Ministra Obrony Narodowej z 30 grudnia 2013 r.). Natomiast współcześnie funkcje wartowni pełnią również budki strażnicze znajdujące się przy wjazdach na parkingi lub kompleksy budynków."@pl ;
-    rdfs:isDefinedBy "Jest to budynek przeznaczony dla osób pełniących wartę w którym przechowywane jest niezbędne wyposażenie, czasem pełni funkcję aresztu."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q2914427"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Hauptwache"@de,
-        "guardhouse; watch house; guard building; guard booth; guard shack; security booth; security building; sentry building"@en,
-        "corps de garde"@fr,
-        "custodia"@la,
-        "vigilarium"@la,
-        "vigiliarium"@la,
-        "budka strażnicza"@pl,
-        "kordegarda"@pl,
-        "odwach"@pl,
-        "warta"@pl,
-        "кордегардия"@ru ;
-    ns1:hiddenLabel "budka wartownicza"@pl,
-        "posterunek wartowniczy"@pl ;
-    urbanonto:isAlsoDefinedBy "Odwach – ob. Warta",
-        "Wartownia - Wartownia – specjalnie przygotowany i wyposażony budynek (wydzielone pomieszczenia), przeznaczony dla warty pełniącej służbę",
-        "Wartownia - pomieszczenie dla wartowników",
-        "Wartownia – pomieszczenie dla wartowników",
-        "Wartownia – pomieszczenie dla warty, posterunek wartowniczy, strażnica" .
+<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> a cidoc_crm:E21_Person .
 
-<https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> a owl:Class ;
-    rdfs:label "Port wodny"@en,
-        "Port wodny"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Wygląd portu wodnego może różnić się w poszczególnych miastach tak w czasie jak i pod względem zajmowanej przestrzeni czy zabudowy portu. Porty wodne wyróżnia ich położenie w przestrzeni miasta, czyli w pobliżu akwenu wodnego oraz istnienie części wodnej i lądowej portu."@en,
-        "Wygląd portu wodnego może różnić się w poszczególnych miastach tak w czasie jak i pod względem zajmowanej przestrzeni czy zabudowy portu. Porty wodne wyróżnia ich położenie w przestrzeni miasta, czyli w pobliżu akwenu wodnego oraz istnienie części wodnej i lądowej portu."@pl ;
-    rdfs:isDefinedBy "Jest to węzeł transportowy będący miejscem przeładunku towarów i osób między różnymi środkami transportu, z których co najmniej jeden jest statkiem wodnym, składający się się z dwóćh części: wodnej i lądowej (nabrzeże)."@en,
-        "Jest to węzeł transportowy będący miejscem przeładunku towarów i osób między różnymi środkami transportu, z których co najmniej jeden jest statkiem wodnym, składający się się z dwóćh części: wodnej i lądowej (nabrzeże)."@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q44782"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_f34c64b2-1e58-4874-bca5-0fdad2eaa1b4> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_abc1df03-8e9c-4353-9f3e-d43c748dd928> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6bfe066c-6602-4543-a524-38365ee3e051> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_7f527c97-50d5-4363-a249-3a5ae07070d7> ],
-        <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "Hafen"@de,
-        "docks"@en,
-        "harbor"@en,
-        "harbour"@en ;
-    ns1:hiddenLabel "doki"@pl,
-        "marina"@pl,
-        "miasto portowe"@pl,
-        "molo"@pl,
-        "nabrzeże"@pl,
-        "przystań"@pl,
-        "stanica żeglarska"@pl ;
-    urbanonto:isAlsoDefinedBy "1. część morza między ziemią zamknięta, do której okręty wchodzą na odpoczynek, gdzie przybijają do brzegu dla wysadzenia pływaczów, i gdzie od burty morskiej bezpieczeństwo znajdują",
-        "1. obszar wodny wraz z przylegającym do niego pasem lądu, wyposażony w urządzenia zapewniające postój i obsługę statków, przeładunek towarów i obsługę pasażerów, 2. miasto, w którym jest takie miejsce postoju statków",
-        "Port (1.1) żegl. wyznaczone miejsce, wyposażone w odpowiednią infrastrukturę, umożliwiające załadunek i wyładunek statków wodnych, (1.3) pot. miasto z portem (1.1)",
-        "Port wodny (z łac. Portus) – miejsce do czasowego postoju jednostek pływających, gdzie może odbywać się załadunek/wyładunek towarów, przyjęcie pasażerów, uzupełnienie potrzebnych zapasów i artykułów, obsługa jednostki. Porty są wyposażone w zespół urządzeń umożliwiających cumowanie jednostek, wymianę osób i towarów, wykoie typowych czynności związanych z eksploatacją danej jednostki (obsługa techniczna, uzupełnianie zapasów, usunięcie nieczystości, tankowanie itp.). Porty mogą być przystosowane do magazynowania i transportu towarów w głąb lądu. Porty mogą być utworzone naturalnie, kiedy leżą u ujścia rzeki, w fiordzie, zatoce, lagunie, a także sztucznie, gdy powstają przez wykopanie basenów portowych i budowanie na przybrzeżnych wodach pirsów, falochronów itp. Budowy portu dokonuje się za pomocą kesonów wypełnianych kamieniami, piaskiem, cementem, które następnie są osadzane na dnie",
-        "port wodny, przystań (węzeł transportowy) będąca miejscem przeładunku towarów i osób między różnymi środkami transportu, z których co najmniej jeden jest statkiem wodnym" .
+<https://purl.org/urbanonto/object_type_1e56acd2-f788-43d0-b26a-3129bfde5d51> a owl:Class ;
+    rdfs:label "teren zabudowany"@pl .
+
+<https://purl.org/urbanonto/object_type_ef7f0987-eca5-446e-bb09-73356ee269d6> a owl:Class ;
+    rdfs:label "kompleks przemysłowo-gospodarczy"@pl .
 
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> a cidoc_crm:E21_Person .
-
-urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
-    rdfs:label "is also defined in"@en,
-        "ma inną definicję w"@pl ;
-    rdfs:subPropertyOf rdfs:isDefinedBy .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_6f81157b-fd1d-472d-b0e7-71e4f84a5daf> ;
-    owl:annotatedTarget "1.  niewielka budowla sakralna" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP1807> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_d58e0a48-af1f-4ca5-86eb-3333c89afe8d> ;
-    owl:annotatedTarget "\"budowanie, wystawienie budowli”" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Wikisłownik> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> ;
-    owl:annotatedTarget "Port (1.1) żegl. wyznaczone miejsce, wyposażone w odpowiednią infrastrukturę, umożliwiające załadunek i wyładunek statków wodnych, (1.3) pot. miasto z portem (1.1)" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Konarski,_Warszawa_w_jej_pierwszym_stołęcznym_okresie,_s._64> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_73c45d9d-a579-416e-81c2-eb1dee828e1b> ;
-    owl:annotatedTarget "jurydyki - wydzielone osady, kościelne lub magnackie, które nie podlegały jurysdykcji miejskiej" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Słownik_języka_polskiego_pod_red._W._Doroszewskiego> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_6f81157b-fd1d-472d-b0e7-71e4f84a5daf> ;
-    owl:annotatedTarget "mały kościółek" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_a03d335b-28f2-4fb3-a3ef-0d9164a9c9f9> ;
-    owl:annotatedTarget "\"niezabudowana przestrzeń przed fortyfikacjami\"" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Orgelbrand_1861_jako> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_d87ecf17-7764-4e96-b359-2f9356d9cc51> ;
-    owl:annotatedTarget "1) dwór we wsi, folwark" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Wikipedia> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> ;
-    owl:annotatedTarget "Port wodny (z łac. Portus) – miejsce do czasowego postoju jednostek pływających, gdzie może odbywać się załadunek/wyładunek towarów, przyjęcie pasażerów, uzupełnienie potrzebnych zapasów i artykułów, obsługa jednostki. Porty są wyposażone w zespół urządzeń umożliwiających cumowanie jednostek, wymianę osób i towarów, wykoie typowych czynności związanych z eksploatacją danej jednostki (obsługa techniczna, uzupełnianie zapasów, usunięcie nieczystości, tankowanie itp.). Porty mogą być przystosowane do magazynowania i transportu towarów w głąb lądu. Porty mogą być utworzone naturalnie, kiedy leżą u ujścia rzeki, w fiordzie, zatoce, lagunie, a także sztucznie, gdy powstają przez wykopanie basenów portowych i budowanie na przybrzeżnych wodach pirsów, falochronów itp. Budowy portu dokonuje się za pomocą kesonów wypełnianych kamieniami, piaskiem, cementem, które następnie są osadzane na dnie" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_EncyklopediaPWN> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_834b0320-be1f-4dd9-a7dd-184846a6b225> ;
-    owl:annotatedTarget "\"magazyn: 1) pomieszczenie do przechowywania towarów, surowców, różnego rodzaju zapasów, sprzętu itp." .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Orgelbrand_1861> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_a03d335b-28f2-4fb3-a3ef-0d9164a9c9f9> ;
-    owl:annotatedTarget "\"miejsce wygładzone przed fortem / wszelka sztucznie wzniesiona płaszczyzna\"" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP_1908> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_7ab50d73-a12e-4c41-a6aa-a94303f37a20> ;
-    owl:annotatedTarget "\"wielki ogród ozdobny urządzony na kształt lasku\"" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Słownik_Języka_Polskiego_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> ;
-    owl:annotatedTarget "1. obszar wodny wraz z przylegającym do niego pasem lądu, wyposażony w urządzenia zapewniające postój i obsługę statków, przeładunek towarów i obsługę pasażerów, 2. miasto, w którym jest takie miejsce postoju statków" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Encyklopedia_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_6f81157b-fd1d-472d-b0e7-71e4f84a5daf> ;
-    owl:annotatedTarget "kaplica [czes. < łac.], arch. niewielka budowla sakralna, wolno stojąca lub połączona z większym kompleksem architektonicznym (głównie kościołem), bądź też wydzielone pomieszczenie z ołtarzem, stanowiące część większej budowli" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Encyklopedia_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> ;
-    owl:annotatedTarget "port wodny, przystań (węzeł transportowy) będąca miejscem przeładunku towarów i osób między różnymi środkami transportu, z których co najmniej jeden jest statkiem wodnym" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Wikipedia> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> ;
-    owl:annotatedTarget "Wartownia - Wartownia – specjalnie przygotowany i wyposażony budynek (wydzielone pomieszczenia), przeznaczony dla warty pełniącej służbę" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Orgelbrand_1900-1903> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> ;
-    owl:annotatedTarget "Odwach – ob. Warta" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Encyklopedia_historii_gospodarczej_Polski_do_1945_roku> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_73c45d9d-a579-416e-81c2-eb1dee828e1b> ;
-    owl:annotatedTarget "jurydyki - osady zakładane jako prywatne enklawy miast królewskich na gruntach miejskich, niepodlegające magistratom i ich sądownictwu" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_EncPWN> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_7a9f44e6-4731-46bd-9b40-c250e1aa2963> ;
-    owl:annotatedTarget "\"[łac.], miejskie zieleńce publiczne oraz ciągi spacerowe, zakładane na miejscu zlikwidowanych i zniwelowanych (splantowanych) murów obronnych, fortyfikacji, wałów i fos lub dawnych koryt rzecznych (np. Planty w Krakowie" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP_Doroszewski> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> ;
-    owl:annotatedTarget "Wartownia – pomieszczenie dla warty, posterunek wartowniczy, strażnica" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_DictionaryofArchitecture2008> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_834b0320-be1f-4dd9-a7dd-184846a6b225> ;
-    owl:annotatedTarget "\"warehouse: a large building for storing goods and products prior to distribution" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> ;
-    owl:annotatedTarget "Wartownia - pomieszczenie dla wartowników" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Encyklopedia_PWN_on-line> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_0deebe1a-232b-4aa6-8f79-80ab7acf2753> ;
-    owl:annotatedTarget "Wartownia – pomieszczenie dla wartowników" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_Encyklopedia_Orgelbrandta> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_9749b15a-de70-4f30-9536-25f10c819d6f> ;
-    owl:annotatedTarget "1. część morza między ziemią zamknięta, do której okręty wchodzą na odpoczynek, gdzie przybijają do brzegu dla wysadzenia pływaczów, i gdzie od burty morskiej bezpieczeństwo znajdują" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJP_1811> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_7ab50d73-a12e-4c41-a6aa-a94303f37a20> ;
-    owl:annotatedTarget "brak hasła \"park\" i \"przechadzka\" (w tym znaczeniu), jedynie jest \"ogród\". #Orgelbrand 1861: oznaczony jako wyraz obcy i odesłanie do wyrazów \"ogród\" i \"zwierzyniec\"" .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy <https://purl.org/urbanonto/source_SJPDoroszewski> ;
-    owl:annotatedProperty urbanonto:isAlsoDefinedBy ;
-    owl:annotatedSource <https://purl.org/urbanonto/object_type_834b0320-be1f-4dd9-a7dd-184846a6b225> ;
-    owl:annotatedTarget "\"1. pomieszczenie do przechowywania towarów, zapasów, sprzętu itp." .
 
