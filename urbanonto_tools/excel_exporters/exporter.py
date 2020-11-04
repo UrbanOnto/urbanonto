@@ -19,10 +19,13 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports, ontology_iri=URIRef('https://purl.org/urbanonto'))
 
     excel_sheet_dataframes = pandas.read_excel(excel_file_path, sheet_name=None, header=None)
+    print('There are', str(len(excel_sheet_dataframes)), 'sheets in workbook.')
+    ill_formed_sheet_count = 0
     object_type_count = 0
     for excel_sheet_name, excel_sheet_dataframe in excel_sheet_dataframes.items():
         if not excel_sheet_dataframe.shape == EXCEL_SHEET_SHAPE:
             print('Sheet', excel_sheet_name, 'is ill-formed.')
+            ill_formed_sheet_count += 1
             continue
         object_type_count += 1
         object_type = create_iri_for_object_in_type(type_local_fragment=OBJECT_TYPE_LOCAL_FRAGMENT)
@@ -35,7 +38,7 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
                 ontology=ontology,
                 ontology_with_imports=ontology_with_imports,
                 object_type=object_type)
-
+    print('There are', str(ill_formed_sheet_count), 'ill-formed sheets in workbook.')
     ontology.commit()
     ontology.serialize(ontology_file_path, format='turtle')
     ontology.close()
@@ -89,7 +92,7 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
                 ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=excel_sheet_name)
         else:
-            print('No function in', excel_sheet_name)
+            print('No proper function in', excel_sheet_name)
 
     if index == ADDITIONAL_FUNCTION_ROW_NO:
         if len(pl_row_value) > 0:
@@ -100,8 +103,6 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
                 ontology=ontology,
                 ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=excel_sheet_name)
-        else:
-            print('No function in', excel_sheet_name)
     if index == PART_ROW_NO:
         if len(pl_row_value) > 0:
             add_parts_to_entity(
