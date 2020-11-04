@@ -1,0 +1,60 @@
+Date: 2020-11-04 07:29:04
+Ontology source: /D:/projects/ihpan/urbanonto/urbanonto_ontology/urbanonto.ttl
+Worksheet source: D:\projects\ihpan\urbanonto\urbanonto_ontology\import_data\function_imports\new_functions_202011040723.xlsx
+Transformation rules: D:\projects\ihpan\urbanonto\urbanonto_ontology\import_data\function_imports\function_import_rules.json
+
+# Cell range: (Sheet1!A1:B+) Comment: ""
+# Individual: @A*
+# Types: BFO_0000034
+# Annotations:  rdfs:label @B*
+
+Individual: function15  # Generated from value "function15" located at cell 'Sheet1'!A1.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja edukacyjna"
+Individual: function16  # Generated from value "function16" located at cell 'Sheet1'!A2.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja budowlana"
+Individual: function17  # Generated from value "function17" located at cell 'Sheet1'!A3.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja wychowawcza"
+Individual: function18  # Generated from value "function18" located at cell 'Sheet1'!A4.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja opiekuńcza"
+Individual: function19  # Generated from value "function19" located at cell 'Sheet1'!A5.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja dobroczynna"
+Individual: function20  # Generated from value "function20" located at cell 'Sheet1'!A6.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja rozrywkowa"
+Individual: function21  # Generated from value "function21" located at cell 'Sheet1'!A7.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja kulturalna"
+Individual: function22  # Generated from value "function22" located at cell 'Sheet1'!A8.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja magazynowa"
+Individual: function15  # Generated from value "function15" located at cell 'Sheet1'!A1.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja edukacyjna"
+Individual: function16  # Generated from value "function16" located at cell 'Sheet1'!A2.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja budowlana"
+Individual: function17  # Generated from value "function17" located at cell 'Sheet1'!A3.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja wychowawcza"
+Individual: function18  # Generated from value "function18" located at cell 'Sheet1'!A4.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja opiekuńcza"
+Individual: function19  # Generated from value "function19" located at cell 'Sheet1'!A5.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja dobroczynna"
+Individual: function20  # Generated from value "function20" located at cell 'Sheet1'!A6.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja rozrywkowa"
+Individual: function21  # Generated from value "function21" located at cell 'Sheet1'!A7.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja kulturalna"
+Individual: function22  # Generated from value "function22" located at cell 'Sheet1'!A8.
+   Types: BFO_0000034
+   Annotations: rdfs:label "funkcja magazynowa"
+
+===========================================================================================================

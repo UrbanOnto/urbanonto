@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"A","endColumn":"B","startRow":"1","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: BFO_0000034\nAnnotations:  rdfs:label @B*","active":true}]}
