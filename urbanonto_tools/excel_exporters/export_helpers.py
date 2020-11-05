@@ -1,4 +1,5 @@
 import uuid
+import logging
 
 from rdflib import URIRef
 from rdflib.term import _is_valid_uri
@@ -19,5 +20,5 @@ def __create_iri(iri_string: str) -> URIRef:
     if iri_is_valid:
         return URIRef(iri_string)
     else:
-        print('Cannot create iri from', iri_string)
+        logging.warning(msg='Cannot create iri from ' + iri_string)
         return None

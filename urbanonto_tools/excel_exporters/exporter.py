@@ -9,9 +9,11 @@ from excel_exporters.ontology_constants import *
 from excel_exporters.other_definitions_exporter import add_other_definitions_to_entity
 from owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
 from owl_handlers.register import Register
+import logging
 
 
 def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontology_file_path: str):
+    logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO, datefmt='%m/%d/%Y %I:%M:%S %p')
     ontology = Graph()
     ontology = ontology.parse(ontology_file_path, format='n3')
     ontology_with_imports = Graph()
@@ -19,12 +21,12 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports, ontology_iri=URIRef('https://purl.org/urbanonto'))
 
     excel_sheet_dataframes = pandas.read_excel(excel_file_path, sheet_name=None, header=None)
-    print('There are', str(len(excel_sheet_dataframes)), 'sheets in workbook.')
+    logging.info('There are ' + str(len(excel_sheet_dataframes)) + ' sheets in workbook.')
     ill_formed_sheet_count = 0
     object_type_count = 0
     for excel_sheet_name, excel_sheet_dataframe in excel_sheet_dataframes.items():
         if not excel_sheet_dataframe.shape == EXCEL_SHEET_SHAPE:
-            print('Sheet', excel_sheet_name, 'is ill-formed.')
+            logging.warning('Sheet ' + excel_sheet_name + ' is ill-formed.')
             ill_formed_sheet_count += 1
             continue
         object_type_count += 1
@@ -38,7 +40,8 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
                 ontology=ontology,
                 ontology_with_imports=ontology_with_imports,
                 object_type=object_type)
-    print('There are', str(ill_formed_sheet_count), 'ill-formed sheets in workbook.')
+    if ill_formed_sheet_count > 0:
+        logging.warning(msg='There are ' + str(ill_formed_sheet_count) + ' ill-formed sheets in workbook.')
     ontology.commit()
     ontology.serialize(ontology_file_path, format='turtle')
     ontology.close()
@@ -65,23 +68,23 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
                 ontology.add((object_type, RDFS.label, name_pl_literal))
                 Register.labels_to_iris_map.update({name_pl_literal: object_type})
         else:
-            print('No PL name in', excel_sheet_name)
+            logging.warning('No PL name in ' + excel_sheet_name)
         if len(en_row_value) > 0:
             name_en_literal = Literal(en_row_value, lang='en')
             ontology.add((object_type, RDFS.label, name_en_literal))
         else:
-            print('No EN name in', excel_sheet_name)
+            logging.info('No EN name in ' + excel_sheet_name)
     if index == DEFINITION_ROW_NO:
         if len(pl_row_value) > 0:
             def_pl_literal = Literal(pl_row_value, lang='pl')
             ontology.add((object_type, RDFS.isDefinedBy, def_pl_literal))
         else:
-            print('No PL definition in', excel_sheet_name)
+            logging.warning('No PL definition in ' + excel_sheet_name)
         if len(en_row_value) > 0:
             def_en_literal = Literal(en_row_value, lang='en')
             ontology.add((object_type, RDFS.isDefinedBy, def_en_literal))
         else:
-            print('No EN definition in', excel_sheet_name)
+            logging.info('No EN definition in ' + excel_sheet_name)
     if index == MAIN_FUNCTION_ROW_NO:
         if len(pl_row_value) > 0:
             add_functions_to_entity(
@@ -92,7 +95,7 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
                 ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=excel_sheet_name)
         else:
-            print('No proper function in', excel_sheet_name)
+            logging.info('No proper function in ' +  excel_sheet_name)
 
     if index == ADDITIONAL_FUNCTION_ROW_NO:
         if len(pl_row_value) > 0:
@@ -122,12 +125,12 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
             comment_pl_literal = Literal(pl_row_value, lang='pl')
             ontology.add((object_type, RDFS.comment, comment_pl_literal))
         else:
-            print('No PL comment in', excel_sheet_name)
+            logging.info('No PL comment in ' + excel_sheet_name)
         if len(en_row_value) > 0:
             comment_en_literal = Literal(en_row_value, lang='en')
             ontology.add((object_type, RDFS.comment, comment_en_literal))
         else:
-            print('No EN comment in', excel_sheet_name)
+            logging.info('No EN comment in ' + excel_sheet_name)
     if index == SYNONYM_PL_ROW_NO:
         if len(pl_row_value) > 0:
             __split_cell_into_literals(cell=pl_row_value, subject=object_type, predicate=SKOS.altLabel, lang='pl',
@@ -175,15 +178,15 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
             bdot_label = Literal(pl_row_value, datatype=XSD.string)
             bdot_objects = list(ontology_with_imports.subjects(predicate=RDFS.label, object=bdot_label))
             if len(bdot_objects) == 0:
-                print('Exporting from', excel_sheet_name, 'I was not able to find BDOT name', bdot_label, 'mentioned in', excel_sheet_name)
+                logging.warning('Exporting from ' + excel_sheet_name + ' I was not able to find BDOT name ' + bdot_label + ' mentioned in ' + excel_sheet_name)
             else:
                 if len(bdot_objects) > 1:
-                    print('Exporting from', excel_sheet_name, 'multiple BDOT10K objects were found for', bdot_label, 'in', excel_sheet_name)
+                    logging.warning('Exporting from ' + excel_sheet_name + ' multiple BDOT10K objects were found for ' + bdot_label + ' in ' + excel_sheet_name)
                 else:
                     bdot_object = bdot_objects[0]
                     ontology.add((object_type, RDFS.subClassOf, bdot_object))
         # else:
-        #     print('No BDOT10K class in', excel_sheet_name)
+        #     logging.warning('No BDOT10K class in', excel_sheet_name)
     if index == WIKIDATA_ROW_NO:
         if len(pl_row_value) > 0:
             wikidata_id_literal = Literal('https://www.wikidata.org/wiki/' + pl_row_value, datatype=XSD.url)
@@ -197,4 +200,4 @@ def __export_row(excel_sheet_name: str, index, row, ontology: Graph, ontology_wi
             ontology.add((author, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E21_Person')))
             ontology.add((object_type, URIRef('http://purl.org/dc/terms/creator'), author))
         else:
-            print('No author in', excel_sheet_name)
+            logging.warning('No author in ' + excel_sheet_name)

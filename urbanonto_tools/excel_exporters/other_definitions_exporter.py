@@ -7,7 +7,7 @@ from excel_exporters.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLAS
 from excel_exporters.owl_axiom_creator import add_owl_annotation_axiom_to_graph
 from excel_exporters.re_constants import *
 from owl_handlers.register import Register
-
+import logging
 other_definitions_re = re.compile(DEFINITION_START + '(.+?)' + DEFINITION_SEPARATOR + '(.+?)' + DEFINITION_END)
 
 
@@ -24,7 +24,7 @@ def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_str
             ontology.add((other_definition_source_iri, RDF.type, SOURCE_CLASS))
             Register.labels_to_iris_map[other_definition_source_label] = other_definition_source_iri
         if other_definition_source_iri is None:
-            print('Exporting other definitions from', excel_sheet_name, 'was not able to create iri for', other_definition_source_iri_string)
+            logging.warning('Exporting other definitions from ' + excel_sheet_name + ' was not able to create iri for ' + other_definition_source_iri_string)
             continue
         other_definition_string = other_definition[1].strip()
         other_definition = Literal(other_definition_string)
