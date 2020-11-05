@@ -703,7 +703,7 @@ bdot10k:object_125 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#object_126
 bdot10k:object_126 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "pozostałe budynki niemieszkalne,nie wymienione"^^xsd:string ;
+                   rdfs:label "pozostałe budynki niemieszkalne, gdzie indziej nie wymienione"^^xsd:string ;
                    bdot10k:hasBdot10kCode "BUBD21"^^xsd:string .
 
 
