@@ -8435,15 +8435,32 @@ imported by:
   <a target="code" href="///D:/projects/ihpan/urbanonto/urbanonto_tools/excel_exporters/__init__.py" type="text/plain"><tt>excel_exporters</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imported by:
-    <a href="#excel_exporters.excel_file_constants">excel_exporters.excel_file_constants</a>
+    <a href="#excel_exporters.bdot10k_data_exporter">excel_exporters.bdot10k_data_exporter</a>
+ &#8226;   <a href="#excel_exporters.excel_file_constants">excel_exporters.excel_file_constants</a>
  &#8226;   <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
  &#8226;   <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.function_exporter">excel_exporters.function_exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
  &#8226;   <a href="#excel_exporters.ontology_constants">excel_exporters.ontology_constants</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
- &#8226;   <a href="#excel_exporters.owl_axiom_creator">excel_exporters.owl_axiom_creator</a>
- &#8226;   <a href="#excel_exporters.re_constants">excel_exporters.re_constants</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="excel_exporters.bdot10k_data_exporter"></a>
+  <a target="code" href="///D:/projects/ihpan/urbanonto/urbanonto_tools/excel_exporters/bdot10k_data_exporter.py" type="text/plain"><tt>excel_exporters.bdot10k_data_exporter</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#excel_exporters">excel_exporters</a>
+ &#8226;   <a href="#excel_exporters.excel_file_constants">excel_exporters.excel_file_constants</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#rdflib">rdflib</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
 
   </div>
 
@@ -8459,7 +8476,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
+    <a href="#excel_exporters.bdot10k_data_exporter">excel_exporters.bdot10k_data_exporter</a>
+ &#8226;   <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
 
   </div>
@@ -8483,7 +8501,6 @@ imports:
 imported by:
     <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
 
   </div>
 
@@ -8495,12 +8512,12 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#excel_exporters">excel_exporters</a>
+ &#8226;   <a href="#excel_exporters.bdot10k_data_exporter">excel_exporters.bdot10k_data_exporter</a>
  &#8226;   <a href="#excel_exporters.excel_file_constants">excel_exporters.excel_file_constants</a>
  &#8226;   <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
  &#8226;   <a href="#excel_exporters.function_exporter">excel_exporters.function_exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
  &#8226;   <a href="#excel_exporters.ontology_constants">excel_exporters.ontology_constants</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#owl_handlers.owl_importer">owl_handlers.owl_importer</a>
  &#8226;   <a href="#owl_handlers.register">owl_handlers.register</a>
@@ -8571,65 +8588,6 @@ imported by:
     <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
  &#8226;   <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="excel_exporters.other_definitions_exporter"></a>
-  <a target="code" href="///D:/projects/ihpan/urbanonto/urbanonto_tools/excel_exporters/other_definitions_exporter.py" type="text/plain"><tt>excel_exporters.other_definitions_exporter</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#excel_exporters">excel_exporters</a>
- &#8226;   <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
- &#8226;   <a href="#excel_exporters.ontology_constants">excel_exporters.ontology_constants</a>
- &#8226;   <a href="#excel_exporters.owl_axiom_creator">excel_exporters.owl_axiom_creator</a>
- &#8226;   <a href="#excel_exporters.re_constants">excel_exporters.re_constants</a>
- &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#owl_handlers.register">owl_handlers.register</a>
- &#8226;   <a href="#rdflib">rdflib</a>
- &#8226;   <a href="#re">re</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="excel_exporters.owl_axiom_creator"></a>
-  <a target="code" href="///D:/projects/ihpan/urbanonto/urbanonto_tools/excel_exporters/owl_axiom_creator.py" type="text/plain"><tt>excel_exporters.owl_axiom_creator</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#excel_exporters">excel_exporters</a>
- &#8226;   <a href="#rdflib">rdflib</a>
- &#8226;   <a href="#rdflib.term">rdflib.term</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="excel_exporters.re_constants"></a>
-  <a target="code" href="///D:/projects/ihpan/urbanonto/urbanonto_tools/excel_exporters/re_constants.py" type="text/plain"><tt>excel_exporters.re_constants</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#excel_exporters">excel_exporters</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
 
   </div>
 
@@ -10654,10 +10612,10 @@ imports:
 imported by:
     <a href="#PyInstaller.log">PyInstaller.log</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
+ &#8226;   <a href="#excel_exporters.bdot10k_data_exporter">excel_exporters.bdot10k_data_exporter</a>
  &#8226;   <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
  &#8226;   <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.function_exporter">excel_exporters.function_exporter</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#lib2to3.btm_matcher">lib2to3.btm_matcher</a>
@@ -17088,7 +17046,6 @@ imports:
 imported by:
     <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
 
   </div>
 
@@ -27469,13 +27426,12 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
+    <a href="#excel_exporters.bdot10k_data_exporter">excel_exporters.bdot10k_data_exporter</a>
+ &#8226;   <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
  &#8226;   <a href="#excel_exporters.exporter">excel_exporters.exporter</a>
  &#8226;   <a href="#excel_exporters.function_exporter">excel_exporters.function_exporter</a>
  &#8226;   <a href="#excel_exporters.mereology_exporter">excel_exporters.mereology_exporter</a>
  &#8226;   <a href="#excel_exporters.ontology_constants">excel_exporters.ontology_constants</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
- &#8226;   <a href="#excel_exporters.owl_axiom_creator">excel_exporters.owl_axiom_creator</a>
  &#8226;   <a href="#owl_handlers.owl_constructors">owl_handlers.owl_constructors</a>
  &#8226;   <a href="#owl_handlers.owl_importer">owl_handlers.owl_importer</a>
  &#8226;   <a href="#owl_handlers.register">owl_handlers.register</a>
@@ -28817,7 +28773,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#excel_exporters.export_helpers">excel_exporters.export_helpers</a>
- &#8226;   <a href="#excel_exporters.owl_axiom_creator">excel_exporters.owl_axiom_creator</a>
  &#8226;   <a href="#rdflib">rdflib</a>
  &#8226;   <a href="#rdflib.collection">rdflib.collection</a>
  &#8226;   <a href="#rdflib.graph">rdflib.graph</a>
@@ -28943,7 +28898,6 @@ imported by:
  &#8226;   <a href="#email.quoprimime">email.quoprimime</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#encodings.idna">encodings.idna</a>
- &#8226;   <a href="#excel_exporters.other_definitions_exporter">excel_exporters.other_definitions_exporter</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#fractions">fractions</a>
  &#8226;   <a href="#ftplib">ftplib</a>
