@@ -12,12 +12,11 @@ from owl_handlers.register import Register
 import logging
 
 
-def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontology_file_path: str):
-    logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO, datefmt='%m/%d/%Y %I:%M:%S %p')
+def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontology_iri: str) -> Graph():
     ontology = Graph()
-    ontology = ontology.parse(ontology_file_path, format='n3')
+    ontology = ontology.parse(ontology_iri, format='n3')
     ontology_with_imports = Graph()
-    ontology_with_imports = ontology_with_imports.parse(ontology_file_path, format='n3')
+    ontology_with_imports = ontology_with_imports.parse(ontology_iri, format='n3')
     ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports, ontology_iri=URIRef('https://purl.org/urbanonto'))
 
     excel_sheet_dataframes = pandas.read_excel(excel_file_path, sheet_name=None, header=None)
@@ -43,8 +42,8 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     if ill_formed_sheet_count > 0:
         logging.warning(msg='There are ' + str(ill_formed_sheet_count) + ' ill-formed sheets in workbook.')
     ontology.commit()
-    ontology.serialize(ontology_file_path, format='turtle')
-    ontology.close()
+    return ontology
+
 
 
 def __split_cell_into_literals(cell: str, subject, predicate, lang: str, ontology: Graph):
