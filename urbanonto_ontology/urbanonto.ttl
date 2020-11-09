@@ -38,7 +38,7 @@ urbanonto:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
 
 ###  https://purl.org/bdot10k#bdot10k_entity
 <https://purl.org/bdot10k#bdot10k_entity> rdf:type owl:Class ;
-                                          rdfs:subClassOf cidoc_crm:E70_Thing .
+                                          rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing .
 
 
 #################################################################
