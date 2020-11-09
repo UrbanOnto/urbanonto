@@ -18,8 +18,9 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     ontology = ontology.parse(ontology_iri, format='n3')
     ontology_with_imports = Graph()
     ontology_with_imports = ontology_with_imports.parse(ontology_iri, format='n3')
-    ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports,
-                                                                    ontology_iri=URIRef('https://purl.org/urbanonto'))
+    ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports, ontology_iri=URIRef('https://purl.org/urbanonto'))
+
+    Register.update_register_from_ontology(ontology=ontology_with_imports)
 
     excel_sheet_dataframes = pandas.read_excel(excel_file_path, sheet_name=None, header=None)
     logging.info('There are ' + str(len(excel_sheet_dataframes)) + ' sheets in workbook.')
@@ -34,13 +35,13 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
         object_type = create_iri_for_object_in_type(type_local_fragment=OBJECT_TYPE_LOCAL_FRAGMENT)
         bdot10k_found = False
         for index, row in excel_sheet_dataframe.iterrows():
-            bdot10k_found = \
+            object_type, bdot10k_found = \
                 __export_row(
                     sheet_name=excel_sheet_name,
                     index=index,
                     row=row,
                     ontology=ontology,
-                    bdot10k_ontology=ontology_with_imports,
+                    ontology_with_imports=ontology_with_imports,
                     object_type=object_type,
                     bdot10k_found=bdot10k_found)
         if not bdot10k_found:
@@ -58,8 +59,7 @@ def __split_cell_into_literals(cell: str, subject, predicate, lang: str, ontolog
         ontology.add((subject, predicate, cell_value))
 
 
-def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology: Graph, object_type: URIRef,
-                 bdot10k_found: bool) -> bool:
+def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imports: Graph, object_type: URIRef, bdot10k_found: bool) -> tuple:
     pl_row_value = str(row[1]).replace('nan', '')
     en_row_value = str(row[2]).replace('nan', '')
 
@@ -68,6 +68,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology:
             name_pl_literal = Literal(pl_row_value, lang='pl')
             if name_pl_literal in Register.labels_to_iris_map.keys():
                 object_type = Register.labels_to_iris_map[name_pl_literal]
+                logging.warning(msg='Object type with label ' + pl_row_value + ' already exists in ontology. Is this intended?')
             else:
                 ontology.add((object_type, RDF.type, OWL.Class))
                 ontology.add((object_type, RDFS.label, name_pl_literal))
@@ -97,7 +98,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology:
                 object_type=object_type,
                 function_property=HAS_FUNCTION,
                 ontology=ontology,
-                ontology_with_imports=bdot10k_ontology,
+                ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=sheet_name)
         else:
             logging.info('No proper function in ' + sheet_name)
@@ -109,7 +110,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology:
                 object_type=object_type,
                 function_property=HAS_IMPROPER_FUNCTION,
                 ontology=ontology,
-                ontology_with_imports=bdot10k_ontology,
+                ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=sheet_name)
     if index == PART_ROW_NO:
         if len(pl_row_value) > 0:
@@ -185,7 +186,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology:
                 data=pl_row_value,
                 iri=object_type,
                 ontology=ontology,
-                bdot10k_ontology=bdot10k_ontology,
+                bdot10k_ontology=ontology_with_imports,
                 sheet_name=sheet_name)
     if index == WIKIDATA_ROW_NO:
         if len(pl_row_value) > 0:
@@ -196,10 +197,10 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, bdot10k_ontology:
         if len(pl_row_value) > 0:
             author = create_iri_for_object_in_type(type_local_fragment='person', index=pl_row_value)
             if author is None:
-                return bdot10k_found
+                return object_type, bdot10k_found
             ontology.add((author, RDF.type, URIRef('http://www.cidoc-crm.org/cidoc-crm/E21_Person')))
             ontology.add((object_type, URIRef('http://purl.org/dc/terms/creator'), author))
         else:
             logging.warning('No author in ' + sheet_name)
 
-    return bdot10k_found
+    return object_type, bdot10k_found

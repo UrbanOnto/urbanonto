@@ -17,3 +17,9 @@ class Register:
         ontology.add((iri, RDF.type, OWL.Class))
         ontology.add((iri, RDFS.label, label))
         Register.labels_to_iris_map[label] = iri
+
+    @staticmethod
+    def update_register_from_ontology(ontology: Graph):
+        for subject, predicate, object in ontology:
+            if predicate == RDFS.label:
+                Register.labels_to_iris_map.update({object: subject})
