@@ -7,55 +7,6 @@
 @prefix urbanonto: <https://purl.org/urbanonto#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ontohgis:administrative_type_84 rdfs:label "mała litera, bez pogrubienia"@en ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Zawsze jest to część składowa gminy miejskiej i zawsze jest częścią miasta; często jest odrębnym kwartałem podatkowym; w gminie miejskiej nie zawsze są wyodrębnione dzielnice. Odrębna gmina miejska nie jest dzielnicą, lecz po likwidacji jej formalnej odrębności często staje się dzielnicą. W klasie \"miejscowość\" dzielnica nie ma części składowych. Dzielnica jako część miasta w klasie miejscowości nie ma odrębnego statusu prawnego; dzielnica w sensie administracyjnym jest w klasie \"jednostki podziału administracyjnego\"."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "część gminy miejskiej o własnej nazwie i określonym zasięgu."@pl ;
-    rdfs:seeAlso "#Runge_2008: \"s. 72, cyt. za: pl.wikipedia.org: Dzielnica miasta – część miasta  wyróżniająca się pod względem: pełnionych funkcji, zabudowy i układu urbanistycznego, zamieszkującej ją określonej grupy społecznej, odrębnych kompetencji władz administracyjnych i samorządu terytorialnego\"; #SJP_online: \"część dużego miasta o określonym rodzaju zabudowy i charakterze zamieszkujących ją grup społecznych\"; #wiktionary: \"wydzielona, zwyczajowo lub administracyjnie, część dużego miasta\" "@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom ontohgis:settlement_unit3 ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_6> ;
-    ns1:altLabel "Stadtbezirk"@de,
-        "city district"@en ;
-    ns1:hiddenLabel "Stadtviertel"@pl,
-        "część miasta"@pl,
-        "kwartał miasta; Statdteil"@pl,
-        "osiedle"@pl .
-
-ontohgis:settlement_unit22 rdfs:label "mała litera, bez pogrubienia"@en ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Koszary były lokowane w centrum miast, w tym w obrębie fortec, ale w XIX w. nastąpiła tendencja do stawiania całych \"miasteczek\" koszarowych dla wojska na peryferiach miast, zzawsze jednak blisko ważnych dróg komunikacyjnych. Ich istnienie mogło być korzystne dla gospodarki małych miasteczek."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "pojedynczy budynek, a częściej grupa budynków służących za mieszkania żołnierzy pełniących służbę wojskową"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"3) w lm. Domy osobne na mieszkanie dla żołnierzy przeznaczone, kazarmy\"; #SJP_1900-1927: \"2 t.: [koszary, kazarnie, kazernie, kazerny, kasarnia, kosarnia, kazarmy, kasiary] domy oddzielne, przeznaczone na mieszkanie dla wojska\"; #SJP_1978: \"1 t.: [koszara:] budynek lub zespół budynków przeznaczonych na kwatery dla żołnierzy w czasie pełnienia służby wojskowej lub w czasie ćwiczeń\""@pl,
-        "https://www.wikidata.org/wiki/Q131263"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function13 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_400 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Kaserne"@de,
-        "barrack"@en,
-        "caserne"@fr,
-        "castrum"@la,
-        "baraki wojskowe"@pl,
-        "kazarmy"@pl,
-        "kazarma"@ru .
-
 <https://purl.org/bdot10k#bdot10k_entity> a owl:Class ;
     rdfs:subClassOf cidoc_crm:E70_Thing .
 
@@ -71,108 +22,7 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "jest również zdefiniowany przez"@pl ;
     rdfs:subPropertyOf rdfs:isDefinedBy .
 
-<https://purl.org/urbanonto/object_type_01312979-51f9-41cb-97aa-6a6d1ddc5dba> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "opera"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Wystawianiu oper służyły różne, nieraz prowizoryczne budynki wpierw w renesansowych Włoszech, z których pochodzi ten rodzaj sztuki. W czasach nowożytnych opery wystawiane były najczęściej w tych samych pomieszczeniach, co przedstawienia teatralne. W dziewiętnastym wieku największe i najbogatsze miasta stać było na stawianie odrębnych budynków operowych. Świadczyły o statusie miasta, dlatego też miały wyjątkowo ozdobne fasady."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym publiczność gromadzi się w celu oglądania spektakli operowych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"teatr, na którym grają opery\"; #SJP_1900-1927: \"3 t.: 2) przedstawienie w teatrze dramatu, w którym akcję ilustruje muzyka i śpiew, to jest w którym aktorowie nie mówią, lecz śpiewają; 3) teatr, w którym przedstawiają opery\"; #SJP_1978: \"2 t.: 1) sceniczny dramat muzyczny, złożony z partii wokalnych, instrumentalnych, wstawek baletowych i niekiedy partii mówionych, wykonywany przez śpiewaków, tancerzy i orkiestrę; 4) pot. gmach, w którym się odbywają takie przedstawienia\""@pl,
-        "https://www.wikidata.org/wiki/Q153562"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function13 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function20 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Opernhaus"@de,
-        "opera house"@en,
-        "opéra"@fr,
-        "opera"@la,
-        "opernyj teatr"@ru ;
-    ns1:hiddenLabel "cyrk"@pl,
-        "kino"@pl,
-        "scena"@pl,
-        "teatr"@pl .
-
-<https://purl.org/urbanonto/object_type_02eeeb32-066f-4610-bd56-194049a2eea0> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "manufaktura"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "#SJPDoroszewski \"faza przejściowa pomiędzy warsztatem rzemieślniczym a fabryką\"; Manufaktura jako przedsiębiorstwo mogła być scentralizowana lub rozproszona (kilka małych warsztatów)."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym produkcja jest oparta na podziale pracy (zadań) i pracy rękodzielniczej"@pl ;
-    rdfs:seeAlso """#SJPDoroszewski: "1. przedsiębiorstwo przemysłowe we wczesnej fazie produkcji kapitalistycznej, oparte na pracy rękodzielniczej, będące fazą przejściową między warsztatem rzemieślniczym a fabryką; 2. praca rękodzielnicza, rękodzielnictwo"
-#EncPWN: "[łac.], forma produkcji przemysłowej oparta na podziale pracy i technice ręcznej”
-#wiki.pl: "(łac. manus „ręka”, manufactura „rękodzieło”) – zakład produkcyjny, w którym produkcja masowa złożonego produktu końcowego odbywa się ręcznie i oparta jest na podziale pracy: poszczególne etapy produkcji wykonywane są przez pracowników wyspecjalizowanych w ich wykonywaniu"
-#CambridgeDictionary: "a word used in the past for a factory, sometimes still used in the names of companies\""""@pl,
-        "https://www.wikidata.org/wiki/Q380342"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_404 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_58e80f7b-116b-450f-9b18-1bf1a5b81095> ],
-        <https://purl.org/bdot10k#object_116> ;
-    ns1:altLabel "Manufaktur"@de,
-        "manufactory"@en,
-        "manufacture"@fr,
-        "Мануфактура"@ru ;
-    ns1:hiddenLabel "atelier"@pl .
-
-<https://purl.org/urbanonto/object_type_080d7e28-8f77-4a7c-b7fb-8f6ed260408f> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "planty"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Rodzaj parków (terenów zielonych) otaczających teren miasta lokacyjnego/starego miasta."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "typ parku zakładanego na obszarze zlikwidowanych fortyfikacji miejskich"@pl ;
-    rdfs:seeAlso """#Slowosiec: "rodzaj miejskich terenów zielonych zwykle zakładanych w miejscu likwidowanych fortyfikacji miejskich (murów obronnych, wałów ziemnych, fos), czy dawnego koryta rzecznego"
-#SJPPWN: "tereny zielone zakładane wokół ośrodków staromiejskich po zniwelowaniu wałów fortyfikacyjnych, fos lub dawnych koryt rzecznych"
-#SJPDoroszewski: "2. teren obsadzonny drzewami, krzewami, przeznaczony do przechadzek"
-#EncPWN: "[łac.], miejskie zieleńce publiczne oraz ciągi spacerowe, zakładane na miejscu zlikwidowanych i zniwelowanych (splantowanych) murów obronnych, fortyfikacji, wałów i fos lub dawnych koryt rzecznych (np. Planty w Krakowie; esplanada); rozpowszechnione od końca XVIII w.; nazwa przyjęta w Polsce od początku XIX w., używana była wymiennie z terminem plantacje"
-#wiki.cz: "Planty is the name used in Poland for one of the types of city parks. These are usually parks or strips of greenery based on the sites of former fortification systems - walls , ramparts, moats or a former riverbed . The name is derived from the words splantować ( plan , level, settle) or plantacja (plantation)\""""@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#object_226> ;
-    ns1:altLabel "promenada"@pl .
-
-<https://purl.org/urbanonto/object_type_0a3163e3-ebe3-4071-8c33-c5053f18622d> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "biblioteka"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Składy książek pojawiały się od starożytności aż do czasów najnowszych. Bywały najczęściej fundacją możnych rodów. W dziewiętnastym wieku pojawił się fenomen masowych bibliotek zakładanych przez instytucje nawet w najmniejszych ośrodkach, w czym szczególnie aktywne były organizacje narodowe."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "gmach służący przechowywaniu i udostępnianiu publicznemu książek, zaopatrzony w magazyn i nieobowiązkowo w czytelnię"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"zbiór ksiąg, książnica, księgi i gmach, który je zawiera\"; #SJP_1900-1927: \"1 t.: księgozbiór, książnica, zbiór ksiąg a. gmach, który je mieści\"; #SJP_1978: \"1 t.: instytucja powołana do gromadzenia i udostępniania księgozbiorów; gmach, lokal takiej instytucji\""@pl,
-        "https://www.wikidata.org/wiki/Q7075"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function15 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function21 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function22 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Bibliothek"@de,
-        "Bücherei"@de,
-        "library"@en,
-        "bibliothèque"@fr,
-        "bibliotheca"@la,
-        "książnica"@pl,
-        "składnica książek"@pl,
-        "wypożyczalnia książek"@pl,
-        "biblioteka"@ru ;
-    ns1:hiddenLabel "księgarnia"@pl .
-
-<https://purl.org/urbanonto/object_type_0bde7de6-bb23-45cd-a173-b2733ef5b864> a owl:Class ;
+<https://purl.org/urbanonto/object_type_07b191c5-70f0-4454-b102-6901d6095999> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "działka miejska"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
@@ -190,92 +40,127 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "urban plot"@en,
         "parcela"@pl .
 
-<https://purl.org/urbanonto/object_type_10522074-1e9e-4990-8770-a248e39eb2d6> a owl:Class ;
+<https://purl.org/urbanonto/object_type_29f43dcb-05aa-41b0-a940-51d3ef794d34> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "kompleks szkolny"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
+        "opera"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
     rdfs:comment "Lorem ipsum"@en,
-        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
+        "Wystawianiu oper służyły różne, nieraz prowizoryczne budynki wpierw w renesansowych Włoszech, z których pochodzi ten rodzaj sztuki. W czasach nowożytnych opery wystawiane były najczęściej w tych samych pomieszczeniach, co przedstawienia teatralne. W dziewiętnastym wieku największe i najbogatsze miasta stać było na stawianie odrębnych budynków operowych. Świadczyły o statusie miasta, dlatego też miały wyjątkowo ozdobne fasady."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
+        "budynek, w którym publiczność gromadzi się w celu oglądania spektakli operowych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"teatr, na którym grają opery\"; #SJP_1900-1927: \"3 t.: 2) przedstawienie w teatrze dramatu, w którym akcję ilustruje muzyka i śpiew, to jest w którym aktorowie nie mówią, lecz śpiewają; 3) teatr, w którym przedstawiają opery\"; #SJP_1978: \"2 t.: 1) sceniczny dramat muzyczny, złożony z partii wokalnych, instrumentalnych, wstawek baletowych i niekiedy partii mówionych, wykonywany przez śpiewaków, tancerzy i orkiestrę; 4) pot. gmach, w którym się odbywają takie przedstawienia\""@pl,
+        "https://www.wikidata.org/wiki/Q153562"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue urbanonto:function20 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function13 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        <https://purl.org/bdot10k#object_118> ;
+    ns1:altLabel "Opernhaus"@de,
+        "opera house"@en,
+        "opéra"@fr,
+        "opera"@la,
+        "opernyj teatr"@ru ;
+    ns1:hiddenLabel "cyrk"@pl,
+        "kino"@pl,
+        "scena"@pl,
+        "teatr"@pl .
+
+<https://purl.org/urbanonto/object_type_2d0168fb-463b-4c78-bedc-717a6a6834ed> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "klasztor"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "W każdym większym mieście klasztory były ważną częścią przestrzeni realnej i symbolicznej. Często były położone na terenie kompleksu klasztornego, obejmującego również kościół i inne budynki. W klasie budynków klasztor nie jest częścią większej całości; przestrzennie często mieści się w obrębie  obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków klasztor nie ma części składowych; funkcjonalnie składa się m.in. z części sypialnej, jadalni (refektarz), pomieszczeń gospodarczych i innych. Siedziba i własność klasztoru jako instytucji; w Kościele Katolickim - instytucji prawa kanonicznego, podlegający jurysdykcji kościelnej."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek mieszkalny wspólnoty zakonnej"@pl ;
+    rdfs:seeAlso "#SJP_online: \"budynek lub kompleks budynków stanowiących wspólne miejsce zamieszkania zakonnic lub zakonników (https://sjp.pwn.pl/szukaj/klasztor.html); budynek, zespół budynków będących miejscem zamieszkania zakonników lub zakonnic (https://sjp.pl/klasztor)\"; #Wiki.pl: \"Klasztor (czes. klášter, z niem. Kloster, od łac. claustrum, miejsce zamknięte) – budynek lub zespół budynków, w którym mieszkają wspólnoty religijne zakonników albo zakonnic. (https://pl.wikipedia.org/wiki/Klasztor)\"; #Vita: Ein Kloster ist eine Anlage, in der Menschen (in den kontemplativen Orden Mönche oder Nonnen gent) in einer gemeinschaftlichen, auf die Ausübung ihres Glaubens konzentrierten, Lebensweise zusammenleben (Vita communis)\"; #Wiki.de: \"Die Klosteranlage besteht in der Regel aus Kult-, Wohn- und Wirtschaftsgebäuden und eventuell noch weiteren Bauwerken. (https://de.wikipedia.org/wiki/Kloster)\"; #Wiki.en: \"A monastery is a building or complex of buildings comprising the domestic quarters and workplaces of monastics, monks or nuns, whether living in communities or alone (hermits). (https://en.wikipedia.org/wiki/Monastery)\"; #Wiki.es: \"Un monasterio (del griego μοναστήριον, monasterion, derivado del verbo μονάζειν, monazein, \"vivir en solitario\") es una comunidad formada por uno o varios monjes (del griego μοναχός, monachos, \"solitario\") y el edificio donde habitan, en clausura. (https://es.wikipedia.org/wiki/Monasterio)\""@pl ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function12 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function3 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#class_30> ;
+    ns1:altLabel "Kloster"@de,
+        "monastery"@en,
+        "claustrum"@la,
+        "monasterium"@la ;
+    ns1:hiddenLabel "konwent"@pl,
+        "opactwo"@pl .
+
+<https://purl.org/urbanonto/object_type_30d1ea9b-fd46-491a-8be4-06662976ff94> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "dom dla bezdomnych"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Domy dla bezdomnych mogą funkcjonować zarówno w miastach jak też innych typach miejscowości. Oprócz schronisk, które mogą zapewniać całodobową opiekę nad osobami bezdomnymi, część domów dla bezdomnych funkcjonuje jako noclegownie zapewniające osobom bezdomnych nocleg w bezpiecznych dla zdrowia i życia warunkach lub ogrzewalnie gdzie osoby bezdomne mają zagwarantowany bezpieczny pobyt interwencyjny i dostęp do ciepła i przynajmniej do miejsca siedzącego. Przebywanie w domu dla bezdomnych może się wiązać z pewnymi ograniczeniami (np. zakaz spożywania alkoholu), zasady te są określane przez instytucje prowadzącce dane schronisko."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym osoby bezdomne mogą czasowo mieszkać"@pl ;
+    rdfs:seeAlso "#Wikipedia: \"Schroniska dla bezdomnych przeznaczone są dla osób, które nigdzie nie są zameldowane, często nie posiadają dowodów tożsamości i stałych źródeł dochodu. Często podopieczni schronisk obciążeni są nałogami (alkoholizm, narkomania). Społeczność schronisk w dużej mierze składa się z ludzi, którzy weszli w konflikt z prawem. Prowadzone są przez organizacje pozarządowe (zakony, fundacje, stowarzyszenia itp.). Na swoją działalność pozyskują fundusze w większości od sponsorów, a w mniejszym stopniu i od władz lokalnych na terenie, na którym funkcjonują. Do zadań schroniska należy: zaspakajanie podstawowych potrzeb bytowych (zapewnienie bezpiecznego schronienia, wyżywienie, odzież); pomoc w leczeniu wszelkiego rodzaju chorób i uzależnień; pozyskiwanie miejsc pracy dla podopiecznych; pomoc w powrocie do społeczeństwa, uczestnictwo w życiu społecznym i rodzinnym\"; #SJP_online: \"noclegownia - miejsce przeznaczone na nocleg dla ludzi przebywających daleko od domu lub niemających domu\""@pl,
+        "https://www.wikidata.org/wiki/Q772298"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function13 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function18 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
             owl:hasValue ontohgis:function3 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_bf0226c5-c52a-424b-9821-e972e0308e64> ],
+            owl:hasValue urbanonto:function19 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#category_7> ;
+    ns1:altLabel "Notschlafstelle"@de,
+        "homeless shelter"@en,
+        "centre d'hébergement et de réinsertion sociale"@fr,
+        "noclegownia"@pl,
+        "ogrzewalnia"@pl,
+        "przytułek"@pl,
+        "schronisko dla bezdomnych"@pl,
+        "ночлежные дома"@ru ;
+    ns1:hiddenLabel "dom dziecka"@pl,
+        "dom stałego pobytu"@pl,
+        "schronisko dla samotnych matek"@pl,
+        "szpital przednowożytny"@pl .
+
+<https://purl.org/urbanonto/object_type_3d06ea8e-ab28-4920-83d7-8b61ff210fc5> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "bursa szkolna"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek przeznaczony na zamieszkanie uczniów lub studentów, prowadzony najczęściej przez szkołę lub uczelnię"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"2) życie wspólne, wspólnym kosztem, szczególniej, konwikt, kollegjum; 3) kupiecka, giełda\"; #SJP_1900-1927: \"1 t.: konwikt, stancja uczniów z fundacji rządu a. magnata\"; #SJP_1978: \"1 t.: zakład, w którym ucząca się młodzież otrzymuje mieszkanie i zwykle utrzymanie; internat\""@pl,
+        "https://www.wikidata.org/wiki/Q3153217"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_400 ;
+            owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_b9f930b6-3d89-4722-8166-a521d385ff63> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_544cbdcf-2b4f-4f42-8e94-3d19dcdc8c61> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_0bcc07a1-ee6f-4227-945f-16e48089945c> ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function15 ;
+            owl:hasValue ontohgis:function3 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
             owl:hasValue urbanonto:function17 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom ontohgis:object_23 ],
-        <https://purl.org/bdot10k#class_48> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "scholae"@la,
-        "kompleks oświatowy"@pl,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "ochronka"@pl,
-        "przedszkole"@pl,
-        "szkoła wyższa"@pl,
-        "uniwersytet"@pl,
-        "zespół szkół"@pl .
+            owl:onProperty ontohgis:hasImproperFunction ],
+        <https://purl.org/bdot10k#object_109> ;
+    ns1:altLabel "Burse"@de,
+        "Internat"@de,
+        "boarding school"@en,
+        "dormitory"@en,
+        "internat"@fr,
+        "pensionnat"@fr,
+        "oecotropheum"@la,
+        "akademik"@pl,
+        "internat"@pl,
+        "konwikt"@pl,
+        "obszczerzitie"@ru ;
+    ns1:hiddenLabel "hotel młodzieżowy"@pl,
+        "szkoła z internatem"@pl .
 
-<https://purl.org/urbanonto/object_type_1226a3b7-c93c-4635-8578-9c3452fc7e41> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "szkoła XIX wieku"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Szkoły publiczne istniały przez cały okres XIX w., ich istnienie regulowało ustawodawstwo, które mówiło o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba była dużo niższa od prywatnych. Szkoły prywatne istniały także przez cały okres XIX w., wpierw głównie jako szkoły wyziowe (które potem włączano w sieć placówek publicznych utrzymywanych przez państwo), potem rosła liczba laickich szkół prywatnych, których właściciele wynajmowali przestrzeń w kamienicach czynszowych na cele szkolne. Właścicielem mogła być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiągnęła kilkadziesiąt w Warszawie, dzieliły się według liczby klas. Były też słabo wyróżnione w przestrzeni miasta."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "instytucja edukacyjno-wychowawcza"@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom ontohgis:object_23 ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function15 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_bf0226c5-c52a-424b-9821-e972e0308e64> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_e9bb9335-8ef7-420a-97d2-4ab64998f42b> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom ontohgis:settlement_unit100 ],
-        <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "academia"@la,
-        "schola"@la,
-        "zakład naukowy"@pl,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
-        "uniwersytet"@pl .
-
-<https://purl.org/urbanonto/object_type_1474a61a-2993-438d-97f1-26949cb81cfb> a owl:Class ;
+<https://purl.org/urbanonto/object_type_41e3a192-0a81-4728-b7c1-4b9fedb8cd0f> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "archiwum"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
@@ -290,7 +175,8 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
             owl:hasValue urbanonto:function21 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_119> ;
     ns1:altLabel "Ablage"@de,
         "Archiv"@de,
         "archives"@en,
@@ -300,7 +186,51 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "archiw"@ru ;
     ns1:hiddenLabel "muzeum"@pl .
 
-<https://purl.org/urbanonto/object_type_18ad5dd9-64f3-4c39-bc84-be3cf8e24622> a owl:Class ;
+<https://purl.org/urbanonto/object_type_4699c1c1-b6a1-48f2-af5a-70bf28fdca24> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "szkoła wyższa - kompleks"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Różnego rodzaju szkoły wyższe najczęściej swoje siedziby mają w miastach. Ich obecność zmienia charakter miasta - napływ osób związanych z funkcjonowaniem danej szkoły wyższej wpływa również na inne sfery życia w mieście takie jak: dostępność miejsc przeznaczonych do mieszkania dla studentów (mieszkania na wynajem, akademiki), oferta gastronomiczna, rozrywkowa czy kulturalna. Istnienie szkoły wyższej może wpłynąć na rozwój danego ośrodka."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "wydzielony teren użytkowany przez instytucję prowadzącą studia wyższe"@pl ;
+    rdfs:seeAlso "#Wikipedia: \"Uczelnia, szkoła wyższa - szkoła prowadząca studia wyższe; Akademia  – początkowo zgromadzenie uczonych lub artystów, którzy kształcili się pod kierunkiem wybitnego autorytetu, mające na celu rozwój nauki i sztuki. Nazwa wywodzi się od starożytnej szkoły Platona założonej w gaju Akademosa. Pierwsze nowożytne akademie powstały w epoce renesansu we Włoszech. Model współczesnej akademii nauk jako instytucji publicznej o zasięgu ogólnokrajowym ukształtował się XVII–XVIII wieku. Współcześnie terminem tym nadal określa się zgromadzenia naukowców, np. Polska Akademia Nauk, oraz rodzaj uczelni. W Polsce nazwa ta pojawia się w drugiej połowie XVI w. W okresie przedrozbiorowym określano nią zarówno uniwersytety (Akademia Krakowska), uczelnie aspirujące do miana uniwersytetu (Akademia Lwowska), jak i niektóre wyróżniające się szkoły niższego szczebla (Akademia Chełmińska); Politechnika – rodzaj uczelni akademickiej o profilu technicznym, nastawionej na interdyscyplinarny kierunek kształcenia, zapewniająca możliwość uzyskania tytułów zawodowych inżynier i magister inżynier oraz stopni naukowych doktor nauk technicznych i doktor habilitowany nauk technicznych; Uniwersytet – najstarszy rodzaj uczelni o charakterze nietechnicznym, której celem jest przygotowanie kadr pracowników naukowych oraz kształcenie wykwalifikowanych pracowników\", #Slownik_Języka_Polskiego_PWN_on-line: \"szkoła wyższa - szkoła kształcąca pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; uczelnia - 1. zob. szkoła wyższa, 2. budynek, w którym mieści się szkoła wyższa; akademia - 1. wyższa uczelnia, 2. instytucja skupiająca wybitnych uczonych lub artystów, 3. oficjalna uroczystość zorganizowana z okazji jakiegoś święta; politechnika - wyższa uczelnia techniczna kształcąca specjalistów w różnych dziedzinach techniki i dająca im tytuł inżyniera; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk, mająca prawo nadawania stopni naukowych; wszechnica - 1. wyższa uczelnia, 2. seria wykładów popularnonaukowych\"; #Słownik_Języka_Polskiego_WDoroszewskiego: \"uczelnia - zakład naukowy, szkoła wyższego stopnia typu uniwersyteckiego; szkoła wyższa; czasem również w odniesieniu do innych dawnych typów szkół, zwłaszcza takich, które stanowiły dalszy etap nauczania w stosunku do podstawowego; akademia - 1. Akademia - nazwa szkoły filozoficznej założonej przez Platonw (IV w. p.n.e) w pobliżu Aten, w gaju poświęconym czci herosa Akademosa, 2. instytucja o charakterze społecznym lub państwowym skupiająca artystów, uczonych danej specjalności, 3. nazwa niektórych wyższych zakładów naukowych, 4. uroczyste zebranie publiczne poświęcone uczczeniu jakiejś osobistości lub wydarzeń historycznych, 5. daw. wyższa uczelnia obejmująca wszystkie dziedziny nauk, uniwersytet, wszechnica; politechnika - wyższa szkoła techniczna, pod względem organizacji i uprawnień wzorowana na uniwersytetach, 2. budynek w którym mieści się ta uczelnia; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk nietechnicznych, przygotowująca kadry pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; wszechnica - wyższa uczelnia, uniwersytet\"; #Ustawa_z_dnia_20_lipca_2018_r._Prawo_o_szkolnictwie_wyższym: \"Art. 9. 1. Uczelnia posiada osobowość prawną. 2. Uczelnia jest autonomiczna na zasadach określonych w ustawie. 3. Uczelnia prowadzi studia na co najmniej jednym kierunku. 4. Uczelnia prowadzi działalność w swojej siedzibie, a w przypadku gdy siedziba znajduje się na obszarze związku metropolitalnego – na tym obszarze. Uczelnia może prowadzić działalność poza siedzibą albo tym obszarem – w swojej filii. 5. Organy władzy publicznej mogą podejmować rozstrzygnięcia dotyczące uczelni tylko w przypadkach przewidzianych w ustawach.”"@pl,
+        "https://www.wikidata.org/wiki/Q38723"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue urbanonto:function15 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function20 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function17 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_4089c103-03b3-4740-8a80-a677b71ffb46> ],
+        <https://purl.org/bdot10k#category_8> ;
+    ns1:altLabel "Hochschule"@de,
+        "academy"@en,
+        "college"@en,
+        "higher education institution"@en,
+        "university"@en,
+        "grande école"@fr,
+        "université"@fr,
+        "établissement d'enseignement supérieur"@fr,
+        "schola superior"@la,
+        "akademia"@pl,
+        "politechnika"@pl,
+        "uczelnia"@pl,
+        "uczelnia akademicka"@pl,
+        "uczelnia zawodowa"@pl,
+        "uniwersytet"@pl,
+        "wszechnica"@pl,
+        "высшее учебное заведение"@ru ;
+    ns1:hiddenLabel "instytucja badawcza"@pl,
+        "instytut"@pl,
+        "szkoła"@pl .
+
+<https://purl.org/urbanonto/object_type_4815e898-fa08-4384-860f-0c9eec9e0eaf> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "bank"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
@@ -312,7 +242,8 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "https://www.wikidata.org/wiki/Q22687"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue ontohgis:function8 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_112> ;
     ns1:altLabel "Bank"@de,
         "bank"@en,
         "banque"@fr,
@@ -320,24 +251,7 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "instytucja fisowa"@pl,
         "bank"@ru .
 
-<https://purl.org/urbanonto/object_type_2e39cb88-e4ce-4d21-a0d5-5e08635ed41a> a owl:Class ;
-    rdfs:label "miejsce straceń"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
-    rdfs:comment "Miejsce straceń znajdowało się przy granicy miasta, czasem przy rozstaju dróg. Jego wyodrębnienie było konsekwencją nadania osadzie przywileju i możliwości egzekwowania kary śmierci. Niekiedy miejsce straceń znajdowało się na rynku, przy wykonywaniu ważniejszych egzekucji. Funkcjonowały od średniowiecza (XIII-XIV w.) do drugiej połowy XVIII w. i pierwszej połowy XIX w., gdy zaczęto prawnie ograniczać publiczne egzekucje pod wpływem idei oświeceniowych. Na ogół nie było ogrodzone."@pl ;
-    rdfs:isDefinedBy "obszar, na którym wykonywano egzekucje"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q2151479"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function6 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "der Richtplatz"@de,
-        "die Richtstätte"@de,
-        "execution site"@en,
-        "place of execution"@en,
-        "lieu d'exécution"@fr,
-        "Места казней"@ru .
-
-<https://purl.org/urbanonto/object_type_3b7f6d6f-e4a7-4c0b-9e00-e9a7905ba9a6> a owl:Class ;
+<https://purl.org/urbanonto/object_type_57fb3ebb-fd43-4728-8c0d-4bff6473585b> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "wartownia"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
@@ -365,33 +279,28 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
     ns1:hiddenLabel "budka wartownicza"@pl,
         "posterunek wartowniczy"@pl .
 
-<https://purl.org/urbanonto/object_type_3b9d3623-fbec-4dd0-91e7-e0127239dcac> a owl:Class ;
+<https://purl.org/urbanonto/object_type_59482e33-619e-42e6-9e4c-7293f3400e65> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "szpital przednowoczesny"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
+        "dworzec kolejowy"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
     rdfs:comment "Lorem ipsum"@en,
-        "W każdym większym mieście szpital stanowił ważną część jego przestrzeni realnej i symbolicznej. W klasie budynków szpital nie jest częścią większej całości; przestrzennie czasem mieści się w obrębie obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków szpital nie ma części składowych. W pełnym i późnym średniowieczu zawsze, a w następnych wiekach często, budynek szpitala był siedzibą i własnością instytucji prawa kanonicznego o własnej osobowości prawnej i majątku, w epoce nowożytnej również występował jako neisamodzielny obiekt w posiadaniu parafii."@pl ;
+        "Dworzec kolejowy znajdował się w samym centrum miasta lub - częściej - na jego obrzeżach, w odległości do kilku kilometrów od historycznego centrum, w miastach i osadach, przez które biegła linia kolejowa. W ciągu XIX wieku pojawiała się bardziej reprezentacyjna ulica lub aleja biegnąca do niego z w/w centrum. Czasem w większych ośrodkach obok dworca pojawiał się park kolejowy - wizytówka miasta, częściej był to większy plac - postój dla powozów i dorożek, potem samochodów. W największych miastach było kilka dworców. Pojawia się na ziemiach polskich w późnych latach trzydziestych wraz budową późniejszej linii Warszawa-Wiedeń, w Warszawie w 1845 r. (arch. Henryk Marconi). Wyraz nie występował w słownikach do drugiej połowy XIX w. Jednak w prasie warszawskiej nowy dworzec był od samego początku (1845 r.) nazywany tym terminem (por. Łupienko 2012: s. 121). Nazywany także banhofem z niemieckiego, jako taki jednak nie występuje u Orgelbranda w 1861 r. "@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek przenaczony do kompleksowej opieki nad potrzebującymi, obejmującej m.in. mieszkanie i wyżywienie"@pl ;
+        "zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem"@pl ;
+    rdfs:seeAlso "#Orgelbrand_1861: \"1) dwór we wsi, folwark; 2) nieużyw. podwórze, obora; 3) dwór stary, dworzysko; 4) pałac\"; #SJP_1900_1927: \"1) gmach, dom porządniejszy wiejski, dwór; 2) stary dwór; 3) podwórze z zabudowaniami gosp.; 4) budynek stacyjny na kolei, banhof\""@pl ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function18 ;
+            owl:hasValue ontohgis:function13 ;
             owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Spital"@de ;
-    ns1:hiddenLabel "dom ubogich"@pl,
-        "przytułek"@pl .
-
-<https://purl.org/urbanonto/object_type_4f574f4b-17b4-4995-a03f-cd12f1885bda> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "ulica"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "droga lub część drogi w terenie zabudowanym, do której przylegają budynki, budowle, urządzenia lub inne obiekty"@pl ;
-    rdfs:seeAlso "#Ustawa_1985_drogi: \"Art. 4 [Słowniczek] Użyte w ustawie określenia oznaczają [...] 3)  ulica - drogę na terenie zabudowy lub przeznaczonym do zabudowy zgodnie z przepisami o planowaniu i zagospodarowaniu przestrzennym, w której ciągu może być zlokalizowane torowisko tramwajowe\""@pl,
-        "https://www.wikidata.org/wiki/Q79007"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function8 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_af3e6365-d10f-4121-926e-994abacbd2a9> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function7 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
             owl:hasValue ontohgis:function9 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
@@ -399,69 +308,133 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_622969b9-0600-463d-9fa1-5c0066650070> ],
-        <https://purl.org/bdot10k#class_5> ;
-    ns1:altLabel "Strasse"@de,
-        "street"@en,
-        "rue"@fr,
-        "via"@la,
-        "ulitsa"@ru ;
-    ns1:hiddenLabel "aleja"@pl,
-        "bulwar"@pl,
-        "jezdnia"@pl,
-        "pasaż"@pl,
-        "trakt"@pl,
-        "zaułek"@pl,
-        "ścieżka"@pl .
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_feea228c-6413-4bd7-8fb7-b566e7ad225b> ],
+        <https://purl.org/bdot10k#category_7> ;
+    ns1:altLabel "Bahnhof"@de,
+        "railway station"@en,
+        "gare"@fr,
+        "station ferroviaire"@fr,
+        "banhof"@pl,
+        "dworzec drogi żelaznej (#Fryze_Chodorowicz_1873: \"s. 38-39\")"@pl,
+        "galeria (wcześniej)"@pl,
+        "zheleznodorozhnyj woksal"@ru ;
+    ns1:hiddenLabel "stacja kolejowa"@pl .
 
-<https://purl.org/urbanonto/object_type_5644bf13-7eee-4fc9-a38a-e4ccb5ceb5c7> a owl:Class ;
+<https://purl.org/urbanonto/object_type_5b2289ae-3e16-4513-8f66-9fb80beb6e7b> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "filharmonia"@pl ;
+        "szkoła XIX wieku"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
     rdfs:comment "Lorem ipsum"@en,
-        "Prototypem filharmonii były sale balowe w pałacach, w których znajdowały się galerie na pomieszczenie orkiestry. Jako budynki specjalnie przeznaczone dla występów muzyków stały się częścią miast w XIX wieku. Warunkiem ich powstania było istnienie instytucji muzycznych, które je prowadziły i których były siedzibami."@pl ;
+        "Szkoły publiczne istniały przez cały okres XIX w., ich istnienie regulowało ustawodawstwo, które mówiło o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba była dużo niższa od prywatnych. Szkoły prywatne istniały także przez cały okres XIX w., wpierw głównie jako szkoły wyziowe (które potem włączano w sieć placówek publicznych utrzymywanych przez państwo), potem rosła liczba laickich szkół prywatnych, których właściciele wynajmowali przestrzeń w kamienicach czynszowych na cele szkolne. Właścicielem mogła być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiągnęła kilkadziesiąt w Warszawie, dzieliły się według liczby klas. Były też słabo wyróżnione w przestrzeni miasta."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym publiczność gromadzi się w celu słuchania utworów muzycznych, który pod jednym dachem mieści jedną lub kilka scen dla muzyków, zaplecze oraz miejsca dla widowni"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"brak hasła\"; #SJP_1900-1927: \"1 t.: towarzystwo a. instytucja, mająca na celu rozwój muzyki i zapoznawanie z nią ogółu\"; #SJP_1978: \"1 t.: instytucja dysponująca stałym zespołem wykonawczym, złożonym z instrumentalistów i śpewaków pod kierunkiem dyrygenta, mająca na celu organizowanie koncertów i rozpowszechnianie muzyki (symfonicznej, kameralnej); budynek, w którym się odbywają koncerty organizowane przez tę instytucję\""@pl,
-        "https://www.wikidata.org/wiki/Q1060829"^^xsd:url ;
+        "instytucja edukacyjno-wychowawcza"@pl ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function21 ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom ontohgis:object_23 ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_010b05ab-ecf5-41a9-9b1f-e0534114f565> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_10c2e9e8-b0af-4265-a886-cf55542a7c39> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function3 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue urbanonto:function20 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Philharmonie"@de,
-        "concert hall"@en,
-        "salle de concerte"@fr,
-        "sala koncertowa"@pl,
-        "filarmonia"@ru ;
-    ns1:hiddenLabel "opera"@pl,
-        "teatr"@pl,
-        "teatr muzyczny"@pl .
+            owl:hasValue urbanonto:function15 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom ontohgis:settlement_unit100 ],
+        <https://purl.org/bdot10k#object_120> ;
+    ns1:altLabel "Lehranstalt"@de,
+        "Schule"@de,
+        "school"@en,
+        "école"@fr,
+        "academia"@la,
+        "schola"@la,
+        "zakład naukowy"@pl,
+        "ucziliszcze"@ru ;
+    ns1:hiddenLabel "szkoła wyższa"@pl,
+        "uniwersytet"@pl .
 
-<https://purl.org/urbanonto/object_type_57c1a8de-2183-4e95-82f8-3c94eca3a8d2> a owl:Class ;
+<https://purl.org/urbanonto/object_type_5cdc5678-a259-4f0e-96d3-fec95e162833> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "szkoła wyższa - kompleks"@pl ;
+        "arsenał"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Arsenały i zbrojownie znajdowały się w miastach od czasów starożytnych. W średniowieczu i w czasach wczesnonowożytnych bywały ulokowane w pomieszczeniach będących częścią fortyfikacji miejskich. Miasta rezydencjonalne posiadały szczególnie obszerne oddzielnie arsenały. W osiemnastym i dziewiętnastym wieku znajdowały się już w zabudowaniach należących do rozwijającej się siatki infrastruktury militarnej miasta, nierzadko z dala od historycznego centrum, a dawne budynki arsenałów przejmowały inne funkcje, np. kulturalne lub więzienne."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek przeznaczony na przechowywanie broni i uzbrojenia"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"gmach przeznaczony na skład wszelkiej broni, zbrojownia, cekauz\"; #SJP_1900-1927: \"1 t.: gmach przeznaczony na skład wszelkiej broni, zbrojownia, cekauz\"; #SJP_1978: \"1 t.: budynek lub inne pomieszczenie przeznaczone na skład broni; składnica broni, zbrojownia\""@pl,
+        "https://www.wikidata.org/wiki/Q81669"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue urbanonto:function22 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function5 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_117> ;
+    ns1:altLabel "Arsenal"@de,
+        "Waffenlager"@de,
+        "armory"@en,
+        "arsenal"@en,
+        "arsenal"@fr,
+        "armamentarium"@la,
+        "cekhauz"@pl,
+        "prochownia"@pl,
+        "składnica broni"@pl,
+        "zbrojownia"@pl,
+        "arsenal"@ru .
+
+<https://purl.org/urbanonto/object_type_6a843940-bcb3-45cf-9e44-8aa08ee6090f> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "jurydyka"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Jurydyka jest rodzajem osady lub enklawy wewnątrz miasta charakterystycznym dla Rzeczypospolitej Polsko-Litewskiej. Zwykle układ, przeznaczenie i profil mieszkańców jurydyki były zależne od jej fundatora."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "osada obok miasta królewskiego lub enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu"@pl ;
+    rdfs:seeAlso "#EncGosp_do_1945: \"jurydyka - osada zakładana jako prywatna enklawa miast królewskich na gruntach miejskich, niepodlegająca magistratom i ich sądownictwu\"; #Konarski_1970: \"s. 64, jurydyki - wydzielone osady, kościelne lub magnackie, które nie podlegały jurysdykcji miejskiej\"; #Wiki.pl: \"jurydyka - osada obok miasta królewskiego, rzadziej enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu\""@pl,
+        "https://www.wikidata.org/wiki/Q1714048"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_404 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function8 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_400 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#category_6> ;
+    ns1:altLabel "jurydyka"@de,
+        "jurydyka"@en,
+        "jurydyka"@fr,
+        "Юридика"@ru ;
+    ns1:hiddenLabel "miasteczko"@pl,
+        "miasto"@pl,
+        "osada"@pl .
+
+<https://purl.org/urbanonto/object_type_6ba61904-af3e-4b72-ba4d-0d29b5cad9e0> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "szkoła wyższa budynek"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
     rdfs:comment "Lorem ipsum"@en,
         "Różnego rodzaju szkoły wyższe najczęściej swoje siedziby mają w miastach. Ich obecność zmienia charakter miasta - napływ osób związanych z funkcjonowaniem danej szkoły wyższej wpływa również na inne sfery życia w mieście takie jak: dostępność miejsc przeznaczonych do mieszkania dla studentów (mieszkania na wynajem, akademiki), oferta gastronomiczna, rozrywkowa czy kulturalna. Istnienie szkoły wyższej może wpłynąć na rozwój danego ośrodka."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "wydzielony teren użytkowany przez instytucję prowadzącą studia wyższe"@pl ;
+        "budynek użytkowany przez instytucję prowadzącą studia wyższe"@pl ;
     rdfs:seeAlso "#Wikipedia: \"Uczelnia, szkoła wyższa - szkoła prowadząca studia wyższe; Akademia  – początkowo zgromadzenie uczonych lub artystów, którzy kształcili się pod kierunkiem wybitnego autorytetu, mające na celu rozwój nauki i sztuki. Nazwa wywodzi się od starożytnej szkoły Platona założonej w gaju Akademosa. Pierwsze nowożytne akademie powstały w epoce renesansu we Włoszech. Model współczesnej akademii nauk jako instytucji publicznej o zasięgu ogólnokrajowym ukształtował się XVII–XVIII wieku. Współcześnie terminem tym nadal określa się zgromadzenia naukowców, np. Polska Akademia Nauk, oraz rodzaj uczelni. W Polsce nazwa ta pojawia się w drugiej połowie XVI w. W okresie przedrozbiorowym określano nią zarówno uniwersytety (Akademia Krakowska), uczelnie aspirujące do miana uniwersytetu (Akademia Lwowska), jak i niektóre wyróżniające się szkoły niższego szczebla (Akademia Chełmińska); Politechnika – rodzaj uczelni akademickiej o profilu technicznym, nastawionej na interdyscyplinarny kierunek kształcenia, zapewniająca możliwość uzyskania tytułów zawodowych inżynier i magister inżynier oraz stopni naukowych doktor nauk technicznych i doktor habilitowany nauk technicznych; Uniwersytet – najstarszy rodzaj uczelni o charakterze nietechnicznym, której celem jest przygotowanie kadr pracowników naukowych oraz kształcenie wykwalifikowanych pracowników\", #Slownik_Języka_Polskiego_PWN_on-line: \"szkoła wyższa - szkoła kształcąca pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; uczelnia - 1. zob. szkoła wyższa, 2. budynek, w którym mieści się szkoła wyższa; akademia - 1. wyższa uczelnia, 2. instytucja skupiająca wybitnych uczonych lub artystów, 3. oficjalna uroczystość zorganizowana z okazji jakiegoś święta; politechnika - wyższa uczelnia techniczna kształcąca specjalistów w różnych dziedzinach techniki i dająca im tytuł inżyniera; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk, mająca prawo nadawania stopni naukowych; wszechnica - 1. wyższa uczelnia, 2. seria wykładów popularnonaukowych\"; #Słownik_Języka_Polskiego_WDoroszewskiego: \"uczelnia - zakład naukowy, szkoła wyższego stopnia typu uniwersyteckiego; szkoła wyższa; czasem również w odniesieniu do innych dawnych typów szkół, zwłaszcza takich, które stanowiły dalszy etap nauczania w stosunku do podstawowego; akademia - 1. Akademia - nazwa szkoły filozoficznej założonej przez Platonw (IV w. p.n.e) w pobliżu Aten, w gaju poświęconym czci herosa Akademosa, 2. instytucja o charakterze społecznym lub państwowym skupiająca artystów, uczonych danej specjalności, 3. nazwa niektórych wyższych zakładów naukowych, 4. uroczyste zebranie publiczne poświęcone uczczeniu jakiejś osobistości lub wydarzeń historycznych, 5. daw. wyższa uczelnia obejmująca wszystkie dziedziny nauk, uniwersytet, wszechnica; politechnika - wyższa szkoła techniczna, pod względem organizacji i uprawnień wzorowana na uniwersytetach, 2. budynek w którym mieści się ta uczelnia; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk nietechnicznych, przygotowująca kadry pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; wszechnica - wyższa uczelnia, uniwersytet\"; #Ustawa_z_dnia_20_lipca_2018_r._Prawo_o_szkolnictwie_wyższym: \"Art. 9. 1. Uczelnia posiada osobowość prawną. 2. Uczelnia jest autonomiczna na zasadach określonych w ustawie. 3. Uczelnia prowadzi studia na co najmniej jednym kierunku. 4. Uczelnia prowadzi działalność w swojej siedzibie, a w przypadku gdy siedziba znajduje się na obszarze związku metropolitalnego – na tym obszarze. Uczelnia może prowadzić działalność poza siedzibą albo tym obszarem – w swojej filii. 5. Organy władzy publicznej mogą podejmować rozstrzygnięcia dotyczące uczelni tylko w przypadkach przewidzianych w ustawach.”"@pl,
         "https://www.wikidata.org/wiki/Q38723"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue urbanonto:function17 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue urbanonto:function20 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_4620b685-2771-467b-baf1-864467ce483d> ],
-        [ a owl:Restriction ;
             owl:hasValue urbanonto:function15 ;
             owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_8> ;
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function20 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        <https://purl.org/bdot10k#category_7> ;
     ns1:altLabel "Hochschule"@de,
         "academy"@en,
         "college"@en,
@@ -483,71 +456,7 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "instytut"@pl,
         "szkoła"@pl .
 
-<https://purl.org/urbanonto/object_type_63dddcd8-a1be-45b5-a672-1cf40a73951a> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "dworzec kolejowy"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Dworzec kolejowy znajdował się w samym centrum miasta lub - częściej - na jego obrzeżach, w odległości do kilku kilometrów od historycznego centrum, w miastach i osadach, przez które biegła linia kolejowa. W ciągu XIX wieku pojawiała się bardziej reprezentacyjna ulica lub aleja biegnąca do niego z w/w centrum. Czasem w większych ośrodkach obok dworca pojawiał się park kolejowy - wizytówka miasta, częściej był to większy plac - postój dla powozów i dorożek, potem samochodów. W największych miastach było kilka dworców. Pojawia się na ziemiach polskich w późnych latach trzydziestych wraz budową późniejszej linii Warszawa-Wiedeń, w Warszawie w 1845 r. (arch. Henryk Marconi). Wyraz nie występował w słownikach do drugiej połowy XIX w. Jednak w prasie warszawskiej nowy dworzec był od samego początku (1845 r.) nazywany tym terminem (por. Łupienko 2012: s. 121). Nazywany także banhofem z niemieckiego, jako taki jednak nie występuje u Orgelbranda w 1861 r. "@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem"@pl ;
-    rdfs:seeAlso "#Orgelbrand_1861: \"1) dwór we wsi, folwark; 2) nieużyw. podwórze, obora; 3) dwór stary, dworzysko; 4) pałac\"; #SJP_1900_1927: \"1) gmach, dom porządniejszy wiejski, dwór; 2) stary dwór; 3) podwórze z zabudowaniami gosp.; 4) budynek stacyjny na kolei, banhof\""@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function9 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function8 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_c1bb2301-c6c7-4e67-9c61-2bad51033877> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_405 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_30b55910-03fa-49d0-a89b-0d9c6d4d59cb> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function13 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Bahnhof"@de,
-        "railway station"@en,
-        "gare"@fr,
-        "station ferroviaire"@fr,
-        "banhof"@pl,
-        "dworzec drogi żelaznej (#Fryze_Chodorowicz_1873: \"s. 38-39\")"@pl,
-        "galeria (wcześniej)"@pl,
-        "zheleznodorozhnyj woksal"@ru ;
-    ns1:hiddenLabel "stacja kolejowa"@pl .
-
-<https://purl.org/urbanonto/object_type_6429a5c0-6925-41de-9cec-7776a858588b> a owl:Class ;
-    rdfs:label "szubienica"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
-    rdfs:comment "Pojawienie się szubienic należy łączyć z przełomem lokacyjnym pełnego średniowiecza. Szubienice na ogół ulokowane były poza murami miejskimi, przed bramami lub koło dróg wylotowych z miasta przy granicy patrymonium miejskiego z otaczającymi miejscowościami. Niekiedy jednak szubienicę stawiano na rynku, w okolicach ratusza. Były to jednak na ogół szubienice budowane na krótki czas. Najprawdopodobniej szubienice znajdowały się przy większości, jeśli nie wszystkich, miastach. Szubienice były rozbierane w pod koniec XVIII w. i w XIX w., wraz z prawnym ograniczaniem publicznych egzekucji pod wpływem oświeceniowych idei."@pl ;
-    rdfs:isDefinedBy "konstrukcja przeznaczona do wieszania skazanych"@pl ;
-    rdfs:seeAlso "#SJPPWN: \"konstrukcja, na której wiesza się skazańców\""@pl,
-        "https://www.wikidata.org/wiki/Q243778"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function6 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "der Galgen"@de,
-        "gallows"@en,
-        "gibbet"@en,
-        "gibet"@fr,
-        "potence"@fr,
-        "arbor"@la,
-        "gabalus"@la,
-        "patibulum"@la,
-        "pohybel"@pl,
-        "виселица"@ru ;
-    ns1:hiddenLabel "szlemię"@pl .
-
-<https://purl.org/urbanonto/object_type_6bc31678-4909-49ab-bdff-7330319da206> a owl:Class ;
+<https://purl.org/urbanonto/object_type_6c35b8f7-6eca-4f1f-8e6a-04c512bc15fa> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "dom dziecka"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
@@ -558,19 +467,19 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
     rdfs:seeAlso "#Ustawa_2011_rodzina: \"Art. 93 4. Placówka opiekuńczo-wychowawcza: 1) zapewnia dziecku całodobową opiekę i wychowanie oraz zaspokaja jego niezbędne potrzeby, w szczególności emocjonalne, rozwojowe, zdrowotne, bytowe, społeczne i religijne; 2) realizuje przygotowany we współpracy z asystentem rodziny plan pomocy dziecku; 3) umożliwia kontakt dziecka z rodzicami i innymi osobami bliskimi, chyba że sąd postanowi inaczej; 4) podejmuje działania w celu powrotu dziecka do rodziny; 5) zapewnia dziecku dostęp do kształcenia dostosowanego do jego wieku i możliwości rozwojowych; 6) obejmuje dziecko działaniami terapeutycznymi; 7) zapewnia korzystanie z przysługujących świadczeń zdrowotnych.\"; #Wikipedia: \"dom dziecka - całodobowa placówka opiekuńczo-wychowawcza typu socjalizacyjnego. Do domów dziecka kierowane są dzieci i młodzież, których potrzeby stale lub okresowo nie mogą być zaspokajane w domu rodzinnym. Oznacza to, że domy dziecka są powołane do istnienia nie tylko dla sierot, ale także dla dzieci i młodzieży zaniedbanych środowiskowo, których rodzina nie wywiązuje się z powierzonych zadań. Takie dzieci i młodzież nazywane są wtedy sierotami społecznymi\"; #SJP_online: \"dom dziecka - zakład wychowawczy dla sierot lub dzieci pozbawionych opieki rodzicielskiej; sierociniec - dom dla sierot\"; #SJP_Doroszewski: \"sierociniec - przestarz. przytułek dla sierot, dom sierot\"; #Encyklopedia_PWN_on-line: \"dom dziecka - zakład opiekuńczo-wych. dla dzieci i młodzieży w wieku 3–18 lat, osieroconych lub pozbawionych opieki rodziny\""@pl,
         "https://www.wikidata.org/wiki/Q160645"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function18 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
             owl:hasValue ontohgis:function3 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
             owl:hasValue urbanonto:function19 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
+            owl:hasValue urbanonto:function17 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
             owl:hasValue urbanonto:function15 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue urbanonto:function17 ;
+            owl:hasValue urbanonto:function18 ;
             owl:onProperty ontohgis:hasProperFunction ],
         <https://purl.org/bdot10k#category_7> ;
     ns1:altLabel "Kinderheim"@de,
@@ -591,79 +500,103 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "szpital przednowoczesny"@pl,
         "zakład poprawczy"@pl .
 
-<https://purl.org/urbanonto/object_type_869dbda8-bf48-4be2-9fb0-cf7b9b63567e> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "fabryka"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Powstawały od XVIII wieku (rewolucja przemysłowa), kiedy to zaczęły zastępować/wypierać zakłady rzemieślnicze i manufaktury."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym masowa produkcja jest oparta na pracy maszyn"@pl ;
-    rdfs:seeAlso """#SJP1807: "budowanie, wystawienie budowli”; „gmach”, a także „warsztat rękodzielny"
-#SJPDoroszewski: "zakład przemysłowy wytwarzający maszynowo na wielką skalę środki spożycia i produkcji, wytwórnia"
-#EncPWN: "[łac. fabrica ‘warsztat rzemieślniczy’], ekon. forma organizacji produkcji przemysłowej oparta na pracy maszyn"
-#Dz.U. z 2016 r. poz. 879: "Zakład przemysłowy – zespół budynków i urządzeń wraz z terenem, na którym prowadzi się działalność wytwórczą polegającą na przekształcaniu mechanicznym, fizycznym lub chemicznym materiału, substancji lub ich części składowych w nowy produkt"
-#CambridgeDictionary: "a building or set of buildings where large amounts of goods are made using machines"
-#HTA_Wroclaw "zakład zmechanizowanej produkcji przemysłowej\""""@pl,
-        "https://www.wikidata.org/wiki/Q83405"^^xsd:url ;
+<https://purl.org/urbanonto/object_type_6d154b56-1fcd-4ac3-a7ff-3a6d22fc2be7> a owl:Class ;
+    rdfs:label "miejsce straceń"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
+    rdfs:comment "Miejsce straceń znajdowało się przy granicy miasta, czasem przy rozstaju dróg. Jego wyodrębnienie było konsekwencją nadania osadzie przywileju i możliwości egzekwowania kary śmierci. Niekiedy miejsce straceń znajdowało się na rynku, przy wykonywaniu ważniejszych egzekucji. Funkcjonowały od średniowiecza (XIII-XIV w.) do drugiej połowy XVIII w. i pierwszej połowy XIX w., gdy zaczęto prawnie ograniczać publiczne egzekucje pod wpływem idei oświeceniowych. Na ogół nie było ogrodzone."@pl ;
+    rdfs:isDefinedBy "obszar, na którym wykonywano egzekucje"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q2151479"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function2 ;
+            owl:hasValue ontohgis:function6 ;
             owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_404 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_58e80f7b-116b-450f-9b18-1bf1a5b81095> ],
-        <https://purl.org/bdot10k#object_116> ;
-    ns1:altLabel "Fabrik"@de,
-        "Fabrikanlage"@de,
-        "Fabrikgebäude"@de,
-        "factory"@en,
-        "plant"@en,
-        "usine"@fr,
-        "Fabrica (officina)"@la,
-        "warsztat fabryczny"@pl,
-        "фабрика"@ru ;
-    ns1:hiddenLabel "kombinat"@pl .
+        <https://purl.org/bdot10k#category_8> ;
+    ns1:altLabel "der Richtplatz"@de,
+        "die Richtstätte"@de,
+        "execution site"@en,
+        "place of execution"@en,
+        "lieu d'exécution"@fr,
+        "Места казней"@ru .
 
-<https://purl.org/urbanonto/object_type_8a81ed83-b1f3-4b9a-9694-789b2c34b261> a owl:Class ;
+<https://purl.org/urbanonto/object_type_6e291d72-79e5-4980-a40a-0d2aa8861952> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "dom dla bezdomnych"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
+        "szpital przednowoczesny"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
     rdfs:comment "Lorem ipsum"@en,
-        "Domy dla bezdomnych mogą funkcjonować zarówno w miastach jak też innych typach miejscowości. Oprócz schronisk, które mogą zapewniać całodobową opiekę nad osobami bezdomnymi, część domów dla bezdomnych funkcjonuje jako noclegownie zapewniające osobom bezdomnych nocleg w bezpiecznych dla zdrowia i życia warunkach lub ogrzewalnie gdzie osoby bezdomne mają zagwarantowany bezpieczny pobyt interwencyjny i dostęp do ciepła i przynajmniej do miejsca siedzącego. Przebywanie w domu dla bezdomnych może się wiązać z pewnymi ograniczeniami (np. zakaz spożywania alkoholu), zasady te są określane przez instytucje prowadzącce dane schronisko."@pl ;
+        "W każdym większym mieście szpital stanowił ważną część jego przestrzeni realnej i symbolicznej. W klasie budynków szpital nie jest częścią większej całości; przestrzennie czasem mieści się w obrębie obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków szpital nie ma części składowych. W pełnym i późnym średniowieczu zawsze, a w następnych wiekach często, budynek szpitala był siedzibą i własnością instytucji prawa kanonicznego o własnej osobowości prawnej i majątku, w epoce nowożytnej również występował jako neisamodzielny obiekt w posiadaniu parafii."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym osoby bezdomne mogą czasowo mieszkać"@pl ;
-    rdfs:seeAlso "#Wikipedia: \"Schroniska dla bezdomnych przeznaczone są dla osób, które nigdzie nie są zameldowane, często nie posiadają dowodów tożsamości i stałych źródeł dochodu. Często podopieczni schronisk obciążeni są nałogami (alkoholizm, narkomania). Społeczność schronisk w dużej mierze składa się z ludzi, którzy weszli w konflikt z prawem. Prowadzone są przez organizacje pozarządowe (zakony, fundacje, stowarzyszenia itp.). Na swoją działalność pozyskują fundusze w większości od sponsorów, a w mniejszym stopniu i od władz lokalnych na terenie, na którym funkcjonują. Do zadań schroniska należy: zaspakajanie podstawowych potrzeb bytowych (zapewnienie bezpiecznego schronienia, wyżywienie, odzież); pomoc w leczeniu wszelkiego rodzaju chorób i uzależnień; pozyskiwanie miejsc pracy dla podopiecznych; pomoc w powrocie do społeczeństwa, uczestnictwo w życiu społecznym i rodzinnym\"; #SJP_online: \"noclegownia - miejsce przeznaczone na nocleg dla ludzi przebywających daleko od domu lub niemających domu\""@pl,
-        "https://www.wikidata.org/wiki/Q772298"^^xsd:url ;
+        "budynek przenaczony do kompleksowej opieki nad potrzebującymi, obejmującej m.in. mieszkanie i wyżywienie"@pl ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function19 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function13 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
             owl:hasValue urbanonto:function18 ;
             owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Notschlafstelle"@de,
-        "homeless shelter"@en,
-        "centre d'hébergement et de réinsertion sociale"@fr,
-        "noclegownia"@pl,
-        "ogrzewalnia"@pl,
-        "przytułek"@pl,
-        "schronisko dla bezdomnych"@pl,
-        "ночлежные дома"@ru ;
-    ns1:hiddenLabel "dom dziecka"@pl,
-        "dom stałego pobytu"@pl,
-        "schronisko dla samotnych matek"@pl,
-        "szpital przednowożytny"@pl .
+        <https://purl.org/bdot10k#class_30> ;
+    ns1:altLabel "Spital"@de ;
+    ns1:hiddenLabel "dom ubogich"@pl,
+        "przytułek"@pl .
 
-<https://purl.org/urbanonto/object_type_8c822a9a-36c4-452c-8c7f-4116640bab3b> a owl:Class ;
+<https://purl.org/urbanonto/object_type_70668c0c-0e68-4111-96dc-543d318d0423> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "muzeum"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Muzea pojawiły się w starożytności. W średniowieczu i czasach nowożytnych funkcję prywatnego (zazwyczaj) muzeum pełniły pomieszczenia rezydencji możnych i władców. Osobne publiczne gmachy muzealne pojawiły się w końcu XVIII w. (z inicjatywy władców lub instytucji muzealnych), a do ważnych teoretyków w dziedzinie ich planowania w Europie Środkowej należał Niemiec Karl Friedrich Schinkel, autor berlińskiego Altes Museum."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "gmach przeznaczony na pomieszczenie zbiorów dzieł sztuki lub innych kolekcji przedmiotów wytworzonych przez człowieka lub pochodzących z ożywionych lub nieożywionych zasobów natury, a także przystosowany do ich ekspozycji dla zwiedzających w ramach stałych i czasowych wystaw"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"skład przedmiotów rzadkich pod względem sztuki, wyrobu, lub pamiątek historycznych\"; #SJP_1900-1927: \"2 t.: zbiór przedmiotów, mających wartość dla jakiejś nauki, sztuki, a. gałęzi przemysłu; gmach, w którym znajduje się ten zbiór\"; #SJP_1978: \"2 t.: instytucja gromadząca eksponaty z różnych dziedzin, np. z dziedziny kultury, sztuki, nauki, techniki w celu ich przechowania, konserwacji, naukowego opracowania i upowszechnienia; lokal, budynek mieszczący taką instytucję i eksponaty\""@pl,
+        "https://www.wikidata.org/wiki/Q33506"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue urbanonto:function21 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function22 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function15 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_119> ;
+    ns1:altLabel "Museum"@de,
+        "museum"@en,
+        "musée"@fr,
+        "museum"@la,
+        "galeria"@pl,
+        "panoptikum"@pl,
+        "muzej"@ru ;
+    ns1:hiddenLabel "gliptoteka"@pl,
+        "pinakoteka"@pl .
+
+<https://purl.org/urbanonto/object_type_7bd236a0-726d-4a2e-a348-b34feb9bfdef> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "ulica"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "droga lub część drogi w terenie zabudowanym, do której przylegają budynki, budowle, urządzenia lub inne obiekty"@pl ;
+    rdfs:seeAlso "#Ustawa_1985_drogi: \"Art. 4 [Słowniczek] Użyte w ustawie określenia oznaczają [...] 3)  ulica - drogę na terenie zabudowy lub przeznaczonym do zabudowy zgodnie z przepisami o planowaniu i zagospodarowaniu przestrzennym, w której ciągu może być zlokalizowane torowisko tramwajowe\""@pl,
+        "https://www.wikidata.org/wiki/Q79007"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_d3f21a79-8f3b-4db4-a214-497a95aae948> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function9 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_405 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#class_5> ;
+    ns1:altLabel "Strasse"@de,
+        "street"@en,
+        "rue"@fr,
+        "via"@la,
+        "ulitsa"@ru ;
+    ns1:hiddenLabel "aleja"@pl,
+        "bulwar"@pl,
+        "jezdnia"@pl,
+        "pasaż"@pl,
+        "trakt"@pl,
+        "zaułek"@pl,
+        "ścieżka"@pl .
+
+<https://purl.org/urbanonto/object_type_82b3d32b-c1a3-4bf4-80c8-e98c7dc51bed> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "port wodny"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
@@ -677,31 +610,31 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
             owl:hasValue ontohgis:function13 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_405 ;
+            owl:hasValue ontohgis:function9 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
             owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a465633e-5b4f-4b53-bab3-626f253bb45f> ],
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_37ab5a46-314d-4415-9fbd-ea836e7ebec4> ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom ontohgis:settlement_unit3 ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
+            owl:hasValue ontohgis:function2 ;
             owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_9327267a-de0d-4eec-9c49-a016b9c31074> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6e0178d6-09b3-4608-8ac9-cb2f559c6769> ],
         [ a owl:Restriction ;
             owl:hasValue ontohgis:function8 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:function9 ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1f888e5b-0c7e-4f24-849f-aacf05de083c> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_405 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:function2 ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom ontohgis:settlement_unit3 ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_60f24c3b-b544-4921-83e3-9c46b00b22f5> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function3 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         <https://purl.org/bdot10k#category_8> ;
     ns1:altLabel "Hafen"@de,
@@ -720,7 +653,153 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "przystań"@pl,
         "stanica żeglarska"@pl .
 
-<https://purl.org/urbanonto/object_type_9006a67a-a670-4044-bafa-ac8a76806255> a owl:Class ;
+<https://purl.org/urbanonto/object_type_8c52c62a-a577-4671-a801-6b3a81a840e3> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "fosa"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "W średniowieczu były często stosowanym rodzajem fortyfikacji. Okalały mury obronne. Współcześnie są spotykane w kompleksach zabytkowo-historycznych."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "rodzaj fortyfikacji w postaci głębokiego rowu"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q88480"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function5 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_401 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom ontohgis:settlement_unit52 ],
+        <https://purl.org/bdot10k#class_37> ;
+    ns1:altLabel "Burggraben"@de,
+        "fosse"@en,
+        "moat"@en,
+        "douve"@fr,
+        "Fossa castrensis"@la,
+        "rów forteczny"@pl,
+        "Ров"@ru .
+
+<https://purl.org/urbanonto/object_type_95f40f07-08e6-45c3-8076-3e280cc987f9> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "esplanada forteczna"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie. Esplanada pojawia się wokół obiektów wojskowych o funkcji obronnej ulokowanej w otwartym terenie, obok miasta, częściowo w jego granicach lub wokół miasta-twierdzy, jej fortyfikacji i bastionów. Często znajdowała się na wzniesieniu, np. we Lwowie i w Przemyślu, wówczas jej esplanada ograniczała się do zboczy wzgórza."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@pl ;
+    rdfs:seeAlso "#Orgelbrand_1861: \"miejsce wygładzone przed fortem / wszelka sztucznie wzniesiona płaszczyzna\"; #SJP: \"niezabudowana przestrzeń przed fortyfikacjami\"; "@pl,
+        "https://www.wikidata.org/wiki/Q88372"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function5 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_664c95f8-d6fe-4450-b67f-e472540af22c> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function7 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#category_8> ;
+    ns1:altLabel "Esplanade"@de,
+        "Festungspromenade"@de,
+        "esplanade"@en,
+        "esplanade"@fr,
+        "przedmurze"@pl,
+        "przedpole twierdzy"@pl .
+
+<https://purl.org/urbanonto/object_type_99090164-1a7b-4e78-b7d3-a32d32a7c1f5> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "planty"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Rodzaj parków (terenów zielonych) otaczających teren miasta lokacyjnego/starego miasta."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "typ parku zakładanego na obszarze zlikwidowanych fortyfikacji miejskich"@pl ;
+    rdfs:seeAlso """#Slowosiec: "rodzaj miejskich terenów zielonych zwykle zakładanych w miejscu likwidowanych fortyfikacji miejskich (murów obronnych, wałów ziemnych, fos), czy dawnego koryta rzecznego"
+#SJPPWN: "tereny zielone zakładane wokół ośrodków staromiejskich po zniwelowaniu wałów fortyfikacyjnych, fos lub dawnych koryt rzecznych"
+#SJPDoroszewski: "2. teren obsadzonny drzewami, krzewami, przeznaczony do przechadzek"
+#EncPWN: "[łac.], miejskie zieleńce publiczne oraz ciągi spacerowe, zakładane na miejscu zlikwidowanych i zniwelowanych (splantowanych) murów obronnych, fortyfikacji, wałów i fos lub dawnych koryt rzecznych (np. Planty w Krakowie; esplanada); rozpowszechnione od końca XVIII w.; nazwa przyjęta w Polsce od początku XIX w., używana była wymiennie z terminem plantacje"
+#wiki.cz: "Planty is the name used in Poland for one of the types of city parks. These are usually parks or strips of greenery based on the sites of former fortification systems - walls , ramparts, moats or a former riverbed . The name is derived from the words splantować ( plan , level, settle) or plantacja (plantation)\""""@pl ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function7 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_226> ;
+    ns1:altLabel "promenada"@pl .
+
+<https://purl.org/urbanonto/object_type_a6ef4f9c-932c-4858-b81b-0b124f7b9f98> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "manufaktura"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "#SJPDoroszewski \"faza przejściowa pomiędzy warsztatem rzemieślniczym a fabryką\"; Manufaktura jako przedsiębiorstwo mogła być scentralizowana lub rozproszona (kilka małych warsztatów)."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym produkcja jest oparta na podziale pracy (zadań) i pracy rękodzielniczej"@pl ;
+    rdfs:seeAlso """#SJPDoroszewski: "1. przedsiębiorstwo przemysłowe we wczesnej fazie produkcji kapitalistycznej, oparte na pracy rękodzielniczej, będące fazą przejściową między warsztatem rzemieślniczym a fabryką; 2. praca rękodzielnicza, rękodzielnictwo"
+#EncPWN: "[łac.], forma produkcji przemysłowej oparta na podziale pracy i technice ręcznej”
+#wiki.pl: "(łac. manus „ręka”, manufactura „rękodzieło”) – zakład produkcyjny, w którym produkcja masowa złożonego produktu końcowego odbywa się ręcznie i oparta jest na podziale pracy: poszczególne etapy produkcji wykonywane są przez pracowników wyspecjalizowanych w ich wykonywaniu"
+#CambridgeDictionary: "a word used in the past for a factory, sometimes still used in the names of companies\""""@pl,
+        "https://www.wikidata.org/wiki/Q380342"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1685f86f-d637-4847-8275-be6c9e76176b> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_404 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Manufaktur"@de,
+        "manufactory"@en,
+        "manufacture"@fr,
+        "Мануфактура"@ru ;
+    ns1:hiddenLabel "atelier"@pl .
+
+<https://purl.org/urbanonto/object_type_aa5a9307-ddc2-4a6a-a70a-f856017420bd> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "kompleks szkolny"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "kompleks budynków i obiektów użytkowania terenu mieszczący instytucję wychowawczo-edukacyjną"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom ontohgis:object_23 ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function17 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function3 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function15 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2dd34f1d-6b44-477b-9090-cf2db3b5d2bc> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_010b05ab-ecf5-41a9-9b1f-e0534114f565> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_23b4c9ea-bbae-4234-b4b3-303ee9250abb> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_5883e0ad-5527-44db-868c-20d66410f88d> ],
+        <https://purl.org/bdot10k#class_48> ;
+    ns1:altLabel "Lehranstalt"@de,
+        "Schule"@de,
+        "school"@en,
+        "école"@fr,
+        "scholae"@la,
+        "kompleks oświatowy"@pl,
+        "ucziliszcze"@ru ;
+    ns1:hiddenLabel "ochronka"@pl,
+        "przedszkole"@pl,
+        "szkoła wyższa"@pl,
+        "uniwersytet"@pl,
+        "zespół szkół"@pl .
+
+<https://purl.org/urbanonto/object_type_b12fa7f6-348d-44f7-9523-0e0f47dde91f> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "staw"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
@@ -750,7 +829,175 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
     ns1:hiddenLabel "oczko wodne"@pl,
         "sadzawka"@pl .
 
-<https://purl.org/urbanonto/object_type_94c4344f-3944-4fed-84ea-62a2e49df637> a owl:Class ;
+<https://purl.org/urbanonto/object_type_b15bd930-4dc4-4141-990a-76f1de896714> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "fabryka"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Powstawały od XVIII wieku (rewolucja przemysłowa), kiedy to zaczęły zastępować/wypierać zakłady rzemieślnicze i manufaktury."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym masowa produkcja jest oparta na pracy maszyn"@pl ;
+    rdfs:seeAlso """#SJP1807: "budowanie, wystawienie budowli”; „gmach”, a także „warsztat rękodzielny"
+#SJPDoroszewski: "zakład przemysłowy wytwarzający maszynowo na wielką skalę środki spożycia i produkcji, wytwórnia"
+#EncPWN: "[łac. fabrica ‘warsztat rzemieślniczy’], ekon. forma organizacji produkcji przemysłowej oparta na pracy maszyn"
+#Dz.U. z 2016 r. poz. 879: "Zakład przemysłowy – zespół budynków i urządzeń wraz z terenem, na którym prowadzi się działalność wytwórczą polegającą na przekształcaniu mechanicznym, fizycznym lub chemicznym materiału, substancji lub ich części składowych w nowy produkt"
+#CambridgeDictionary: "a building or set of buildings where large amounts of goods are made using machines"
+#HTA_Wroclaw "zakład zmechanizowanej produkcji przemysłowej\""""@pl,
+        "https://www.wikidata.org/wiki/Q83405"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_404 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function2 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1685f86f-d637-4847-8275-be6c9e76176b> ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Fabrik"@de,
+        "Fabrikanlage"@de,
+        "Fabrikgebäude"@de,
+        "factory"@en,
+        "plant"@en,
+        "usine"@fr,
+        "Fabrica (officina)"@la,
+        "warsztat fabryczny"@pl,
+        "фабрика"@ru ;
+    ns1:hiddenLabel "kombinat"@pl .
+
+<https://purl.org/urbanonto/object_type_b8d1f2a2-1b97-40dd-96d5-f93e665b58e7> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "szkoła"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek mieszczący instytucję wychowawczo-edukacyjną"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2dd34f1d-6b44-477b-9090-cf2db3b5d2bc> ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function15 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function17 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_120> ;
+    ns1:altLabel "Lehranstalt"@de,
+        "Schule"@de,
+        "school"@en,
+        "école"@fr,
+        "scholae"@la,
+        "ucziliszcze"@ru ;
+    ns1:hiddenLabel "szkoła wyższa"@pl,
+        "uniwersytet"@pl .
+
+<https://purl.org/urbanonto/object_type_c80bca79-fd63-4a85-b317-7de143545941> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "warsztat"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Budynek produkcyjny z epoki przed manufakturami i fabrykami, ale występujący również później. Warsztat może również działać w jednym z pomieszczeń budynku, którego główna funkcja jest inna. "@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym produkcja jest oparta na pracy rękodzielniczej"@pl ;
+    rdfs:seeAlso """#SJP1814: "robotnia, miejsce, w którym rzemieślnicy pracują; i także stół etc., na którym pracują”
+#SJPDoroszewski: "1. rodzaj stołu specjalnie wyposażonego pod względem technicznym, służącego do wykonywania różnego rodzaju prac; 2. pomieszczenie wyposażone w odpowiednie urządzenia i przyrządy, w którym wykonywane są różnego rodzaju prace rzemieślnicze [...]; zakład wykonujący tego rodzaju prace 3. oddział zgormadzenia wolnomularzy"
+#wiki.pl: "pomieszczenie przeznaczone do wykonywania pracy o charakterze wytwórczym lub usługowym z niezbędnym wyposażeniem"
+#CambridgeDictionary: "a room or building where things are made or repaired using machines and/or tools”"""@pl,
+        "https://www.wikidata.org/wiki/Q656720"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_404 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:object_402 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        <https://purl.org/bdot10k#object_116> ;
+    ns1:altLabel "Werkstatt"@de,
+        "workshop"@en,
+        "atelier"@fr,
+        "zakład rzemieślniczy"@pl,
+        "мастерская"@ru ;
+    ns1:hiddenLabel "pracownia"@pl .
+
+<https://purl.org/urbanonto/object_type_c84e1a22-d0b8-4d0f-b542-70be74b41374> a owl:Class ;
+    rdfs:label "szubienica"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
+    rdfs:comment "Pojawienie się szubienic należy łączyć z przełomem lokacyjnym pełnego średniowiecza. Szubienice na ogół ulokowane były poza murami miejskimi, przed bramami lub koło dróg wylotowych z miasta przy granicy patrymonium miejskiego z otaczającymi miejscowościami. Niekiedy jednak szubienicę stawiano na rynku, w okolicach ratusza. Były to jednak na ogół szubienice budowane na krótki czas. Najprawdopodobniej szubienice znajdowały się przy większości, jeśli nie wszystkich, miastach. Szubienice były rozbierane w pod koniec XVIII w. i w XIX w., wraz z prawnym ograniczaniem publicznych egzekucji pod wpływem oświeceniowych idei."@pl ;
+    rdfs:isDefinedBy "konstrukcja przeznaczona do wieszania skazanych"@pl ;
+    rdfs:seeAlso "#SJPPWN: \"konstrukcja, na której wiesza się skazańców\""@pl,
+        "https://www.wikidata.org/wiki/Q243778"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue ontohgis:function6 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#category_7> ;
+    ns1:altLabel "der Galgen"@de,
+        "gallows"@en,
+        "gibbet"@en,
+        "gibet"@fr,
+        "potence"@fr,
+        "arbor"@la,
+        "gabalus"@la,
+        "patibulum"@la,
+        "pohybel"@pl,
+        "виселица"@ru ;
+    ns1:hiddenLabel "szlemię"@pl .
+
+<https://purl.org/urbanonto/object_type_d150d27b-36d4-47ec-8c74-3f4db11a61ec> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "park"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Parki występują w większości dużych i średnich ośrodków miejskich, ich częścią mogą być fragmenty terenu o innej niż rekreacyjna funkcji, np. komercyjnej. Pojawiają się w XVIII w. (Europa) lub końcu XVIII w. (zabory Rzeczypospolitej) jako ogród spacerowy lub przechadzki. Wcześniej istnieją jako prywatny ogród miejski lub pałacowy. Nazwa \"park\" nie występuje w XIX w. w odniesieniu do parków miejskich, które wówczas też rzadko przybierają większe rozmiary. Park jest importem z angielskiego, który przyjmuje się dopiero po połowie wieku XIX, wcześniej ma znaczenie artyleryjskie (park armat itp.). "@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym"@pl ;
+    rdfs:seeAlso "#SJP_1811: \"brak hasła 'park' i 'przechadzka' (w tym znaczeniu), jedynie jest 'ogród'\"; #Orgelbrand_1861: \"oznaczony jako wyraz obcy i odesłanie do wyrazów 'ogród' i 'zwierzyniec'\"; #SJP_1908: \"wielki ogród ozdobny urządzony na kształt lasku\"; #PWN_1979: \"duży ogród powiązany przestrzennie i kompozycyjnie z warunkami naturalnymi i otaczającym krajobrazem, z alejkami i ścieżkami spacerowymi\""@pl,
+        "https://www.wikidata.org/wiki/Q22698"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_bf9a610b-1315-4f02-86e9-2f5c425bd629> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function13 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_6f1a3762-cbeb-4895-9783-79ce43f51192> ],
+        [ a owl:Restriction ;
+            owl:hasValue ontohgis:function7 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_ad458f5d-bbd8-485b-98d4-5780ede0d5f9> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_5e79d381-05ed-478b-b731-e1e7d8864b42> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_595ea717-768b-4ce4-a584-e189cd09a320> ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46_is_composed_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_af747017-1db5-4326-af9b-b092bf7b62ea> ],
+        <https://purl.org/bdot10k#category_8> ;
+    ns1:altLabel "Garten"@de,
+        "Parkanlage"@de,
+        "Promenade"@de,
+        "garden"@en,
+        "park"@en,
+        "jardin"@fr,
+        "parque"@fr,
+        "hortus"@la,
+        "ogród"@pl,
+        "ogród spacerowy"@pl,
+        "promenada"@pl,
+        "przechadzki"@pl,
+        "sadź"@pl,
+        "zwierzyniec (dawniej)"@pl,
+        "sad"@ru ;
+    ns1:hiddenLabel "ogród"@pl,
+        "pole"@pl,
+        "zieleniec"@pl .
+
+<https://purl.org/urbanonto/object_type_d37dad28-bb07-487c-af9d-cdaf4a19b5f1> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "przytułek"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
@@ -764,11 +1011,12 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
             owl:hasValue urbanonto:function19 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
+            owl:hasValue ontohgis:function3 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
             owl:hasValue ontohgis:function13 ;
             owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
+        <https://purl.org/bdot10k#object_109> ;
     ns1:altLabel "Obdachlosenheim"@de,
         "homeless shelter"@en,
         "hospice [dla ubogich]"@fr,
@@ -779,54 +1027,33 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "schroniska"@pl,
         "pryjut"@ru .
 
-<https://purl.org/urbanonto/object_type_993d2b08-4684-4841-bd03-4d76cd0036c1> a owl:Class ;
-    rdfs:label "pręgierz"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
-    rdfs:comment "Pręgierz był podstawowym elementem przestrzeni miejskiej w miastach średniowiecznych i nowożytnych, symbolizującym jurysdykcję karną przedindustrialnego miasta, choć korzystano z niego jeszcze w XIX w. Niektóre pręgierze istniały jeszcze w połowie XX w. Przede wszystkim znajdował się na rynkach miast, w bliskości ratuszy, choć zdarzały się przypadki, że stawiano pręgierze na cmentarzach. W każdym razie, pęgierze stawiano w otwartych, dostępnych dla ogółu miejscach."@pl ;
-    rdfs:isDefinedBy "słup, przy którym publicznie wykonywano kary cielesne lub hańbiące"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q241212"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function6 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "der Pranger"@de,
-        "pillary"@en,
-        "whipping post"@en,
-        "pilori"@fr,
-        "mediastinum"@la,
-        "mediastrum"@la,
-        "prąga"@pl,
-        "Позорный столб"@ru .
-
-<https://purl.org/urbanonto/object_type_add18e2d-8652-46a5-b1f3-d570a8d65fc6> a owl:Class ;
+<https://purl.org/urbanonto/object_type_d3e6363b-1ba8-45d1-aae7-721c055a8769> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "arsenał"@pl ;
+        "filharmonia"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
     rdfs:comment "Lorem ipsum"@en,
-        "Arsenały i zbrojownie znajdowały się w miastach od czasów starożytnych. W średniowieczu i w czasach wczesnonowożytnych bywały ulokowane w pomieszczeniach będących częścią fortyfikacji miejskich. Miasta rezydencjonalne posiadały szczególnie obszerne oddzielnie arsenały. W osiemnastym i dziewiętnastym wieku znajdowały się już w zabudowaniach należących do rozwijającej się siatki infrastruktury militarnej miasta, nierzadko z dala od historycznego centrum, a dawne budynki arsenałów przejmowały inne funkcje, np. kulturalne lub więzienne."@pl ;
+        "Prototypem filharmonii były sale balowe w pałacach, w których znajdowały się galerie na pomieszczenie orkiestry. Jako budynki specjalnie przeznaczone dla występów muzyków stały się częścią miast w XIX wieku. Warunkiem ich powstania było istnienie instytucji muzycznych, które je prowadziły i których były siedzibami."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek przeznaczony na przechowywanie broni i uzbrojenia"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"gmach przeznaczony na skład wszelkiej broni, zbrojownia, cekauz\"; #SJP_1900-1927: \"1 t.: gmach przeznaczony na skład wszelkiej broni, zbrojownia, cekauz\"; #SJP_1978: \"1 t.: budynek lub inne pomieszczenie przeznaczone na skład broni; składnica broni, zbrojownia\""@pl,
-        "https://www.wikidata.org/wiki/Q81669"^^xsd:url ;
+        "budynek, w którym publiczność gromadzi się w celu słuchania utworów muzycznych, który pod jednym dachem mieści jedną lub kilka scen dla muzyków, zaplecze oraz miejsca dla widowni"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"brak hasła\"; #SJP_1900-1927: \"1 t.: towarzystwo a. instytucja, mająca na celu rozwój muzyki i zapoznawanie z nią ogółu\"; #SJP_1978: \"1 t.: instytucja dysponująca stałym zespołem wykonawczym, złożonym z instrumentalistów i śpewaków pod kierunkiem dyrygenta, mająca na celu organizowanie koncertów i rozpowszechnianie muzyki (symfonicznej, kameralnej); budynek, w którym się odbywają koncerty organizowane przez tę instytucję\""@pl,
+        "https://www.wikidata.org/wiki/Q1060829"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function22 ;
+            owl:hasValue urbanonto:function21 ;
             owl:onProperty ontohgis:hasProperFunction ],
         [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Arsenal"@de,
-        "Waffenlager"@de,
-        "armory"@en,
-        "arsenal"@en,
-        "arsenal"@fr,
-        "armamentarium"@la,
-        "cekhauz"@pl,
-        "prochownia"@pl,
-        "składnica broni"@pl,
-        "zbrojownia"@pl,
-        "arsenal"@ru .
+            owl:hasValue urbanonto:function20 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_118> ;
+    ns1:altLabel "Philharmonie"@de,
+        "concert hall"@en,
+        "salle de concerte"@fr,
+        "sala koncertowa"@pl,
+        "filarmonia"@ru ;
+    ns1:hiddenLabel "opera"@pl,
+        "teatr"@pl,
+        "teatr muzyczny"@pl .
 
-<https://purl.org/urbanonto/object_type_d1402cb3-3e3b-4e9e-85c7-490c59262c4c> a owl:Class ;
+<https://purl.org/urbanonto/object_type_d6517f4c-03c8-4c8f-9391-dd9ee848e33b> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "kaplica wolnostojąca"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
@@ -852,322 +1079,55 @@ urbanonto:isAlsoDefinedBy a owl:AnnotationProperty ;
         "kościół"@pl,
         "kościółek"@pl .
 
-<https://purl.org/urbanonto/object_type_da128e19-cbda-4c1d-afdf-29b8d7959684> a owl:Class ;
+<https://purl.org/urbanonto/object_type_dbd80c81-8c8f-479e-87d2-1e9c9d9d8198> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
-        "bursa szkolna"@pl ;
+        "biblioteka"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
     rdfs:comment "Lorem ipsum"@en,
-        "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
+        "Składy książek pojawiały się od starożytności aż do czasów najnowszych. Bywały najczęściej fundacją możnych rodów. W dziewiętnastym wieku pojawił się fenomen masowych bibliotek zakładanych przez instytucje nawet w najmniejszych ośrodkach, w czym szczególnie aktywne były organizacje narodowe."@pl ;
     rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek przeznaczony na zamieszkanie uczniów lub studentów, prowadzony najczęściej przez szkołę lub uczelnię"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"2) życie wspólne, wspólnym kosztem, szczególniej, konwikt, kollegjum; 3) kupiecka, giełda\"; #SJP_1900-1927: \"1 t.: konwikt, stancja uczniów z fundacji rządu a. magnata\"; #SJP_1978: \"1 t.: zakład, w którym ucząca się młodzież otrzymuje mieszkanie i zwykle utrzymanie; internat\""@pl,
-        "https://www.wikidata.org/wiki/Q3153217"^^xsd:url ;
+        "gmach służący przechowywaniu i udostępnianiu publicznemu książek, zaopatrzony w magazyn i nieobowiązkowo w czytelnię"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"zbiór ksiąg, książnica, księgi i gmach, który je zawiera\"; #SJP_1900-1927: \"1 t.: księgozbiór, książnica, zbiór ksiąg a. gmach, który je mieści\"; #SJP_1978: \"1 t.: instytucja powołana do gromadzenia i udostępniania księgozbiorów; gmach, lokal takiej instytucji\""@pl,
+        "https://www.wikidata.org/wiki/Q7075"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_400 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function17 ;
-            owl:onProperty ontohgis:hasImproperFunction ] ;
-    ns1:altLabel "Burse"@de,
-        "Internat"@de,
-        "boarding school"@en,
-        "dormitory"@en,
-        "internat"@fr,
-        "pensionnat"@fr,
-        "oecotropheum"@la,
-        "akademik"@pl,
-        "internat"@pl,
-        "konwikt"@pl,
-        "obszczerzitie"@ru ;
-    ns1:hiddenLabel "hotel młodzieżowy"@pl,
-        "szkoła z internatem"@pl .
-
-<https://purl.org/urbanonto/object_type_dbed3b37-0f4e-4afb-915e-acae5896c0fd> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "esplanada forteczna"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie. Esplanada pojawia się wokół obiektów wojskowych o funkcji obronnej ulokowanej w otwartym terenie, obok miasta, częściowo w jego granicach lub wokół miasta-twierdzy, jej fortyfikacji i bastionów. Często znajdowała się na wzniesieniu, np. we Lwowie i w Przemyślu, wówczas jej esplanada ograniczała się do zboczy wzgórza."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@pl ;
-    rdfs:seeAlso "#Orgelbrand_1861: \"miejsce wygładzone przed fortem / wszelka sztucznie wzniesiona płaszczyzna\"; #SJP: \"niezabudowana przestrzeń przed fortyfikacjami\"; "@pl,
-        "https://www.wikidata.org/wiki/Q88372"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_22b6faf0-8d7c-4daf-87cd-62e29df0f9e3> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "Esplanade"@de,
-        "Festungspromenade"@de,
-        "esplanade"@en,
-        "esplanade"@fr,
-        "przedmurze"@pl,
-        "przedpole twierdzy"@pl .
-
-<https://purl.org/urbanonto/object_type_dd4e0b69-d322-43b0-8c4b-e39925b24f67> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "muzeum"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Muzea pojawiły się w starożytności. W średniowieczu i czasach nowożytnych funkcję prywatnego (zazwyczaj) muzeum pełniły pomieszczenia rezydencji możnych i władców. Osobne publiczne gmachy muzealne pojawiły się w końcu XVIII w. (z inicjatywy władców lub instytucji muzealnych), a do ważnych teoretyków w dziedzinie ich planowania w Europie Środkowej należał Niemiec Karl Friedrich Schinkel, autor berlińskiego Altes Museum."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "gmach przeznaczony na pomieszczenie zbiorów dzieł sztuki lub innych kolekcji przedmiotów wytworzonych przez człowieka lub pochodzących z ożywionych lub nieożywionych zasobów natury, a także przystosowany do ich ekspozycji dla zwiedzających w ramach stałych i czasowych wystaw"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"skład przedmiotów rzadkich pod względem sztuki, wyrobu, lub pamiątek historycznych\"; #SJP_1900-1927: \"2 t.: zbiór przedmiotów, mających wartość dla jakiejś nauki, sztuki, a. gałęzi przemysłu; gmach, w którym znajduje się ten zbiór\"; #SJP_1978: \"2 t.: instytucja gromadząca eksponaty z różnych dziedzin, np. z dziedziny kultury, sztuki, nauki, techniki w celu ich przechowania, konserwacji, naukowego opracowania i upowszechnienia; lokal, budynek mieszczący taką instytucję i eksponaty\""@pl,
-        "https://www.wikidata.org/wiki/Q33506"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function22 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
             owl:hasValue urbanonto:function15 ;
-            owl:onProperty ontohgis:hasProperFunction ],
+            owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
             owl:hasValue urbanonto:function21 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Museum"@de,
-        "museum"@en,
-        "musée"@fr,
-        "museum"@la,
-        "galeria"@pl,
-        "panoptikum"@pl,
-        "muzej"@ru ;
-    ns1:hiddenLabel "gliptoteka"@pl,
-        "pinakoteka"@pl .
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function22 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_119> ;
+    ns1:altLabel "Bibliothek"@de,
+        "Bücherei"@de,
+        "library"@en,
+        "bibliothèque"@fr,
+        "bibliotheca"@la,
+        "książnica"@pl,
+        "składnica książek"@pl,
+        "wypożyczalnia książek"@pl,
+        "biblioteka"@ru ;
+    ns1:hiddenLabel "księgarnia"@pl .
 
-<https://purl.org/urbanonto/object_type_df4f4a20-0f4c-49f3-a39c-65f4df335509> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "warsztat"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Budynek produkcyjny z epoki przed manufakturami i fabrykami, ale występujący również później. Warsztat może również działać w jednym z pomieszczeń budynku, którego główna funkcja jest inna. "@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym produkcja jest oparta na pracy rękodzielniczej"@pl ;
-    rdfs:seeAlso """#SJP1814: "robotnia, miejsce, w którym rzemieślnicy pracują; i także stół etc., na którym pracują”
-#SJPDoroszewski: "1. rodzaj stołu specjalnie wyposażonego pod względem technicznym, służącego do wykonywania różnego rodzaju prac; 2. pomieszczenie wyposażone w odpowiednie urządzenia i przyrządy, w którym wykonywane są różnego rodzaju prace rzemieślnicze [...]; zakład wykonujący tego rodzaju prace 3. oddział zgormadzenia wolnomularzy"
-#wiki.pl: "pomieszczenie przeznaczone do wykonywania pracy o charakterze wytwórczym lub usługowym z niezbędnym wyposażeniem"
-#CambridgeDictionary: "a room or building where things are made or repaired using machines and/or tools”"""@pl,
-        "https://www.wikidata.org/wiki/Q656720"^^xsd:url ;
+<https://purl.org/urbanonto/object_type_f61549b8-cce9-4c4a-93bb-fa474689299b> a owl:Class ;
+    rdfs:label "pręgierz"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> ;
+    rdfs:comment "Pręgierz był podstawowym elementem przestrzeni miejskiej w miastach średniowiecznych i nowożytnych, symbolizującym jurysdykcję karną przedindustrialnego miasta, choć korzystano z niego jeszcze w XIX w. Niektóre pręgierze istniały jeszcze w połowie XX w. Przede wszystkim znajdował się na rynkach miast, w bliskości ratuszy, choć zdarzały się przypadki, że stawiano pręgierze na cmentarzach. W każdym razie, pęgierze stawiano w otwartych, dostępnych dla ogółu miejscach."@pl ;
+    rdfs:isDefinedBy "słup, przy którym publicznie wykonywano kary cielesne lub hańbiące"@pl ;
+    rdfs:seeAlso "https://www.wikidata.org/wiki/Q241212"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_402 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_404 ;
+            owl:hasValue ontohgis:function6 ;
             owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#object_116> ;
-    ns1:altLabel "Werkstatt"@de,
-        "workshop"@en,
-        "atelier"@fr,
-        "zakład rzemieślniczy"@pl,
-        "мастерская"@ru ;
-    ns1:hiddenLabel "pracownia"@pl .
-
-<https://purl.org/urbanonto/object_type_e0453af1-21a6-4cab-a6af-6fa9928aac47> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "jurydyka"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Jurydyka jest rodzajem osady lub enklawy wewnątrz miasta charakterystycznym dla Rzeczypospolitej Polsko-Litewskiej. Zwykle układ, przeznaczenie i profil mieszkańców jurydyki były zależne od jej fundatora."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "osada obok miasta królewskiego lub enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu"@pl ;
-    rdfs:seeAlso "#EncGosp_do_1945: \"jurydyka - osada zakładana jako prywatna enklawa miast królewskich na gruntach miejskich, niepodlegająca magistratom i ich sądownictwu\"; #Konarski_1970: \"s. 64, jurydyki - wydzielone osady, kościelne lub magnackie, które nie podlegały jurysdykcji miejskiej\"; #Wiki.pl: \"jurydyka - osada obok miasta królewskiego, rzadziej enklawa na gruntach miejskich, niepodlegająca władzom miejskim i miejskiemu sądownictwu\""@pl,
-        "https://www.wikidata.org/wiki/Q1714048"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_404 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_400 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function8 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_6> ;
-    ns1:altLabel "jurydyka"@de,
-        "jurydyka"@en,
-        "jurydyka"@fr,
-        "Юридика"@ru ;
-    ns1:hiddenLabel "miasteczko"@pl,
-        "miasto"@pl,
-        "osada"@pl .
-
-<https://purl.org/urbanonto/object_type_e769c40a-0707-4cb2-8a95-79a373e0c996> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "szkoła"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Właścicielem może być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiąga kilkadziesiąt w Warszawie, dzielą się według liczby klas. Są też słabo wyróżnione w przestrzeni miasta."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek mieszczący instytucję wychowawczo-edukacyjną"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q3914"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function15 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function17 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_0bcc07a1-ee6f-4227-945f-16e48089945c> ],
-        <https://purl.org/bdot10k#object_120> ;
-    ns1:altLabel "Lehranstalt"@de,
-        "Schule"@de,
-        "school"@en,
-        "école"@fr,
-        "scholae"@la,
-        "ucziliszcze"@ru ;
-    ns1:hiddenLabel "szkoła wyższa"@pl,
-        "uniwersytet"@pl .
-
-<https://purl.org/urbanonto/object_type_ed8a9cae-102e-4c51-b44d-8e6e65a5f4ff> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "fosa"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "W średniowieczu były często stosowanym rodzajem fortyfikacji. Okalały mury obronne. Współcześnie są spotykane w kompleksach zabytkowo-historycznych."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "rodzaj fortyfikacji w postaci głębokiego rowu"@pl ;
-    rdfs:seeAlso "https://www.wikidata.org/wiki/Q88480"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function5 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:object_401 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom ontohgis:settlement_unit52 ],
-        <https://purl.org/bdot10k#class_37> ;
-    ns1:altLabel "Burggraben"@de,
-        "fosse"@en,
-        "moat"@en,
-        "douve"@fr,
-        "Fossa castrensis"@la,
-        "rów forteczny"@pl,
-        "Ров"@ru .
-
-<https://purl.org/urbanonto/object_type_f3cdb5b1-4528-4263-a5e7-1b54ca8478e9> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "szkoła wyższa budynek"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Różnego rodzaju szkoły wyższe najczęściej swoje siedziby mają w miastach. Ich obecność zmienia charakter miasta - napływ osób związanych z funkcjonowaniem danej szkoły wyższej wpływa również na inne sfery życia w mieście takie jak: dostępność miejsc przeznaczonych do mieszkania dla studentów (mieszkania na wynajem, akademiki), oferta gastronomiczna, rozrywkowa czy kulturalna. Istnienie szkoły wyższej może wpłynąć na rozwój danego ośrodka."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek użytkowany przez instytucję prowadzącą studia wyższe"@pl ;
-    rdfs:seeAlso "#Wikipedia: \"Uczelnia, szkoła wyższa - szkoła prowadząca studia wyższe; Akademia  – początkowo zgromadzenie uczonych lub artystów, którzy kształcili się pod kierunkiem wybitnego autorytetu, mające na celu rozwój nauki i sztuki. Nazwa wywodzi się od starożytnej szkoły Platona założonej w gaju Akademosa. Pierwsze nowożytne akademie powstały w epoce renesansu we Włoszech. Model współczesnej akademii nauk jako instytucji publicznej o zasięgu ogólnokrajowym ukształtował się XVII–XVIII wieku. Współcześnie terminem tym nadal określa się zgromadzenia naukowców, np. Polska Akademia Nauk, oraz rodzaj uczelni. W Polsce nazwa ta pojawia się w drugiej połowie XVI w. W okresie przedrozbiorowym określano nią zarówno uniwersytety (Akademia Krakowska), uczelnie aspirujące do miana uniwersytetu (Akademia Lwowska), jak i niektóre wyróżniające się szkoły niższego szczebla (Akademia Chełmińska); Politechnika – rodzaj uczelni akademickiej o profilu technicznym, nastawionej na interdyscyplinarny kierunek kształcenia, zapewniająca możliwość uzyskania tytułów zawodowych inżynier i magister inżynier oraz stopni naukowych doktor nauk technicznych i doktor habilitowany nauk technicznych; Uniwersytet – najstarszy rodzaj uczelni o charakterze nietechnicznym, której celem jest przygotowanie kadr pracowników naukowych oraz kształcenie wykwalifikowanych pracowników\", #Slownik_Języka_Polskiego_PWN_on-line: \"szkoła wyższa - szkoła kształcąca pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; uczelnia - 1. zob. szkoła wyższa, 2. budynek, w którym mieści się szkoła wyższa; akademia - 1. wyższa uczelnia, 2. instytucja skupiająca wybitnych uczonych lub artystów, 3. oficjalna uroczystość zorganizowana z okazji jakiegoś święta; politechnika - wyższa uczelnia techniczna kształcąca specjalistów w różnych dziedzinach techniki i dająca im tytuł inżyniera; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk, mająca prawo nadawania stopni naukowych; wszechnica - 1. wyższa uczelnia, 2. seria wykładów popularnonaukowych\"; #Słownik_Języka_Polskiego_WDoroszewskiego: \"uczelnia - zakład naukowy, szkoła wyższego stopnia typu uniwersyteckiego; szkoła wyższa; czasem również w odniesieniu do innych dawnych typów szkół, zwłaszcza takich, które stanowiły dalszy etap nauczania w stosunku do podstawowego; akademia - 1. Akademia - nazwa szkoły filozoficznej założonej przez Platonw (IV w. p.n.e) w pobliżu Aten, w gaju poświęconym czci herosa Akademosa, 2. instytucja o charakterze społecznym lub państwowym skupiająca artystów, uczonych danej specjalności, 3. nazwa niektórych wyższych zakładów naukowych, 4. uroczyste zebranie publiczne poświęcone uczczeniu jakiejś osobistości lub wydarzeń historycznych, 5. daw. wyższa uczelnia obejmująca wszystkie dziedziny nauk, uniwersytet, wszechnica; politechnika - wyższa szkoła techniczna, pod względem organizacji i uprawnień wzorowana na uniwersytetach, 2. budynek w którym mieści się ta uczelnia; uniwersytet - wyższa uczelnia obejmująca zwykle kilka wydziałów nauk nietechnicznych, przygotowująca kadry pracowników naukowych oraz najwyżej kwalifikowanych pracowników w poszczególnych zawodach; wszechnica - wyższa uczelnia, uniwersytet\"; #Ustawa_z_dnia_20_lipca_2018_r._Prawo_o_szkolnictwie_wyższym: \"Art. 9. 1. Uczelnia posiada osobowość prawną. 2. Uczelnia jest autonomiczna na zasadach określonych w ustawie. 3. Uczelnia prowadzi studia na co najmniej jednym kierunku. 4. Uczelnia prowadzi działalność w swojej siedzibie, a w przypadku gdy siedziba znajduje się na obszarze związku metropolitalnego – na tym obszarze. Uczelnia może prowadzić działalność poza siedzibą albo tym obszarem – w swojej filii. 5. Organy władzy publicznej mogą podejmować rozstrzygnięcia dotyczące uczelni tylko w przypadkach przewidzianych w ustawach.”"@pl,
-        "https://www.wikidata.org/wiki/Q38723"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function15 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function17 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function20 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
         <https://purl.org/bdot10k#category_7> ;
-    ns1:altLabel "Hochschule"@de,
-        "academy"@en,
-        "college"@en,
-        "higher education institution"@en,
-        "university"@en,
-        "grande école"@fr,
-        "université"@fr,
-        "établissement d'enseignement supérieur"@fr,
-        "schola superior"@la,
-        "akademia"@pl,
-        "politechnika"@pl,
-        "uczelnia"@pl,
-        "uczelnia akademicka"@pl,
-        "uczelnia zawodowa"@pl,
-        "uniwersytet"@pl,
-        "wszechnica"@pl,
-        "высшее учебное заведение"@ru ;
-    ns1:hiddenLabel "instytucja badawcza"@pl,
-        "instytut"@pl,
-        "szkoła"@pl .
-
-<https://purl.org/urbanonto/object_type_f9a298e5-8c09-4694-8281-cbec8f236a65> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "klasztor"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "W każdym większym mieście klasztory były ważną częścią przestrzeni realnej i symbolicznej. Często były położone na terenie kompleksu klasztornego, obejmującego również kościół i inne budynki. W klasie budynków klasztor nie jest częścią większej całości; przestrzennie często mieści się w obrębie  obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków klasztor nie ma części składowych; funkcjonalnie składa się m.in. z części sypialnej, jadalni (refektarz), pomieszczeń gospodarczych i innych. Siedziba i własność klasztoru jako instytucji; w Kościele Katolickim - instytucji prawa kanonicznego, podlegający jurysdykcji kościelnej."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek mieszkalny wspólnoty zakonnej"@pl ;
-    rdfs:seeAlso "#SJP_online: \"budynek lub kompleks budynków stanowiących wspólne miejsce zamieszkania zakonnic lub zakonników (https://sjp.pwn.pl/szukaj/klasztor.html); budynek, zespół budynków będących miejscem zamieszkania zakonników lub zakonnic (https://sjp.pl/klasztor)\"; #Wiki.pl: \"Klasztor (czes. klášter, z niem. Kloster, od łac. claustrum, miejsce zamknięte) – budynek lub zespół budynków, w którym mieszkają wspólnoty religijne zakonników albo zakonnic. (https://pl.wikipedia.org/wiki/Klasztor)\"; #Vita: Ein Kloster ist eine Anlage, in der Menschen (in den kontemplativen Orden Mönche oder Nonnen gent) in einer gemeinschaftlichen, auf die Ausübung ihres Glaubens konzentrierten, Lebensweise zusammenleben (Vita communis)\"; #Wiki.de: \"Die Klosteranlage besteht in der Regel aus Kult-, Wohn- und Wirtschaftsgebäuden und eventuell noch weiteren Bauwerken. (https://de.wikipedia.org/wiki/Kloster)\"; #Wiki.en: \"A monastery is a building or complex of buildings comprising the domestic quarters and workplaces of monastics, monks or nuns, whether living in communities or alone (hermits). (https://en.wikipedia.org/wiki/Monastery)\"; #Wiki.es: \"Un monasterio (del griego μοναστήριον, monasterion, derivado del verbo μονάζειν, monazein, \"vivir en solitario\") es una comunidad formada por uno o varios monjes (del griego μοναχός, monachos, \"solitario\") y el edificio donde habitan, en clausura. (https://es.wikipedia.org/wiki/Monasterio)\""@pl ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue ontohgis:function3 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function12 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#class_30> ;
-    ns1:altLabel "Kloster"@de,
-        "monastery"@en,
-        "claustrum"@la,
-        "monasterium"@la ;
-    ns1:hiddenLabel "konwent"@pl,
-        "opactwo"@pl .
-
-<https://purl.org/urbanonto/object_type_fa2841f6-4af6-4429-b911-30cbea17ccc1> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "park"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Parki występują w większości dużych i średnich ośrodków miejskich, ich częścią mogą być fragmenty terenu o innej niż rekreacyjna funkcji, np. komercyjnej. Pojawiają się w XVIII w. (Europa) lub końcu XVIII w. (zabory Rzeczypospolitej) jako ogród spacerowy lub przechadzki. Wcześniej istnieją jako prywatny ogród miejski lub pałacowy. Nazwa \"park\" nie występuje w XIX w. w odniesieniu do parków miejskich, które wówczas też rzadko przybierają większe rozmiary. Park jest importem z angielskiego, który przyjmuje się dopiero po połowie wieku XIX, wcześniej ma znaczenie artyleryjskie (park armat itp.). "@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym"@pl ;
-    rdfs:seeAlso "#SJP_1811: \"brak hasła 'park' i 'przechadzka' (w tym znaczeniu), jedynie jest 'ogród'\"; #Orgelbrand_1861: \"oznaczony jako wyraz obcy i odesłanie do wyrazów 'ogród' i 'zwierzyniec'\"; #SJP_1908: \"wielki ogród ozdobny urządzony na kształt lasku\"; #PWN_1979: \"duży ogród powiązany przestrzennie i kompozycyjnie z warunkami naturalnymi i otaczającym krajobrazem, z alejkami i ścieżkami spacerowymi\""@pl,
-        "https://www.wikidata.org/wiki/Q22698"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_57901678-afe4-4260-96f2-a182d0597123> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function7 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_0f7d21ec-dc8d-4103-84ea-911547264779> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_b09ba64a-5d24-4e8a-8a12-0dc510f1903d> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_a1a9f42d-bee4-46ec-9070-d4d81069957b> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_348cf0a2-f2bf-46f8-bf91-753ebaa94826> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46_is_composed_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_0c99d77d-c4b0-4a62-b052-4ec74540f017> ],
-        [ a owl:Restriction ;
-            owl:hasValue ontohgis:function13 ;
-            owl:onProperty ontohgis:hasProperFunction ],
-        <https://purl.org/bdot10k#category_8> ;
-    ns1:altLabel "Garten"@de,
-        "Parkanlage"@de,
-        "Promenade"@de,
-        "garden"@en,
-        "park"@en,
-        "jardin"@fr,
-        "parque"@fr,
-        "hortus"@la,
-        "ogród"@pl,
-        "ogród spacerowy"@pl,
-        "promenada"@pl,
-        "przechadzki"@pl,
-        "sadź"@pl,
-        "zwierzyniec (dawniej)"@pl,
-        "sad"@ru ;
-    ns1:hiddenLabel "ogród"@pl,
-        "pole"@pl,
-        "zieleniec"@pl .
+    ns1:altLabel "der Pranger"@de,
+        "pillary"@en,
+        "whipping post"@en,
+        "pilori"@fr,
+        "mediastinum"@la,
+        "mediastrum"@la,
+        "prąga"@pl,
+        "Позорный столб"@ru .
 
 rdfs:isDefinedBy rdfs:label "is defined by"@en,
         "jest zdefiniowany przez"@pl .
@@ -1176,37 +1136,56 @@ urbanonto:function16 a <http://purl.obolibrary.org/obo/BFO_0000034>,
         owl:NamedIndividual ;
     rdfs:label "funkcja budowlana"@pl .
 
-<https://purl.org/urbanonto/object_type_0c99d77d-c4b0-4a62-b052-4ec74540f017> a owl:Class ;
-    rdfs:label "restauracja"@pl .
+<https://purl.org/urbanonto/object_type_10c2e9e8-b0af-4265-a886-cf55542a7c39> a owl:Class ;
+    rdfs:label "pokrycie terenu"@pl .
 
-<https://purl.org/urbanonto/object_type_0f7d21ec-dc8d-4103-84ea-911547264779> a owl:Class ;
-    rdfs:label "otulina wokół miasta"@pl .
+<https://purl.org/urbanonto/object_type_1f888e5b-0c7e-4f24-849f-aacf05de083c> a owl:Class ;
+    rdfs:label "dok"@pl .
 
-<https://purl.org/urbanonto/object_type_22b6faf0-8d7c-4daf-87cd-62e29df0f9e3> a owl:Class ;
-    rdfs:label "bastion"@pl .
-
-<https://purl.org/urbanonto/object_type_2b8c9866-c68e-4ff1-85f0-fc77240c8959> a owl:Class ;
+<https://purl.org/urbanonto/object_type_227d6b53-cbdd-426b-8466-8be37ea50cb4> a owl:Class ;
     rdfs:label "kompleks handlowo-usługowy"@pl .
 
-<https://purl.org/urbanonto/object_type_30b55910-03fa-49d0-a89b-0d9c6d4d59cb> a owl:Class ;
-    rdfs:label "peron"@pl .
-
-<https://purl.org/urbanonto/object_type_348cf0a2-f2bf-46f8-bf91-753ebaa94826> a owl:Class ;
-    rdfs:label "fontanna"@pl .
-
-<https://purl.org/urbanonto/object_type_4620b685-2771-467b-baf1-864467ce483d> a owl:Class ;
-    rdfs:label "szkoła wyższa - budynek"@pl .
-
-<https://purl.org/urbanonto/object_type_544cbdcf-2b4f-4f42-8e94-3d19dcdc8c61> a owl:Class ;
+<https://purl.org/urbanonto/object_type_23b4c9ea-bbae-4234-b4b3-303ee9250abb> a owl:Class ;
     rdfs:label "plac zabaw"@pl .
 
-<https://purl.org/urbanonto/object_type_57901678-afe4-4260-96f2-a182d0597123> a owl:Class ;
-    rdfs:label "założenie pałacowe"@pl .
+<https://purl.org/urbanonto/object_type_37ab5a46-314d-4415-9fbd-ea836e7ebec4> a owl:Class ;
+    rdfs:label "molo"@pl .
 
-<https://purl.org/urbanonto/object_type_622969b9-0600-463d-9fa1-5c0066650070> a owl:Class ;
-    rdfs:label "droga"@pl .
+<https://purl.org/urbanonto/object_type_4089c103-03b3-4740-8a80-a677b71ffb46> a owl:Class ;
+    rdfs:label "szkoła wyższa - budynek"@pl .
 
-<https://purl.org/urbanonto/object_type_6e0178d6-09b3-4608-8ac9-cb2f559c6769> a owl:Class ;
+<https://purl.org/urbanonto/object_type_5883e0ad-5527-44db-868c-20d66410f88d> a owl:Class ;
+    rdfs:label "ogród"@pl .
+
+<https://purl.org/urbanonto/object_type_595ea717-768b-4ce4-a584-e189cd09a320> a owl:Class ;
+    rdfs:label "mała litera, bez pogrubienia"@en,
+        "teatr"@pl ;
+    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+    rdfs:comment "Lorem ipsum"@en,
+        "Teatry pojawiały się jako część miasta w antycznej Grecji (widownia na zboczu wzgórza) i w Rzymie (amfiteatry). W miastach nowożytnych pojawiały się od czasów renesansu. W Europie Środkowej funkcjonowały w większych pomieszczeniach, budach, magazynach i w zabudowaniach sekularyzowanych instytucji religijnych (od końca XVIII w.). Odrębne gmachy teatrów pojawiały się najwcześniej w miastach rezydencjonalnych. Od końca XVIII w. duże ośrodki były w stanie wybudować okazałe gmachy teatralne świadczące o randze miasta i dlatego też miały wyjątkowo ozdobne fasady."@pl ;
+    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
+        "budynek, w którym publiczność gromadzi się w celu oglądania spektakli teatralnych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
+    rdfs:seeAlso "#SJP_1861: \"miejsce, dom gdzie aktorowie sztuki grają\"; #SJP_1900-1927: \"7 t.: budowla, w której odbywają się przedstawienia sceniczne\"; #SJP_1978: \"3 t.: 3) instytucja, organizacja zajmująca się wystawianiem utworów scenicznych; zespół aktorów, reżyserów, scenografów, muzyków, mechników pracujących w tej instytucji; 4) budynek, pomieszczenie przystosowane do wystawiania utworów scenicznych; także: widzowie zebrani na przedstawieniu, widownia\""@pl,
+        "https://www.wikidata.org/wiki/Q24354"^^xsd:url ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue urbanonto:function17 ;
+            owl:onProperty ontohgis:hasImproperFunction ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function20 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        <https://purl.org/bdot10k#object_118> ;
+    ns1:altLabel "Theater"@de,
+        "theatre"@en,
+        "théâtre"@fr,
+        "theatrum"@la,
+        "amfiteatr"@pl,
+        "odeon"@pl,
+        "teatr"@ru .
+
+<https://purl.org/urbanonto/object_type_5e79d381-05ed-478b-b731-e1e7d8864b42> a owl:Class ;
+    rdfs:label "restauracja"@pl .
+
+<https://purl.org/urbanonto/object_type_60f24c3b-b544-4921-83e3-9c46b00b22f5> a owl:Class ;
     rdfs:label "mała litera, bez pogrubienia"@en,
         "magazyn"@pl ;
     ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
@@ -1221,23 +1200,23 @@ urbanonto:function16 a <http://purl.obolibrary.org/obo/BFO_0000034>,
 #CambridgeDictionary: "a large building for storing goods that are going to be sold\""""@pl,
         "https://www.wikidata.org/wiki/Q1362225"^^xsd:url ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_227d6b53-cbdd-426b-8466-8be37ea50cb4> ],
+        [ a owl:Restriction ;
+            owl:hasValue urbanonto:function22 ;
+            owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
             owl:hasValue ontohgis:function8 ;
             owl:onProperty ontohgis:hasProperFunction ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc_crm:P46i_forms_part_of ;
+            owl:someValuesFrom <https://purl.org/urbanonto/object_type_1685f86f-d637-4847-8275-be6c9e76176b> ],
         [ a owl:Restriction ;
             owl:hasValue ontohgis:function2 ;
             owl:onProperty ontohgis:hasImproperFunction ],
         [ a owl:Restriction ;
             owl:hasValue ontohgis:object_402 ;
             owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_58e80f7b-116b-450f-9b18-1bf1a5b81095> ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc_crm:P46i_forms_part_of ;
-            owl:someValuesFrom <https://purl.org/urbanonto/object_type_2b8c9866-c68e-4ff1-85f0-fc77240c8959> ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function22 ;
-            owl:onProperty ontohgis:hasProperFunction ],
         <https://purl.org/bdot10k#object_117> ;
     ns1:altLabel "Bodenspeicher"@de,
         "Fruchtkasten"@de,
@@ -1264,53 +1243,37 @@ urbanonto:function16 a <http://purl.obolibrary.org/obo/BFO_0000034>,
         "szopa"@pl,
         "wiata"@pl .
 
-<https://purl.org/urbanonto/object_type_9327267a-de0d-4eec-9c49-a016b9c31074> a owl:Class ;
-    rdfs:label "dok"@pl .
+<https://purl.org/urbanonto/object_type_664c95f8-d6fe-4450-b67f-e472540af22c> a owl:Class ;
+    rdfs:label "bastion"@pl .
 
-<https://purl.org/urbanonto/object_type_a1a9f42d-bee4-46ec-9070-d4d81069957b> a owl:Class ;
-    rdfs:label "mała litera, bez pogrubienia"@en,
-        "teatr"@pl ;
-    ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-    rdfs:comment "Lorem ipsum"@en,
-        "Teatry pojawiały się jako część miasta w antycznej Grecji (widownia na zboczu wzgórza) i w Rzymie (amfiteatry). W miastach nowożytnych pojawiały się od czasów renesansu. W Europie Środkowej funkcjonowały w większych pomieszczeniach, budach, magazynach i w zabudowaniach sekularyzowanych instytucji religijnych (od końca XVIII w.). Odrębne gmachy teatrów pojawiały się najwcześniej w miastach rezydencjonalnych. Od końca XVIII w. duże ośrodki były w stanie wybudować okazałe gmachy teatralne świadczące o randze miasta i dlatego też miały wyjątkowo ozdobne fasady."@pl ;
-    rdfs:isDefinedBy "mała litera, bez kropki na końcu"@en,
-        "budynek, w którym publiczność gromadzi się w celu oglądania spektakli teatralnych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
-    rdfs:seeAlso "#SJP_1861: \"miejsce, dom gdzie aktorowie sztuki grają\"; #SJP_1900-1927: \"7 t.: budowla, w której odbywają się przedstawienia sceniczne\"; #SJP_1978: \"3 t.: 3) instytucja, organizacja zajmująca się wystawianiem utworów scenicznych; zespół aktorów, reżyserów, scenografów, muzyków, mechników pracujących w tej instytucji; 4) budynek, pomieszczenie przystosowane do wystawiania utworów scenicznych; także: widzowie zebrani na przedstawieniu, widownia\""@pl,
-        "https://www.wikidata.org/wiki/Q24354"^^xsd:url ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue urbanonto:function17 ;
-            owl:onProperty ontohgis:hasImproperFunction ],
-        [ a owl:Restriction ;
-            owl:hasValue urbanonto:function20 ;
-            owl:onProperty ontohgis:hasProperFunction ] ;
-    ns1:altLabel "Theater"@de,
-        "theatre"@en,
-        "théâtre"@fr,
-        "theatrum"@la,
-        "amfiteatr"@pl,
-        "odeon"@pl,
-        "teatr"@ru .
+<https://purl.org/urbanonto/object_type_6f1a3762-cbeb-4895-9783-79ce43f51192> a owl:Class ;
+    rdfs:label "otulina wokół miasta"@pl .
 
-<https://purl.org/urbanonto/object_type_a465633e-5b4f-4b53-bab3-626f253bb45f> a owl:Class ;
-    rdfs:label "molo"@pl .
+<https://purl.org/urbanonto/object_type_ad458f5d-bbd8-485b-98d4-5780ede0d5f9> a owl:Class ;
+    rdfs:label "założenie pałacowe"@pl .
 
-<https://purl.org/urbanonto/object_type_b09ba64a-5d24-4e8a-8a12-0dc510f1903d> a owl:Class ;
+<https://purl.org/urbanonto/object_type_af3e6365-d10f-4121-926e-994abacbd2a9> a owl:Class ;
+    rdfs:label "peron"@pl .
+
+<https://purl.org/urbanonto/object_type_af747017-1db5-4326-af9b-b092bf7b62ea> a owl:Class ;
+    rdfs:label "fontanna"@pl .
+
+<https://purl.org/urbanonto/object_type_bf9a610b-1315-4f02-86e9-2f5c425bd629> a owl:Class ;
     rdfs:label "pawilon"@pl .
 
-<https://purl.org/urbanonto/object_type_b9f930b6-3d89-4722-8166-a521d385ff63> a owl:Class ;
-    rdfs:label "ogród"@pl .
+<https://purl.org/urbanonto/object_type_d3f21a79-8f3b-4db4-a214-497a95aae948> a owl:Class ;
+    rdfs:label "droga"@pl .
 
-<https://purl.org/urbanonto/object_type_c1bb2301-c6c7-4e67-9c61-2bad51033877> a owl:Class ;
+<https://purl.org/urbanonto/object_type_feea228c-6413-4bd7-8fb7-b566e7ad225b> a owl:Class ;
     rdfs:label "sieć kolejowa"@pl .
 
-<https://purl.org/urbanonto/object_type_e9bb9335-8ef7-420a-97d2-4ab64998f42b> a owl:Class ;
-    rdfs:label "pokrycie terenu"@pl .
+<https://purl.org/urbanonto/object_type_010b05ab-ecf5-41a9-9b1f-e0534114f565> a owl:Class ;
+    rdfs:label "boisko"@pl .
 
-<https://purl.org/urbanonto/object_type_0bcc07a1-ee6f-4227-945f-16e48089945c> a owl:Class ;
+<https://purl.org/urbanonto/object_type_2dd34f1d-6b44-477b-9090-cf2db3b5d2bc> a owl:Class ;
     rdfs:label "teren zabudowany"@pl .
 
-<https://purl.org/urbanonto/object_type_bf0226c5-c52a-424b-9821-e972e0308e64> a owl:Class ;
-    rdfs:label "boisko"@pl .
+<https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> a cidoc_crm:E21_Person .
 
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> a cidoc_crm:E21_Person .
 
@@ -1324,12 +1287,10 @@ urbanonto:function19 a <http://purl.obolibrary.org/obo/BFO_0000034>,
         owl:NamedIndividual ;
     rdfs:label "funkcja dobroczynna"@pl .
 
-<https://purl.org/urbanonto/object_type_58e80f7b-116b-450f-9b18-1bf1a5b81095> a owl:Class ;
+<https://purl.org/urbanonto/object_type_1685f86f-d637-4847-8275-be6c9e76176b> a owl:Class ;
     rdfs:label "kompleks przemysłowo-gospodarczy"@pl .
 
 <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> a cidoc_crm:E21_Person .
-
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> a cidoc_crm:E21_Person .
 
 urbanonto:function21 a <http://purl.obolibrary.org/obo/BFO_0000034>,
         owl:NamedIndividual ;
