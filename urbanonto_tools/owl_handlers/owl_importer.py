@@ -1,5 +1,6 @@
-from rdflib import Graph, OWL, URIRef
 import logging
+
+from rdflib import Graph, OWL, URIRef
 
 
 def add_recursively_owl_imports_to_ontology(ontology: Graph, ontology_iri: URIRef) -> Graph:

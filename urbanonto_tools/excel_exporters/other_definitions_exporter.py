@@ -1,17 +1,19 @@
+import logging
 import re
 
 from rdflib import URIRef, Graph, Literal, RDFS, RDF
 
+from constants.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
+from constants.re_constants import *
 from excel_exporters.export_helpers import create_iri_for_object_in_type
-from excel_exporters.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
-from excel_exporters.owl_axiom_creator import add_owl_annotation_axiom_to_graph
-from excel_exporters.re_constants import *
+from owl_handlers.owl_axiom_creator import add_owl_annotation_axiom_to_graph
 from owl_handlers.register import Register
-import logging
+
 other_definitions_re = re.compile(DEFINITION_START + '(.+?)' + DEFINITION_SEPARATOR + '(.+?)' + DEFINITION_END)
 
 
-def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_string: str, entity: URIRef, ontology: Graph):
+def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_string: str, entity: URIRef,
+                                    ontology: Graph):
     other_definitions = __get_other_definitions_from_string(other_definitions_string=other_definitions_string)
     for other_definition in other_definitions:
         other_definition_source_string = other_definition[0].strip()
@@ -20,11 +22,13 @@ def add_other_definitions_to_entity(excel_sheet_name: str, other_definitions_str
         if other_definition_source_label in Register.labels_to_iris_map.keys():
             other_definition_source_iri = Register.labels_to_iris_map[other_definition_source_label]
         else:
-            other_definition_source_iri = create_iri_for_object_in_type(type_local_fragment='source', index=other_definition_source_iri_string)
+            other_definition_source_iri = create_iri_for_object_in_type(type_local_fragment='source',
+                                                                        index=other_definition_source_iri_string)
             ontology.add((other_definition_source_iri, RDF.type, SOURCE_CLASS))
             Register.labels_to_iris_map[other_definition_source_label] = other_definition_source_iri
         if other_definition_source_iri is None:
-            logging.warning('Exporting other definitions from ' + excel_sheet_name + ' was not able to create iri for ' + other_definition_source_iri_string)
+            logging.warning(
+                'Exporting other definitions from ' + excel_sheet_name + ' was not able to create iri for ' + other_definition_source_iri_string)
             continue
         other_definition_string = other_definition[1].strip()
         other_definition = Literal(other_definition_string)

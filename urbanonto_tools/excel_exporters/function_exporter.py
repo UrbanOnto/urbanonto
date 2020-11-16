@@ -1,7 +1,8 @@
-from rdflib import URIRef, Graph, Literal, RDFS
 import logging
 
-from owl_handlers.owl_constructors import get_owl_has_value_restriction_to_graph
+from rdflib import URIRef, Graph, Literal, RDFS
+
+from owl_handlers.owl_restriction_getter import get_owl_has_value_restriction
 
 
 def add_functions_to_entity(
@@ -17,14 +18,16 @@ def add_functions_to_entity(
         function_label = Literal(function_stripped, lang='pl')
         function_objects = list(ontology_with_imports.subjects(predicate=RDFS.label, object=function_label))
         if len(function_objects) == 0:
-            logging.warning('Exporting from ' + excel_sheet_name + ' I was not able to find function with name ' + function)
+            logging.warning(
+                'Exporting from ' + excel_sheet_name + ' I was not able to find function with name ' + function)
         else:
             if len(function_objects) > 1:
-                logging.warning('Exporting from ' + excel_sheet_name + ' multiple functions were found for name ' + function)
+                logging.warning(
+                    'Exporting from ' + excel_sheet_name + ' multiple functions were found for name ' + function)
             else:
                 function_object = function_objects[0]
                 owl_value_restriction_for_function = \
-                    get_owl_has_value_restriction_to_graph(
+                    get_owl_has_value_restriction(
                         owl_object_property=function_property,
                         value=function_object,
                         ontology=ontology)
