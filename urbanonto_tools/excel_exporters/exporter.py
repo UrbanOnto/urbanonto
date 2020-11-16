@@ -3,12 +3,12 @@ import logging
 import pandas
 from rdflib import Graph, Literal, RDFS, OWL, RDF, SKOS, XSD
 
-from excel_exporters.bdot10k_data_exporter import export_bdot10k_data
 from excel_exporters.excel_file_constants import *
 from excel_exporters.export_helpers import create_iri_for_object_in_type
 from excel_exporters.function_exporter import add_functions_to_entity
 from excel_exporters.mereology_exporter import add_parts_to_entity, add_wholes_to_entity
 from excel_exporters.ontology_constants import *
+from excel_exporters.reference_data_exporter import export_reference_data
 from owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
 from owl_handlers.register import Register
 
@@ -80,6 +80,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
             ontology.add((object_type, RDFS.label, name_en_literal))
         else:
             logging.info('No EN name in ' + sheet_name)
+
     if index == DEFINITION_ROW_NO:
         if len(pl_row_value) > 0:
             def_pl_literal = Literal(pl_row_value, lang='pl')
@@ -91,6 +92,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
             ontology.add((object_type, RDFS.isDefinedBy, def_en_literal))
         else:
             logging.info('No EN definition in ' + sheet_name)
+
     if index == MAIN_FUNCTION_ROW_NO:
         if len(pl_row_value) > 0:
             add_functions_to_entity(
@@ -112,6 +114,17 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
                 ontology=ontology,
                 ontology_with_imports=ontology_with_imports,
                 excel_sheet_name=sheet_name)
+
+    if index == FORM_ROW_NO:
+        export_reference_data(
+            iri=object_type,
+            data=pl_row_value,
+            ontology=ontology,
+            reference_ontology=ontology_with_imports,
+            sheet_name=sheet_name,
+            reference_type='forma',
+            reference_link_type=HAS_FORM)
+
     if index == PART_ROW_NO:
         if len(pl_row_value) > 0:
             add_parts_to_entity(
@@ -119,6 +132,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
                 parts_string=pl_row_value,
                 entity=object_type,
                 ontology=ontology)
+
     if index == WHOLE_ROW_NO:
         if len(pl_row_value) > 0:
             add_wholes_to_entity(
@@ -126,6 +140,17 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
                 wholes_string=pl_row_value,
                 entity=object_type,
                 ontology=ontology)
+
+    if index == LEGAL_STATUS_ROW_NO:
+        export_reference_data(
+            iri=object_type,
+            data=pl_row_value,
+            ontology=ontology,
+            reference_ontology=ontology_with_imports,
+            sheet_name=sheet_name,
+            reference_type='status prawny',
+            reference_link_type=HAS_STATUS)
+
     if index == COMMENT_ROW_NO:
         if len(pl_row_value) > 0:
             comment_pl_literal = Literal(pl_row_value, lang='pl')
@@ -137,6 +162,7 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
             ontology.add((object_type, RDFS.comment, comment_en_literal))
         else:
             logging.info('No EN comment in ' + sheet_name)
+
     if index == SYNONYM_PL_ROW_NO:
         if len(pl_row_value) > 0:
             __split_cell_into_literals(cell=pl_row_value, subject=object_type, predicate=SKOS.altLabel, lang='pl',
@@ -170,24 +196,22 @@ def __export_row(sheet_name: str, index, row, ontology: Graph, ontology_with_imp
                                        ontology=ontology)
     if index == OTHER_DEF_ROW_NO:
         if len(pl_row_value) > 0:
-            # add_other_definitions_to_entity(
-            #     excel_sheet_name=excel_sheet_name,
-            #     other_definitions_string=pl_row_value,
-            #     entity=object_type, ontology=ontology)
             other_def_pl_literal = Literal(pl_row_value, lang='pl')
             ontology.add((object_type, RDFS.seeAlso, other_def_pl_literal))
-        # if len(en_row_value) > 0:
-        #     other_def_en_literal = Literal(en_row_value, lang='en')
-        #     ontology.add((object_type, RDFS.seeAlso, other_def_en_literal))
-    if not bdot10k_found:
-        bdot10k_found = \
-            export_bdot10k_data(
-                index=index,
-                data=pl_row_value,
-                iri=object_type,
-                ontology=ontology,
-                bdot10k_ontology=ontology_with_imports,
-                sheet_name=sheet_name)
+
+    if index == BDOT_L1_ROW_NO or index == BDOT_L2_ROW_NO or index == BDOT_L3_ROW_NO:
+        if not bdot10k_found:
+            bdot10k_found = \
+                export_reference_data(
+                    data=pl_row_value,
+                    iri=object_type,
+                    ontology=ontology,
+                    reference_ontology=ontology_with_imports,
+                    sheet_name=sheet_name,
+                    reference_link_type=RDFS.subClassOf,
+                    reference_type='BDOT10K',
+                    datatype=XSD.string)
+
     if index == WIKIDATA_ROW_NO:
         if len(pl_row_value) > 0:
             wikidata_id_literal = Literal('https://www.wikidata.org/wiki/' + pl_row_value, datatype=XSD.url)
