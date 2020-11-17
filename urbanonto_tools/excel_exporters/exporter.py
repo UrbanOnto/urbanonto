@@ -126,7 +126,7 @@ def __export_pl_row(sheet_name: str, index, row, ontology: Graph, ontology_with_
             sheet_name=sheet_name,
             reference_type='forma',
             reference_link_type=HAS_FORM,
-            reference_object_function=get_owl_has_value_restriction,
+            reference_object_function=get_owl_some_values_restriction,
             literal_creator=create_literal_with_lang)
 
     if index == PART_ROW_NO:
@@ -199,18 +199,20 @@ def __export_pl_row(sheet_name: str, index, row, ontology: Graph, ontology_with_
             ontology.add((object_type, RDFS.seeAlso, other_def_pl_literal))
 
     if index == BDOT_L1_ROW_NO or index == BDOT_L2_ROW_NO or index == BDOT_L3_ROW_NO:
+        bdot10k_locally_found = \
+            export_reference_data(
+                reference_data=pl_row_value,
+                iri=object_type,
+                ontology=ontology,
+                reference_ontology=ontology_with_imports,
+                sheet_name=sheet_name,
+                reference_link_type=RDFS.subClassOf,
+                reference_type='BDOT10K',
+                reference_object_function=get_null_restriction,
+                literal_creator=create_literal_with_type)
+
         if not bdot10k_found:
-            bdot10k_found = \
-                export_reference_data(
-                    reference_data=pl_row_value,
-                    iri=object_type,
-                    ontology=ontology,
-                    reference_ontology=ontology_with_imports,
-                    sheet_name=sheet_name,
-                    reference_link_type=RDFS.subClassOf,
-                    reference_type='BDOT10K',
-                    reference_object_function=get_null_restriction,
-                    literal_creator=create_literal_with_type)
+            bdot10k_found = bdot10k_locally_found
 
     if index == WIKIDATA_ROW_NO:
         if len(pl_row_value) > 0:
