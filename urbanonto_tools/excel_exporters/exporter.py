@@ -22,7 +22,7 @@ def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontolo
     ontology_with_imports = Graph()
     ontology_with_imports = ontology_with_imports.parse(ontology_iri, format='n3')
     ontology_with_imports = add_recursively_owl_imports_to_ontology(ontology=ontology_with_imports,
-                                                                    ontology_iri=URIRef('https://purl.org/urbanonto'))
+                                                                    ontology_iri=URIRef('http://purl.org/urbanonto'))
 
     Register.update_register_from_ontology(ontology=ontology_with_imports)
 
