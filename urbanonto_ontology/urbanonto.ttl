@@ -7,34 +7,40 @@
 @prefix ontohgis: <http://purl.org/ontohgis#> .
 @prefix cidoc_crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix urbanonto: <https://purl.org/urbanonto#> .
-@base <https://purl.org/urbanonto> .
+@base <http://purl.org/urbanonto> .
 
-<https://purl.org/urbanonto> rdf:type owl:Ontology ;
-                              owl:imports <http://purl.org/bdot10k> ,
-                                          <http://purl.org/ontohgis> ;
-                              rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
-                              rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/" ;
-                              owl:versionInfo 0.1 .
+<http://purl.org/urbanonto> rdf:type owl:Ontology ;
+                             owl:imports <http://purl.org/bdot10k> ,
+                                         <http://purl.org/ontohgis> ;
+                             rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
+                             rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/" ;
+                             owl:versionInfo 0.1 .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/urbanonto#isAlsoDefinedBy
+:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
+                 rdfs:label "is also defined in"@en ,
+                            "jest również zdefiniowany przez"@pl ;
+                 rdfs:subPropertyOf rdfs:isDefinedBy .
+
 
 ###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
 rdfs:isDefinedBy rdfs:label "is defined by"@en ,
                             "jest zdefiniowany przez"@pl .
 
 
-###  https://purl.org/urbanonto#isAlsoDefinedBy
-urbanonto:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
-                          rdfs:label "is also defined in"@en ,
-                                     "jest również zdefiniowany przez"@pl ;
-                          rdfs:subPropertyOf rdfs:isDefinedBy .
-
-
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.org/urbanonto/multipolygon
+<http://purl.org/urbanonto/multipolygon> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiSurface> ;
+                                         rdfs:label "multipoligon"@pl .
+
 
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdfs:subClassOf cidoc_crm:E26_Physical_Feature .
@@ -86,98 +92,92 @@ urbanonto:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
                                           rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing .
 
 
-###  https://purl.org/urbanonto/multipolygon
-:multipolygon rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiSurface> ;
-              rdfs:label "multipoligon"@pl .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://purl.org/urbanonto#function15
-urbanonto:function15 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja edukacyjna"@pl .
-
-
-###  https://purl.org/urbanonto#function16
-urbanonto:function16 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja budowlana"@pl .
-
-
-###  https://purl.org/urbanonto#function17
-urbanonto:function17 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja wychowawcza"@pl .
-
-
-###  https://purl.org/urbanonto#function18
-urbanonto:function18 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja opiekuńcza"@pl .
-
-
-###  https://purl.org/urbanonto#function19
-urbanonto:function19 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja dobroczynna"@pl .
-
-
-###  https://purl.org/urbanonto#function20
-urbanonto:function20 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja rozrywkowa"@pl .
-
-
-###  https://purl.org/urbanonto#function21
-urbanonto:function21 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja kulturalna"@pl .
-
-
-###  https://purl.org/urbanonto#function22
-urbanonto:function22 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja magazynowa"@pl .
-
-
-###  https://purl.org/urbanonto#property_right_1
-urbanonto:property_right_1 rdf:type owl:NamedIndividual ,
-                                    cidoc_crm:E30_Right ;
-                           rdfs:label "własność publiczna"@pl .
-
-
-###  https://purl.org/urbanonto#property_right_2
-urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
-                                    cidoc_crm:E30_Right ;
-                           rdfs:label "własność prywatna"@pl .
-
-
-###  https://purl.org/urbanonto#property_right_3
-urbanonto:property_right_3 rdf:type owl:NamedIndividual ,
-                                    cidoc_crm:E30_Right ;
-                           rdfs:label "własność publiczno-prywatna"@pl .
-
-
-###  https://purl.org/urbanonto/function23
-:function23 rdf:type owl:NamedIndividual ,
+###  http://purl.org/urbanonto#function15
+:function15 rdf:type owl:NamedIndividual ,
                      <http://purl.obolibrary.org/obo/BFO_0000034> ;
-            rdfs:label "funkcja estetyczna"@pl .
+            rdfs:label "funkcja edukacyjna"@pl .
 
 
-###  https://purl.org/urbanonto/function24
-:function24 rdf:type owl:NamedIndividual ,
+###  http://purl.org/urbanonto#function16
+:function16 rdf:type owl:NamedIndividual ,
                      <http://purl.obolibrary.org/obo/BFO_0000034> ;
-            rdfs:label "funkcja bycia miejscem spotkań"@pl .
+            rdfs:label "funkcja budowlana"@pl .
 
 
-###  https://purl.org/urbanonto/function25
-:function25 rdf:type owl:NamedIndividual ,
+###  http://purl.org/urbanonto#function17
+:function17 rdf:type owl:NamedIndividual ,
                      <http://purl.obolibrary.org/obo/BFO_0000034> ;
-            rdfs:label "funkcja reprezentacyjna"@pl .
+            rdfs:label "funkcja wychowawcza"@pl .
+
+
+###  http://purl.org/urbanonto#function18
+:function18 rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/BFO_0000034> ;
+            rdfs:label "funkcja opiekuńcza"@pl .
+
+
+###  http://purl.org/urbanonto#function19
+:function19 rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/BFO_0000034> ;
+            rdfs:label "funkcja dobroczynna"@pl .
+
+
+###  http://purl.org/urbanonto#function20
+:function20 rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/BFO_0000034> ;
+            rdfs:label "funkcja rozrywkowa"@pl .
+
+
+###  http://purl.org/urbanonto#function21
+:function21 rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/BFO_0000034> ;
+            rdfs:label "funkcja kulturalna"@pl .
+
+
+###  http://purl.org/urbanonto#function22
+:function22 rdf:type owl:NamedIndividual ,
+                     <http://purl.obolibrary.org/obo/BFO_0000034> ;
+            rdfs:label "funkcja magazynowa"@pl .
+
+
+###  http://purl.org/urbanonto#property_right_1
+:property_right_1 rdf:type owl:NamedIndividual ,
+                           cidoc_crm:E30_Right ;
+                  rdfs:label "własność publiczna"@pl .
+
+
+###  http://purl.org/urbanonto#property_right_2
+:property_right_2 rdf:type owl:NamedIndividual ,
+                           cidoc_crm:E30_Right ;
+                  rdfs:label "własność prywatna"@pl .
+
+
+###  http://purl.org/urbanonto#property_right_3
+:property_right_3 rdf:type owl:NamedIndividual ,
+                           cidoc_crm:E30_Right ;
+                  rdfs:label "własność publiczno-prywatna"@pl .
+
+
+###  http://purl.org/urbanonto/function23
+<http://purl.org/urbanonto/function23> rdf:type owl:NamedIndividual ,
+                                                <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                                       rdfs:label "funkcja estetyczna"@pl .
+
+
+###  http://purl.org/urbanonto/function24
+<http://purl.org/urbanonto/function24> rdf:type owl:NamedIndividual ,
+                                                <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                                       rdfs:label "funkcja bycia miejscem spotkań"@pl .
+
+
+###  http://purl.org/urbanonto/function25
+<http://purl.org/urbanonto/function25> rdf:type owl:NamedIndividual ,
+                                                <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                                       rdfs:label "funkcja reprezentacyjna"@pl .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
