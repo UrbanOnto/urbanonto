@@ -416,7 +416,7 @@ bdot10k:class_50 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_51
 bdot10k:class_51 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks sakralny i cmentarzy"^^xsd:string ;
+                 rdfs:label "kompleks sakralny i cmentarz"^^xsd:string ;
                  bdot10k:hasBdot10kCode "KUSC"^^xsd:string .
 
 
