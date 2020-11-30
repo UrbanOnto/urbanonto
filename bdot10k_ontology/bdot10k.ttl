@@ -444,7 +444,7 @@ bdot10k:class_54 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_55
 bdot10k:class_55 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "obiekty o znaczeniu orientacyjnym w terenie"^^xsd:string ;
+                 rdfs:label "obiekt o znaczeniu orientacyjnym w terenie"^^xsd:string ;
                  bdot10k:hasBdot10kCode "OIOR"^^xsd:string .
 
 

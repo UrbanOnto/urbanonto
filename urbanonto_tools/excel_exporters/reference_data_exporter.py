@@ -14,6 +14,7 @@ def export_reference_data(
         reference_link_type: URIRef,
         reference_object_function: Callable,
         literal_creator: Callable):
+    reference_data = reference_data.strip()
     reference_data_found = False
     if len(reference_data) > 0:
         reference_literal = literal_creator(literal_string=reference_data)
