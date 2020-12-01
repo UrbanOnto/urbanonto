@@ -605,7 +605,7 @@ bdot10k:object_112 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#object_113
 bdot10k:object_113 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki handlowo ‐usługowe"^^xsd:string ;
+                   rdfs:label "budynki handlowo‐usługowe"^^xsd:string ;
                    bdot10k:hasBdot10kCode "BUBD08"^^xsd:string .
 
 
