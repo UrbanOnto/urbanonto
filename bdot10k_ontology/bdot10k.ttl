@@ -297,7 +297,7 @@ bdot10k:class_35 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_36
 bdot10k:class_36 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "umocnienie drogowe, kolejowe"^^xsd:string ;
+                 rdfs:label "umocnienie drogowe, kolejowe i wodne"^^xsd:string ;
                  bdot10k:hasBdot10kCode "BUUO"^^xsd:string .
 
 
