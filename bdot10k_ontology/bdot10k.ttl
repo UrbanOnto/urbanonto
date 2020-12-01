@@ -696,7 +696,7 @@ bdot10k:object_124 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#object_125
 bdot10k:object_125 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "obiekty budowlane wpisane do rejestru zabytków i objęte indywidualną ochroną konserwatorską oraz nieruchome,archeologiczne dobra kultury"^^xsd:string ;
+                   rdfs:label "obiekty budowlane wpisane do rejestru zabytków i objęte indywidualną ochroną konserwatorską oraz nieruchome, archeologiczne dobra kultury"^^xsd:string ;
                    bdot10k:hasBdot10kCode "BUBD20"^^xsd:string .
 
 
