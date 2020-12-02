@@ -1,6 +1,6 @@
 ('D:\\projects\\ihpan\\urbanonto\\urbanonto_tools\\start_ups\\build\\import_validator\\setuptools-40.8.0-py3.6.egg',
  None,
- {'EGG-INFO', '*.pyd', '*.pyw', '*.cp36-win_amd64.pyd', '*.py', '*.pyc'},
+ {'*.pyd', 'EGG-INFO', '*.pyc', '*.pyw', '*.py', '*.cp36-win_amd64.pyd'},
  'DATA',
  [('setuptools\\cli-32.exe',
    'D:\\projects\\ihpan\\urbanonto\\urbanonto_tools\\start_ups\\build\\import_validator\\setuptools-40.8.0-py3.6.egg\\setuptools\\cli-32.exe',
