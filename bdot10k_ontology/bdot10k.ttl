@@ -7,7 +7,12 @@
 @prefix bdot10k: <https://purl.org/bdot10k#> .
 @base <https://purl.org/bdot10k> .
 
-<https://purl.org/bdot10k> rdf:type owl:Ontology .
+<https://purl.org/bdot10k> rdf:type owl:Ontology ;
+                            rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
+                            rdfs:isDefinedBy "http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20112791642"^^xsd:anyURI ;
+                            rdfs:label "klasyfikacja obiektów na trzech poziomach szczegółowości, z oznaczeniami kodowymi"@pl ,
+                                       "ontology of BDOTk system"@en ;
+                            owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
