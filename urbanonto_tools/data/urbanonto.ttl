@@ -724,7 +724,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function22
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Odpady przemysłowe pojawiają się w części miast przez cały badany okres (głównie miasta górnicze), ale w większości miast wysypiska na odpady przemysłowe oddzielne od wysypisk odpadów komunalnych pojawiają dopiero po rewolucji przemysłowej. Istnieją miasta, w których historii nigdy nie było takich wysypisk."@pl ;
                                                   rdfs:isDefinedBy "teren gromadzenia odpadów hutniczych lub innych powstałych w wyniku działalności przemysłowej"@pl ;
                                                   rdfs:label "teren składowania odpadów przemysłowych"@pl ;
@@ -1006,7 +1006,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Falochrony występowały w miastach, szczególnie w miastach na wybrzeżu morskim, przez cały badany okres."@pl ;
                                                   rdfs:isDefinedBy "przegroda umiejscowiona na brzegu morza lub rzeki, prostopadle do brzegu lub nurtu, mająca na celu ochronę brzegu przed erozją wywoływaną falami lub ochronę statków w porcie"@pl ;
                                                   rdfs:label "falochron"@pl ;
@@ -1197,7 +1197,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Ostrogi występują głownie w miastach nadmorskich lub położonych nad rzekami o znaczącym nurcie."@pl ;
                                                   rdfs:isDefinedBy "przegroda umiejscowiona na brzegu rzeki lub morza służąca ochronie brzegu i kształtowaniu dna lub ochronie przypór mostowych"@pl ;
                                                   rdfs:label "ostroga"@pl ;
@@ -1370,7 +1370,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Baszta jest popularną częścią fortyfikacji miejskich."@pl ;
                                                   rdfs:isDefinedBy "element fortyfikacji miejskich, okrągły lub wieloboczny,  wysunięty przed lico murów miejskich, ale będący ich częścią, wyższy niż mur miejski"@pl ;
                                                   rdfs:label "baszta"@pl ;
@@ -1440,7 +1440,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Kramy występują we wszystkich miastach przez cały okres ich istnienia."@pl ;
                                                   rdfs:isDefinedBy "niewielki sklep, oferujący na sprzedaż jeden rodzaj towaru"@pl ;
                                                   rdfs:label "kram"@pl ;
@@ -1607,7 +1607,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Nazwy są ważnym atrybutem i charakteryzują wszystkie obiekty, w tym nazwy własne charakteryzują liczne instancje."@pl ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umieszczona w poprzek koryta rzeki służąca spiętrzaniu wody wyposażona w elementy ruchome"@pl ;
                                                   rdfs:label "jaz ruchomy lub zastawka piętrząca"@pl ;
@@ -1632,7 +1632,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Schody były stałą częścią przestrzeni miejskiej większości miast umożliwiającą sprawną komunikację piesze między częściami miasta położonymi na różnych poziomach. "@pl ;
                                                   rdfs:isDefinedBy "szereg stopni umożliwiających przejście między różnymi poziomami"@pl ;
                                                   rdfs:label "schody"@pl ;
@@ -1711,7 +1711,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Miejsca poboru opłat zazwyczaj były umiejscawiane na granicy miast, często w obrębie bram miejskich, ale w miastach nieotoczonych w danej chwili murami były to oddzielne budynki."@pl ;
                                                   rdfs:isDefinedBy "budynek, zazwyczaj niewielki, w którym podróżujący uiszczają opłatę za przejazd drogą"@pl ;
                                                   rdfs:label "miejsce poboru opłat"@pl ;
@@ -2027,7 +2027,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Budynki produkcyjne zwierząt hodowlanych były istotną częścią przestrzeni miejskiej przez całą epokę przedprzemysłową, a w pewnym zakresie funkcjonowały także w epokach późniejszych. Budynki znajdowały się w różnych częściach miasta, przez cały okres przedprzemysłowy w obrębie większości działek mieszkalnych znajdował się co najmniej jeden budynek produkcyjny zwierząt hodowlanych, czasem były zespolone z budynkiem mieszkalnym. Poza tym mogły istnieć budynki należące do gminy, współużywane przez mieszkańców miasta. Specyficzną formą budynków produkcyjnych zwierząt hodowlanych są stajnie, które w epoce przemysłowej tworzyły wręcz kompleksy budynków."@pl ;
                                                   rdfs:isDefinedBy "budynek służący do trzymania zwierząt hodowlanych"@pl ;
                                                   rdfs:label "budynek produkcyjny zwierząt hodowlanych"@pl ;
@@ -2854,7 +2854,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Jatki są jednymi z najważniejszych i najwcześniej występujących kramów w mieście."@pl ;
                                                   rdfs:isDefinedBy "kram do sprzedaży mięsa"@pl ;
                                                   rdfs:label "jatki"@pl ;
@@ -2878,7 +2878,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "przewód rurowy służący do transportu odpadów ciekłych"@pl ;
                                                   rdfs:label "przewód kanalizacyjny"@pl ;
                                                   ns1:altLabel "kanalizacyjny"@pl .
@@ -2968,7 +2968,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Śluzy są ważnym elementem infrastruktury umożliwiającej żeglugę śródlądową i łączenie komunikacyjnych i  produkcyjnych funkcji rzek oraz kanałów, najstarsze ze śluzy w obrębie miast na terenie Europy pochodzą z XIV wieku. Występują w miastach położonych nad rzekami o znaczeniu komunikacyjnym."@pl ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umożliwiająca pokonywanie różnicy poziomów wód w trakcie żeglugi"@pl ;
                                                   rdfs:label "śluza"@pl ;
@@ -3036,7 +3036,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Furty istniały w przypadku większości miast, także nieufortyfikowanych. W przypadku istnienia fortyfikacji, furta jest stałą częścią fortyfikacji miast, pojawia się we wszystkich badanych okresach."@pl ;
                                                   rdfs:isDefinedBy "wąskie zabezpieczone skrzydłem bramnym wejście ustawione na granicy miasta, umożliwiające kontrolę wchodzących i pobór opłat, często też element fortyfikacji, zamykalne, chronione przejście w murach obronnych"@pl ;
                                                   rdfs:label "furta miejska"@pl ;
@@ -3077,7 +3077,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function20
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Domy publiczne istniały we wszystkich miastach przez cały okres ich trwania, w niektórych okresach i na niektórych ziemiach jednak nieoficjalnie. Czasem ich rolę pełniły inne ośrodki, np. kultu sakralnego. Obiekt zazwyczaj jest oddzielnym budynkiem, ale bywa też częścią budynku."@pl ;
                                                   rdfs:isDefinedBy "miejsce, w którym świadczone są odpłatnie usługi seksualne"@pl ;
                                                   rdfs:label "dom publiczny"@pl ;
@@ -3117,7 +3117,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Bramy istniały w przypadku większości miast, także nieufortyfikowanych. W przypadku istnienia fortyfikacji, brama jest stałą częścią fortyfikacji miast, pojawia się we wszystkich badanych okresach."@pl ;
                                                   rdfs:isDefinedBy "brama ustawiona na granicy miasta, wyposażona w skrzydła bramne, umożliwiająca kontrolę wjeżdżających i pobór opłat, często też element fortyfikacji, zamykalny, chroniony przejazd w murach obronnych"@pl ;
                                                   rdfs:label "brama miejska"@pl ;
@@ -3190,7 +3190,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function18
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Powstanie żłobków we współczesnym rozumieniu jest zjawiskiem XX-wiecznym."@pl ;
                                                   rdfs:isDefinedBy "miejsce opieki nad dziećmi w wieku przedprzedszkolnym, może być w oddzielnie stojącym budynku, może być częścią innego budynku"@pl ;
                                                   rdfs:label "żłobek"@pl ;
@@ -3404,7 +3404,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function31>
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "sztuczny, ziemny wał, na ogół przy rzece, pełniący funkcje przeciwpowodziowe, lub wał ziemny, rozdzielający wody stojące, w szczególności obwałowania stawów rybnych"@pl ;
                                                   rdfs:label "wał przeciwpowodziowy lub grobla"@pl ;
                                                   rdfs:seeAlso "#SJP, grobla: \"wał ziemny usypany w celu spiętrzenia wody w rzece lub rozdzielenia stawów\" #duden: \"Damm: künstlich errichteter Wall\", #duden: \"Deich: aufgeschütteter Erddamm längs eines Flusses oder einer Meeresküste zum Schutz tiefer liegenden Geländes gegen Überschwemmung\""@pl ,
@@ -3479,7 +3479,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function8
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Budynki gospodarcze były przez cały okres istnienia miasta częścią składową zabudowy działek miejskich. "@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do niezawodowego wykonywania prac warsztatowych oraz do przechowywania materiałów, narzędzi, sprzętu i płodów rolnych służących mieszkańcom budynku mieszkalnego, budynku zamieszkania zbiorowego, budynku rekreacji indywidualnej, a także ich otoczenia, a w zabudowie zagrodowej przeznaczony również do przechowywania środków produkcji rolnej i sprzętu oraz płodów rolnych"@pl ;
                                                   rdfs:label "budynek gospodarczy"@pl ;
@@ -3854,7 +3854,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Kanały występują w miastach przez cały badany okres."@pl ;
                                                   rdfs:isDefinedBy "odcinek sztucznego cieku wodnego, pomiędzy węzłami sieci hydrograficznej, pełniącego rolę transportową lub melioracyjną"@pl ;
                                                   rdfs:label "kanał"@pl ;
@@ -4182,7 +4182,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umieszczona w poprzek koryta rzeki służąca spiętrzaniu wody"@pl ;
                                                   rdfs:label "jaz"@pl ;
                                                   rdfs:seeAlso "#SJP: \"stała lub ruchoma budowla wznoszona w poprzek koryta rzeki, służąca do spiętrzenia wody\" #SJP_Doroszewski: \"zapora na rzece służaca do spiętrzania wody dla wyzyskania siły wodnej, w celach żeglugowych, melioracyjnych, wodociągowych itp.; tama, grobla, zastawa\""@pl ,
@@ -4378,7 +4378,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function7
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "pomost spacerowy zbudowany prostopadle lub ukośnie do linii brzegowej; służy też zwykle do cumowania niewielkich statków i łodzi."@pl ;
                                                   rdfs:label "pomost albo molo"@pl ;
                                                   rdfs:seeAlso "#SJP: \"molo: pomost wychodzący w morze\", #SJP: \"pomost: platforma oparta na podporach, wychodząca z brzegu na jezioro lub rzekę\""@pl ,
@@ -4606,7 +4606,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Gospodarstwa hodowlane były w okresie przedprzemysłowym ważną częścią gospodarki miejskiej, w niektórych miastach pełniły wręcz funkcję dominującą."@pl ;
                                                   rdfs:isDefinedBy "Zwarty obszar, na którym prowadzi się na hodowlę roślin lub zwierząt"@pl ;
                                                   rdfs:label "gospodarstwo hodowlane"@pl ;
@@ -4686,7 +4686,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna przegradzająca dolinę rzeki w celu spiętrzenia wody oraz ochrony przed powodziami"@pl ;
                                                   rdfs:label "zapora"@pl ;
                                                   rdfs:seeAlso "#SJP: \"budowla przegradzająca dolinę rzeki i spiętrzająca wodę, z której tworzy się zbiornik wodny\""@pl ,
@@ -5225,7 +5225,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Rurociągi gazowe pojawiają się w miastach w XIX wieku, powszechne stają się w XX."@pl ;
                                                   rdfs:isDefinedBy "rurociąg przeznaczony do transportu gazu ziemnego lub miejskiego"@pl ;
                                                   rdfs:label "przewód gazowy"@pl ;
@@ -5291,7 +5291,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Pensjonaty znajdują się zazwyczaj w miejscowościach turystycznych. "@pl ;
                                                   rdfs:isDefinedBy "mały hotel o domowym charakterze, nieoferujący pełni usług hotelarskich, ale zapewniający zazwyczaj całodniowe wyżywienie"@pl ;
                                                   rdfs:label "pensjonat"@pl ;
@@ -5465,7 +5465,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Barbakan jest ważną częścią fortyfikacji miast, zazwyczaj pojawia się pod koniec średniowiecza. Występuje w mniejszości miast."@pl ;
                                                   rdfs:isDefinedBy "element fortyfikacji miejskich, zazwyczaj okrągły i wysunięty przed mury miejskie, połączony z bramą miejską osłoniętym przejściem, wyposażony w strzelnice"@pl ;
                                                   rdfs:label "barbakan"@pl ;
@@ -5511,7 +5511,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "budowla ziemna, umożliwiająca poprowadzenie drogi lub linii kolejowej na odpowiednim poziomie"@pl ;
                                                   rdfs:label "nasyp"@pl ;
                                                   rdfs:seeAlso "#SJP: \"wał usypany z ziemi w celu podniesienia terenu w danym miejscu\""@pl ,
@@ -5536,7 +5536,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function22
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:comment "Występują we wszystkich miastach przez cały okres ich istnienia."@pl ;
                                                   rdfs:isDefinedBy "teren gromadzenia odpadów komunalnych, obszar wysypiska śmieci"@pl ;
                                                   rdfs:label "teren składowania odpadów komunalnych"@pl ;
@@ -5787,7 +5787,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "przewód rurowy służący do transportu wody"@pl ;
                                                   rdfs:label "przewód wodociągowy"@pl ;
                                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q55753876"^^xsd:url ;
@@ -6350,7 +6350,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> ;
+                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
                                                   rdfs:isDefinedBy "fortyfikacje chroniące miasto, wykoe z kamienia lub cegły"@pl ;
                                                   rdfs:label "mury miejskie"@pl ;
                                                   rdfs:seeAlso "#duden: \"der Befestigung einer Stadt dienende, sie umgebende, dicke, hohe Mauer\""@pl ;
@@ -6467,7 +6467,7 @@ ontohgis:person_2 rdf:type owl:NamedIndividual ;
 
 
 ###  http://purl.org/ontohgis#person_4
-ontohgis:person_4 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> .
+ontohgis:person_4 owl:sameAs <http://purl.org/ontohgis#person_4> .
 
 
 ###  http://purl.org/ontohgis#person_9
@@ -6638,9 +6638,8 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                                                                           rdfs:label "Konrad Szuba"@pl .
 
 
-###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person ;
+###  http://purl.org/ontohgis#person_4
+<http://purl.org/ontohgis#person_4> 
                                                                           <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
 
 
