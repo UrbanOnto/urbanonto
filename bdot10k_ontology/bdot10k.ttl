@@ -332,7 +332,7 @@ bdot10k:class_4 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_40
 bdot10k:class_40 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla cmentarna "^^xsd:string ;
+                 rdfs:label "budowla cmentarna"^^xsd:string ;
                  bdot10k:hasBdot10kCode "BUCM"^^xsd:string .
 
 

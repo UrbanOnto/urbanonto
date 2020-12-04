@@ -42,6 +42,22 @@ xsd:url rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to
+cidoc_crm:P104_is_subject_to rdfs:label "jest objęty"@pl .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of
+cidoc_crm:P106_is_composed_of rdfs:label "jest złożony z"@pl .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of
+cidoc_crm:P46i_forms_part_of rdfs:label "jest częścią"@pl .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -147,6 +163,10 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  http://purl.org/urbanonto/unclassified
 <http://purl.org/urbanonto/unclassified> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing
+cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -459,6 +479,10 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                       owl:equivalentClass :object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca .
 
 
+###  https://purl.org/bdot10k#object_143
+<https://purl.org/bdot10k#object_143> owl:equivalentClass :object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33 .
+
+
 ###  https://purl.org/bdot10k#object_146
 <https://purl.org/bdot10k#object_146> rdf:type owl:Class ;
                                       owl:equivalentClass :object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad .
@@ -596,6 +620,10 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 <https://purl.org/bdot10k#object_273> rdf:type owl:Class .
 
 
+###  https://purl.org/bdot10k#object_275
+<https://purl.org/bdot10k#object_275> owl:equivalentClass :object_type_1a276b47-16bd-4b07-a642-e76acabe34d9 .
+
+
 ###  https://purl.org/bdot10k#object_276
 <https://purl.org/bdot10k#object_276> rdf:type owl:Class ;
                                       owl:equivalentClass :object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3 .
@@ -689,7 +717,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                                                   ] ;
                                                   ns2:creator :person_0000-0001-8208-4743 ;
                                                   rdfs:comment "Miasta w strefie lokacyjnej były zakładane według okreslonego planu, a jego fundamentem były modułoewe parcele mieszczanskie. Ich rzeczywisty kształt mógł odbiegać od geometrycznego wzorca od samego początku i zawsze podlegał potem zmianom wskutek podziałów i łączeń działek. Zazwyczaj rekonstrukcja rozmierzenia lokacyjnego jest więc hipotetyczna, a mimo to stanowi ważny nurt badań nad przestrzenią miejską. "@pl ;
-                                                  rdfs:isDefinedBy "wyznaczone wraz z lokacją miasta granice parcel według określonego modułu, wyznaczające jednocześnie zasięg bloków zabudowy i ulic"@pl ;
+                                                  rdfs:isDefinedBy "wyznaczone wraz z lokacją rozplanowanie miasta obejmujące granice parcel według określonego modułu, wyznaczające jednocześnie zasięg bloków zabudowy i ulic"@pl ;
                                                   rdfs:label "rozmierzenie lokacyjne"@pl .
 
 
@@ -712,7 +740,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0
 :object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0 rdf:type owl:Class ;
-                                                  rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ,
+                                                  rdfs:subClassOf cidoc_crm:E18_Physical_Thing ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P43_has_dimension ;
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Point>
@@ -1067,7 +1095,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_11f78853-134a-45d0-8090-efd8f28965bf
 :object_type_11f78853-134a-45d0-8090-efd8f28965bf rdf:type owl:Class ;
-                                                  rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ;
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                   ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> ;
                                                   rdfs:isDefinedBy "podstawowa wyznaczona granicami jednostka organizacji przestrzeni miejskiej, potencjalnie zabudowana, przypisana do właściciela"@pl ;
                                                   rdfs:label "działka"@pl ;
@@ -1289,10 +1317,6 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 ###  https://purl.org/urbanonto/object_type_1a276b47-16bd-4b07-a642-e76acabe34d9
 :object_type_1a276b47-16bd-4b07-a642-e76acabe34d9 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty ontohgis:hasProperFunction ;
-                                                                    owl:hasValue <http://purl.org/urbanonto/function28>
-                                                                  ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
@@ -1675,14 +1699,16 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_32815407-9ac8-488f-8414-cccae56e9913
 :object_type_32815407-9ac8-488f-8414-cccae56e9913 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  :object_type_b2c135a0-216c-4270-84a9-98552c4398c0 ;
                                                   rdfs:label "cytadela"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_331f9036-04b2-4125-bd35-adb38e5f073b
 :object_type_331f9036-04b2-4125-bd35-adb38e5f073b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
-                                                  rdfs:label "groby"@pl .
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_40> ;
+                                                  rdfs:label "grób"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af
@@ -1722,7 +1748,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_36983569-cabe-4309-8f18-107316903411 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom <https://purl.org/bdot10k#object_223>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
@@ -1754,10 +1780,6 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_38b9b000-aee9-4d98-aee8-315a89689a87 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#object_120> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
-                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_4>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P46_is_composed_of ;
                                                                     owl:someValuesFrom ontohgis:settlement_unit100
                                                                   ] ,
@@ -1768,6 +1790,10 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom ontohgis:object_23
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
+                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_4>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasProperFunction ;
@@ -1855,13 +1881,15 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1
 :object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#category_2> ;
                                                   rdfs:label "linia metra"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2
 :object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "basen"@pl .
 
 
@@ -2233,7 +2261,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7
 :object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_54> ;
                                                   rdfs:label "brama"@pl .
 
 
@@ -2406,7 +2435,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb
 :object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb rdf:type owl:Class ;
-                                                  rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ,
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function8
@@ -2423,7 +2452,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_5e55b798-5e07-470b-bab7-b84e718a5baa
 :object_type_5e55b798-5e07-470b-bab7-b84e718a5baa rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "boisko"@pl .
 
 
@@ -2431,12 +2461,12 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_5ec5f208-d56f-421c-9e83-93776dd0119e rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_1> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
-                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_1>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P43_has_dimension ;
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Curve>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
+                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_1>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
@@ -2590,7 +2620,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33
 :object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "plac zabaw"@pl .
 
 
@@ -2784,13 +2815,14 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_6e66c5e3-4652-4ccf-a626-492169a1122b
 :object_type_6e66c5e3-4652-4ccf-a626-492169a1122b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#object_240> ;
                                                   rdfs:label "forteca"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1
 :object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1 rdf:type owl:Class ;
-                                                  rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ,
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P46_is_composed_of ;
                                                                     owl:someValuesFrom :object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f
@@ -2911,10 +2943,6 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function29>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty ontohgis:hasProperFunction ;
-                                                                    owl:hasValue <http://purl.org/urbanonto/function28>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
@@ -3104,7 +3132,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom <https://purl.org/bdot10k#object_273>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
@@ -3135,7 +3163,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_81d08218-f988-46ba-a0b1-924cbb26abb5
 :object_type_81d08218-f988-46ba-a0b1-924cbb26abb5 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_54> ;
                                                   rdfs:label "furta"@pl .
 
 
@@ -3143,7 +3172,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_824432d0-3ccc-46df-81ec-7b54d0509262 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom <https://purl.org/bdot10k#class_43>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
@@ -3356,7 +3385,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0
 :object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#category_8> ;
                                                   rdfs:label "założenie pałacowe"@pl .
 
 
@@ -3395,7 +3425,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_8a287e70-01a2-454d-8e28-85f356330169
 :object_type_8a287e70-01a2-454d-8e28-85f356330169 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_48> ;
                                                   rdfs:label "szkoła-kompleks"@pl .
 
 
@@ -3492,7 +3523,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_9> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom <https://purl.org/bdot10k#class_5>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
@@ -3526,11 +3557,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b
 :object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty ontohgis:hasProperFunction ;
-                                                                    owl:hasValue <http://purl.org/urbanonto/function28>
-                                                                  ] ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_55> ;
                                                   ns2:creator :person_ORCID0000-0002-7568-7455 ;
                                                   rdfs:comment "Pozostałości po dawnej architekturze były stałym elementem pejzażu miast i ich okolic. Mogły być ignorowane i zaniedbane, mogły być obiektem nostalgii i ew. przedmiotem opieki, mogły być też chronione przez prawo, które zakazywało ingerowania w ich stan i kształt. Ruiny najczęściej stały na terenie prywatnym i do drugiej połowy XIX w. właściciela praktycznie nie można było zmusić do nieingerowania w ten obiekt. Debaty na temat tego, czy powinno się odbudowywać ruiny trwały przez cały XIX w., a jednym z ważnych obiektów tych ogólnokrajowych debat były w Niemczech ruiny zamku w Heidelbergu. W XX w. przeważyło zdanie, że ruin nie powinno się odbudowywać, pogląd ten został jednak zmarginalizowany po II wojnie światowej i strasznych zniszczeniach zabytków, jakie wówczas miały miejsce w wyniku nalotów bombowych."@pl ;
                                                   rdfs:isDefinedBy "pozostałość po dawnej budowli lub budowlach"@pl ;
@@ -3551,7 +3578,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                     owl:someValuesFrom :object_type_d0008f3a-5765-4541-a619-636f66883974
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
@@ -3688,7 +3715,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_93c8cca0-8c87-414b-839a-992f2a538da1
 :object_type_93c8cca0-8c87-414b-839a-992f2a538da1 rdf:type owl:Class ;
-                                                  rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ,
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function24>
@@ -4159,13 +4186,15 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265
 :object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#category_2> ;
                                                   rdfs:label "sieć kolejowa"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_a8dc449a-b349-4738-9c02-d6676469550b
 :object_type_a8dc449a-b349-4738-9c02-d6676469550b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "teren zabudowany"@pl .
 
 
@@ -4502,7 +4531,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b
 :object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#category_8> ;
                                                   rdfs:label "ogród"@pl .
 
 
@@ -4993,7 +5023,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_cace123e-7364-43b7-b756-eebe60ac4c0f
 :object_type_cace123e-7364-43b7-b756-eebe60ac4c0f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "parcela"@pl .
 
 
@@ -5066,7 +5097,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_cdc73205-dd22-4341-a13a-b358492ff9ce
 :object_type_cdc73205-dd22-4341-a13a-b358492ff9ce rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_39> ;
                                                   rdfs:label "dok"@pl .
 
 
@@ -5251,7 +5283,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                                                   ] ;
                                                   ns2:creator :person_0000-0001-8208-4743 ;
                                                   rdfs:comment "Mosty stanowiły zawsze kluczowy element sieci komunikacyjnej; w epoce przedindistrialnej mogły być czynnikiem decydującym o rozwoju miasta i kształtującym jego przestrzeń; przykładem jest rozwój odrębnych dzielnic lub nawet gmin jako przyczółka mostowego."@pl ;
-                                                  rdfs:isDefinedBy "budowla prowadząca ciąg komunikacyjny przeznaczony dla większych pojazdów  nad wodą"@pl ;
+                                                  rdfs:isDefinedBy "budowla prowadząca nad wodą ciąg komunikacyjny przeznaczony dla większych pojazdów"@pl ;
                                                   rdfs:label "most"@pl ;
                                                   ns1:altLabel "bridge"@en ,
                                                                "die Brücke"@de ,
@@ -5531,7 +5563,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34
 :object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_39> ;
                                                   rdfs:label "molo"@pl .
 
 
@@ -5668,12 +5701,12 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 :object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_5> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P106i_forms_part_of ;
-                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_2>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P43_has_dimension ;
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Curve>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
+                                                                    owl:someValuesFrom <https://purl.org/bdot10k#category_2>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
@@ -5843,7 +5876,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf
 :object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "otulina wokół miasta"@pl .
 
 
@@ -5928,17 +5962,14 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25
 :object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#class_50> ;
                                                   rdfs:label "bastion"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb
 :object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://purl.org/bdot10k#object_125> ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty ontohgis:hasProperFunction ;
-                                                                    owl:hasValue <http://purl.org/urbanonto/function28>
-                                                                  ] ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#object_125> ;
                                                   ns2:creator :person_ORCID0000-0002-7568-7455 ;
                                                   rdfs:comment "obiekty dawnej architektury zawsze były liczne w mieście i najczęściej nie były nawet zauważane. Kościoły, zamki, pałace i ratusze były tu oczywistym wyjątkiem. Jednak i te budynki i mniej znaczące dawne budowle były do początku XIX w. burzone, gdy tylko była taka potrzeba, gdyż dominował pogląd, że zasadność zachowania budynku zależy od jego użyteczności. Niewiele obiektów uznawano za zabytki, tzn. obiekty, które powinny być zachowane dla następnych pokoleń, najczęściej dawne obiekty \"ratowały\" ich rozmiary i duży koszt ew. usunięcia. To zaczęło się zmieniać w XIX wieku, gdy więcej budowli zaczęto postrzegać jako zabytki oraz gdy pojawiła się nostalgia związana z dawną architekturą, którą dodatkowo wzmacniały rozwijająca się nowa dziedzina historii sztuki. Za zabytki zaczęto uznawać domy mieszkalne, kamienice, mury miejskie i baszty, mniejsze świątynie itp. Nowoczesna klasyfikacja zabytków rozpoczęła się wraz z powstaniem instytucji ochrony zabytków: w zaborze pruskim po 1815 r., w austriackim od 1853 r., w rosyjskim od czasu dekretu Mikołaja I z 1826 r. Listy zabytków tworzone przez instytucje państwowe oraz naukowe odpowiadały nie tylko ówczesnej wiedzy o historii architektury, ale wpływ na to miała także idea państwowa. Pojawienie się nowoczesnej klasyfikacji i ochrony zabytków nie jest jednak warunkiem istnienia samych zabytków."@pl ;
                                                   rdfs:isDefinedBy "dawny obiekt architektoniczny, niebędący w stanie ruiny"@pl ;
@@ -5988,7 +6019,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08
 :object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#category_7> ;
                                                   rdfs:label "peron"@pl .
 
 
@@ -6338,7 +6370,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f
 :object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "posesja"@pl .
 
 
@@ -6421,7 +6454,8 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
 
 ###  https://purl.org/urbanonto/object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f
 :object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ;
+                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
+                                                                  <https://purl.org/bdot10k#object_113> ;
                                                   rdfs:label "pawilon"@pl .
 
 
@@ -6668,8 +6702,8 @@ ontohgis:administrative_type_243 ns1:altLabel "districtus"@la ;
 
 
 ontohgis:administrative_type_257 rdfs:seeAlso "https://www.wikidata.org/wiki/Q15284"^^xsd:url ;
-                                 rdfs:isDefinedBy "podstawowa, najcęściej najniższa jednostka podziału administracyjnego i samorządu terytorialnego"@pl ;
                                  ns1:altLabel "municipality"@en ;
+                                 rdfs:isDefinedBy "podstawowa, najcęściej najniższa jednostka podziału administracyjnego i samorządu terytorialnego"@pl ;
                                  ns2:creator :person_0000-0001-8208-4743 ;
                                  ns1:altLabel "die Gemeinde"@de ;
                                  rdfs:comment "Miasto zazwyczaj stanowiło jedną gminę i jej zasięg wyznaczał pod pewnymi względami granice miasta. "@pl .
@@ -6678,8 +6712,8 @@ ontohgis:administrative_type_257 rdfs:seeAlso "https://www.wikidata.org/wiki/Q15
 ontohgis:administrative_type_47 rdfs:isDefinedBy "podstawowa, zwykle najwyższa jednostka podziału terytorialnego państwa polskiego"@pl ;
                                 rdfs:comment "Granice województwa rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy wojewódzkiej lub pełnienie roli siedziby województwa."@pl ;
                                 ns2:creator :person_0000-0001-8208-4743 ;
-                                ns1:altLabel "palatinatus"@la ;
-                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url .
+                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url ;
+                                ns1:altLabel "palatinatus"@la .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
