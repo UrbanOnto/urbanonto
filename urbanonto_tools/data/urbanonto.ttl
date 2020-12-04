@@ -6585,12 +6585,14 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 ###  https://purl.org/urbanonto/person_0000-0001-8208-4743
 :person_0000-0001-8208-4743 rdf:type owl:NamedIndividual ,
-                                     cidoc_crm:E21_Person .
+                                     cidoc_crm:E21_Person ;
+                            <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_ORCID0000-0002-7568-7455
 :person_ORCID0000-0002-7568-7455 rdf:type owl:NamedIndividual ,
-                                          cidoc_crm:E21_Person .
+                                          cidoc_crm:E21_Person ;
+                                 <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/property_right_1
@@ -6609,42 +6611,50 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 ###  https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093
 <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> rdf:type owl:NamedIndividual ,
-                                                                                  cidoc_crm:E21_Person .
+                                                                                  cidoc_crm:E21_Person ;
+                                                                         <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-4905-2093"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-0489-3171"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-0634-7614"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person .
+                                                                                   cidoc_crm:E21_Person ;
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3669-0018"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455
 <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
-                                                                           cidoc_crm:E21_Person .
+                                                                           cidoc_crm:E21_Person ;
+                                                                  <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
 #################################################################
