@@ -6463,6 +6463,18 @@ ontohgis:administrative_type_257 rdf:type owl:NamedIndividual .
 ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 
+###  http://purl.org/ontohgis#person_2
+ontohgis:person_2 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> .
+
+
+###  http://purl.org/ontohgis#person_4
+ontohgis:person_4 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165> .
+
+
+###  http://purl.org/ontohgis#person_9
+ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> .
+
+
 ###  http://purl.org/urbanonto/function23
 <http://purl.org/urbanonto/function23> rdf:type owl:NamedIndividual ,
                                                 <http://purl.obolibrary.org/obo/BFO_0000034> ;
@@ -6614,7 +6626,8 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 ###  https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093
 <https://purl.org/urbanonto/person_http://orcid.org/0000-0002-4905-2093> rdf:type owl:NamedIndividual ,
                                                                                   cidoc_crm:E21_Person ;
-                                                                         <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-4905-2093"^^xsd:url .
+                                                                         <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-4905-2093"^^xsd:url ;
+                                                                         rdfs:label "Michał Słomski"@pl .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743
@@ -6633,13 +6646,15 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
                                                                           owl:sameAs <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
+                                                                          rdfs:label "Aleksander Łupienko"@pl .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-0634-7614"^^xsd:url .
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-0634-7614"^^xsd:url ;
+                                                                          rdfs:label "Konrad Szuba"@pl .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3025-6165
@@ -6651,7 +6666,8 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3669-0018"^^xsd:url .
+                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3669-0018"^^xsd:url ;
+                                                                          rdfs:label "Katarzyna Słomska-Przech"@pl .
 
 
 ###  https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455
