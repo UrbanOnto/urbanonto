@@ -4102,10 +4102,6 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                   rdfs:subClassOf :object_type_cf52d40b-be95-4124-8e06-296e97cf499e ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
-                                                                    owl:hasValue :function17
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue :function20
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
