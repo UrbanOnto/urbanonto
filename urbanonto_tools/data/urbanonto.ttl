@@ -1293,7 +1293,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function16
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
+                                                  ns2:creator ontohgis:person_9 ;
                                                   rdfs:comment "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
                                                   rdfs:isDefinedBy "część terenu miasta oddzielona od innych na podstawie własności lub pełnionej funkcji. Granica działki widoczna jest w terenie lub w rejestrach własności lub w materiale kartograficznym"@pl ;
                                                   rdfs:label "działka miejska"@pl ;
@@ -4740,7 +4740,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> ;
+                                                  ns2:creator ontohgis:person_9 ;
                                                   rdfs:comment "Występuje powszechnie, jest to jeden z podstawowych elementów przestrzeni (również) miejskiej."@pl ;
                                                   rdfs:isDefinedBy "droga lub część drogi w terenie zabudowanym, do której przylegają budynki, budowle, urządzenia lub inne obiekty"@pl ;
                                                   rdfs:label "ulica"@pl ;
@@ -6471,7 +6471,8 @@ ontohgis:person_4 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.or
 
 
 ###  http://purl.org/ontohgis#person_9
-ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> .
+ontohgis:person_9 rdf:type owl:NamedIndividual ;
+                  <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-0489-3171"^^xsd:url .
 
 
 ###  http://purl.org/urbanonto/function23
@@ -6620,12 +6621,6 @@ ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.or
                                                                                   cidoc_crm:E21_Person ;
                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-4905-2093"^^xsd:url ;
                                                                          rdfs:label "Michał Słomski"@pl .
-
-
-###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-0489-3171"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455
