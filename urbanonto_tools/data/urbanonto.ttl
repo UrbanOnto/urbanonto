@@ -161,10 +161,6 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                          rdfs:label "multipoligon"@pl .
 
 
-###  http://purl.org/urbanonto/unclassified
-<http://purl.org/urbanonto/unclassified> rdf:type owl:Class .
-
-
 ###  http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing
 cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing .
 
@@ -1003,10 +999,6 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Curve>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                    owl:someValuesFrom :object_type_71c4e5e7-8b84-425f-a02e-f25b75076377
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function27>
                                                                   ] ,
@@ -1196,10 +1188,6 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty cidoc_crm:P43_has_dimension ;
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Curve>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                    owl:someValuesFrom :object_type_71c4e5e7-8b84-425f-a02e-f25b75076377
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasProperFunction ;
@@ -1605,10 +1593,6 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Curve>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                    owl:someValuesFrom :object_type_71c4e5e7-8b84-425f-a02e-f25b75076377
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ,
@@ -1699,15 +1683,13 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_32815407-9ac8-488f-8414-cccae56e9913
 :object_type_32815407-9ac8-488f-8414-cccae56e9913 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  :object_type_b2c135a0-216c-4270-84a9-98552c4398c0 ;
+                                                  rdfs:subClassOf :object_type_b2c135a0-216c-4270-84a9-98552c4398c0 ;
                                                   rdfs:label "cytadela"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_331f9036-04b2-4125-bd35-adb38e5f073b
 :object_type_331f9036-04b2-4125-bd35-adb38e5f073b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_40> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_40> ;
                                                   rdfs:label "grób"@pl .
 
 
@@ -1881,15 +1863,13 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1
 :object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#category_2> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#category_2> ;
                                                   rdfs:label "linia metra"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2
 :object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_33> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "basen"@pl .
 
 
@@ -2261,8 +2241,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7
 :object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_54> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_54> ;
                                                   rdfs:label "brama"@pl .
 
 
@@ -2452,8 +2431,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_5e55b798-5e07-470b-bab7-b84e718a5baa
 :object_type_5e55b798-5e07-470b-bab7-b84e718a5baa rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_33> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "boisko"@pl .
 
 
@@ -2620,8 +2598,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33
 :object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_33> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                   rdfs:label "plac zabaw"@pl .
 
 
@@ -2815,8 +2792,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_6e66c5e3-4652-4ccf-a626-492169a1122b
 :object_type_6e66c5e3-4652-4ccf-a626-492169a1122b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#object_240> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#object_240> ;
                                                   rdfs:label "forteca"@pl .
 
 
@@ -2870,11 +2846,6 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                "roadside cross"@en ,
                                                                "wayside cross"@en ,
                                                                "придорожный крест"@ru .
-
-
-###  https://purl.org/urbanonto/object_type_71c4e5e7-8b84-425f-a02e-f25b75076377
-:object_type_71c4e5e7-8b84-425f-a02e-f25b75076377 rdf:type owl:Class ;
-                                                  rdfs:label "desygnat"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6
@@ -3163,8 +3134,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_81d08218-f988-46ba-a0b1-924cbb26abb5
 :object_type_81d08218-f988-46ba-a0b1-924cbb26abb5 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_54> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_54> ;
                                                   rdfs:label "furta"@pl .
 
 
@@ -3385,8 +3355,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0
 :object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#category_8> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#category_8> ;
                                                   rdfs:label "założenie pałacowe"@pl .
 
 
@@ -3425,8 +3394,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_8a287e70-01a2-454d-8e28-85f356330169
 :object_type_8a287e70-01a2-454d-8e28-85f356330169 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_48> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_48> ;
                                                   rdfs:label "szkoła-kompleks"@pl .
 
 
@@ -4186,15 +4154,13 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265
 :object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#category_2> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#category_2> ;
                                                   rdfs:label "sieć kolejowa"@pl .
 
 
 ###  https://purl.org/urbanonto/object_type_a8dc449a-b349-4738-9c02-d6676469550b
 :object_type_a8dc449a-b349-4738-9c02-d6676469550b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  cidoc_crm:E25_Man-Made_Feature ;
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "teren zabudowany"@pl .
 
 
@@ -4531,8 +4497,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b
 :object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#category_8> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#category_8> ;
                                                   rdfs:label "ogród"@pl .
 
 
@@ -5023,8 +4988,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_cace123e-7364-43b7-b756-eebe60ac4c0f
 :object_type_cace123e-7364-43b7-b756-eebe60ac4c0f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  cidoc_crm:E25_Man-Made_Feature ;
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "parcela"@pl .
 
 
@@ -5097,8 +5061,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_cdc73205-dd22-4341-a13a-b358492ff9ce
 :object_type_cdc73205-dd22-4341-a13a-b358492ff9ce rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_39> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_39> ;
                                                   rdfs:label "dok"@pl .
 
 
@@ -5563,8 +5526,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34
 :object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_39> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_39> ;
                                                   rdfs:label "molo"@pl .
 
 
@@ -5876,8 +5838,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf
 :object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  cidoc_crm:E25_Man-Made_Feature ;
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "otulina wokół miasta"@pl .
 
 
@@ -5962,8 +5923,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25
 :object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#class_50> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#class_50> ;
                                                   rdfs:label "bastion"@pl .
 
 
@@ -6019,8 +5979,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08
 :object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08 rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#category_7> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#category_7> ;
                                                   rdfs:label "peron"@pl .
 
 
@@ -6370,8 +6329,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f
 :object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  cidoc_crm:E25_Man-Made_Feature ;
+                                                  rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                   rdfs:label "posesja"@pl .
 
 
@@ -6454,8 +6412,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 
 ###  https://purl.org/urbanonto/object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f
 :object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/urbanonto/unclassified> ,
-                                                                  <https://purl.org/bdot10k#object_113> ;
+                                                  rdfs:subClassOf <https://purl.org/bdot10k#object_113> ;
                                                   rdfs:label "pawilon"@pl .
 
 
@@ -6702,8 +6659,8 @@ ontohgis:administrative_type_243 ns1:altLabel "districtus"@la ;
 
 
 ontohgis:administrative_type_257 rdfs:seeAlso "https://www.wikidata.org/wiki/Q15284"^^xsd:url ;
-                                 ns1:altLabel "municipality"@en ;
                                  rdfs:isDefinedBy "podstawowa, najcęściej najniższa jednostka podziału administracyjnego i samorządu terytorialnego"@pl ;
+                                 ns1:altLabel "municipality"@en ;
                                  ns2:creator :person_0000-0001-8208-4743 ;
                                  ns1:altLabel "die Gemeinde"@de ;
                                  rdfs:comment "Miasto zazwyczaj stanowiło jedną gminę i jej zasięg wyznaczał pod pewnymi względami granice miasta. "@pl .
