@@ -13,9 +13,12 @@
 <http://purl.org/urbanonto> rdf:type owl:Ontology ;
                              owl:imports <http://purl.org/bdot10k> ,
                                          <http://purl.org/ontohgis> ;
-                             rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
+                             rdfs:comment "Ontologia została stworzona na potrzeby projektu \"Historical Ontology of Urban Space\"."@pl ,
+                                          "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
+                             rdfs:label "UrbanOnto" ;
                              rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/" ;
-                             owl:versionInfo 1.0 .
+                             owl:versionInfo 1.0 ;
+                             ns1:altLabel "ontologia przestrzeni miejskiej"@pl .
 
 #################################################################
 #    Annotation properties
