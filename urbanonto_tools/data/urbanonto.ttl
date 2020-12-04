@@ -6586,12 +6586,14 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 ###  https://purl.org/urbanonto/person_0000-0001-8208-4743
 :person_0000-0001-8208-4743 rdf:type owl:NamedIndividual ,
                                      cidoc_crm:E21_Person ;
+                            owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
                             <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_ORCID0000-0002-7568-7455
 :person_ORCID0000-0002-7568-7455 rdf:type owl:NamedIndividual ,
                                           cidoc_crm:E21_Person ;
+                                 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                  <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
@@ -6630,6 +6632,7 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
+                                                                          owl:sameAs <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
                                                                           <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
