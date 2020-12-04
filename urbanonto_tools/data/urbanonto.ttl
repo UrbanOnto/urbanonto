@@ -724,7 +724,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function22
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Odpady przemysłowe pojawiają się w części miast przez cały badany okres (głównie miasta górnicze), ale w większości miast wysypiska na odpady przemysłowe oddzielne od wysypisk odpadów komunalnych pojawiają dopiero po rewolucji przemysłowej. Istnieją miasta, w których historii nigdy nie było takich wysypisk."@pl ;
                                                   rdfs:isDefinedBy "teren gromadzenia odpadów hutniczych lub innych powstałych w wyniku działalności przemysłowej"@pl ;
                                                   rdfs:label "teren składowania odpadów przemysłowych"@pl ;
@@ -915,7 +915,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Sądy posiadały własne siedziby od średniowiecza (np. nowożytne budynki Trybunałów w Lublinie i Piotrkowie), choć często obradowały w obiektach wielofunkcyjnych, np. w zamkach, rezydencjach. W XIX w. urządzano je w adaptowanych pałacach z uwagi na reprezentacyjny wygląd, licujący z powagą instytucji oraz obszerne wnętrza oraz powstawały specjalne siedziby sądów. Niektóre sądy otrzymały bardzo reprezentacyjne nowe siedziby, które nazywano pałacami sprawiedliwości. W XIX w. wymiar sprawiedliwości uległ znacznemu rozwojowi (więcej instancji) i pojawiły się oddzielne sądy dla poszczególnych miast, a potem nawet dzielnic."@pl ;
                                                   rdfs:isDefinedBy "budynek, w którym odbywają się procesy sądowe"@pl ;
                                                   rdfs:label "sąd"@pl ;
@@ -1006,7 +1006,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Falochrony występowały w miastach, szczególnie w miastach na wybrzeżu morskim, przez cały badany okres."@pl ;
                                                   rdfs:isDefinedBy "przegroda umiejscowiona na brzegu morza lub rzeki, prostopadle do brzegu lub nurtu, mająca na celu ochronę brzegu przed erozją wywoływaną falami lub ochronę statków w porcie"@pl ;
                                                   rdfs:label "falochron"@pl ;
@@ -1161,7 +1161,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
                                                   ns2:creator ontohgis:person_2 ,
-                                                              <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                              <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Przytułki lub inaczej domy dla bezdomnych pojawiały się od starożytności, funkcjonowały na różnych zasadach i różne było ich umocowanie prawne. W średniowieczu i czasach nowożytnych prowadzone były przez instytucje religijne i bywały częścią zabudowań klasztornych. W czasach późnonowożytnych zaczęły być częściej prowadzone przez instytucje pożytku publicznego i nowoczesne instytucje dobroczynne."@pl ,
                                                                "Różne formy przytułków występowały powszechnie miastach."@pl ;
                                                   rdfs:isDefinedBy "budynek stanowiący nieodpłatne schronienie dla potrzebujących"@pl ,
@@ -1197,7 +1197,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Ostrogi występują głownie w miastach nadmorskich lub położonych nad rzekami o znaczącym nurcie."@pl ;
                                                   rdfs:isDefinedBy "przegroda umiejscowiona na brzegu rzeki lub morza służąca ochronie brzegu i kształtowaniu dna lub ochronie przypór mostowych"@pl ;
                                                   rdfs:label "ostroga"@pl ;
@@ -1309,7 +1309,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Pomniki były elementem miasta od starożytności. Mogły wyrażać ducha religijnego, ideę dynastyczną, państwową, a potem także narodową. Zwykle były ustawiane w dobrze widocznych miejscach, np. na placach miejskich. Bywało jednak, że miały charakter bardziej prywatny i znajdowały się na podwórzach posesji. Przekładem pomnika postawionego z dala od głównych przestrzeni publicznych miasta był pierwszy pomnik Adama Mickiewicza postawiony na placyku przykościelnym w Poziu w 1859 r. Duże reprezentacyjne pomniki bywały wizytówką miasta i były bardzo kosztowne, a ich autorami byli oddzielnie architekt opracowujący formę cokołu oraz rzeźbiarz przygotowujący odlew postaci. Pomniki były, historycznie patrząc, obiektami, które były mniej trwałe niż budynki i nierzadko były usuwane przy zmieniających się układach politycznych (całkiem lub częściowo, gdy wymieniano tylko przedstawianą postać). Od przełomu XVIII i XIX w. w obiegu pojawiła się kategoria \"pomnika przyrody\" (A. von Humboldt), która stosowana była do wyjątkowo starych drzew i innych obiektów przyrodniczych i dużym znaczeniu, a w XX w. zaczęły się pojawiać pomniki nie tylko przedstawiające ludzi."@pl ;
                                                   rdfs:isDefinedBy "dzieło rzeźbiarskie lub architektoniczne, nieposiadające funkcji użytkowej"@pl ;
                                                   rdfs:label "pomnik"@pl ;
@@ -1340,7 +1340,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_400
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Oficyny, czyli części kamienic czynszowych i domów mieszczańskich, istniały od średniowiecza i były stałym, choć ukrytym zwykle przed okiem przechodniów elementem przestrzeni miasta. Mieszkania w nich oferowane były często gorszej jakości niż w domu frontowym (szczególnie w oficynach bocznych: płytsze, mniej przewiewne mieszkania) i w związku z tym tańsze w wynajmie."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do zamieszkania ludzi, będący częścią zabudowań kamienicy lub domu mieszczańskiego, znajdujący się za domem frontowym i z nim połączony"@pl ;
                                                   rdfs:label "oficyna"@pl ;
@@ -1370,7 +1370,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Baszta jest popularną częścią fortyfikacji miejskich."@pl ;
                                                   rdfs:isDefinedBy "element fortyfikacji miejskich, okrągły lub wieloboczny,  wysunięty przed lico murów miejskich, ale będący ich częścią, wyższy niż mur miejski"@pl ;
                                                   rdfs:label "baszta"@pl ;
@@ -1440,7 +1440,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Kramy występują we wszystkich miastach przez cały okres ich istnienia."@pl ;
                                                   rdfs:isDefinedBy "niewielki sklep, oferujący na sprzedaż jeden rodzaj towaru"@pl ;
                                                   rdfs:label "kram"@pl ;
@@ -1607,7 +1607,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Nazwy są ważnym atrybutem i charakteryzują wszystkie obiekty, w tym nazwy własne charakteryzują liczne instancje."@pl ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umieszczona w poprzek koryta rzeki służąca spiętrzaniu wody wyposażona w elementy ruchome"@pl ;
                                                   rdfs:label "jaz ruchomy lub zastawka piętrząca"@pl ;
@@ -1632,7 +1632,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Schody były stałą częścią przestrzeni miejskiej większości miast umożliwiającą sprawną komunikację piesze między częściami miasta położonymi na różnych poziomach. "@pl ;
                                                   rdfs:isDefinedBy "szereg stopni umożliwiających przejście między różnymi poziomami"@pl ;
                                                   rdfs:label "schody"@pl ;
@@ -1661,7 +1661,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Restauracje istniały w miastach od końca XVIII w., ich rozwój to wiek XIX. Nie miały zwykle własnych oddzielnych siedzib, bywały elementem kamienic czynszowych, hoteli i zajazdów, a także siedzib instytucji i urzędów. Wcześnie pojawiły się w obiektach służących wypoczynkowi, wśród zieleni miejskiej i podmiejskiej, potem także jako stały element składowy większych dworców kolejowych. Nawet jeśli były częścią obiektu publicznego pozostawały własnością prywatną."@pl ;
                                                   rdfs:isDefinedBy "lokal służący serwowaniu posiłków dla klientów, obsługiwany przez kelnerów"@pl ;
                                                   rdfs:label "restauracja"@pl ;
@@ -1711,7 +1711,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Miejsca poboru opłat zazwyczaj były umiejscawiane na granicy miast, często w obrębie bram miejskich, ale w miastach nieotoczonych w danej chwili murami były to oddzielne budynki."@pl ;
                                                   rdfs:isDefinedBy "budynek, zazwyczaj niewielki, w którym podróżujący uiszczają opłatę za przejazd drogą"@pl ;
                                                   rdfs:label "miejsce poboru opłat"@pl ;
@@ -1784,7 +1784,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function15
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Status prawny regulowany ustawodawstwem państwowym, czasem dodatkowo religijnym, budynek zwykle jest własnością publiczną, czasem należy do instytucji. Szkoły publiczne istniały przez cały okres XIX w., ich istnienie regulowało ustawodawstwo, które mówiło o ich tworzeniu, normach, jakie powinny spełniać, o ich rodzajach i stopniach. Ich liczba była dużo niższa od prywatnych. Szkoły prywatne istniały także przez cały okres XIX w., wpierw głównie jako szkoły wyziowe (które potem włączano w sieć placówek publicznych utrzymywanych przez państwo), potem rosła liczba laickich szkół prywatnych, których właściciele wynajmowali przestrzeń w kamienicach czynszowych na cele szkolne. Właścicielem mogła być osoba prywatna lub stowarzyszenie/instytucja. Liczba szkół prywatnych osiągnęła kilkadziesiąt w Warszawie, dzieliły się według liczby klas. Były też słabo wyróżnione w przestrzeni miasta."@pl ;
                                                   rdfs:isDefinedBy "budynek instytucji edukacyjno-wychowawczej"@pl ;
                                                   rdfs:label "szkoła XIX wieku"@pl ;
@@ -1887,7 +1887,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Arsenały i zbrojownie znajdowały się w miastach od czasów starożytnych. W średniowieczu i w czasach wczesnonowożytnych bywały ulokowane w pomieszczeniach będących częścią fortyfikacji miejskich. Miasta rezydencjonalne posiadały szczególnie obszerne oddzielnie arsenały. W osiemnastym i dziewiętnastym wieku znajdowały się już w zabudowaniach należących do rozwijającej się siatki infrastruktury militarnej miasta, nierzadko z dala od historycznego centrum, a dawne budynki arsenałów przejmowały inne funkcje, np. kulturalne lub więzienne."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony na przechowywanie broni i uzbrojenia"@pl ;
                                                   rdfs:label "arsenał"@pl ;
@@ -2003,7 +2003,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function26>
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Nowoczesne szpitale rozwinęły się w końcu XVIII i w pierwszej połowie XIX w. Posiadanie oddzielnej wolnostojącej siedziby stało się wymogiem dla szpitali dopiero w końcu XIX w. Wcześniej mogły być ulokowane w kamienicy czynszowej (np. szpital św. Rocha w Warszawie), w dobudowywanych kolejnych aneksach (Szpital Ewangelicki w Warszawie). Zwarte, wielkogabarytowe siedziby szpitali (np. szpital przy ul. Kopernika w Warszawie) ustąpiły w XIX w. zabudowie pawilonowej (np. szpital Dzieciątka Jezus w Warszawie)."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do leczenia pacjentów, którzy wymagają stałej opieki"@pl ;
                                                   rdfs:label "szpital"@pl ;
@@ -2027,7 +2027,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Budynki produkcyjne zwierząt hodowlanych były istotną częścią przestrzeni miejskiej przez całą epokę przedprzemysłową, a w pewnym zakresie funkcjonowały także w epokach późniejszych. Budynki znajdowały się w różnych częściach miasta, przez cały okres przedprzemysłowy w obrębie większości działek mieszkalnych znajdował się co najmniej jeden budynek produkcyjny zwierząt hodowlanych, czasem były zespolone z budynkiem mieszkalnym. Poza tym mogły istnieć budynki należące do gminy, współużywane przez mieszkańców miasta. Specyficzną formą budynków produkcyjnych zwierząt hodowlanych są stajnie, które w epoce przemysłowej tworzyły wręcz kompleksy budynków."@pl ;
                                                   rdfs:isDefinedBy "budynek służący do trzymania zwierząt hodowlanych"@pl ;
                                                   rdfs:label "budynek produkcyjny zwierząt hodowlanych"@pl ;
@@ -2052,7 +2052,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Poligon wojskowy pod nazwą placu ćwiczeń pojawiał się na obrzeżach miast od czasów nowożytnych. W Warszawie tzw. Plac Broni w północnej dzielnicy stał się elementem przestrzeni miasta w początku XIX w. Place ćwiczeń były dobrze widoczne w przestrzeni, a dostęp do nich był utrudniony, czego przykładem jest ograniczenie dostępu przechodniów na skądinąd publiczny Plac Saski w Warszawie w czasach konstytucyjnego Królestwa Polskiego po 1815 r. Rosjanie urządzali na obrzeżach miast tzw. \"Pola Wojenne\" o większych rozmiarach i bogatszej infrastrukturze."@pl ;
                                                   rdfs:isDefinedBy "otwarte pole służące do przeprowadzania ćwiczeń wojskowych"@pl ;
                                                   rdfs:label "poligon wojskowy"@pl ;
@@ -2176,7 +2176,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Muzea pojawiły się w starożytności. W średniowieczu i czasach nowożytnych funkcję prywatnego (zazwyczaj) muzeum pełniły pomieszczenia rezydencji możnych i władców. Osobne publiczne gmachy muzealne pojawiły się w końcu XVIII w. (z inicjatywy władców lub instytucji muzealnych), a do ważnych teoretyków w dziedzinie ich planowania w Europie Środkowej należał Niemiec Karl Friedrich Schinkel, autor berlińskiego Altes Museum."@pl ;
                                                   rdfs:isDefinedBy "gmach przeznaczony na pomieszczenie zbiorów dzieł sztuki lub innych kolekcji przedmiotów wytworzonych przez człowieka lub pochodzących z ożywionych lub nieożywionych zasobów natury, a także przystosowany do ich ekspozycji dla zwiedzających w ramach stałych i czasowych wystaw"@pl ;
                                                   rdfs:label "muzeum"@pl ;
@@ -2224,7 +2224,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Esplanada to pusty teren, zabudowany rzadko i głównie w zabudowie drewnianej, możliwe luźne zadrzewienie. Esplanada pojawia się wokół obiektów wojskowych o funkcji obronnej ulokowanej w otwartym terenie, obok miasta, częściowo w jego granicach lub wokół miasta-twierdzy, jej fortyfikacji i bastionów. Często znajdowała się na wzniesieniu, np. we Lwowie i w Przemyślu, wówczas jej esplanada ograniczała się do zboczy wzgórza."@pl ;
                                                   rdfs:isDefinedBy "teren objęty zakazem permanentnej zabudowy murowanej wokół fortecy, twierdzy lub cytadeli, obejmujący przepisany prawem obszar w określonej odległości od tego obiektu militarnego."@pl ;
                                                   rdfs:label "esplanada forteczna"@pl ;
@@ -2259,7 +2259,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function18
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Przedszkole pojawiło się jako instytucja państwowa dopiero po 1918 r., wcześniej jako ochronka lub freblówka była raczej instytucją prywatną lub społeczną/dobroczynną, a dostęp do nich był najczęściej płatny, a więc ograniczony. Nie miały własnych oddzielnych siedzib, mieściły się w części kamienic czynszowych."@pl ;
                                                   rdfs:isDefinedBy "placówka opiekuńczo-wychowawcza przeznaczona dla dzieci nieobjętych jeszcze nauczaniem szkolnym"@pl ;
                                                   rdfs:label "przedszkole"@pl ;
@@ -2394,7 +2394,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Wystawianiu oper służyły różne, nieraz prowizoryczne budynki wpierw w renesansowych Włoszech, z których pochodzi ten rodzaj sztuki. W czasach nowożytnych opery wystawiane były najczęściej w tych samych pomieszczeniach, co przedstawienia teatralne. W dziewiętnastym wieku największe i najbogatsze miasta stać było na stawianie odrębnych budynków operowych. Świadczyły o statusie miasta, dlatego też miały wyjątkowo ozdobne fasady."@pl ;
                                                   rdfs:isDefinedBy "budynek, w którym publiczność gromadzi się w celu oglądania spektakli operowych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
                                                   rdfs:label "opera"@pl ;
@@ -2528,7 +2528,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Koszary były lokowane w centrach miast, w tym w obrębie fortec, ale w XIX w. nastąpiła tendencja do stawiania całych \"miasteczek\" koszarowych dla wojska na peryferiach miast, zawsze jednak blisko ważnych dróg komunikacyjnych. Ich istnienie mogło być korzystne dla gospodarki małych miasteczek."@pl ;
                                                   rdfs:isDefinedBy "grupa budynków służących za mieszkania żołnierzy pełniących służbę wojskową"@pl ;
                                                   rdfs:label "zabudowania koszarowe"@pl ;
@@ -2854,7 +2854,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Jatki są jednymi z najważniejszych i najwcześniej występujących kramów w mieście."@pl ;
                                                   rdfs:isDefinedBy "kram do sprzedaży mięsa"@pl ;
                                                   rdfs:label "jatki"@pl ;
@@ -2878,7 +2878,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "przewód rurowy służący do transportu odpadów ciekłych"@pl ;
                                                   rdfs:label "przewód kanalizacyjny"@pl ;
                                                   ns1:altLabel "kanalizacyjny"@pl .
@@ -2968,7 +2968,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Śluzy są ważnym elementem infrastruktury umożliwiającej żeglugę śródlądową i łączenie komunikacyjnych i  produkcyjnych funkcji rzek oraz kanałów, najstarsze ze śluzy w obrębie miast na terenie Europy pochodzą z XIV wieku. Występują w miastach położonych nad rzekami o znaczeniu komunikacyjnym."@pl ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umożliwiająca pokonywanie różnicy poziomów wód w trakcie żeglugi"@pl ;
                                                   rdfs:label "śluza"@pl ;
@@ -3036,7 +3036,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Furty istniały w przypadku większości miast, także nieufortyfikowanych. W przypadku istnienia fortyfikacji, furta jest stałą częścią fortyfikacji miast, pojawia się we wszystkich badanych okresach."@pl ;
                                                   rdfs:isDefinedBy "wąskie zabezpieczone skrzydłem bramnym wejście ustawione na granicy miasta, umożliwiające kontrolę wchodzących i pobór opłat, często też element fortyfikacji, zamykalne, chronione przejście w murach obronnych"@pl ;
                                                   rdfs:label "furta miejska"@pl ;
@@ -3077,7 +3077,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function20
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Domy publiczne istniały we wszystkich miastach przez cały okres ich trwania, w niektórych okresach i na niektórych ziemiach jednak nieoficjalnie. Czasem ich rolę pełniły inne ośrodki, np. kultu sakralnego. Obiekt zazwyczaj jest oddzielnym budynkiem, ale bywa też częścią budynku."@pl ;
                                                   rdfs:isDefinedBy "miejsce, w którym świadczone są odpłatnie usługi seksualne"@pl ;
                                                   rdfs:label "dom publiczny"@pl ;
@@ -3117,7 +3117,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Bramy istniały w przypadku większości miast, także nieufortyfikowanych. W przypadku istnienia fortyfikacji, brama jest stałą częścią fortyfikacji miast, pojawia się we wszystkich badanych okresach."@pl ;
                                                   rdfs:isDefinedBy "brama ustawiona na granicy miasta, wyposażona w skrzydła bramne, umożliwiająca kontrolę wjeżdżających i pobór opłat, często też element fortyfikacji, zamykalny, chroniony przejazd w murach obronnych"@pl ;
                                                   rdfs:label "brama miejska"@pl ;
@@ -3190,7 +3190,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function18
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Powstanie żłobków we współczesnym rozumieniu jest zjawiskiem XX-wiecznym."@pl ;
                                                   rdfs:isDefinedBy "miejsce opieki nad dziećmi w wieku przedprzedszkolnym, może być w oddzielnie stojącym budynku, może być częścią innego budynku"@pl ;
                                                   rdfs:label "żłobek"@pl ;
@@ -3404,7 +3404,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function31>
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "sztuczny, ziemny wał, na ogół przy rzece, pełniący funkcje przeciwpowodziowe, lub wał ziemny, rozdzielający wody stojące, w szczególności obwałowania stawów rybnych"@pl ;
                                                   rdfs:label "wał przeciwpowodziowy lub grobla"@pl ;
                                                   rdfs:seeAlso "#SJP, grobla: \"wał ziemny usypany w celu spiętrzenia wody w rzece lub rozdzielenia stawów\" #duden: \"Damm: künstlich errichteter Wall\", #duden: \"Deich: aufgeschütteter Erddamm längs eines Flusses oder einer Meeresküste zum Schutz tiefer liegenden Geländes gegen Überschwemmung\""@pl ,
@@ -3479,7 +3479,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function8
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Budynki gospodarcze były przez cały okres istnienia miasta częścią składową zabudowy działek miejskich. "@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do niezawodowego wykonywania prac warsztatowych oraz do przechowywania materiałów, narzędzi, sprzętu i płodów rolnych służących mieszkańcom budynku mieszkalnego, budynku zamieszkania zbiorowego, budynku rekreacji indywidualnej, a także ich otoczenia, a w zabudowie zagrodowej przeznaczony również do przechowywania środków produkcji rolnej i sprzętu oraz płodów rolnych"@pl ;
                                                   rdfs:label "budynek gospodarczy"@pl ;
@@ -3525,7 +3525,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 ###  https://purl.org/urbanonto/object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b
 :object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#class_55> ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Pozostałości po dawnej architekturze były stałym elementem pejzażu miast i ich okolic. Mogły być ignorowane i zaniedbane, mogły być obiektem nostalgii i ew. przedmiotem opieki, mogły być też chronione przez prawo, które zakazywało ingerowania w ich stan i kształt. Ruiny najczęściej stały na terenie prywatnym i do drugiej połowy XIX w. właściciela praktycznie nie można było zmusić do nieingerowania w ten obiekt. Debaty na temat tego, czy powinno się odbudowywać ruiny trwały przez cały XIX w., a jednym z ważnych obiektów tych ogólnokrajowych debat były w Niemczech ruiny zamku w Heidelbergu. W XX w. przeważyło zdanie, że ruin nie powinno się odbudowywać, pogląd ten został jednak zmarginalizowany po II wojnie światowej i strasznych zniszczeniach zabytków, jakie wówczas miały miejsce w wyniku nalotów bombowych."@pl ;
                                                   rdfs:isDefinedBy "pozostałość po dawnej budowli lub budowlach"@pl ;
                                                   rdfs:label "ruina zabytkowa"@pl ;
@@ -3854,7 +3854,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Kanały występują w miastach przez cały badany okres."@pl ;
                                                   rdfs:isDefinedBy "odcinek sztucznego cieku wodnego, pomiędzy węzłami sieci hydrograficznej, pełniącego rolę transportową lub melioracyjną"@pl ;
                                                   rdfs:label "kanał"@pl ;
@@ -4182,7 +4182,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna umieszczona w poprzek koryta rzeki służąca spiętrzaniu wody"@pl ;
                                                   rdfs:label "jaz"@pl ;
                                                   rdfs:seeAlso "#SJP: \"stała lub ruchoma budowla wznoszona w poprzek koryta rzeki, służąca do spiętrzenia wody\" #SJP_Doroszewski: \"zapora na rzece służaca do spiętrzania wody dla wyzyskania siły wodnej, w celach żeglugowych, melioracyjnych, wodociągowych itp.; tama, grobla, zastawa\""@pl ,
@@ -4343,7 +4343,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Jedno- lub wieloczęściowy budynek, najczęściej wolnostojący, łatwy do rozpozia po swym wydłużonym kształcie. Czasem dworcowi towarzyszyły mniejsze budynki o wydzielonych funkcjach (gastronomia itp.), większe dworce grupowały wszystkie funkcje towarzyszące pod jednym dachem. Dworzec kolejowy znajdował się w samym centrum miasta lub - częściej - na jego obrzeżach, w odległości do kilku kilometrów od historycznego centrum, w miastach i osadach, przez które biegła linia kolejowa. W ciągu XIX wieku pojawiała się bardziej reprezentacyjna ulica lub aleja biegnąca do niego z w/w centrum. Czasem w większych ośrodkach obok dworca pojawiał się park kolejowy - wizytówka miasta, częściej był to większy plac - postój dla powozów i dorożek, potem samochodów. W największych miastach było kilka dworców. Pojawia się na ziemiach polskich w późnych latach trzydziestych wraz budową późniejszej linii Warszawa-Wiedeń, w Warszawie w 1845 r. (arch. Henryk Marconi). Wyraz nie występował w słownikach do drugiej połowy XIX w. Jednak w prasie warszawskiej nowy dworzec był od samego początku (1845 r.) nazywany tym terminem (por. Łupienko 2012: s. 121). Nazywany także banhofem z niemieckiego, jako taki jednak nie występuje u Orgelbranda w 1861 r. "@pl ;
                                                   rdfs:isDefinedBy "zadaszone zabudowania służące pasażerom kolei żelaznych oraz ich obsłudze, zlokalizowane na stacji osobowej lub przeładunkowej, zajmujące część terenu torów kolejowych oraz najbliższy przyległy obszar. Przede wszystkim służył jako wnętrze służące dla osób oczekujących na przyjazd pociągu. Występował głównie w ośrodkach miejskich różnej wielkości, które były jego zapleczem"@pl ;
                                                   rdfs:label "dworzec kolejowy"@pl ;
@@ -4378,7 +4378,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function7
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "pomost spacerowy zbudowany prostopadle lub ukośnie do linii brzegowej; służy też zwykle do cumowania niewielkich statków i łodzi."@pl ;
                                                   rdfs:label "pomost albo molo"@pl ;
                                                   rdfs:seeAlso "#SJP: \"molo: pomost wychodzący w morze\", #SJP: \"pomost: platforma oparta na podporach, wychodząca z brzegu na jezioro lub rzekę\""@pl ,
@@ -4440,7 +4440,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Archiwa istniały jako oddzielne pomieszczenia przy instytucjach i urzędach od starożytności. W średniowieczu i czasach nowożytnych najważniejszym obiektem, gdzie przechowywano archiwalia w miastach, były gmachy ratuszy. Dopiero w dziewiętnastym wieku pojawiły się jako oddzielnie istniejące instytucje, a w dwudziestym wieku pojawiły się wielkie archiwa państwowe, które miały nieraz okazałe gmachy."@pl ;
                                                   rdfs:isDefinedBy "gmach przeznaczony do przechowywania archiwaliów, dawnych dokumentów wraz z miejscem do ich odczytywania i konserwacji"@pl ;
                                                   rdfs:label "archiwum"@pl ;
@@ -4515,7 +4515,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function22
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Składy książek pojawiały się od starożytności aż do czasów najnowszych. Bywały najczęściej fundacją możnych rodów. W dziewiętnastym wieku pojawił się fenomen masowych bibliotek zakładanych przez instytucje nawet w najmniejszych ośrodkach, w czym szczególnie aktywne były organizacje narodowe."@pl ;
                                                   rdfs:isDefinedBy "gmach służący przechowywaniu i udostępnianiu publicznemu książek, zaopatrzony w magazyn i nieobowiązkowo w czytelnię"@pl ;
                                                   rdfs:label "biblioteka"@pl ;
@@ -4552,7 +4552,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Zespoły pałacowe były elementem miast, szczególnie rezydencjonalnych, od czasów nowożytnych. Pałace często były budowane na sposób 'entre cour et jardin', a więc były oddzielone od osi ulicy dziedzińcem, a z tyłu miały ogród. Warszawa była w XVII i XVIII w. miastem takich pałaców. Resztki tych ogródów przetrwały w XIX w. także w tych założeniach, które zostały rozparcelowane, jednak parcelacja takiego założenia sprawiała, że przestawał on spełniać definicję zespołu pałacowego."@pl ;
                                                   rdfs:isDefinedBy "kompleks budynków zawierający pałac, zbudowanych przez właściciela pałacu"@pl ;
                                                   rdfs:label "zespół pałacowy"@pl ;
@@ -4606,7 +4606,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Gospodarstwa hodowlane były w okresie przedprzemysłowym ważną częścią gospodarki miejskiej, w niektórych miastach pełniły wręcz funkcję dominującą."@pl ;
                                                   rdfs:isDefinedBy "Zwarty obszar, na którym prowadzi się na hodowlę roślin lub zwierząt"@pl ;
                                                   rdfs:label "gospodarstwo hodowlane"@pl ;
@@ -4686,7 +4686,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "budowla hydrotechniczna przegradzająca dolinę rzeki w celu spiętrzenia wody oraz ochrony przed powodziami"@pl ;
                                                   rdfs:label "zapora"@pl ;
                                                   rdfs:seeAlso "#SJP: \"budowla przegradzająca dolinę rzeki i spiętrzająca wodę, z której tworzy się zbiornik wodny\""@pl ,
@@ -4917,7 +4917,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Hale targowe stanowiły rozwiniętą formę targowiska, która oferowała komfortowe warunki handlu (ochrona przed niekorzystnymi okolicznościami pogodowymi). Ich gabaryty uległy zwiększeniu wraz z wprowadzeniem konstrukcji żeliwnych. Hale targowe pojawiły się w XIX w. W Warszawie wczesnymi przykładami był Sewerynów koło pomnika Kopernika oraz Gościnny Dwór przy placu Żelaznej Bramy. Nowoczesny typ hali targowej pojawił się pod koniec wieku, a przykładem takiej budowli w Warszawie były Hale Mirowskie oraz hala targowa na placu Witkowskiego w okolicy rogatek jerozolimskich. "@pl ;
                                                   rdfs:isDefinedBy "budynek o większej kubaturze i wysokim parterze, który służy jako miejsce handlu"@pl ;
                                                   rdfs:label "hala targowa"@pl ;
@@ -5171,7 +5171,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function26>
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Nowoczesne szpitale rozwinęły się w końcu XVIII i w pierwszej połowie XIX w. Posiadanie oddzielnej wolnostojącej siedziby stało się wymogiem dla szpitali dopiero w końcu XIX w. Zwarte, wielkogabarytowe siedziby szpitali (np. szpital przy ul. Kopernika w Warszawie) ustąpiły w XIX w. zabudowie pawilonowej (np. szpital Dzieciątka Jezus w Warszawie)."@pl ;
                                                   rdfs:isDefinedBy "zespół budynków przeznaczony do leczenia pacjentów, którzy wymagają stałej opieki"@pl ;
                                                   rdfs:label "zespół szpitalny"@pl ;
@@ -5225,7 +5225,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Rurociągi gazowe pojawiają się w miastach w XIX wieku, powszechne stają się w XX."@pl ;
                                                   rdfs:isDefinedBy "rurociąg przeznaczony do transportu gazu ziemnego lub miejskiego"@pl ;
                                                   rdfs:label "przewód gazowy"@pl ;
@@ -5291,7 +5291,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Pensjonaty znajdują się zazwyczaj w miejscowościach turystycznych. "@pl ;
                                                   rdfs:isDefinedBy "mały hotel o domowym charakterze, nieoferujący pełni usług hotelarskich, ale zapewniający zazwyczaj całodniowe wyżywienie"@pl ;
                                                   rdfs:label "pensjonat"@pl ;
@@ -5320,7 +5320,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_400
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Pałace były elementem miast, szczególnie rezydencjonalnych, od średniowiecza. Nie zawsze jednak łatwo jest odróżnić je od bogatszych kamienic, które - jeśli służyły jednej rodzinie i bardzo ograniczonej liczbie lokatorów wynajmujących mieszkania - mogły być nazywane pałacami (np. pałac Teppera przy ul. Miodowej w Warszawie z końca XVIII w.). Z drugiej strony, pałace arystokratyczne mogły przejść w posiadanie kamieniczników i być podzielone na mieszkania na wynajem, np. pałac Lubomirskich przy pl. Żelaznej Bramy w Warszawie. Dlatego dla odróżnienia p. od innych budynków przyjęta została nadrzędna kategoria formy. Pałace były też dogodnymi obiektami, w których - po wykupieniu przez państwo lub miasto - urządzano siedziby urzędów, przez co traciły swoją funkcję mieszkalną i przez to znikały z kategorii pałaców."@pl ;
                                                   rdfs:isDefinedBy "wolnostojący budynek mieszkalny o reprezentacyjnej formie, wyjątkowo też jako budynek tworzący pierzeję (pałac miejski w typie kamienicy)"@pl ;
                                                   rdfs:label "pałac"@pl ;
@@ -5465,7 +5465,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Barbakan jest ważną częścią fortyfikacji miast, zazwyczaj pojawia się pod koniec średniowiecza. Występuje w mniejszości miast."@pl ;
                                                   rdfs:isDefinedBy "element fortyfikacji miejskich, zazwyczaj okrągły i wysunięty przed mury miejskie, połączony z bramą miejską osłoniętym przejściem, wyposażony w strzelnice"@pl ;
                                                   rdfs:label "barbakan"@pl ;
@@ -5511,7 +5511,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "budowla ziemna, umożliwiająca poprowadzenie drogi lub linii kolejowej na odpowiednim poziomie"@pl ;
                                                   rdfs:label "nasyp"@pl ;
                                                   rdfs:seeAlso "#SJP: \"wał usypany z ziemi w celu podniesienia terenu w danym miejscu\""@pl ,
@@ -5536,7 +5536,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function22
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:comment "Występują we wszystkich miastach przez cały okres ich istnienia."@pl ;
                                                   rdfs:isDefinedBy "teren gromadzenia odpadów komunalnych, obszar wysypiska śmieci"@pl ;
                                                   rdfs:label "teren składowania odpadów komunalnych"@pl ;
@@ -5729,7 +5729,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function7
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Park jest publiczny lub prywatny, na terenie parku obowiązuje specjalny regulamin zachowania się, a wstępu najczęściej pilnują woźni przy bramach. Parki występują w większości dużych i średnich ośrodków miejskich, ich częścią mogą być fragmenty terenu o innej niż rekreacyjna funkcji, np. komercyjnej. Pojawiają się w XVIII w. (Europa) lub końcu XVIII w. (zabory Rzeczypospolitej) jako ogród spacerowy lub przechadzki. Wcześniej istnieją jako prywatny ogród miejski lub pałacowy. Nazwa \"park\" nie występuje w XIX w. w odniesieniu do parków miejskich, które wówczas też rzadko przybierają większe rozmiary. Park jest importem z angielskiego, który przyjmuje się dopiero po połowie wieku XIX, wcześniej ma znaczenie artyleryjskie (park armat itp.). "@pl ;
                                                   rdfs:isDefinedBy "wydzielona parcela miejska lub grupa parcel w znaczącym stopniu pokryta zielenią, otwarta lub zalesiona, skomunikowana najczęściej ścieżkami spacerowymi, z niewielkim udziałem zabudowy, często wydzielona ogrodzeniem, służąca celom publicznym"@pl ;
                                                   rdfs:label "park"@pl ;
@@ -5762,7 +5762,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function8
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Siedziby banków (domów bankowych) pojawiły się najwcześniej w nowożytnych Włoszech, gdzie jako pierwsza pojawiła się sama instytucja. Była to instytucja o charakterze prywatnym, więc wygląd i okazałość gmachów bankowych zależały od zamożności instytucji oraz siły gospodarki kapitalistycznej w danym kraju lub mieście. W końcu osiemnastego wieku pojawiły się banki państwowe, a w dziewiętnastym - banki spółdzielcze, co miało wpływ na bardziej okazałe gmachy mieszczące te instytucje. W jednym mieście istniało kilka lub kilkadziesiąt banków, mieszczących się w wolnostojących gmachach lub w części kamienic mieszkalnych oraz gmachów publicznych."@pl ;
                                                   rdfs:isDefinedBy "gmach instytucji finansowej, dostępny dla klientów"@pl ;
                                                   rdfs:label "bank"@pl ;
@@ -5787,7 +5787,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "przewód rurowy służący do transportu wody"@pl ;
                                                   rdfs:label "przewód wodociągowy"@pl ;
                                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q55753876"^^xsd:url ;
@@ -5929,7 +5929,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 ###  https://purl.org/urbanonto/object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb
 :object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#object_125> ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "obiekty dawnej architektury zawsze były liczne w mieście i najczęściej nie były nawet zauważane. Kościoły, zamki, pałace i ratusze były tu oczywistym wyjątkiem. Jednak i te budynki i mniej znaczące dawne budowle były do początku XIX w. burzone, gdy tylko była taka potrzeba, gdyż dominował pogląd, że zasadność zachowania budynku zależy od jego użyteczności. Niewiele obiektów uznawano za zabytki, tzn. obiekty, które powinny być zachowane dla następnych pokoleń, najczęściej dawne obiekty \"ratowały\" ich rozmiary i duży koszt ew. usunięcia. To zaczęło się zmieniać w XIX wieku, gdy więcej budowli zaczęto postrzegać jako zabytki oraz gdy pojawiła się nostalgia związana z dawną architekturą, którą dodatkowo wzmacniały rozwijająca się nowa dziedzina historii sztuki. Za zabytki zaczęto uznawać domy mieszkalne, kamienice, mury miejskie i baszty, mniejsze świątynie itp. Nowoczesna klasyfikacja zabytków rozpoczęła się wraz z powstaniem instytucji ochrony zabytków: w zaborze pruskim po 1815 r., w austriackim od 1853 r., w rosyjskim od czasu dekretu Mikołaja I z 1826 r. Listy zabytków tworzone przez instytucje państwowe oraz naukowe odpowiadały nie tylko ówczesnej wiedzy o historii architektury, ale wpływ na to miała także idea państwowa. Pojawienie się nowoczesnej klasyfikacji i ochrony zabytków nie jest jednak warunkiem istnienia samych zabytków."@pl ;
                                                   rdfs:isDefinedBy "dawny obiekt architektoniczny, niebędący w stanie ruiny"@pl ;
                                                   rdfs:label "zabytek nieużytkowy"@pl ;
@@ -5961,7 +5961,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Teatry pojawiały się jako część miasta w antycznej Grecji (widownia na zboczu wzgórza) i w Rzymie (amfiteatry). W miastach nowożytnych pojawiały się od czasów renesansu. W Europie Środkowej funkcjonowały w większych pomieszczeniach, budach, magazynach i w zabudowaniach sekularyzowanych instytucji religijnych (od końca XVIII w.). Odrębne gmachy teatrów pojawiały się najwcześniej w miastach rezydencjonalnych. Od końca XVIII w. duże ośrodki były w stanie wybudować okazałe gmachy teatralne świadczące o randze miasta i dlatego też miały wyjątkowo ozdobne fasady."@pl ;
                                                   rdfs:isDefinedBy "budynek, w którym publiczność gromadzi się w celu oglądania spektakli teatralnych, który pod jednym dachem mieści jedną lub kilka scen, zaplecze oraz miejsca dla widowni"@pl ;
                                                   rdfs:label "teatr"@pl ;
@@ -6001,7 +6001,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Prototypem filharmonii były sale balowe w pałacach, w których znajdowały się galerie na pomieszczenie orkiestry. Jako budynki specjalnie przeznaczone dla występów muzyków stały się częścią miast w XIX wieku. Warunkiem ich powstania było istnienie instytucji muzycznych, które je prowadziły i których były siedzibami."@pl ;
                                                   rdfs:isDefinedBy "budynek, w którym publiczność gromadzi się w celu słuchania utworów muzycznych, który pod jednym dachem mieści jedną lub kilka scen dla muzyków, zaplecze oraz miejsca dla widowni"@pl ;
                                                   rdfs:label "filharmonia"@pl ;
@@ -6032,7 +6032,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_400
                                                                   ] ;
-                                                  ns2:creator <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów lub studentów, prowadzony najczęściej przez szkołę lub uczelnię"@pl ;
                                                   rdfs:label "bursa szkolna"@pl ;
@@ -6173,7 +6173,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Hotele, których nazwa pochodzi od francuskiego określenia pałacu miejskiego, pojawiły się w czasach nowożytnych. Różniły się charakterem, jakością wnętrz oraz oferowanych usług. W XVIII i XIX w. siedzibami hoteli były kamienice czynszowe (w Warszawie najwięcej kamienic służyło jako hotele przy ul. Długiej), a nowe obiekty tego typu w pierwszej połowie XIX w. miały formę albo kamienicy podwórzowej (np. Hotel Wiedeński koło dworca w Warszawie, ul. Widok) albo pałacu miejskiego (np. Hotel de Russie, potem Hotel George we Lwowie). Połowa XIX w. to okres pojawienia się dojrzałej formy reprezentacyjnego hotelu o wielu pokojach, obszernych przestrzeniach służących obsłudze gości i utrzymaniu czystości w pokojach i usługach gastronomicznych w parterze: np. Hotel Europejski (lata 1850te) i Hotel Brühlowski (lata 1880te). Nowoczesne hotele końca XIX w. były ważnymi wizytówkami miasta i pionierami nowoczesności: np. Hotel Bristol (pierwsza elektryczna winda w mieście) i Hotel Polonia w Warszawie."@pl ;
                                                   rdfs:isDefinedBy "budynek, w którym ludzie zatrzymują się na niestały, płatny pobyt"@pl ;
                                                   rdfs:label "hotel"@pl ;
@@ -6210,7 +6210,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_2
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Domy jednorodzinne były najczęściej występującym rodzajem budynku istniejącego na przedmieściach miast, poza murami miejskimi. Ten typ budowli charakteryzował te miasta i części miast, które znajdowały się we wczesnym etapie rozwoju, np. kolonie rzemieślników w XIX w., np. tkaczy lnu w Okręgu Łódzkim pierwszych dekad XIX w., którzy mieli sami uprawiać swój surowiec. W ciągu XIX wieku d.j. stał się modelową formą mieszkalną w projektach rozszerzania miast i nowych osiedli przeznaczonych dla burżuazji i urzędników. Szczególnym rodzajem domu jednorodzinnego w Rzeczypospolitej był dworek szlachecki."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do zamieszkania jednej rodziny"@pl ;
                                                   rdfs:label "dom jednorodzinny"@pl ;
@@ -6350,7 +6350,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator <http://purl.org/ontohgis#person_4> ;
+                                                  ns2:creator ontohgis:person_4 ;
                                                   rdfs:isDefinedBy "fortyfikacje chroniące miasto, wykoe z kamienia lub cegły"@pl ;
                                                   rdfs:label "mury miejskie"@pl ;
                                                   rdfs:seeAlso "#duden: \"der Befestigung einer Stadt dienende, sie umgebende, dicke, hohe Mauer\""@pl ;
@@ -6371,7 +6371,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_ORCID0000-0002-7568-7455 ;
+                                                  ns2:creator <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Urzędy pocztowe istniały od późnych czasów nowożytnych, wcześniej placówkami poczty bywały często traktiernie czy gospody. Nowoczesny urząd pocztowy pojawił się w Warszawie w czasach saskich w postaci reprezentacyjnej kamienicy Poczty Saskiej na rogu ul. Trębackiej i Krakowskiego Przedmieścia. W XIX w. instytucja poczty bardzo się rozbudowała, a usługi przez nią oferowane się rozwinęły (np. wysyłanie telegramów), zaś placówki pocztowe pojawiły się w każdym mieście. Istniały też często odgórne wytyczne, jaką szatę stylową miały mieć urzędy pocztowe, np. w Prusach, gdzie stosowano najczęściej neogotyk."@pl ;
                                                   rdfs:isDefinedBy "ogólnodostępny budynek lub część budynku, w którym można skorzystać z usług pocztowych"@pl ;
                                                   rdfs:label "urząd pocztowy"@pl ;
@@ -6467,7 +6467,7 @@ ontohgis:person_2 rdf:type owl:NamedIndividual ;
 
 
 ###  http://purl.org/ontohgis#person_4
-ontohgis:person_4 owl:sameAs <http://purl.org/ontohgis#person_4> .
+ontohgis:person_4 <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
 
 
 ###  http://purl.org/ontohgis#person_9
@@ -6547,6 +6547,13 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                                        rdfs:label "funkcja kontrolna"@pl .
 
 
+###  https://orcid.org/0000-0002-7568-7455
+<https://orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
+                                                 cidoc_crm:E21_Person ;
+                                        <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
+                                        rdfs:label "Aleksander Łupienko"@pl .
+
+
 ###  https://purl.org/urbanonto/function15
 :function15 rdf:type owl:NamedIndividual ,
                      <http://purl.obolibrary.org/obo/BFO_0000034> ;
@@ -6595,13 +6602,6 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
             rdfs:label "funkcja magazynowa"@pl .
 
 
-###  https://purl.org/urbanonto/person_ORCID0000-0002-7568-7455
-:person_ORCID0000-0002-7568-7455 rdf:type owl:NamedIndividual ,
-                                          cidoc_crm:E21_Person ;
-                                 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> ;
-                                 <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
-
-
 ###  https://purl.org/urbanonto/property_right_1
 :property_right_1 rdf:type owl:NamedIndividual ,
                            cidoc_crm:E30_Right ;
@@ -6623,14 +6623,6 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                                                                          rdfs:label "Michał Słomski"@pl .
 
 
-###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person ;
-                                                                          owl:sameAs <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url ;
-                                                                          rdfs:label "Aleksander Łupienko"@pl .
-
-
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-0634-7614> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
@@ -6638,22 +6630,11 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                                                                           rdfs:label "Konrad Szuba"@pl .
 
 
-###  http://purl.org/ontohgis#person_4
-<http://purl.org/ontohgis#person_4> 
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
-
-
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018
 <https://purl.org/urbanonto/person_https://orcid.org/0000-0003-3669-0018> rdf:type owl:NamedIndividual ,
                                                                                    cidoc_crm:E21_Person ;
                                                                           <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3669-0018"^^xsd:url ;
                                                                           rdfs:label "Katarzyna Słomska-Przech"@pl .
-
-
-###  https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455
-<https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> rdf:type owl:NamedIndividual ,
-                                                                           cidoc_crm:E21_Person ;
-                                                                  <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-7568-7455"^^xsd:url .
 
 
 #################################################################
