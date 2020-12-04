@@ -15,7 +15,7 @@
                                          <http://purl.org/ontohgis> ;
                              rdfs:comment "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
                              rdfs:seeAlso "https://urbanonto.ihpan.edu.pl/" ;
-                             owl:versionInfo 0.1 .
+                             owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
@@ -127,7 +127,7 @@ ontohgis:administrative_type_85 rdfs:subClassOf <https://purl.org/bdot10k#class_
                                                   owl:onProperty ontohgis:hasProperFunction ;
                                                   owl:hasValue <http://purl.org/urbanonto/function32>
                                                 ] ;
-                                ns2:creator :person_0000-0001-8208-4743 ;
+                                ns2:creator ontohgis:person_2 ;
                                 rdfs:comment "Choć miasto z reguły jest całe w granicach jednego państwa, zdarzają się sytuacje, gdy jest ono czasowo lub trwale dzielone między dwa państwa, jak również takie, gdy połączenie dwóch miast powstałych obok siebie po dwu stronach granicy prowadzi do powstania, nowego, połączonego miasta, przy zachowaniu lub uchyleniu tejże granicy."@pl ;
                                 rdfs:isDefinedBy "jednostka polityczna, która na danym terytorium odgrywa rolę dominującą w stanowieniu i egzekwowaniu prawa"@pl ;
                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q7275"^^xsd:url ;
@@ -146,7 +146,7 @@ ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109>
                                              owl:onProperty ontohgis:hasProperFunction ;
                                              owl:hasValue <http://purl.org/urbanonto/function30>
                                            ] ;
-                           ns2:creator :person_0000-0001-8208-4743 ;
+                           ns2:creator ontohgis:person_2 ;
                            rdfs:comment "W okresie przedindustrialnym więzienie było stałym elementem przestrzeni większych miast, powiązanym funkcjonalnie i przestrzennie z miejscem sprawowania władzy. Rozpowszechnioną formą więzienia były pomieszczenia w wieży, zwykle na najniższym i czasem prawie najniższym poziomie; mogła to być wieża ratuszowa, zamkowa lub wieża obronna należąca do fortyfikacji miejskich. W epoce nowożytnej więzienia zaczęły stanowić odrębne budynki, często stanowiące jednocześnie placówkę produkcyjną, co straciło ponownie na znaczeniu w XVIII w."@pl ;
                            rdfs:isDefinedBy "budynek przeznaczony do przetrzymywania ludzi wbrew ich woli, zazwyczaj skazanych na karę pozbawienia wolności"@pl ;
                            rdfs:seeAlso "https://www.wikidata.org/wiki/Q40357"^^xsd:url ;
@@ -711,7 +711,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Miasta w strefie lokacyjnej były zakładane według okreslonego planu, a jego fundamentem były modułoewe parcele mieszczanskie. Ich rzeczywisty kształt mógł odbiegać od geometrycznego wzorca od samego początku i zawsze podlegał potem zmianom wskutek podziałów i łączeń działek. Zazwyczaj rekonstrukcja rozmierzenia lokacyjnego jest więc hipotetyczna, a mimo to stanowi ważny nurt badań nad przestrzenią miejską. "@pl ;
                                                   rdfs:isDefinedBy "wyznaczone wraz z lokacją rozplanowanie miasta obejmujące granice parcel według określonego modułu, wyznaczające jednocześnie zasięg bloków zabudowy i ulic"@pl ;
                                                   rdfs:label "rozmierzenie lokacyjne"@pl .
@@ -745,7 +745,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function29>
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Kamienie milowe ze są od czasów antycznych, a na ziemiach polskich od XI w. Występują przede wszystkim poza miastem, ale zdarzają się również w przestrzeni miejskiej i mogą odgrywać istotną rolę np. w określeniu centrum miasta dla czasów powstania kamienia milowego."@pl ;
                                                   rdfs:isDefinedBy "kamienny znak wyznaczający odcinek drogi"@pl ;
                                                   rdfs:label "kamień milowy"@pl ;
@@ -898,7 +898,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Wiadukty w miastach pojawiły się w epoce przemysłowej i odgrywały mniejszą rolę niż mosty. Ich obecność w bazie danych jest jednak istotna ze względu na wpływ na sieć komunikacyjną."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca ciąg komunikacyjny przeznaczony dla większych pojazdów  nad obniżeniem terenu lub innym ciągiem komunikacyjnym"@pl ;
                                                   rdfs:label "wiadukt"@pl .
@@ -985,7 +985,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Przejścia podziemne rozpowszechniły się w miastach w epoce przemysłowej i nigdy nie odgrywały kluczowej roli w przestrzeni miejskiej."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca ciąg komunikacyjny przeznaczony dla większych pojazdów  pod innym ciągiem komunikacyjnym"@pl ;
                                                   rdfs:label "przejście podziemne"@pl .
@@ -1160,7 +1160,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ,
+                                                  ns2:creator ontohgis:person_2 ,
                                                               <https://purl.org/urbanonto/person_orcid.org/0000-0002-7568-7455> ;
                                                   rdfs:comment "Przytułki lub inaczej domy dla bezdomnych pojawiały się od starożytności, funkcjonowały na różnych zasadach i różne było ich umocowanie prawne. W średniowieczu i czasach nowożytnych prowadzone były przez instytucje religijne i bywały częścią zabudowań klasztornych. W czasach późnonowożytnych zaczęły być częściej prowadzone przez instytucje pożytku publicznego i nowoczesne instytucje dobroczynne."@pl ,
                                                                "Różne formy przytułków występowały powszechnie miastach."@pl ;
@@ -1236,7 +1236,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function25>
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Rynek jest obiektem charakterystycznym przede wszystkim dla strefy miast lokacyjnych, o zaplanowanym z góry układzie przestrzennym, i ma w nich regularną formę: najczęściej prostokąta, rzadzej owalu lub trójkąta. W innych częściach Europy wskazanie jednego głównego placu może być trudne, a wyróżnikiem jest przede wszystkim rola miejsca wymiany i położenie w centrum miasta, bez związku z siedzibą władzy i manifestacją tejże. "@pl ;
                                                   rdfs:isDefinedBy "plac położony w centrum miasta i pełniący rolę głównego miejsca wymiany oraz manifestacji władzy komunalnej"@pl ;
                                                   rdfs:label "rynek"@pl ;
@@ -1402,7 +1402,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Z perspektywy pokrycia terenu jednym terminem określa się cieki wodne niezależnie od ich wielkości: rzeki, strumienie, potoki, strugi. Są to zazwyczaj cieki naturalne, lecz w mieście silnie przetworzone przez człowieka. Nie chowują ciągłości przechodząc przez zbiorniki wodne, np. zaporowe lub stawy, ani na odcinkach, gdzie płyną pod ziemią (w XIX - XX w. mniejsze rzeki często na terenie miasta kanalizowano, czyli przykrywano całkiem ich nurt na dłuższym odcinku)."@pl ;
                                                   rdfs:isDefinedBy "powierzchniowy ciek wodny"@pl ;
                                                   rdfs:label "woda płynąca"@pl ;
@@ -1427,7 +1427,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function12
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Zespoły sakralne i klasztorne stanowiły jeden z ważniejszych elementów przestrzeni miejskiej, choć zazwyczaj były wyłączone spod jurysdykcji władz miejskich. W mniejszych ośrodkach często jedynym zespołem sakralnym był ten wokół kościoła parafialnego, a nie klasztoru."@pl ;
                                                   rdfs:isDefinedBy "Wydzielony funkcjonalnie lub własnościowo teren, który stanowi bezpośrednie otoczenie znajdującego się tam klasztoru lub innego obiektu sakralnego wraz z obiektami towarzyszącymi."@pl ;
                                                   rdfs:label "zespół sakralny lub klasztorny"@pl .
@@ -1520,8 +1520,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function3
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ,
-                                                              <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Siedziba i własność klasztoru jako instytucji; w Kościele Katolickim - instytucji prawa kanonicznego, podlegający jurysdykcji kościelnej. W każdym większym mieście klasztory były ważną częścią przestrzeni realnej i symbolicznej. Często były położone na terenie kompleksu klasztornego, obejmującego również kościół i inne budynki."@pl ,
                                                                "W każdym większym mieście klasztory były ważną częścią przestrzeni realnej i symbolicznej. Często były położone na terenie kompleksu klasztornego, obejmującego również kościół i inne budynki. W klasie budynków klasztor nie jest częścią większej całości; przestrzennie często mieści się w obrębie  obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków klasztor nie ma części składowych; funkcjonalnie składa się m.in. z części sypialnej, jadalni (refektarz), pomieszczeń gospodarczych i innych. Siedziba i własność klasztoru jako instytucji; w Kościele Katolickim - instytucji prawa kanonicznego, podlegający jurysdykcji kościelnej. "@pl ;
                                                   rdfs:isDefinedBy "budynek mieszkalny wspólnoty zakonnej"@pl ;
@@ -1575,7 +1574,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue ontohgis:function8
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Definiowane tu cieki stanowią część sieci wodnej, mają charakter liniowy i zachowują ciągłość  przepływając np. przez zbiornik zaporowy lub na odcinku krytym. Należy je odróżnić od pokrycia terenu wodą płynącą i od drogi wodnej, będącej częścią sieci komunikacyjnej."@pl ;
                                                   rdfs:isDefinedBy "mały, naturalny, powierzchniowy ciek wodny"@pl ;
                                                   rdfs:label "strumień, potok lub struga"@pl ;
@@ -2423,7 +2422,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_400
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Podgrodzia są przedstawiane w literaturze przedmiotu jako ośrodki miejskie przed przełomem lokacyjnym lub jako jako podstawa funkcjonowania wczesnych gmin lokacyjnych; zazwyczaj traciły na znaczeniu lub zanikały po lokacji."@pl ;
                                                   rdfs:isDefinedBy "osada zależna od grodu funkcjonalnie (zaspokajała potrzeby mieszkańców grodu) i przestrzennie (przylegała do niego), ale będąca poza jego granicą i nie wchodząca w skład grodu."@pl ;
                                                   rdfs:label "podgrodzie"@pl .
@@ -2454,7 +2453,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasImproperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Definiowana tu rzeka stanowi część sieci wodnej, ma charakter liniowy i zachowuje ciągłość  przepływając np. przez zbiornik zaporowy lub na odcinku krytym. Należy ją odróżnić od pokrycia terenu wodą płynącą i od drogi wodnej, będącej częścią sieci komunikacyjnej."@pl ;
                                                   rdfs:isDefinedBy "duży, naturalny, powierzchniowy ciek wodny"@pl ;
                                                   rdfs:label "rzeka"@pl ;
@@ -2784,7 +2783,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_402
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Funkcjonowanie gminy i zarazem osady kupieckiej w obrębie policentrycznego ośrodka wczesnomiejskiego jest ważnym, lecz słabo rozpozym (ze względu na ubóstwo źródeł) etapem kształtowania się miasta. Niektóre cechy zdefiniowanej tu gminy kupieckiej dają się wskazać w procesie lokacyjnym miast poza ziemiami polskimi, lecz stan badań nie pozwala na objęcie tych zjawisk jednolitą definicją. Taka osada kupiecka jest zazwyczaj lokalizowana poprzez kościół, który ją obsługiwał."@pl ;
                                                   rdfs:isDefinedBy "zakładana na wczesnym etapie procesu lokacyjnego na ziemiach polskich osada dla kupców głównie obcego pochodzenia i obdarzona przywilejem, który prawdopodobnie odnosił się do grupy osób, a nie do wydzielonego terytorium; na jej czele stał sołtys"@pl ;
                                                   rdfs:label "gmina kupiecka"@pl .
@@ -2815,7 +2814,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue :function16
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Pierzeja może składać się z tylko jednej działki i może być jednocześnie blokiem zabudowy. "@pl ;
                                                   rdfs:isDefinedBy "ciąg działek przylegających do jednej strony odcinka ulicy albo do boku placu ograniczonego dwoma ulicami"@pl ;
                                                   rdfs:label "pierzeja"@pl .
@@ -2919,7 +2918,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Kamienie graniczne ze są w Polsce co najmniej od XI w., w Europie znacznie dłużej, i są wciąż używane, także w przestrzeni miejskiej. Mogą wyznaczać granice jednostek terytorialnych od tych największych, czyli państw, po te najmniejsze, czyli parcele. W tej statniej funkcji mogą często pojawiać się w przestrzeni miejskiej i jej kartograficznym odwzorowaniu, szczególnie cyfrowym."@pl ;
                                                   rdfs:isDefinedBy "kamienny znak wyznaczający granicę miedzy sąsiadującymi obszarami"@pl ;
                                                   rdfs:label "kamień graniczny"@pl ;
@@ -3060,7 +3059,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function30>
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Leprozoria występowały powszechnie w większych miastach epoki przedindistrialnej. Na ziemiach polskich miały zazwyczaj status szpitala jaok instytucji prawa kanonicznego, na zachodzie Europy - zwykle nie. Były to kompleksy w znacznym stopniu autonomiczne, z własnym obiektem sakralnym, majątkiem (dochodami zewnętrznymi), elementami hodowli i uprawy. "@pl ;
                                                   rdfs:isDefinedBy "teren przeznaczony do zamieszkania przez osoby chore na trąd"@pl ;
                                                   rdfs:label "leprozorium"@pl ;
@@ -3343,7 +3342,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_400
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "W okresie przedprzemysłowym i po części również później bloki zabudowy stanowią podstawowy uchwytny źródłowo składnik przestrzeni miejskiej: przestrzeń wewnątrz miasta można podzielić na ulice i place oraz bloki zabudowy. Zazwyczaj taki blok jest zamknięty po prostu czterema ulicami i ma kształt zbliżony do prostokąta, bloki przylegające do granicy miasta mają zwykle jeden bok niebędący prostym odcinkiem. Bloki przyrynkowe, zwylke 4, tworzą szkielet rozplanowania miasta."@pl ;
                                                   rdfs:isDefinedBy "pojedyncza posesja lub zespół posesji, które przylegają do siebie, a od pozostałych są oddzielone ulicą, linią obwarowań, ciekiem wodnym lub inną przeszkodą lub przerwą"@pl ;
                                                   rdfs:label "blok zabudowy"@pl ;
@@ -3464,7 +3463,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Kładki rozpowszechniły się w miastach w epoce przemysłowej i nigdy nie odgrywały kluczowej roli w przestrzeni miejskiej."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca ciąg komunikacyjny przeznaczony dla większych pojazdów,  nad wodą, obniżeniem terenu, inną przeszkodą terenową lub innym ciągiem komunikacynym"@pl ;
                                                   rdfs:label "kładka"@pl ;
@@ -3498,7 +3497,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Brody stanowiły najstarszy i w epoce przedindustrialnej najpowszechniejszy sposób przeprawy przez rzekę. Dotąd są często używane na małych rzekach, lecz w Europie już rzadko w miastach. Dobre brody decydowały niejednokrotnie o miejscu powstania ośrodka miejskiego i o jego rozwoju we wczesnym okresie."@pl ;
                                                   rdfs:isDefinedBy "odcinek drogi przekraczającej rzekę lub rzadziej inną przeszkodę wodną po jej dnie w miejscu, gdzie woda jest płytka, a dno stabilne, umożliwiające przejście lub przejazd"@pl ;
                                                   rdfs:label "bród"@pl ;
@@ -3514,7 +3513,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P43_has_dimension ;
                                                                     owl:someValuesFrom <http://www.opengis.net/ont/sf#Point>
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Umiejscowienie skarbów jest ważną przesłanką dla rekonstrukcji przestrzeni wczesnych ośrodków miejskich i z tej racji jest uwzględniane w niektórych atlasach miast."@pl ;
                                                   rdfs:isDefinedBy "stanowisko archeologiczne zawierające wiele celowo zdeponowanych cennych przedmiotów"@pl ;
                                                   rdfs:label "skarb"@pl ;
@@ -3692,7 +3691,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Place stanowią podsatwowe elementy przestrzeni miejskiej, często główne centrum miasta lub jego części."@pl ;
                                                   rdfs:isDefinedBy "względnie duża i zwarta, wielofunkcyjna przestrzeń publiczna otoczona częściowo lub całkowicie zabudową, a zarazem niezabudowana poza jej częścią centralną"@pl ;
                                                   rdfs:label "plac"@pl ;
@@ -3969,7 +3968,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Tunele rozpowszechniły się w miastach w epoce przemysłowej (budowano je głównie dla obsługi transportu szynowego), lecz lecz jako ważne elementy sieci komunikacynej."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca ciąg komunikacyjny pod poziomem gruntu lub powierzchni wody"@pl ;
                                                   rdfs:label "tunel"@pl ;
@@ -4238,7 +4237,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue <http://purl.org/urbanonto/function25>
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Palatia znajdowały się w najważniejszych grodach monarchii i stanowiły ich centralny punkt, wskazywały na rangę danego ośrodka, który z czasem stawał się zazwyczaj dużym miastem."@pl ;
                                                   rdfs:isDefinedBy "reprezentacyjna, murowana siedziba władcy w Europie Środkowej w X-XII wieku"@pl ;
                                                   rdfs:label "palatium"@pl ;
@@ -4265,7 +4264,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Zakłady karne często znajdowały się w miastach i mimo ich szczelnego odgrodzenia od świata zewnętrzengo pełniły istotną rolę w swoim otoczeniu."@pl ;
                                                   rdfs:isDefinedBy "odgrodzony od otoczenia teran mieszczący więzienie i obiekty towarzyszące"@pl ;
                                                   rdfs:label "zakład karny"@pl .
@@ -4460,7 +4459,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
 ###  https://purl.org/urbanonto/object_type_b2c135a0-216c-4270-84a9-98552c4398c0
 :object_type_b2c135a0-216c-4270-84a9-98552c4398c0 rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://purl.org/bdot10k#category_9> ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "W klasie \"obiekty inne\" nie wyróżniono obiektów o znaczeniu historycznym, jak np. stanowiska archelologiczne, miejsca ważnych wydarzeń, itp., a takie zagadnienia są tematem serii atlasó miast."@pl ;
                                                   rdfs:isDefinedBy "obiekt o znaczeniu historycznym"@pl ;
                                                   rdfs:label "obiekt o znaczeniu historycznym"@pl .
@@ -4712,7 +4711,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function6
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Podział miasta na kwartały, pełniące głównie funkcje podatkowe, był powszechny. Znajomość tych podziałów jest ważna, ponieważ według nich były sporządzane spisy podaktowe, czyli jedne ważniejszych źródel do rekonstrukcji przestrzeni miejskiej w okresie przedindustrialnym. Czasem w poszczególnych kwartałach obowiązywały odmienne zasady opodatkowania, co jest ważne dal intepretcji wspomnianych źródeł i dla formy ich potencjalnej edycji, szczególnie cyfrowej."@pl ;
                                                   rdfs:isDefinedBy "część miasta wydzielona zazwyczaj wraz z jego lokacją za pomocą dwóch prostopadłych osi, wyznaczonych przez wybrane ulice i przecinających się na centralnym placu; te cztery kwartały bywały wraz rozwojem miasta uzupełniane o kolejne lub korygowane; służyły głównie celom podatkowym"@pl ;
                                                   rdfs:label "kwartał podatkowy"@pl .
@@ -4945,7 +4944,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_404
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "W okresie przedindustrialnym mianem młyna określano wszelkie urządzenia wykorzystujące siłę wody, folusze, papiernie, hamernie, tartak. Po polsku nie określa się mianem młyna urządzeń wykorzystujących inną energię - wiatru (wiatrak) lub zwierząt (kierat), ale już źródła łacińskie z ziem polskich nazywają te same urządzenia młynami."@pl ;
                                                   rdfs:isDefinedBy "budynek mieszczący przede wszystkim urzędzenie do mielenia, zazwyczaj zboża, a w okresie przedindustrialnym również inne urządzenia wykorzystujące w podobny sposób siłę wody (młyn wodny), wiatru (wiatrak) lub zwierząt pociągowych (kierat)."@pl ;
                                                   rdfs:label "młyn"@pl ;
@@ -5244,7 +5243,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Mosty stanowiły zawsze kluczowy element sieci komunikacyjnej; w epoce przedindistrialnej mogły być czynnikiem decydującym o rozwoju miasta i kształtującym jego przestrzeń; przykładem jest rozwój odrębnych dzielnic lub nawet gmin jako przyczółka mostowego."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca nad wodą ciąg komunikacyjny przeznaczony dla większych pojazdów"@pl ;
                                                   rdfs:label "most"@pl ;
@@ -5394,7 +5393,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function8
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Określenie utworzone od funkcji gospodarczej często stawało się nazwą własną. "@pl ;
                                                   rdfs:isDefinedBy "rzemieślnicza osada podmiejska, w której głównym rodzajem aktywności zawodowej jest garbarstwo"@pl ;
                                                   rdfs:label "garbary"@pl .
@@ -5652,7 +5651,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function6
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Zwykle tym mianem określa się ostatni obszar włączony do miasta. W miastach ufortyfikowanych rozszerzenie miasta zazwyczaj łączyło się z budową nowej linii obwarowań. Rozszerzenie miasta często oznaczało inkorporację innej jednostki osadniczej i często stawało siępotem nową dzielnicą miasta."@pl ;
                                                   rdfs:isDefinedBy "obszar wlączony do miasta wskutek rozserzenia jego granic"@pl ;
                                                   rdfs:label "rozszerzenie miasta"@pl ;
@@ -5686,7 +5685,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:object_405
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Drogi wodne biegły przede wszystkim większymi, spławnymi rzekami, rzadziej wodami stojącymi, od schyłku XVIII w. coraz częściej kanałami. Pojęcie to nie obejmuje szlaków prowadzących przez otwarte akweny, jak morze i wielkie jeziora, dotyczy jedynie wód śródlądowych. Należy je odróżnić od rzek i mniejszych cieków stanowiących część sieci wodnej."@pl ;
                                                   rdfs:isDefinedBy "szlak transportowy prowadzący wodami płynącymi lub wąskimi akwenami wód stojących"@pl ;
                                                   rdfs:label "droga wodna"@pl ;
@@ -5849,7 +5848,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty ontohgis:hasProperFunction ;
                                                                     owl:hasValue ontohgis:function9
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "Estakady rozpowszechniły się w epoce przemysłowej. Odgrywają większą rolę w transporcie szynowym niż drogowym. W miastach często prowadzą linię komunikacyjną nad niższą zabudową, są alternatywą dla znacznie droższych tuneli."@pl ;
                                                   rdfs:isDefinedBy "budowla prowadząca na dłuższym odcinku ciąg komunikacyjny przeznaczony dla większych pojazdów  nad poziomem gruntu bez nasypu"@pl ;
                                                   rdfs:label "estakada"@pl ;
@@ -6085,8 +6084,7 @@ cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man
                                                                     owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                     owl:hasValue :property_right_1
                                                                   ] ;
-                                                  ns2:creator :person_0000-0001-8208-4743 ,
-                                                              <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
+                                                  ns2:creator ontohgis:person_2 ;
                                                   rdfs:comment "W każdym większym mieście szpital stanowił ważną część jego przestrzeni realnej i symbilicznej."@pl ,
                                                                "W każdym większym mieście szpital stanowił ważną część jego przestrzeni realnej i symbolicznej. W klasie budynków szpital nie jest częścią większej całości; przestrzennie czasem mieści się w obrębie obiektu \"zespół sakralny lub klasztorny\" (KUSC02). W klasie budynków szpital nie ma części składowych. W pełnym i późnym średniowieczu zawsze, a w następnych wiekach często, budynek szpitala był siedzibą i własnością instytucji prawa kanonicznego o własnej osobowości prawnej i majątku, w epoce nowożytnej również występował jako niesamodzielny obiekt w posiadaniu parafii."@pl ;
                                                   rdfs:isDefinedBy "budynek przeznaczony do kompleksowej opieki nad potrzebującymi, obejmującej m.in. mieszkanie i wyżywienie"@pl ,
@@ -6464,7 +6462,8 @@ ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 
 ###  http://purl.org/ontohgis#person_2
-ontohgis:person_2 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> .
+ontohgis:person_2 rdf:type owl:NamedIndividual ;
+                  <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
 
 
 ###  http://purl.org/ontohgis#person_4
@@ -6595,13 +6594,6 @@ ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.or
             rdfs:label "funkcja magazynowa"@pl .
 
 
-###  https://purl.org/urbanonto/person_0000-0001-8208-4743
-:person_0000-0001-8208-4743 rdf:type owl:NamedIndividual ,
-                                     cidoc_crm:E21_Person ;
-                            owl:sameAs <https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> ;
-                            <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
-
-
 ###  https://purl.org/urbanonto/person_ORCID0000-0002-7568-7455
 :person_ORCID0000-0002-7568-7455 rdf:type owl:NamedIndividual ,
                                           cidoc_crm:E21_Person ;
@@ -6628,12 +6620,6 @@ ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.or
                                                                                   cidoc_crm:E21_Person ;
                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-4905-2093"^^xsd:url ;
                                                                          rdfs:label "Michał Słomski"@pl .
-
-
-###  https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743
-<https://purl.org/urbanonto/person_https://orcid.org/0000-0001-8208-4743> rdf:type owl:NamedIndividual ,
-                                                                                   cidoc_crm:E21_Person ;
-                                                                          <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
 
 
 ###  https://purl.org/urbanonto/person_https://orcid.org/0000-0002-0489-3171
@@ -6681,25 +6667,25 @@ ontohgis:person_9 owl:sameAs <https://purl.org/urbanonto/person_https://orcid.or
 #################################################################
 
 ontohgis:administrative_type_243 ns1:altLabel "districtus"@la ;
+                                 ns2:creator ontohgis:person_2 ;
                                  rdfs:comment "Granice powiatu rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy powiatowej lub pełnienie roli siedziby powiatu."@pl ;
                                  rdfs:isDefinedBy "jedna z podstawowych jednostek podziału administracyjnego i samorządowego, w Polsce przedrozbiorowej najniższego, a obecnie średniego szczebla"@pl ;
-                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url ;
-                                 ns2:creator :person_0000-0001-8208-4743 .
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url .
 
 
-ontohgis:administrative_type_257 rdfs:seeAlso "https://www.wikidata.org/wiki/Q15284"^^xsd:url ;
+ontohgis:administrative_type_257 ns2:creator ontohgis:person_2 ;
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q15284"^^xsd:url ;
                                  rdfs:isDefinedBy "podstawowa, najcęściej najniższa jednostka podziału administracyjnego i samorządu terytorialnego"@pl ;
-                                 ns1:altLabel "municipality"@en ;
-                                 ns2:creator :person_0000-0001-8208-4743 ;
-                                 ns1:altLabel "die Gemeinde"@de ;
+                                 ns1:altLabel "municipality"@en ,
+                                              "die Gemeinde"@de ;
                                  rdfs:comment "Miasto zazwyczaj stanowiło jedną gminę i jej zasięg wyznaczał pod pewnymi względami granice miasta. "@pl .
 
 
 ontohgis:administrative_type_47 rdfs:isDefinedBy "podstawowa, zwykle najwyższa jednostka podziału terytorialnego państwa polskiego"@pl ;
                                 rdfs:comment "Granice województwa rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy wojewódzkiej lub pełnienie roli siedziby województwa."@pl ;
-                                ns2:creator :person_0000-0001-8208-4743 ;
-                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url ;
-                                ns1:altLabel "palatinatus"@la .
+                                ns2:creator ontohgis:person_2 ;
+                                ns1:altLabel "palatinatus"@la ;
+                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
