@@ -31,7 +31,7 @@ bdot10k:hasBdot10kCode rdf:type owl:AnnotationProperty ;
 
 ###  https://purl.org/bdot10k#bdot10k_entity
 bdot10k:bdot10k_entity rdf:type owl:Class ;
-                       rdfs:label "obiekt BDOT10k"^^xsd:string .
+                       rdfs:label "obiekt BDOT10k"@pl .
 
 
 ###  https://purl.org/bdot10k#category_1
