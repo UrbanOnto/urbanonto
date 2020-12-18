@@ -5956,9 +5956,6 @@ urbanonto:object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620 rdf:type owl:Class ;
                                                                             "sports venue"@pl .
 
 
-###  http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing
-cidoc_crm:E24_Physical_Man-Made_Thing rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing .
-
 
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdfs:subClassOf cidoc_crm:E26_Physical_Feature .
