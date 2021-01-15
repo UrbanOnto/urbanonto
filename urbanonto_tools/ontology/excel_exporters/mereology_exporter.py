@@ -2,7 +2,7 @@ from rdflib import URIRef, Graph, Literal, RDFS, OWL, RDF
 
 from ontology.constants.excel_file_constants import OBJECT_TYPE_LOCAL_FRAGMENT
 from ontology.constants.ontology_constants import IS_PART_OF_IRI, HAS_PART_IRI
-from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.excel_exporters.export_helpers import create_iri_for_object_in_type
 from ontology.owl_handlers.owl_restriction_getter import get_owl_some_values_restriction
 from ontology.owl_handlers.register import Register
 
@@ -14,9 +14,6 @@ def add_parts_to_entity(excel_sheet_name: str, parts_string: str, entity: URIRef
         some_values_restriction = get_owl_some_values_restriction(owl_object_property=IS_PART_OF_IRI,
                                                                   value=part, ontology=ontology)
         ontology.add((entity, RDFS.subClassOf, some_values_restriction))
-        # all_values_restriction = get_owl_all_values_restriction_to_graph(owl_object_property=IS_PART_OF_IRI,value=part, ontology=ontology)
-        # ontology.add((object_type, RDFS.subClassOf, all_values_restriction))
-
 
 def add_wholes_to_entity(excel_sheet_name: str, wholes_string: str, entity: URIRef, ontology: Graph):
     whole_strings = wholes_string.split(',')
@@ -25,8 +22,6 @@ def add_wholes_to_entity(excel_sheet_name: str, wholes_string: str, entity: URIR
         some_values_restriction = get_owl_some_values_restriction(owl_object_property=HAS_PART_IRI,
                                                                   value=whole, ontology=ontology)
         ontology.add((entity, RDFS.subClassOf, some_values_restriction))
-        # all_values_restriction = get_owl_all_values_restriction_to_graph(owl_object_property=HAS_PART_IRI, value=whole, ontology=ontology)
-        # ontology.add((object_type, RDFS.subClassOf, all_values_restriction))
 
 
 def __get_mereology(mereology_string: str, ontology: Graph) -> URIRef:

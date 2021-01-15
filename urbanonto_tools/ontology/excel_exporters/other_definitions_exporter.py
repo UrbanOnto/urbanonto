@@ -5,7 +5,7 @@ from rdflib import URIRef, Graph, Literal, RDFS, RDF
 
 from ontology.constants.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
 from ontology.constants.re_constants import *
-from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.excel_exporters.export_helpers import create_iri_for_object_in_type
 from ontology.owl_handlers.owl_axiom_creator import add_owl_annotation_axiom_to_graph
 from ontology.owl_handlers.register import Register
 

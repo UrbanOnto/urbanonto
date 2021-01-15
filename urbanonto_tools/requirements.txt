@@ -2,3 +2,6 @@ rdflib
 pandas
 xlrd
 validators
+psycopg2
+sqlalchemy
+requests

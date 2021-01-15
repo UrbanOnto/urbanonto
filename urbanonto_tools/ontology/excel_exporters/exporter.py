@@ -5,9 +5,9 @@ from rdflib import RDFS, SKOS
 
 from ontology.constants.excel_file_constants import *
 from ontology.constants.ontology_constants import *
-from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.excel_exporters.export_helpers import create_iri_for_object_in_type
 from ontology.excel_exporters.function_exporter import add_functions_to_entity
-from ontology.excel_exporters import add_parts_to_entity, add_wholes_to_entity
+from ontology.excel_exporters.mereology_exporter import add_wholes_to_entity, add_parts_to_entity
 from ontology.excel_exporters.reference_data_exporter import export_reference_data
 from ontology.owl_handlers.literal_creators import *
 from ontology.owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
