@@ -3,11 +3,11 @@ import re
 
 from rdflib import URIRef, Graph, Literal, RDFS, RDF
 
-from constants.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
-from constants.re_constants import *
-from excel_exporters.export_helpers import create_iri_for_object_in_type
-from owl_handlers.owl_axiom_creator import add_owl_annotation_axiom_to_graph
-from owl_handlers.register import Register
+from ontology.constants.ontology_constants import HAS_OTHER_DEFINITION, SOURCE_CLASS
+from ontology.constants.re_constants import *
+from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.owl_handlers.owl_axiom_creator import add_owl_annotation_axiom_to_graph
+from ontology.owl_handlers.register import Register
 
 other_definitions_re = re.compile(DEFINITION_START + '(.+?)' + DEFINITION_SEPARATOR + '(.+?)' + DEFINITION_END)
 

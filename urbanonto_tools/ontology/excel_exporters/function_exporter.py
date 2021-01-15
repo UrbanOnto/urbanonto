@@ -2,7 +2,7 @@ import logging
 
 from rdflib import URIRef, Graph, Literal, RDFS
 
-from owl_handlers.owl_restriction_getter import get_owl_has_value_restriction
+from ontology.owl_handlers.owl_restriction_getter import get_owl_has_value_restriction
 
 
 def add_functions_to_entity(

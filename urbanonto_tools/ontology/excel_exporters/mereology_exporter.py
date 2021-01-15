@@ -1,10 +1,10 @@
 from rdflib import URIRef, Graph, Literal, RDFS, OWL, RDF
 
-from constants.excel_file_constants import OBJECT_TYPE_LOCAL_FRAGMENT
-from constants.ontology_constants import IS_PART_OF_IRI, HAS_PART_IRI
-from excel_exporters.export_helpers import create_iri_for_object_in_type
-from owl_handlers.owl_restriction_getter import get_owl_some_values_restriction
-from owl_handlers.register import Register
+from ontology.constants.excel_file_constants import OBJECT_TYPE_LOCAL_FRAGMENT
+from ontology.constants.ontology_constants import IS_PART_OF_IRI, HAS_PART_IRI
+from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.owl_handlers.owl_restriction_getter import get_owl_some_values_restriction
+from ontology.owl_handlers.register import Register
 
 
 def add_parts_to_entity(excel_sheet_name: str, parts_string: str, entity: URIRef, ontology: Graph):

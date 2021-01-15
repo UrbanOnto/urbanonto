@@ -3,16 +3,16 @@ import logging
 import pandas
 from rdflib import RDFS, SKOS
 
-from constants.excel_file_constants import *
-from constants.ontology_constants import *
-from excel_exporters.export_helpers import create_iri_for_object_in_type
-from excel_exporters.function_exporter import add_functions_to_entity
-from excel_exporters.mereology_exporter import add_parts_to_entity, add_wholes_to_entity
-from excel_exporters.reference_data_exporter import export_reference_data
-from owl_handlers.literal_creators import *
-from owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
-from owl_handlers.owl_restriction_getter import *
-from owl_handlers.register import Register
+from ontology.constants.excel_file_constants import *
+from ontology.constants.ontology_constants import *
+from ontology.excel_exporters import create_iri_for_object_in_type
+from ontology.excel_exporters.function_exporter import add_functions_to_entity
+from ontology.excel_exporters import add_parts_to_entity, add_wholes_to_entity
+from ontology.excel_exporters.reference_data_exporter import export_reference_data
+from ontology.owl_handlers.literal_creators import *
+from ontology.owl_handlers.owl_importer import add_recursively_owl_imports_to_ontology
+from ontology.owl_handlers.owl_restriction_getter import *
+from ontology.owl_handlers.register import Register
 
 
 def export_all_entities_from_excel_file_to_ontology(excel_file_path: str, ontology_iri: str,

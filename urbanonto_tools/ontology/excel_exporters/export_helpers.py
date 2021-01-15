@@ -4,7 +4,7 @@ import uuid
 from rdflib import URIRef
 from rdflib.term import _is_valid_uri
 
-from constants.ontology_constants import ONTOLOGY_IRI
+from ontology.constants.ontology_constants import ONTOLOGY_IRI
 
 
 def create_iri_for_object_in_type(type_local_fragment: str, index=None) -> URIRef:

@@ -1,6 +1,6 @@
 import logging
 
-from excel_exporters.exporter import export_all_entities_from_excel_file_to_ontology
+from ontology.excel_exporters.exporter import export_all_entities_from_excel_file_to_ontology
 
 
 def orchestrate_import(excel_file_path: str, ontology_iri: str):

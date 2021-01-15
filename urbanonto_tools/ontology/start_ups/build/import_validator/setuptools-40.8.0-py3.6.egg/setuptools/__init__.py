@@ -1,7 +1,6 @@
 """Extensions to the 'distutils' for large or complex distributions"""
 
 import os
-import sys
 import functools
 import distutils.core
 import distutils.filelist

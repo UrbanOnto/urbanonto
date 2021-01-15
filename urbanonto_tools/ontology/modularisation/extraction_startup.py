@@ -1,4 +1,4 @@
-from modularisation.ontology_extractor import orchestrate_extraction
+from ontology.modularisation import orchestrate_extraction
 
 orchestrate_extraction(
     source_ontology_file=r'D:\projects\ihpan\ontology\ontohgis.ttl',
