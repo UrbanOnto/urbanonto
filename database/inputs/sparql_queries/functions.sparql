@@ -1,0 +1,8 @@
+SELECT ?iris ?names
+WHERE
+{
+    ?iris rdfs:label ?names .
+    ?iris a <http://purl.obolibrary.org/obo/BFO_0000034>
+    FILTER (LANG(?names)='pl')
+}
+ORDER BY ?names

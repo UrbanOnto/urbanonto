@@ -1,0 +1,8 @@
+SELECT ?iris ?names
+WHERE
+{
+    ?iris rdfs:label ?names
+
+    FILTER (CONTAINS(str(?iris), "object_type"))
+}
+ORDER BY ?names
