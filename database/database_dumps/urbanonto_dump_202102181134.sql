@@ -10,7 +10,7 @@ SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
+SELECT pg_catalog.set_config('search_path', 'public', false);
 SET check_function_bodies = false;
 SET xmloption = content;
 SET client_min_messages = warning;
@@ -35,10 +35,10 @@ CREATE SCHEMA ontology_sources;
 ALTER SCHEMA ontology_sources OWNER TO postgres;
 
 --
--- Name: postgis; Type: EXTENSION; Schema: -; Owner: -
+-- Name: postgis; Type: EXTENSION; Schema: public; Owner: -
 --
 
-CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA ontology;
+CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA public;
 
 
 --
@@ -147,7 +147,7 @@ ALTER TABLE ontology.location_link_types OWNER TO postgres;
 
 CREATE TABLE ontology.locations (
     identifiers integer NOT NULL,
-    the_geom ontology.geometry NOT NULL,
+    the_geom geometry NOT NULL,
     location_type_identifiers integer NOT NULL,
     names text
 );
@@ -422,7 +422,7 @@ COMMENT ON TABLE ontology_sources.location_link_type_sources IS 'This table is t
 
 CREATE TABLE ontology_sources.locations (
     identifiers integer NOT NULL,
-    the_geom ontology.geometry NOT NULL
+    the_geom geometry NOT NULL
 );
 
 
