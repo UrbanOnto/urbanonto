@@ -1,1 +1,25 @@
-	topographic_object_identifiers,starts_at,ends_at,whole_identifiers,part_identifiers,historical_source_identifiers
+﻿starts_at,ends_at,whole_identifiers,part_identifiers,historical_sources
+1379,1560,1,1,#Garbacz_2021
+1356,1400,3,4,#KZSP_SW
+1356,1441,3,5,#KZSP_SW
+1356,,3,6,#KZSP_SW
+1400,1478,3,7,#KZSP_SW
+1494,1631,3,8,#KZSP_SW
+1631,1864,3,9,#KZSP_SW
+1441,1864,3,10,#KZSP_SW
+1752,1864,3,11,#KZSP_SW
+1650,1864,3,12,#KZSP_SW
+1650,1864,3,13,#KZSP_SW
+1701,1864,3,14,#KZSP_SW
+1483,1864,3,15,#KZSP_SW
+1780,1864,3,16,#KZSP_SW
+1865,1869,72,76,#Szwarc_2016
+1350,1800,83,78,
+1548,1800,78,85,
+1617,1804,83,89,
+1606,1944,93,91,
+1638,2000,93,92,
+1615,1892,110,112,
+1615,1807,110,113,
+1846,1919,122,123,
+1919,1946,122,124,

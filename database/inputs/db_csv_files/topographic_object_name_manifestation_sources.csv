@@ -1,1 +1,164 @@
-topographic_object_identifiers,starts_at,ends_at,names,historical_source_identifiers,name_link_type_names
+﻿topographic_object_identifiers,starts_at,ends_at,names,historical_sources,name_link_types
+1,1379,1560,Baszta Biała,#Garbacz_2021,nazwa podstawowa
+2,1525,1830,Kaplica św. Małgorzaty,#Kunkel_1989,nazwa podstawowa
+2,1769,,"baszta, w której antiquitates była kaplica, a teraz schowanie kuchenne",#Kunkel_1989,nazwa oboczna
+2,1763,,Wieża Szlachecka,#Kunkel_1989,nazwa oboczna
+2,1525,1830,Kaplica (Zamkowa?) Mansjonarzy pw. św. Małgorzaty,#Kunkel_2006,nazwa oboczna
+3,1356,1864,zespół klasztorny augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+4,1356,,"kościół pw. Świętego Ducha, św. Marcina i św. Doroty w Warszawie",#NKDM3,nazwa oboczna
+5,1356,,klasztor augustianów-eremitów w Warszawie,#NKDM3,nazwa podstawowa
+6,1356,,cmentarz przy kościele augustianów-eremitów w Warszawie,#NKDM3,nazwa podstawowa
+4,1372,,kościół św. Marcina w Warszawie,#NKDM3,nazwa podstawowa
+4,1356,1400,kościół św. Marcina w Warszawie/Starej Warszawie,#KZSP_SW,nazwa podstawowa
+7,1400,1478,kościół św. Marcina w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+8,1494,1631,kościół św. Marcina w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+9,1631,1944,kościół św. Marcina w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+5,1356,1441,klasztor augustianów-eremitów w Warszawie/Starej Warszawie,#KZSP_SW,nazwa podstawowa
+10,1441,1752,klasztor augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+11,1650,1864,kamienica stanowiąca część klasztoru augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+12,1650,1864,kuchnia przy klasztorze augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+13,1650,1864,stajnia przy klasztorze augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+14,1701,1864,nowicjat przy klasztorze augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+6,1483,,cmentarz przy kościele św. Marcina w Starej Warszawie,#Knapinski_1949,nazwa podstawowa
+15,1483,,studnia na cmentarzu przy wejściu do kościoła św. Marcina,#Knapinski_1949,nazwa podstawowa
+15,1780,1864,studnia przy kościele św. Marcina,#KZSP_SW,nazwa oboczna
+13,1780,1864,stajnia przy klasztorze augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+16,1780,1864,wozownia przy klasztorze augustianów-eremitów w Starej Warszawie,#KZSP_SW,nazwa podstawowa
+17,1339,1383,kościół św. Jerzego w Warszawie,#Kunkel_2006,nazwa podstawowa
+17,1383,1453,kościół św. Jerzego w Warszawie kanoników regularnych w Czerwiński,#Kunkel_2006,nazwa oboczna
+18,1453,1819,kościół św. Jerzego w Warszawie kanoników regularnych w Czerwiński,#Kunkel_2006,nazwa oboczna
+19,1450,1818,klasztor kanoników regularnych z Czerwińska przy kościele św. Jerzego w Warszawie,#Kunkel_2006,nazwa podstawowa
+47,1823,1897,dawny kościół św. Jerzego w Warszawie dzierżawiony przez fabrykę odlewów Braci Evans,#Kunkel_2006,nazwa oboczna
+20,1643,,spichlerz zbożowy na Skaryszewie prawdopodobnie należący do Adama Kazanowskiego,#Jarzębski_1974,nazwa podstawowa
+21,1892,1939,Miejskie Elewatory Zbożowe,#MiejskieElewatory,nazwa podstawowa
+22,1499,1553,laterificium,#Mrozowski_2020,nazwa oboczna
+23,1565,1566,platea ad porta civilem tendens alias do przysthawniei,#Mrozowski_2020,nazwa oboczna
+23,1567,,via publica ad portum civilem,#Mrozowski_2020,nazwa oboczna
+24,1522,1550,platea versus navigium,#Mrozowski_2020,nazwa oboczna
+24,1567,,platea Przewozna,#Mrozowski_2022,nazwa oboczna
+24,1566,,na ulicy do przewozu jadacz,#Mrozowski_2023,nazwa oboczna
+24,1643,,przewóz,#Jarzębski_1974,nazwa oboczna
+25,1823,2000,Rogatka Grochowska I,,nazwa podstawowa
+26,1823,1961,Rogatka Grochowska II,,nazwa podstawowa
+26,1961,2000,Rogatka Grochowska II,,nazwa podstawowa
+25,1823,1915,Rogatka Moskiewska,,nazwa oboczna
+26,1823,1915,Rogatka Moskiewska,,nazwa oboczna
+27,1790,2000,Cmentarz Powązkowski,,nazwa podstawowa
+27,1790,2000,Powązki,,nazwa oboczna
+29,1900,1950,"Gmach Towarzystwa Ubezpieczeń ""Rossya""",#Księga_Pamiątkowa_TUR_1900,nazwa podstawowa
+29,1950,2020,"Dom ""Pod Sedesami""",,nazwa podstawowa
+30,1897,1939,"Gmach Domu Mody ""Bogusław Herse""",#Herbst_1949,nazwa podstawowa
+31,1849,2000,Kościół p.w. św. Karola Boromeusza,#Kurier_1849,nazwa podstawowa
+31,,2000,Kościół parafialny parafii św. Andrzeja,#Wikipedia,nazwa oboczna
+32,1875,2000,Pałac Jakuba Janasza,"#Kalendarz_1874,1876",nazwa podstawowa
+32,1875,2000,Pałac Janaszów-Czackich,#Wikipedia,nazwa oboczna
+33,1841,1964,Kamienica Jana Józefa Manzla przy ul. Chłodnej nr hip. 927B,#Bieniecki_1972,nazwa podstawowa
+34,1908,1947,Hala hurtowa na placu Witkowskiego/Kazimierza Wielkiego,#Omilanowska_2004_a,nazwa podstawowa
+35,1805,1944,"Ogród handlowy Ulrichów, nr hip. 1117",#Majewski_2003_a,nazwa podstawowa
+36,1893,2000,Kościół p.w. Wszystkich Świętych w Warszawie,#Gagatnicki_1893,nazwa podstawowa
+37,1886,1944,Kościół p.w. św. Piotra i Pawła w Warszawie,#Przewodnik_1893_a,nazwa podstawowa
+38,1877,1944,Gmach giełdy warszawskiej,#Marcinkowski_2013_a,nazwa podstawowa
+39,1823,1877,Ujeżdżalnia przy ul. Królewskiej,#Marcinkowski_2013_a,nazwa podstawowa
+40,1841,1939,Gościnny Dwór,#Omilanowska_2004_b,nazwa podstawowa
+41,1902,2000,Hale Mirowskie,#Omilanowska_2004_c,nazwa podstawowa
+42,1911,1954,"Kamienica Bractwa Subiektów Handlowych, nr hip. 1414a",#Majewski_2003_b,nazwa podstawowa
+43,1894,1944,"Kamienica Braci Zambonich (neogotycka), nr hip. 1379",#Majewski_2003_c,nazwa podstawowa
+44,1902,1915,Dworzec Kaliski,#Majewski_2003_d,nazwa podstawowa
+45,1925,1944,Zajezdnia Praga,,nazwa podstawowa
+46,1866,1918,Dworzec Terespolski,,nazwa podstawowa
+46,1871,1918,Dworzec Brzeski,,nazwa oboczna
+46,1918,1939,Dworzec Wschodni,,nazwa podstawowa
+48,1888,1901,kościół praski w Warszawie,#Madajczyk_2009,nazwa oboczna
+48,1888,1901,kościół św. Michała Archanioła i Floriana,#Madajczyk_2009,nazwa podstawowa
+48,1888,1946,kościół św. Floriana na Pradze,#Zbior_Korotyńskich_72/1001/0/5/24,nazwa oboczna
+51,1911,2000,"Kamienica zboru luterańskiego, nr hip. 1066J (Kredytowa 4)",#Łupienko_2017,nazwa podstawowa
+51,1911,2000,Kamienica dochodowa gminy Ewangelicko-Augsburskiej,#Łupienko_2017,nazwa oboczna
+52,1912,1944,"Dom parafialny zboru luterańskiego, nr hip. 1066J (Plac Ewangelicki)",#Łupienko_2017,nazwa podstawowa
+53,1870,1936,"Ogród pomologiczny, nr hip. 1600A",#Szwankowski_1970_a,nazwa podstawowa
+54,1883,2000,"Pałac Szlenkierów, nr hip. 5294",#Jaroszewski_1975,nazwa podstawowa
+55,1818,1942,"Rogatki jerozolimskie, nr hip. 1582F",#Szwankowski_1970_b,nazwa podstawowa
+49,1897,,"Rotunda ""Golgoty""",#Troczewski_1897,nazwa oboczna
+49,1897,1907,Gmach dawnej Panoramy,#GmachDawnejPanoramy,nazwa oboczna
+59,1921,1939,dawny Teatr Artystów,#GmachDawnejPanoramy,nazwa oboczna
+60,1896,1913,dawna Panorama,#WarsztatySamochodoweDynasy,nazwa oboczna
+62,1938,1939,warsztat samochodowy,#WarsztatySamochodoweDynasy,nazwa oboczna
+64,1904,,fabryka wyrobów betonowych,#Słowo_184_1904,nazwa oboczna
+65,1901,1995,Stacja Warszawa Stalowa,,nazwa podstawowa
+66,1923,2000,Bazylika Najświętszego Serca Jezusowego,,nazwa podstawowa
+67,1926,1939,Szkoła powszechna przy Otwockiej 3,#Gmachy_1928,nazwa podstawowa
+68,1894,1915,Katedralny Sobór św. Aleksandra Newskiego,#Sosna_KatSobor,nazwa podstawowa
+69,1915,1918,kościół garnizonowy św. Henryka,#Sosna_KatSobor,nazwa podstawowa
+70,1918,1926,Sobór św. Aleksandra Newskiego,#Sosna_KatSobor,nazwa podstawowa
+71,1869,1917,Cesarski Uniwersytet Warszawski,#Schiller-Walicka_2016,nazwa podstawowa
+73,1857,1862,Akademia Medyko-Chirurgiczna,#Szwarc_2016,nazwa podstawowa
+72,1862,1869,Szkoła Główna w Warszawie,#Szwarc_2016,nazwa podstawowa
+73,1857,1862,Cesarsko-Królewska Akademia Medyko-Chirurgiczna,#Szwarc_2016,nazwa oboczna
+74,1861,1862,Kursy Przygotowawcze,#Szwarc_2016,nazwa podstawowa
+75,1862,,Biblioteka Główna,#Szwarc_2016,nazwa podstawowa
+76,1865,,Muzeum Starożytności,#Szwarc_2016,nazwa podstawowa
+77,1388,1821,Szpital św. Ducha,,nazwa podstawowa
+78,1350,1825,Brama nowomiejska,,nazwa podstawowa
+79,1388,2000,Kościół św. Ducha,,nazwa podstawowa
+80,1662,1807,Klasztor paulinów,,nazwa podstawowa
+81,1408,2000,Ulica Nowomiejska,,nazwa podstawowa
+82,1376,,Łaźnia,,nazwa podstawowa
+83,1325,,Mury miejskie,,nazwa podstawowa
+84,1450,,Mury miejskie,,nazwa podstawowa
+85,1548,1818,Barbakan,,nazwa podstawowa
+86,1300,1800,Dunaj,,nazwa podstawowa
+86,1800,2000,Szeroki Dunaj,,nazwa podstawowa
+87,1408,1552,Stara łaźnia,,nazwa podstawowa
+87,1408,1552,Łaźnia wójtowska,,nazwa oboczna
+88,1300,1800,Dunaj,,nazwa podstawowa
+88,1300,1800,versus Dunay,,nazwa podstawowa
+88,1300,1800,platea Iudeorum,,nazwa podstawowa
+88,1800,2000,Wąski Dunaj,,nazwa podstawowa
+89,1617,1804,Brama Poboczna,,nazwa podstawowa
+90,1300,2000,Krzywe Koło,,nazwa podstawowa
+90,1300,1600,Krzywa,,nazwa oboczna
+89,1617,1804,Furta Nowa,,nazwa oboczna
+89,1617,1804,Furta Boczna,,nazwa oboczna
+91,1606,1944,Kościół św. Jacka,,nazwa podstawowa
+92,1638,1864,Klasztor dominikański,,nazwa podstawowa
+94,1825,2000,Kamienica Książąt Mazowieckich,,nazwa oboczna
+95,1818,1944,"""Piwnica Gdańska""",,nazwa podstawowa
+96,1864,1944,Sierociniec dla chłopców,,nazwa podstawowa
+97,1300,2000,Freta,,nazwa podstawowa
+98,1408,1791,Freta Nowomiejskie,,nazwa podstawowa
+100,1408,1791,Nowa Warszawa,,nazwa podstawowa
+100,1408,1791,Warszawa Nowa,,nazwa oboczna
+100,1408,1791,Nowe Miasto Warszawa,,nazwa oboczna
+102,1408,1793,circulus,,nazwa podstawowa
+102,1408,2000,rynek,,nazwa podstawowa
+102,1408,2000,Rynek Nowego Miasta,,nazwa podstawowa
+102,1408,2000,rynek nowomiejski,,nazwa oboczna
+103,1913,1944,Hala Świętojerska,,nazwa podstawowa
+104,1350,1791,Jurydyka Świętojerska,,nazwa podstawowa
+105,1600,1791,Parysów,,nazwa oboczna
+105,1600,1791,Jurydyka Parysowska,,nazwa podstawowa
+106,1600,1943,Plac Parysowski,,nazwa podstawowa
+107,1638,1791,Jurydyka Zadzikowska,,nazwa podstawowa
+107,1638,1791,Kapitulna,,nazwa oboczna
+108,1638,2000,Kapitulna,,nazwa podstawowa
+108,1638,1700,Szpadnia,,nazwa oboczna
+109,1643,2000,Arsenał,,nazwa podstawowa
+110,1615,1807,Klasztor brygidek,,nazwa podstawowa
+111,1903,1944,Pasaż Simmonsa,,nazwa podstawowa
+113,1615,1807,Kościół Św. Trójcy,,nazwa podstawowa
+114,1880,1900,Dworzec Nadwiślański,#Marcinkowski_2013_b,nazwa oboczna
+114,1880,1900,Główny Dworzec Kolei Nadwiślańskiej,#Warszawikia,nazwa podstawowa
+114,1900,1915,Dworzec Kowelski,#Warszawa1939,nazwa podstawowa
+114,1915,2000,Dworzec Gdański,#Wikipedia,nazwa podstawowa
+115,1824,1945,Plac Broni,#Wikipedia,nazwa podstawowa
+116,1906,1950,"Dom firmy Gebethner i Wolff, nr hip. 6391",#Jaroszewski_1996,nazwa podstawowa
+116,1906,1950,"Dom księgarni nakładowej ""Gebethner i Wolff"" w Warszawie",#Przegląd_Techniczny_1907,nazwa oboczna
+117,1916,2000,"Kamienica Goldstanda, nr hip. 1066C",#Jaroszewski_1996,nazwa podstawowa
+118,1870,1944,"Zakłady metalurgiczne Hantkego, nr hip. 1147K",#Markiewicz_et_al_2012,nazwa podstawowa
+119,1867,1890,"Browar Hermana Junga, nr hip. 849",#Sobieszczański_1967,nazwa podstawowa
+119,1784,1850,"Browar i kamienica Winklera, nr hip. 849",#Sobieszczański_1967,nazwa podstawowa
+119,1850,1867,"Browar i kamienica Aleksandra Łęckiego, nr hip. 849",#Sobieszczański_1967,nazwa podstawowa
+120,1818,1942,Rogatki wolskie,#Szwankowski_1970_c,nazwa podstawowa
+121,1683,1775,Łaźnia,,nazwa podstawowa
+122,1775,2000,Pałac na Wyspie,,nazwa podstawowa
+122,1775,2000,Pałac na Wodzie,,nazwa oboczna
+123,1846,1919,Cerkiew św. Aleksandra Newskiego,,nazwa podstawowa
