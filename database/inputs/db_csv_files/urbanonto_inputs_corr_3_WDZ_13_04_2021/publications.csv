@@ -1,5 +1,4 @@
-﻿titles,bibliographic_data
-#Garbacz_2021,"Garbacz, Czym jest tramwaj"
+identifiers,bibliographic_data
 #Kunkel_1989,"Kunkel, R. M. (1989) ‘Kaplica św. Małgorzaty na Zamku Warszawskim’, Kronika Zamkowa, (2 (20)), pp. 22–28."
 #Kunkel_2006,"Kunkel, R. M. (2006) Architektura gotycka na Mazowszu. Warszawa."
 #KZSP_SW,"Łoziński, J. Z. and Rottermund, A. (eds) (1993) Katalog Zabytków Sztuki. Miasto Warszawa. Część 1: Stare Miasto. Warszawa (Katalog Zabytków Sztuki w Polsce. Seria Nowa, Tom XI)."
@@ -10,38 +9,31 @@
 #Księga_Pamiątkowa_TUR_1900,"Księga Pamiątkowa TUR (1900) Księga Pamiątkowa warszawskiego oddziału Towarzystwa Ubezpieczeń ""Rossya"". Warszawa"
 #Herbst_1949,"Herbst, S. (1949) Ulica Marszałkowska. Warszawa"
 #Kurier_1849,"„Kurier Warszawski” 1849, nr 292 (5 listopada), s. 1547"
-"#Kalendarz_1874,1876","#Kalendarz_1874,1876 Józefa Ungra Kalendarz Warszawski Popularno-Naukowy na Rok 1874, 1876. Warszawa"
+#Kalendarz_1874_1876,"Józefa Ungra Kalendarz Warszawski Popularno-Naukowy na Rok 1874, 1876. Warszawa"
 #Przegląd_Techniczny_1904,"""Przegląd Techniczny"" 1904, t. 42, nr 17"
 #Bieniecki_1972,"Bieniecki, Z. (1972) Dom własny rzeźbiarza warszawskiego Jana Józefa Manzla, ""Rocznik Warszawski"", t. 11, s. 173-204."
 #Wikipedia,Wikipedia
-#Omilanowska_2004_a,"Omilanowska, M. (2004) Świątynie handlu. Warszawska architektura komercyjna doby wielkomiejskiej. Warszawa, p. 162-169"
-#Omilanowska_2004_b,"Omilanowska, M. (2004) Świątynie handlu. Warszawska architektura komercyjna doby wielkomiejskiej. Warszawa, p. 92"
-#Omilanowska_2004_c,"Omilanowska, M. (2004) Świątynie handlu. Warszawska architektura komercyjna doby wielkomiejskiej. Warszawa, p. 160"
-#Majewski_2003_a,"Majewski, J.S. (2003) Warszawa nieodbudowana. Metropolia Belle Epoque. Warszawa, p. 298"
-#Majewski_2003_b,"Majewski, J.S. (2003) Warszawa nieodbudowana. Metropolia Belle Epoque. Warszawa, p. 90-93"
-#Majewski_2003_c,"Majewski, J.S. (2003) Warszawa nieodbudowana. Metropolia Belle Epoque. Warszawa, p. 174-176"
-#Majewski_2003_d,"Majewski, J.S. (2003) Warszawa nieodbudowana. Metropolia Belle Epoque. Warszawa, p. 45-49"
+#Omilanowska_2004,"Omilanowska, M. (2004) Świątynie handlu. Warszawska architektura komercyjna doby wielkomiejskiej. Warszawa"
+#Majewski_2003,"Majewski, J.S. (2003) Warszawa nieodbudowana. Metropolia Belle Epoque. Warszawa, p. 298"
 #Machlejd_2006,"Machlejd, K. (2006) Saga ulrichowsko-machlejdowska. Warszawa, p. 47"
 #Gagatnicki_1893,"Gagatnicki, A. (1893) Kościół Wszystkich Świętych w Warszawie. Warszawa"
-#Marcinkowski_2013_a,"Marcinkowski, R. (2013) Ilustrowany atlas dawnej Warszawy. Warszawa, p. 132-133"
-#Szwankowski_1952_a,"Szwankowski, E. (1952) Warszawa. Rozwój urbanistyczny i architektoniczny. Warszawa, p. 257"
-#Przewodnik_1893_a,"Przewodnik (1893) Ilustrowany przewodnik po Warszawie. Warszawa, p. 218-219"
+#Marcinkowski_2013,"Marcinkowski, R. (2013) Ilustrowany atlas dawnej Warszawy. Warszawa"
+#Szwankowski_1952,"Szwankowski, E. (1952) Warszawa. Rozwój urbanistyczny i architektoniczny. Warszawa"
+#Przewodnik_1893,Przewodnik (1893) Ilustrowany przewodnik po Warszawie. Warszawa
 #Madajczyk_2009,"Madajczyk, A. (2009) ‘Z dziejów budowy kościoła pw. świętych Michała i Floriana’, in Sołtan, A., Wiśniewska, J., and Zwierz, K. (eds) Świątynie prawego brzegu. Kościół katolicki w dziejach prawobrzeżnej Warszawy. Warszawa, pp. 125–137"
 #Zbior_Korotyńskich_72/1001/0/5/24,"72/201/0/ - Zbiór Korotyńskich, seria 5 - 'Grupa V - Kościoły, klasztory, zgromadzenia religijne, cmentarze', sygn. 24 - 'Kościół św. Floriana na Pradze'"
 #Łupienko_2017,"Aleksander Łupienko, Ewangelicki zakątek w dziewiętnastowiecznej Warszawie. Nieruchomości parafii św. Trójcy wokół placu Ewangelickiego, ""Kronika Warszawy"", nr 1, p. 55-76"
-#Szwankowski_1970_a,"Szwankowski, E. (1970) Ulice i place Warszawy. Warszawa, p. 139."
+#Szwankowski_1970,"Szwankowski, E. (1970) Ulice i place Warszawy. Warszawa"
 #Jaroszewski_1975,"Jaroszewski, T.S. (1975) Pałac Szlenkierów. Warszawa"
-#Szwankowski_1970_b,"Szwankowski, E. (1970) Ulice i place Warszawy. Warszawa, p. 274."
 #Troczewski_1897,"Troczewski, E. (1897) ‘Rotunda “Golgoty” [ul. Karowa w Warszawie]’. Available at: https://fbc.pionier.net.pl/details/oai:mbc.cyfrowemazowsze.pl:52944."
 #GmachDawnejPanoramy,"‘Gmach dawnej Panoramy, dawny Teatr Artystów, Karowa 18a’ (no date) Fundacja warszawa1939.pl. Available at: http://www.warszawa1939.pl/obiekt/karowa-18a (Accessed: 16 March 2021)."
 #WarsztatySamochodoweDynasy,"‘Warsztaty samochodowe, dawna Panorama, Oboźna - Dynasy’ (no date) Fundacja warszawa1939.pl. Available at: http://www.warszawa1939.pl/obiekt/obozna-panorama (Accessed: 16 March 2021)."
 #Słowo_184_1904,"Słowo R. 23, Nr 184 (1904) ‘[Wiadomości] Z miasta, Z budownictwa’, 11 August, p. 3."
 #MiejskieElewatory,"‘Miejskie Elewatory Zbożowe, Bema 60a’ (no date) Fundacja warszawa1939.pl. Available at: http://www.warszawa1939.pl/obiekt/bema-60a (Accessed: 16 March 2021)."
-#Gmachy_1928,DO UZUPEŁNIENIA!
+#Gmachy_1928,"Gmachy szkół powszechnych m.st. Warszawy pobudowane w latach 1925-1928, red. J. Włodarkiewiczowa, J. Piszczatowski, [b.m. b.d.]."
 #Sosna_KatSobor,"Sosna, A. (no date) ‘Warszawa. Katedralny Sobór św. Aleksandra Newskiego’, Prawosławne cerkwie na starych pocztówkach chram.com.pl. Available at: http://www.chram.com.pl/katedralny-sobor-sw-aleksandra-newskiego-2/ (Accessed: 18 March 2021)."
 #Schiller-Walicka_2016,"Schiller-Walicka, J. (2016) ‘Cesarski Uniwersytet Warszawski: Między edukacją a polityką 1869-1917’, in Kizwalter, T. (ed.) Dzieje Uniwersytetu Warszawskiego 1816−1915. Warszawa (Monumenta Universitatis Varsoviensis, 1), pp. 557–703. Available at: http://www.wuw.pl/data/include/cms/monumenta-ebook/pdf/Dzieje-Uniwersytetu-Warszawskiego-1816-1915.pdf."
 #Szwarc_2016,"Szwarc, A. (2016) ‘Akademia Medyko-Chirurgiczna i Szkoła Głowna 1857-1869’, in Kizwalter, T. (ed.) Dzieje Uniwersytetu Warszawskiego 1816−1915. Warszawa (Monumenta Universitatis Varsoviensis, 1), pp. 415–555. Available at: http://www.wuw.pl/data/include/cms/monumenta-ebook/pdf/Dzieje-Uniwersytetu-Warszawskiego-1816-1915.pdf."
-#Marcinkowski_2013_b,"Marcinkowski, R. (2013) Ilustrowany atlas dawnej Warszawy. Warszawa, p. 75"
 #Warszawikia,https://warszawa.wikia.org
 #Warszawa1939,warszawa1939.pl
 #PlanWarszawy1920,"Plan Warszawy, Wyd. M. Arcta [1920]"
@@ -50,5 +42,8 @@
 #Markiewicz_et_al_2012,"T. Markiewicz, T.W. Świątek, K. Wittels (2012). Polacy z wyboru. Rodziny pochodzenia niemieckiego w Warszawie w XIX i XX wieku. Warszawa, p. 147-149"
 #Sobieszczański_1967,"Sobieszczański, F.M. (1967) Warszawa. Wybór publikacji, t. 1. Warszawa, p. 371."
 #Świątkowski_1852,"Świątkowski, H. (1852) Taryffa domów miasta Warszawy i Pragi... Warszawa."
-#Szwankowski_1970_c,"Szwankowski, E. (1970) Ulice i place Warszawy. Warszawa, p. 27."
 #Majewski_2009_a,"Majewski, J.S. (2009) Warszawa nieodbudowana. Królestwo Polskie w latach 1815-1840. Warszawa, p. 165-166"
+#forty.waw.pl,www.forty.waw.pl
+#PlanWarszawy_1827,Plan Warszawy / [Krzysztof Juliusz Henryk Kolberg] ; rytował Wilhelm Ruchacz; https://crispa.uw.edu.pl/object/files/415864/display/Default
+#Fijalkowski_2020,"P. Fijałkowski, Pociejów – żydowskie centrum handlowe dawnej Warszawy, https://www.jhi.pl/artykuly/pociejow-zydowskie-centrum-handlowe-dawnej-warszawy,625"
+#TODO,"WDZ, Fejkowa publikacja do testów struktury bazy danych, Warszawa 2021"

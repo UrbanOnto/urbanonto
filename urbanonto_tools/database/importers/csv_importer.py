@@ -24,10 +24,6 @@ def import_data_from_csv_to_db_table(csv_file_path: str, cursor: cursor, table_n
         new_tuples.append(new_tuple)
     cols = ','.join(list(dataframe.columns))
     query  = "INSERT INTO %s(%s) VALUES %%s" % (table_name, cols)
-    # for i in range(0,len(dataframe.columns)):
-    #     query += '%,'
-    # query = query[:-1]
-    # query += ')'
     try:
         extras.execute_values(cursor, query, new_tuples)
         cursor.connection.commit()
