@@ -1,3 +1,4 @@
+@prefix : <http://purl.org/urbanonto#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -2021,7 +2022,7 @@ urbanonto:object_type_606bc22a-6984-4aff-b96c-c20f19408004 rdf:type owl:Class ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
                                                            rdfs:comment "Koszary były lokowane w centrach miast, w tym w obrębie fortec, ale w XIX w. nastąpiła tendencja do stawiania całych \"miasteczek\" koszarowych dla wojska na peryferiach miast, zawsze jednak blisko ważnych dróg komunikacyjnych. Ich istnienie mogło być korzystne dla gospodarki małych miasteczek."@pl ;
                                                            rdfs:isDefinedBy "grupa budynków służących za mieszkania żołnierzy pełniących służbę wojskową"@pl ;
-                                                           rdfs:label "zabudowania koszarowe"@pl ;
+                                                           rdfs:label "koszary"@pl ;
                                                            rdfs:seeAlso "#SJP_1861: \"[koszara] 3) w lm. Domy osobne na mieszkanie dla żołnierzy przeznaczone, kazarmy\"; #SJP_1900-1927: \"2 t.: [koszary, kazarnie, kazernie, kazerny, kasarnia, kosarnia, kazarmy, kasiary] domy oddzielne, przeznaczone na mieszkanie dla wojska\"; #SJP_1978: \"1 t.: [koszara:] budynek lub zespół budynków przeznaczonych na kwatery dla żołnierzy w czasie pełnienia służby wojskowej lub w czasie ćwiczeń\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q131263"^^xsd:url ;
                                                            skos:altLabel "Kasernenkomplex"@de ,
@@ -5956,7 +5957,6 @@ urbanonto:object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620 rdf:type owl:Class ;
                                                                             "sports venue"@pl .
 
 
-
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdfs:subClassOf cidoc_crm:E26_Physical_Feature .
 
@@ -6657,8 +6657,8 @@ ontohgis:administrative_type_257 dc:creator ontohgis:person_2 ;
 ontohgis:administrative_type_47 rdfs:isDefinedBy "podstawowa, zwykle najwyższa jednostka podziału terytorialnego państwa polskiego"@pl ;
                                 rdfs:comment "Granice województwa rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy wojewódzkiej lub pełnienie roli siedziby województwa."@pl ;
                                 dc:creator ontohgis:person_2 ;
-                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url ;
-                                skos:altLabel "palatinatus"@la .
+                                skos:altLabel "palatinatus"@la ;
+                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url .
 
 
 ontohgis:person_4 <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
