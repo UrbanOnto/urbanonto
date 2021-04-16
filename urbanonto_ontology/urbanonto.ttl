@@ -145,6 +145,10 @@ ontohgis:administrative_type_85 owl:equivalentClass <https://purl.org/bdot10k#ob
                                 skos:hiddenLabel "kraj"@pl .
 
 
+###  http://purl.org/ontohgis#settlement_unit132
+ontohgis:settlement_unit132 owl:equivalentClass urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 .
+
+
 ###  http://purl.org/ontohgis#settlement_unit55
 ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                            [ rdf:type owl:Restriction ;
@@ -5544,7 +5548,7 @@ urbanonto:object_type_f28683d3-bb10-4e88-8284-21a49e02b67b rdf:type owl:Class ;
                                                                              owl:hasValue ontohgis:object_400
                                                                            ] ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
-                                                           rdfs:comment "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
+                                                           rdfs:comment "Budynki służące na potrzeby zamieszkania uczniów jako odrębne budynki pojawiły się wraz z początkiem szkół."@pl ;
                                                            rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów prowadzony najczęściej przez szkołę"@pl ;
                                                            rdfs:label "bursa szkolna"@pl ;
                                                            rdfs:seeAlso "#SJP_1861: \"2) życie wspólne, wspólnym kosztem, szczególniej, konwikt, kollegjum; 3) kupiecka, giełda\"; #SJP_1900-1927: \"1 t.: konwikt, stancja uczniów z fundacji rządu a. magnata\"; #SJP_1978: \"1 t.: zakład, w którym ucząca się młodzież otrzymuje mieszkanie i zwykle utrzymanie; internat\""@pl ,
@@ -5724,7 +5728,8 @@ urbanonto:object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d rdf:type owl:Class ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
                                                            rdfs:comment "Domy jednorodzinne były najczęściej występującym rodzajem budynku istniejącego na przedmieściach miast, poza murami miejskimi. Ten typ budowli charakteryzował te miasta i części miast, które znajdowały się we wczesnym etapie rozwoju, np. kolonie rzemieślników w XIX w., np. tkaczy lnu w Okręgu Łódzkim pierwszych dekad XIX w., którzy mieli sami uprawiać swój surowiec. W ciągu XIX wieku d.j. stał się modelową formą mieszkalną w projektach rozszerzania miast i nowych osiedli przeznaczonych dla burżuazji i urzędników. Szczególnym rodzajem domu jednorodzinnego w Rzeczypospolitej był dworek szlachecki."@pl ;
                                                            rdfs:isDefinedBy "budynek przeznaczony do zamieszkania jednej rodziny"@pl ;
-                                                           rdfs:label "dom jednorodzinny"@pl ;
+                                                           rdfs:label "dom jednorodzinny"@pl ,
+                                                                      "single-family house"@en ;
                                                            rdfs:seeAlso "#SJP_1861: \"[dom]: budynek dla mieszkania ludzi wystawiony\"; #SJP_1900-1927: \"1 t.: [dom]: budynek mieszkalny\"; #SJP_1978: \"1 t.: [dom]: budynek przeznaczony na mieszkania, na pomieszczenia dla zakładów pracy, instytucji itp.\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q1307276"^^xsd:url ;
                                                            skos:altLabel "Einfamilienhaus"@de ,
