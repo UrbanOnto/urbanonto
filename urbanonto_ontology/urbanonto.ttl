@@ -6463,6 +6463,10 @@ ontohgis:administrative_type_257 rdf:type owl:NamedIndividual .
 ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 
+###  http://purl.org/ontohgis#function6
+ontohgis:function6 rdfs:isDefinedBy "dotyczy obiektów służacych zarządzaniu dużą organizacją z państwem na czele, w tym uznanych przez niego form autonomii lub samorządu, placówek zagranicznych, związków wyznaniowych, w tym też wyższych niż parafia jednostek organizacji kościelnej, a także instytucji, stowarzyszeń społecznych i gospodarczych, np. wszelkiego typu urzędy, towarzystwa ubezpieczeniowe, siedziby zarządu przedsiębiorstw"@pl .
+
+
 ###  http://purl.org/ontohgis#person_2
 ontohgis:person_2 rdf:type owl:NamedIndividual ;
                   <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
@@ -6476,6 +6480,7 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
 ###  http://purl.org/urbanonto/function15
 urbanonto:function15 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                     rdfs:isDefinedBy "dotyczy obiektów-placówek szkolnictwa państwowego, miejskiego i prywatnego, szkolących dzieci w wieku ponadprzedszkolnym, młodzież i dorosłych"@pl ;
                      rdfs:label "funkcja edukacyjna"@pl .
 
 
@@ -6639,8 +6644,8 @@ urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-ontohgis:administrative_type_243 skos:altLabel "districtus"@la ;
-                                 dc:creator ontohgis:person_2 ;
+ontohgis:administrative_type_243 dc:creator ontohgis:person_2 ;
+                                 skos:altLabel "districtus"@la ;
                                  rdfs:comment "Granice powiatu rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy powiatowej lub pełnienie roli siedziby powiatu."@pl ;
                                  rdfs:isDefinedBy "jedna z podstawowych jednostek podziału administracyjnego i samorządowego, w Polsce przedrozbiorowej najniższego, a obecnie średniego szczebla"@pl ;
                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url .
