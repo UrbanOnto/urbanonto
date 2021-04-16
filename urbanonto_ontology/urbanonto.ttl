@@ -5545,7 +5545,7 @@ urbanonto:object_type_f28683d3-bb10-4e88-8284-21a49e02b67b rdf:type owl:Class ;
                                                                            ] ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
                                                            rdfs:comment "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
-                                                           rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów lub studentów, prowadzony najczęściej przez szkołę lub uczelnię"@pl ;
+                                                           rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów prowadzony najczęściej przez szkołę"@pl ;
                                                            rdfs:label "bursa szkolna"@pl ;
                                                            rdfs:seeAlso "#SJP_1861: \"2) życie wspólne, wspólnym kosztem, szczególniej, konwikt, kollegjum; 3) kupiecka, giełda\"; #SJP_1900-1927: \"1 t.: konwikt, stancja uczniów z fundacji rządu a. magnata\"; #SJP_1978: \"1 t.: zakład, w którym ucząca się młodzież otrzymuje mieszkanie i zwykle utrzymanie; internat\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q3153217"^^xsd:url ;
