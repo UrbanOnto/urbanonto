@@ -1,0 +1,497 @@
+identifiers,iris,names
+1,http://purl.org/urbanonto/object_type_69b23a38-e994-4b30-bf29-a685aeef3154,altana
+2,http://purl.org/urbanonto/object_type_d0b5eb87-17c1-45ef-9bcd-b39adb85cba0,ambulatorium
+3,http://purl.org/urbanonto/object_type_b25af316-d50a-4761-832c-6d967f745b9e,archiwum
+4,http://purl.org/urbanonto/object_type_1825216a-68dd-4ae7-b53c-4736713f7f45,areszt śledczy
+5,http://purl.org/urbanonto/object_type_3e00cb4c-a6c0-4394-b5b4-4ff577a15376,arsenał
+6,http://purl.org/urbanonto/object_type_05373902-6260-4373-96f9-685cee4f414a,bagno
+7,http://purl.org/urbanonto/object_type_ec9130a7-541f-4128-a892-c9bd391811f6,bank
+8,http://purl.org/urbanonto/object_type_db09afe5-a9f2-4ad4-82ca-143b0f26f525,barbakan
+9,http://purl.org/urbanonto/object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2,basen
+10,http://purl.org/urbanonto/object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25,bastion
+11,http://purl.org/urbanonto/object_type_1b9fe3b6-652b-4397-8f0c-998b585e4e87,baszta
+12,http://purl.org/urbanonto/object_type_65810a6e-2526-4cc8-9a2d-c733569c228a,baza eksploatacyjna
+13,http://purl.org/urbanonto/object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0,biblioteka
+14,http://purl.org/urbanonto/object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f,blok zabudowy
+15,http://purl.org/urbanonto/object_type_5e55b798-5e07-470b-bab7-b84e718a5baa,boisko
+16,http://purl.org/urbanonto/object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7,brama
+17,http://purl.org/urbanonto/object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4,brama miejska
+18,http://purl.org/urbanonto/object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d,bród
+19,http://purl.org/urbanonto/object_type_8bff2978-7a4b-49d3-b94d-a393ad30f914,budynek gospodarczy
+20,http://purl.org/urbanonto/object_type_36983569-cabe-4309-8f18-107316903411,budynek ogrodu zoologicznego lub botanicznego
+21,http://purl.org/urbanonto/object_type_48187b44-8d1c-4cb0-98f5-eeb6a0a68ecb,budynek produkcyjny zwierząt hodowlanych
+22,http://purl.org/urbanonto/object_type_f28683d3-bb10-4e88-8284-21a49e02b67b,bursa szkolna
+23,http://purl.org/urbanonto/object_type_e63f65ef-61a0-4602-be34-90e52a067c70,cerkiew
+24,http://purl.org/urbanonto/object_type_aff2095e-7ba5-4ce5-be60-1e408f4b80d7,cmentarz
+25,http://purl.org/urbanonto/object_type_32815407-9ac8-488f-8414-cccae56e9913,cytadela
+26,http://purl.org/urbanonto/object_type_cdc73205-dd22-4341-a13a-b358492ff9ce,dok
+27,http://purl.org/urbanonto/object_type_d871b6fe-5868-42e7-aa78-e07a766a5044,dom dla bezdomnych
+28,http://purl.org/urbanonto/object_type_0c9034c3-77a1-47d9-9067-a0e080ecfa43,dom dziecka
+29,http://purl.org/urbanonto/object_type_f92d1dbd-7de9-47e9-8bf9-b78f27363604,dom jednoizbowy
+30,http://purl.org/urbanonto/object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d,dom jednorodzinny
+31,http://purl.org/urbanonto/object_type_8b3ac720-b349-4d3b-92c4-48527594d39b,dom opieki spolecznej
+32,http://purl.org/urbanonto/object_type_884f8bff-26cc-47df-9361-d27da38cd102,dom parafialny
+33,http://purl.org/urbanonto/object_type_2429ab72-0013-4f2a-ac34-0a9c363c42e7,dom pogrzebowy
+34,http://purl.org/urbanonto/object_type_7e689c7a-2810-4911-916f-b57dfb26ad53,dom publiczny
+35,http://purl.org/urbanonto/object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea,dom studencki
+36,http://purl.org/urbanonto/object_type_6a76d684-39d1-4d14-92cd-ce80a9ef063a,dom towarowy lub handlowy
+37,http://purl.org/urbanonto/object_type_c95a340c-2e28-4ca9-8f13-5349a1b4c46b,dom zakonny
+38,http://purl.org/urbanonto/object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d,droga wodna
+39,http://purl.org/urbanonto/object_type_b08cee61-c162-4cb8-98fd-03a0508ab11e,dworzec kolejowy
+40,http://purl.org/urbanonto/object_type_11f78853-134a-45d0-8090-efd8f28965bf,działka
+41,http://purl.org/urbanonto/object_type_18e149fe-1b19-452d-b230-781dcdee378b,działka miejska
+42,http://purl.org/urbanonto/object_type_92391a0e-941b-42e1-a499-ce45065592c1,dzwonnica
+43,http://purl.org/urbanonto/object_type_d9ebb9bd-da35-41e7-8bd6-eebf4ed49e02,dźwig
+44,http://purl.org/urbanonto/object_type_f7c6e7fe-157b-4fbd-88ca-dbb5cff42b2b,elektrownia
+45,http://purl.org/urbanonto/object_type_41963db6-b35f-4aaa-8040-a059b388900f,elewator
+46,http://purl.org/urbanonto/object_type_5083acfb-3f36-4587-83d3-6c27f1412381,esplanada forteczna
+47,http://purl.org/urbanonto/object_type_ee09c17f-1029-40e9-a2ef-f8989ee51ed1,estakada
+48,http://purl.org/urbanonto/object_type_824432d0-3ccc-46df-81ec-7b54d0509262,fabryka
+49,http://purl.org/urbanonto/object_type_0f482fa3-04a0-423b-ab1f-4cdfad888b52,falochron
+50,http://purl.org/urbanonto/object_type_f18f587f-e4d9-42cb-aca6-363a3a58738b,filharmonia
+51,http://purl.org/urbanonto/object_type_4b2f4d68-7662-4205-bfc8-66c1fc921819,fontanna wolnostojąca
+52,http://purl.org/urbanonto/object_type_6e66c5e3-4652-4ccf-a626-492169a1122b,forteca
+53,http://purl.org/urbanonto/object_type_b4293a32-e17d-4159-bbe7-117f71ab946c,fosa
+54,http://purl.org/urbanonto/object_type_81d08218-f988-46ba-a0b1-924cbb26abb5,furta
+55,http://purl.org/urbanonto/object_type_7da67352-7841-46a2-9be0-663de41b9198,furta miejska
+56,http://purl.org/urbanonto/object_type_b9b7e14a-8aa7-4b36-8622-e3928471bda3,galeria sztuki
+57,http://purl.org/urbanonto/object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc,garbary
+58,http://purl.org/urbanonto/object_type_6d39053a-c3f0-47a3-96d2-2cf7f0a4742d,gmina kupiecka
+59,http://purl.org/urbanonto/object_type_b86f5c8e-6c96-45cc-9e16-0ad58bc97a37,gospodarstwo hodowlane
+60,http://purl.org/urbanonto/object_type_331f9036-04b2-4125-bd35-adb38e5f073b,grób
+61,http://purl.org/urbanonto/object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620,hala sportowa
+62,http://purl.org/urbanonto/object_type_c33318ac-c375-4821-a0c1-af7a63cd8ffb,hala targowa
+63,http://purl.org/urbanonto/object_type_5b9cd873-3972-4aa9-9e76-51e6dab898bf,hala widowiskowa
+64,http://purl.org/urbanonto/object_type_897b9a9c-459f-4199-911e-2f25d56c9514,hala wystawowa
+65,http://purl.org/urbanonto/object_type_f5804075-2f0d-46b3-a25e-c92739d33920,hotel
+66,http://purl.org/urbanonto/object_type_ee995979-23be-4441-9c9c-40382dc12698,hotel robotniczy
+67,http://purl.org/urbanonto/object_type_8f04af49-8661-4738-9aa1-452f068525db,internat
+68,http://purl.org/urbanonto/object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6,jatki
+69,http://purl.org/urbanonto/object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e,jaz
+70,http://purl.org/urbanonto/object_type_290ba842-d297-43b3-8df2-12a4c0f2fcdd,jaz ruchomy lub zastawka piętrząca
+71,http://purl.org/urbanonto/object_type_0616e71f-f911-4b5b-8ddf-8e076b5e2ec2,jezioro
+72,http://purl.org/urbanonto/object_type_a1b65f34-6349-4f88-8f33-2a0441e46203,jurydyka
+73,http://purl.org/urbanonto/object_type_7a898e45-2e35-487c-9629-89e6789d5055,kamień graniczny
+74,http://purl.org/urbanonto/object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0,kamień milowy
+75,http://purl.org/urbanonto/object_type_99c5ed94-8a14-485c-8b18-542786dd08b1,kanał
+76,http://purl.org/urbanonto/object_type_93d03b33-4643-46c0-916c-e5b9af97e7ae,kaplica wolnostojąca
+77,http://purl.org/urbanonto/object_type_697a8778-030b-4d2e-9b4c-27041e61661c,kapliczka
+78,http://purl.org/urbanonto/object_type_58008b80-aa5a-4cb2-bab0-0af4921f5ff7,kasyno
+79,http://purl.org/urbanonto/object_type_963423b9-952e-42ea-9937-8399bec3d890,kino
+80,http://purl.org/urbanonto/object_type_23aeb250-4d72-42b1-b9a0-3e387f676563,klasztor
+81,http://purl.org/urbanonto/object_type_f4bb30da-bd08-477d-bae8-8b36f22d38be,kompleks szkolny
+82,http://purl.org/urbanonto/object_type_201bdb3b-da22-43c4-9490-2b43e3fb136c,kram
+83,http://purl.org/urbanonto/object_type_ddf57aca-9884-4d25-b1b1-d3a6efb64074,krematorium
+84,http://purl.org/urbanonto/object_type_71b46985-b115-496b-a175-fc55a0ac5175,krzyż przydrożny
+85,http://purl.org/urbanonto/object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6,kwartał podatkowy
+86,http://purl.org/urbanonto/object_type_8b69df44-0b5c-4287-be30-8b7e1c8c8918,kładka
+87,http://purl.org/urbanonto/object_type_7dfd403b-e0e1-4ea2-bb4a-3bb91c04ac57,leprozorium
+88,http://purl.org/urbanonto/object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1,linia metra
+89,http://purl.org/urbanonto/object_type_83ae40c8-4d52-40e1-a11e-82a1a94ac610,magazyn
+90,http://purl.org/urbanonto/object_type_a0c1f8ff-4e16-4bd2-8816-3e5e7d5f9cb4,manufaktura
+91,http://purl.org/urbanonto/object_type_a2025e3d-976a-4c3d-95e3-e74184efd88f,meczet
+92,http://purl.org/urbanonto/object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af,miejsce poboru opłat
+93,http://purl.org/urbanonto/object_type_d2dd4918-bb62-4dfc-9a4c-c7054718a419,miejsce straceń
+94,http://purl.org/urbanonto/object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34,molo
+95,http://purl.org/urbanonto/object_type_d2b7a392-1cab-49e6-a022-2297d55c23bb,most
+96,http://purl.org/urbanonto/object_type_fa60ddfe-78ff-45fd-ba24-51010f9236b6,mury miejskie
+97,http://purl.org/urbanonto/object_type_4d5b12d9-19b6-4397-891e-c476ea81b139,muzeum
+98,http://purl.org/urbanonto/object_type_c792cd5f-83ca-4582-b0e3-10fdffcf95ab,młyn
+99,http://purl.org/urbanonto/object_type_df211709-40b8-4feb-a6ac-1993ac18842f,nasyp
+100,http://purl.org/urbanonto/object_type_b2c135a0-216c-4270-84a9-98552c4398c0,obiekt o znaczeniu historycznym
+101,http://purl.org/urbanonto/object_type_cc2c53be-6de4-4094-ada0-b64ef0ae5290,obserwatorium
+102,http://purl.org/urbanonto/object_type_77ce613a-c3b3-4727-8bc1-75df777e5ff4,oczyszczalnia ścieków
+103,http://purl.org/urbanonto/object_type_1ac81bf3-defc-4dd0-ab89-38cc0635eeac,oficyna
+104,http://purl.org/urbanonto/object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b,ogród
+105,http://purl.org/urbanonto/object_type_6076fcc5-3de4-4034-95e7-b582bb684634,opactwo
+106,http://purl.org/urbanonto/object_type_5d4c1dcf-d7d4-441c-a931-7503ae4b43eb,opera
+107,http://purl.org/urbanonto/object_type_1466742f-15b9-4426-8ab8-f21c4b304d4f,ostroga
+108,http://purl.org/urbanonto/object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf,otulina wokół miasta
+109,http://purl.org/urbanonto/object_type_ab6e4665-8e6e-4e88-8198-413da99e6341,palatium
+110,http://purl.org/urbanonto/object_type_cace123e-7364-43b7-b756-eebe60ac4c0f,parcela
+111,http://purl.org/urbanonto/object_type_ebb07674-ca92-49a0-9da3-90f840122383,park
+112,http://purl.org/urbanonto/object_type_ce2166ef-bf8f-48f3-953a-cd110d8fb7ce,parking
+113,http://purl.org/urbanonto/object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f,pawilon
+114,http://purl.org/urbanonto/object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078,pałac
+115,http://purl.org/urbanonto/object_type_d61883a4-c2f9-4b56-b243-b62de3abef82,pensjonat
+116,http://purl.org/urbanonto/object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08,peron
+117,http://purl.org/urbanonto/object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1,pierzeja
+118,http://purl.org/urbanonto/object_type_93c8cca0-8c87-414b-839a-992f2a538da1,plac
+119,http://purl.org/urbanonto/object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33,plac zabaw
+120,http://purl.org/urbanonto/object_type_67c791d9-5864-4b3b-89e5-ee80389ab761,placówka badawcza
+121,http://purl.org/urbanonto/object_type_fd7ae0ff-63fb-459a-b535-58a428511747,planty
+122,http://purl.org/urbanonto/object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb,podgrodzie
+123,http://purl.org/urbanonto/object_type_488f8944-e0bd-47dd-8230-610fdc15d49d,poligon wojskowy
+124,http://purl.org/urbanonto/object_type_1a276b47-16bd-4b07-a642-e76acabe34d9,pomnik
+125,http://purl.org/urbanonto/object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3,pomost albo molo
+126,http://purl.org/urbanonto/object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b,port wodny
+127,http://purl.org/urbanonto/object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f,posesja
+128,http://purl.org/urbanonto/object_type_55033dcd-e6fe-443f-b615-1ea420555c92,przedszkole
+129,http://purl.org/urbanonto/object_type_0d1690ae-e388-41d4-aff2-31bf937cc373,przejście podziemne
+130,http://purl.org/urbanonto/object_type_632d5c8c-f305-4cbe-996d-ad321c2b09ec,przeprawa promowa
+131,http://purl.org/urbanonto/object_type_a333898b-73f1-4ba7-8078-e34e35019f60,przeprawa łodziami
+132,http://purl.org/urbanonto/object_type_d2abb593-b436-4f8e-963d-333e470aad7c,przewód gazowy
+133,http://purl.org/urbanonto/object_type_74eff5a9-f958-4033-a6d0-e4fb63ce33a8,przewód kanalizacyjny
+134,http://purl.org/urbanonto/object_type_eca60c6f-b783-450a-9404-ee82f5710573,przewód wodociągowy
+135,http://purl.org/urbanonto/object_type_1441eb43-4105-4f33-813c-31f459a2528b,przytułek
+136,http://purl.org/urbanonto/object_type_b8354224-3b8c-41cb-9b2b-855bea6a0e5c,pręgierz
+137,http://purl.org/urbanonto/object_type_4bd6e285-753f-459e-9b5b-1a1657291685,rakarnia
+138,http://purl.org/urbanonto/object_type_31b9b0e9-68bc-46c0-bb6c-6ba3f85f10c3,restauracja
+139,http://purl.org/urbanonto/object_type_c11cb20d-1a61-4312-a780-c45fa09951a0,rezydencja ambasadora
+140,http://purl.org/urbanonto/object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a,rezydencja biskupia
+141,http://purl.org/urbanonto/object_type_94baa37c-07ed-4159-8e62-0bd69515a313,rezydencja prezydencka
+142,http://purl.org/urbanonto/object_type_5f621828-99bb-4747-99d6-6242dcb669fb,rogatka
+143,http://purl.org/urbanonto/object_type_00dde5ae-0004-499f-bccd-251870d4006c,rozmierzenie lokacyjne
+144,http://purl.org/urbanonto/object_type_e73317ef-21fc-441c-919a-925844d2950d,rozszerzenie miasta
+145,http://purl.org/urbanonto/object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b,ruina zabytkowa
+146,http://purl.org/urbanonto/object_type_16c35144-0a87-4e5f-9235-741e90a76bc5,rynek
+147,http://purl.org/urbanonto/object_type_5ec5f208-d56f-421c-9e83-93776dd0119e,rzeka
+148,http://purl.org/urbanonto/object_type_c14f0fef-4ea1-4713-865e-9b1d99c5a6de,sala gimnastyczna
+149,http://purl.org/urbanonto/object_type_30fc0b77-30ec-4697-9e8d-1f2cf40eef50,schody
+150,http://purl.org/urbanonto/object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265,sieć kolejowa
+151,http://purl.org/urbanonto/object_type_0f4926a1-a1ee-44b9-a09b-03c0bc396802,silos
+152,http://purl.org/urbanonto/object_type_8ca9ab1b-c79c-4bb9-b500-4da2bf350312,skarb
+153,http://purl.org/urbanonto/object_type_1315a9b9-2fe9-4668-8b4c-311dbbb54c97,stacja meteorologiczna
+154,http://purl.org/urbanonto/object_type_7d38c51a-72e0-43b0-a380-222a72f32d49,stacja metra
+155,http://purl.org/urbanonto/object_type_bf299d66-61ed-4b3b-9340-811737a1dbf6,stacja paliw
+156,http://purl.org/urbanonto/object_type_e676bd90-924a-4cc4-ae60-f1e14458b793,stacja pomp
+157,http://purl.org/urbanonto/object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad,stadion
+158,http://purl.org/urbanonto/object_type_4b313ab4-5059-46a7-b62e-000c7f813666,stajnia
+159,http://purl.org/urbanonto/object_type_397b780a-e5fe-464b-8f45-610a265c75ab,staw
+160,http://purl.org/urbanonto/object_type_f78faf6d-0612-490b-b0d9-8cbe13f7dbb7,straż pożarna
+161,http://purl.org/urbanonto/object_type_256ce112-40b9-4dfd-a357-0648e04bf76d,"strumień, potok lub struga"
+162,http://purl.org/urbanonto/object_type_7aba2cf5-9d79-4e1d-ac7d-46a8aa3ad7fd,strzelnica
+163,http://purl.org/urbanonto/object_type_cb053831-abf1-4007-b84c-a3bb6d807392,synagoga
+164,http://purl.org/urbanonto/object_type_cf52d40b-be95-4124-8e06-296e97cf499e,szkoła
+165,http://purl.org/urbanonto/object_type_38b9b000-aee9-4d98-aee8-315a89689a87,szkoła XIX wieku
+166,http://purl.org/urbanonto/object_type_a2e81396-a1cd-47dc-97d0-6634e02ba079,szkoła wyższa budynek
+167,http://purl.org/urbanonto/object_type_d0008f3a-5765-4541-a619-636f66883974,szkoła wyższa kompleks
+168,http://purl.org/urbanonto/object_type_b1e40e54-a8ec-446d-9385-7b3f30e7d569,szkoła średniowieczna i nowożytna
+169,http://purl.org/urbanonto/object_type_8a287e70-01a2-454d-8e28-85f356330169,szkoła-kompleks
+170,http://purl.org/urbanonto/object_type_4768086f-2542-429f-8c3a-e3644a5ce11a,szpital
+171,http://purl.org/urbanonto/object_type_f47316c0-1c09-488a-9b19-0063d480ff87,szpital przednowoczesny
+172,http://purl.org/urbanonto/object_type_ed4a36df-dc84-4dab-bebe-8542138bffc8,szubienica
+173,http://purl.org/urbanonto/object_type_9a254e82-8067-4730-8dfd-cdecab5e86a3,szuwary
+174,http://purl.org/urbanonto/object_type_0944c025-a8e5-48c0-8311-e7955821f889,sąd
+175,http://purl.org/urbanonto/object_type_38da8ae6-c644-4b33-a311-29e7da8b6805,słodownia
+176,http://purl.org/urbanonto/object_type_f02e5f79-8a07-482f-b284-7873fd5f1b1a,teatr
+177,http://purl.org/urbanonto/object_type_e0f1a553-9560-48d7-9998-89bff76410e5,teren składowania odpadów komunalnych
+178,http://purl.org/urbanonto/object_type_02332631-d6e9-43f2-87d9-eb411e79317f,teren składowania odpadów przemysłowych
+179,http://purl.org/urbanonto/object_type_a8dc449a-b349-4738-9c02-d6676469550b,teren zabudowany
+180,http://purl.org/urbanonto/object_type_9fec63be-9676-4208-94cb-b99f0010b365,tunel
+181,http://purl.org/urbanonto/object_type_bcb1ecf1-8ebe-49ec-8a98-1b7e34a10e11,ulica
+182,http://purl.org/urbanonto/object_type_fd67ba75-80e0-40ef-b56e-638f83e28c98,urząd pocztowy
+183,http://purl.org/urbanonto/object_type_ee761b98-ba78-434f-8cd7-2b2a97a325e0,warsztat
+184,http://purl.org/urbanonto/object_type_10cfedcb-03fa-4a62-adee-bb39ff3ead43,wartownia
+185,http://purl.org/urbanonto/object_type_8a7aec41-061d-4dbe-96d4-ba85a0d0c4e4,wał przeciwpowodziowy lub grobla
+186,http://purl.org/urbanonto/object_type_07078b2a-5f06-4a53-af73-ce15ca4c2ddb,wiadukt
+187,http://purl.org/urbanonto/object_type_ab4e294f-7a2d-43be-8310-d3eca632042a,wiata
+188,http://purl.org/urbanonto/object_type_941cfb75-1e17-47dc-8770-b83d7b6d93d6,wieża ciśnień
+189,http://purl.org/urbanonto/object_type_1c6cc03a-8ae3-4e42-95d1-adfcb0c702b5,woda płynąca
+190,http://purl.org/urbanonto/object_type_606bc22a-6984-4aff-b96c-c20f19408004,zabudowania koszarowe
+191,http://purl.org/urbanonto/object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb,zabytek nieużytkowy
+192,http://purl.org/urbanonto/object_type_99f0f5af-ae0e-4b88-a3c9-6f51d1106dc4,zajezdnia autobusowa
+193,http://purl.org/urbanonto/object_type_d91808d7-cbc7-4575-848c-15a876b9fc95,zajezdnia tramwajowa
+194,http://purl.org/urbanonto/object_type_e6f87ce4-9177-4f06-bb36-a74f90982ad7,zajezdnia trolejbusowa
+195,http://purl.org/urbanonto/object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9,zakład karny
+196,http://purl.org/urbanonto/object_type_2130ef99-e232-48f5-bc0c-4b9ab7a6590d,zakład poprawczy
+197,http://purl.org/urbanonto/object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca,zapora
+198,http://purl.org/urbanonto/object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0,założenie pałacowe
+199,http://purl.org/urbanonto/object_type_bdbb9fe6-963f-4b98-9e94-73be11c8bfdd,zbiornik zaporowy
+200,http://purl.org/urbanonto/object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c,zespół pałacowy
+201,http://purl.org/urbanonto/object_type_1f7aca78-5242-408b-add8-7d5438a1fefc,zespół sakralny lub klasztorny
+202,http://purl.org/urbanonto/object_type_d0a27d3e-2799-4636-8124-fb376f29b7a7,zespół szpitalny
+203,http://purl.org/urbanonto/object_type_9d678687-6418-46af-9851-e69437bad487,zespół zamkowy
+204,http://purl.org/urbanonto/object_type_7bd3ee64-e701-48f8-ab7e-f5788cf0163c,śluza
+205,http://purl.org/urbanonto/object_type_838abf8a-3981-4eab-86f3-42ac9b5600b2,żłobek
+1000,https://purl.org/bdot10k#object_24,alejka
+1001,https://purl.org/bdot10k#object_14,autostrada
+1003,https://purl.org/bdot10k#object_138,basen odkryty
+1004,https://purl.org/bdot10k#object_139,basen z czaszą foliową
+1005,https://purl.org/bdot10k#object_38,benzynowy
+1006,https://purl.org/bdot10k#object_140,bieżnia
+1008,https://purl.org/bdot10k#object_112,budynki biurowe
+1009,https://purl.org/bdot10k#object_115,budynki garaży
+1010,https://purl.org/bdot10k#object_123,budynki gospodarstw rolnych
+1011,https://purl.org/bdot10k#object_113,budynki handlowo-usługowe
+1012,https://purl.org/bdot10k#object_110,budynki hoteli
+1013,https://purl.org/bdot10k#object_122,budynki kultury fizycznej
+1014,https://purl.org/bdot10k#object_106,budynki mieszkalne jednorodzinne
+1015,https://purl.org/bdot10k#object_119,budynki muzeów i bibliotek
+1016,https://purl.org/bdot10k#object_107,budynki o dwóch mieszkaniach
+1017,https://purl.org/bdot10k#object_108,budynki o trzech i więcej mieszkaniach
+1018,https://purl.org/bdot10k#object_116,budynki przemysłowe
+1019,https://purl.org/bdot10k#object_124,budynki przeznaczone do sprawowania kultu religijnego i czynności religijnych
+1020,https://purl.org/bdot10k#object_120,budynki szkół i instytucji badawczych
+1021,https://purl.org/bdot10k#object_121,budynki szpitali i zakładów opieki medycznej
+1022,https://purl.org/bdot10k#object_111,"budynki zakwaterowania turystycznego,pozostałe"
+1023,https://purl.org/bdot10k#object_109,budynki zbiorowego zamieszkania
+1024,https://purl.org/bdot10k#object_114,"budynki łączności, dworców i terminali"
+1025,https://purl.org/bdot10k#object_270,bunkier lub schron
+1026,https://purl.org/bdot10k#object_211,centrum handlowo‐usługowe
+1027,https://purl.org/bdot10k#object_151,chłodnia kominowa
+1028,https://purl.org/bdot10k#object_39,ciepłowniczy
+1030,https://purl.org/bdot10k#object_98,część kolonii
+1031,https://purl.org/bdot10k#object_94,część miasta
+1032,https://purl.org/bdot10k#object_100,część osady
+1033,https://purl.org/bdot10k#object_96,część wsi
+1034,https://purl.org/bdot10k#object_92,delegatura
+1035,https://purl.org/bdot10k#object_20,droga dojazdowa
+1036,https://purl.org/bdot10k#object_15,droga ekspresowa
+1037,https://purl.org/bdot10k#object_17,droga główna
+1038,https://purl.org/bdot10k#object_16,droga główna ruchu przyśpieszonego
+1039,https://purl.org/bdot10k#object_21,droga inna
+1040,https://purl.org/bdot10k#object_19,droga lokalna
+1041,https://purl.org/bdot10k#object_18,droga zbiorcza
+1042,https://purl.org/bdot10k#object_248,drzewo lub grupa drzew
+1043,https://purl.org/bdot10k#object_213,dworzec autobusowy
+1044,https://purl.org/bdot10k#object_91,dzielnica
+1045,https://purl.org/bdot10k#object_261,ekran akustyczny
+1046,https://purl.org/bdot10k#object_195,elektrociepłownia
+1049,https://purl.org/bdot10k#object_187,estrada
+1051,https://purl.org/bdot10k#object_271,"figura, kapliczka lub krzyż przydrożny"
+1052,https://purl.org/bdot10k#object_272,fontanna
+1053,https://purl.org/bdot10k#object_171,fosa sucha i wykop
+1054,https://purl.org/bdot10k#object_104,gajówka
+1055,https://purl.org/bdot10k#object_197,gazownia
+1056,https://purl.org/bdot10k#object_40,gazowy
+1057,https://purl.org/bdot10k#object_86,gmina miejska
+1058,https://purl.org/bdot10k#object_88,gmina miejsko‐wiejska
+1059,https://purl.org/bdot10k#object_87,gmina wiejska
+1061,https://purl.org/bdot10k#object_249,głaz narzutowy lub grupa głazów
+1062,https://purl.org/bdot10k#object_228,hotel lub motel
+1063,https://purl.org/bdot10k#object_199,huta
+1064,https://purl.org/bdot10k#object_105,inny obiekt
+1066,https://purl.org/bdot10k#object_135,jaz stały
+1067,https://purl.org/bdot10k#object_6,jezdnia autostrady
+1068,https://purl.org/bdot10k#object_12,jezdnia drogi dojazdowej
+1069,https://purl.org/bdot10k#object_7,jezdnia drogi ekspresowej
+1070,https://purl.org/bdot10k#object_9,jezdnia drogi głównej
+1071,https://purl.org/bdot10k#object_8,jezdnia drogi głównej ruchu przyśpieszonego
+1072,https://purl.org/bdot10k#object_13,jezdnia drogi innej
+1073,https://purl.org/bdot10k#object_11,jezdnia drogi lokalnej
+1074,https://purl.org/bdot10k#object_10,jezdnia drogi zbiorczej
+1075,https://purl.org/bdot10k#object_41,kanalizacyjny
+1077,https://purl.org/bdot10k#object_229,kemping
+1078,https://purl.org/bdot10k#object_174,kolej linowa
+1079,https://purl.org/bdot10k#object_97,kolonia
+1080,https://purl.org/bdot10k#object_152,komin przemysłowy
+1081,https://purl.org/bdot10k#object_200,kopalnia
+1082,https://purl.org/bdot10k#object_141,kort tenisowy
+1083,https://purl.org/bdot10k#object_142,kort tenisowy z czaszą foliową
+1084,https://purl.org/bdot10k#object_55,kosodrzewina
+1085,https://purl.org/bdot10k#object_56,krzewy
+1086,https://purl.org/bdot10k#object_251,kępa kosodrzewiny
+1087,https://purl.org/bdot10k#object_250,kępa krzewów
+1088,https://purl.org/bdot10k#object_128,kładka dla pieszych
+1089,https://purl.org/bdot10k#object_52,las
+1090,https://purl.org/bdot10k#object_103,leśniczówka
+1091,https://purl.org/bdot10k#object_33,linia elektroenergetyczna najwyższego napięcia
+1092,https://purl.org/bdot10k#object_36,linia elektroenergetyczna niskiego napięcia
+1093,https://purl.org/bdot10k#object_34,linia elektroenergetyczna wysokiego napięcia
+1094,https://purl.org/bdot10k#object_35,linia elektroenergetyczna średniego napięcia
+1095,https://purl.org/bdot10k#object_252,linia oddziałowa
+1096,https://purl.org/bdot10k#object_37,linia telekomunikacyjna
+1097,https://purl.org/bdot10k#object_214,lotnisko lub lądowisko
+1098,https://purl.org/bdot10k#object_153,maszt oświetleniowy
+1099,https://purl.org/bdot10k#object_154,maszt telekomunikacyjny
+1100,https://purl.org/bdot10k#object_253,mały las
+1101,https://purl.org/bdot10k#object_93,miasto
+1102,https://purl.org/bdot10k#object_89,miasto w gminie miejsko‐wiejskiej
+1103,https://purl.org/bdot10k#object_215,miejsce obsługi podróżnych
+1104,https://purl.org/bdot10k#object_238,miejsce pamięci narodowej
+1107,https://purl.org/bdot10k#object_273,mur historyczny
+1108,https://purl.org/bdot10k#object_42,naftowy
+1110,https://purl.org/bdot10k#object_125,"obiekty budowlane wpisane do rejestru zabytków i objęte indywidualną ochroną konserwatorską oraz nieruchome, archeologiczne dobra kultury"
+1111,https://purl.org/bdot10k#object_175,obrotnica kolejowa
+1112,https://purl.org/bdot10k#object_79,obszar Natura 2000
+1113,https://purl.org/bdot10k#object_90,obszar wiejski w gminie miejsko‐wiejskiej
+1115,https://purl.org/bdot10k#object_274,odosobniona mogiła
+1116,https://purl.org/bdot10k#object_254,odosobniona skała
+1117,https://purl.org/bdot10k#object_188,ogrodzenie trwałe
+1118,https://purl.org/bdot10k#object_223,ogród botaniczny
+1119,https://purl.org/bdot10k#object_57,ogród działkowy
+1120,https://purl.org/bdot10k#object_224,ogród zoologiczny
+1121,https://purl.org/bdot10k#object_118,ogólnodostępne obiekty kulturalne
+1122,https://purl.org/bdot10k#object_99,osada
+1123,https://purl.org/bdot10k#object_163,osadnik
+1124,https://purl.org/bdot10k#object_101,osiedle
+1125,https://purl.org/bdot10k#object_193,osiedle mieszkaniowe
+1127,https://purl.org/bdot10k#object_232,ośrodek naukowo‐badawczy
+1128,https://purl.org/bdot10k#object_225,ośrodek sportowo‐rekreacyjny
+1129,https://purl.org/bdot10k#object_230,ośrodek wypoczynkowy
+1131,https://purl.org/bdot10k#object_80,park krajobrazowy
+1132,https://purl.org/bdot10k#object_81,park narodowy
+1134,https://purl.org/bdot10k#object_255,pas krzewów lub żywopłot
+1135,https://purl.org/bdot10k#object_262,pas startowy
+1136,https://purl.org/bdot10k#object_25,pasaż
+1137,https://purl.org/bdot10k#object_83,państwo
+1138,https://purl.org/bdot10k#object_189,peron kolejowy
+1139,https://purl.org/bdot10k#object_68,"piarg, usypisko lub rumowisko skalne"
+1141,https://purl.org/bdot10k#object_143,plac gier i zabaw
+1142,https://purl.org/bdot10k#object_144,plac sportowy
+1143,https://purl.org/bdot10k#object_58,plantacja
+1144,https://purl.org/bdot10k#object_190,platforma widokowa
+1145,https://purl.org/bdot10k#object_157,podpora kolei linowej
+1146,https://purl.org/bdot10k#object_202,podstacja elektroenergetyczna
+1149,https://purl.org/bdot10k#object_276,pomost lub molo
+1150,https://purl.org/bdot10k#object_217,port wodny lub przystań
+1152,https://purl.org/bdot10k#object_85,powiat
+1153,https://purl.org/bdot10k#object_51,pozostała zabudowa
+1154,https://purl.org/bdot10k#object_126,"pozostałe budynki niemieszkalne, gdzie indziej nie wymienione"
+1155,https://purl.org/bdot10k#object_71,pozostały grunt nieużytkowany
+1156,https://purl.org/bdot10k#object_233,przedszkole lub żłobek
+1157,https://purl.org/bdot10k#object_263,przejście graniczne
+1158,https://purl.org/bdot10k#object_130,przejście podziemne dla pieszych
+1159,https://purl.org/bdot10k#object_203,przepompownia
+1162,https://purl.org/bdot10k#object_131,przepust
+1163,https://purl.org/bdot10k#object_102,przysiółek
+1164,https://purl.org/bdot10k#object_264,przystanek autobusowy lub tramwajowy
+1165,https://purl.org/bdot10k#object_265,przystanek kolejowy
+1166,https://purl.org/bdot10k#object_256,próg skalny
+1167,https://purl.org/bdot10k#object_204,rafineria
+1168,https://purl.org/bdot10k#object_191,rampa
+1169,https://purl.org/bdot10k#object_82,rezerwat
+1170,https://purl.org/bdot10k#object_22,rondo
+1171,https://purl.org/bdot10k#object_62,roślinność trawiasta
+1174,https://purl.org/bdot10k#object_257,rząd drzew
+1175,https://purl.org/bdot10k#object_4,rów melioracyjny zbiorczy
+1176,https://purl.org/bdot10k#object_5,rów melioracyjny zwykły
+1177,https://purl.org/bdot10k#object_59,sad
+1179,https://purl.org/bdot10k#object_231,schronisko turystyczne
+1180,https://purl.org/bdot10k#object_239,skansen
+1181,https://purl.org/bdot10k#object_145,skocznia narciarska
+1182,https://purl.org/bdot10k#object_205,składowisko odpadów
+1183,https://purl.org/bdot10k#object_218,stacja kolejowa
+1188,https://purl.org/bdot10k#object_278,studnia głębinowa
+1189,https://purl.org/bdot10k#object_176,suwnica
+1190,https://purl.org/bdot10k#object_267,sygnalizator świetlny
+1191,https://purl.org/bdot10k#object_279,szklarnia (niebędąca budynkiem)
+1192,https://purl.org/bdot10k#object_234,szkoła lub zespół szkół
+1193,https://purl.org/bdot10k#object_235,szkoła wyższa
+1194,https://purl.org/bdot10k#object_60,szkółka leśna
+1195,https://purl.org/bdot10k#object_61,szkółka roślin ozdobnych
+1196,https://purl.org/bdot10k#object_147,sztuczny stok
+1198,https://purl.org/bdot10k#object_179,szyb naftowy lub gazowy
+1199,https://purl.org/bdot10k#object_156,słup energetyczny
+1200,https://purl.org/bdot10k#object_212,targowisko lub bazar
+1201,https://purl.org/bdot10k#object_177,taśmociąg
+1202,https://purl.org/bdot10k#object_69,teren kamienisty
+1203,https://purl.org/bdot10k#object_221,teren kolejowy
+1204,https://purl.org/bdot10k#object_70,teren piaszczysty lub żwirowy
+1205,https://purl.org/bdot10k#object_64,teren pod drogą kołową
+1206,https://purl.org/bdot10k#object_66,teren pod drogą kołową i torowiskiem
+1207,https://purl.org/bdot10k#object_67,teren pod drogą lotniskową
+1208,https://purl.org/bdot10k#object_65,teren pod torowiskiem
+1209,https://purl.org/bdot10k#object_77,teren pod urządzeniami technicznymi lub budowlami
+1210,https://purl.org/bdot10k#object_285,teren podmokły
+1211,https://purl.org/bdot10k#object_78,teren przemysłowo‐składowy
+1214,https://purl.org/bdot10k#object_206,teren ujęcia wody
+1215,https://purl.org/bdot10k#object_27,tor kolejowy
+1216,https://purl.org/bdot10k#object_28,tor metra
+1217,https://purl.org/bdot10k#object_148,tor samochodowy
+1218,https://purl.org/bdot10k#object_149,tor saneczkowy
+1219,https://purl.org/bdot10k#object_29,tor tramwajowy
+1220,https://purl.org/bdot10k#object_150,tor żużlowy
+1221,https://purl.org/bdot10k#object_181,transformator
+1222,https://purl.org/bdot10k#object_192,trybuna
+1224,https://purl.org/bdot10k#object_155,turbina wiatrowa
+1225,https://purl.org/bdot10k#object_240,twierdza lub forteca
+1226,https://purl.org/bdot10k#object_180,ujęcie wody
+1227,https://purl.org/bdot10k#object_170,umocnienie brzegu
+1228,https://purl.org/bdot10k#object_63,uprawa na gruntach ornych
+1230,https://purl.org/bdot10k#object_258,wejście do jaskini
+1231,https://purl.org/bdot10k#object_268,wejście do stacji metra
+1233,https://purl.org/bdot10k#object_280,wiata lub altana
+1234,https://purl.org/bdot10k#object_281,wiatrak (niebędący budynkiem)
+1235,https://purl.org/bdot10k#object_95,wieś
+1237,https://purl.org/bdot10k#object_282,wieża obserwacyjna
+1238,https://purl.org/bdot10k#object_159,wieża przeciwpożarowa
+1239,https://purl.org/bdot10k#object_160,wieża szybu kopalnianego
+1240,https://purl.org/bdot10k#object_161,wieża telekomunikacyjna
+1241,https://purl.org/bdot10k#object_162,wieża widokowa
+1242,https://purl.org/bdot10k#object_44,woda morska
+1244,https://purl.org/bdot10k#object_46,woda stojąca
+1245,https://purl.org/bdot10k#object_43,wodociągowy
+1246,https://purl.org/bdot10k#object_259,wodospad
+1247,https://purl.org/bdot10k#object_283,wodowskaz
+1248,https://purl.org/bdot10k#object_84,województwo
+1249,https://purl.org/bdot10k#object_178,wyciąg narciarski
+1250,https://purl.org/bdot10k#object_75,wyrobisko
+1251,https://purl.org/bdot10k#object_23,węzeł drogowy
+1252,https://purl.org/bdot10k#object_50,zabudowa handlowo‐usługowa
+1253,https://purl.org/bdot10k#object_48,zabudowa jednorodzinna
+1254,https://purl.org/bdot10k#object_49,zabudowa przemysłowo‐składowa
+1255,https://purl.org/bdot10k#object_47,zabudowa wielorodzinna
+1256,https://purl.org/bdot10k#object_54,zadrzewienie
+1257,https://purl.org/bdot10k#object_53,zagajnik
+1258,https://purl.org/bdot10k#object_222,zajezdnia lub baza transportowa
+1259,https://purl.org/bdot10k#object_207,zakład metalurgiczny
+1260,https://purl.org/bdot10k#object_236,zakład opieki socjalnej lub dom dziecka
+1261,https://purl.org/bdot10k#object_208,"zakład produkcyjny, usługowy lub remontowy"
+1262,https://purl.org/bdot10k#object_247,zakład specjalny
+1263,https://purl.org/bdot10k#object_209,zakład utylizacji
+1264,https://purl.org/bdot10k#object_210,zakład wodociągowy
+1266,https://purl.org/bdot10k#object_164,zbiornik na ciecz
+1267,https://purl.org/bdot10k#object_165,zbiornik na materiały pędne lub gaz
+1268,https://purl.org/bdot10k#object_166,zbiornik na materiały sypkie
+1269,https://purl.org/bdot10k#object_117,"zbiorniki, silosy i budynki magazynowe"
+1270,https://purl.org/bdot10k#object_227,zespół domów letniskowych
+1271,https://purl.org/bdot10k#object_183,zespół dystrybutorów paliwa
+1272,https://purl.org/bdot10k#object_241,zespół muzealny
+1273,https://purl.org/bdot10k#object_186,zespół nagrobków cmentarnych
+1276,https://purl.org/bdot10k#object_237,zespół szpitalny lub sanatoryjny
+1277,https://purl.org/bdot10k#object_182,zespół transformatorów
+1278,https://purl.org/bdot10k#object_184,zespół urządzeń stacji meteorologicznej
+1279,https://purl.org/bdot10k#object_185,zespół urządzeń terminalu ropy naftowej lub materiałów ropopochodnych
+1281,https://purl.org/bdot10k#object_76,zwałowisko
+1282,https://purl.org/bdot10k#object_169,ściana oporowa
+1283,https://purl.org/bdot10k#object_26,ścieżka
+1285,https://purl.org/bdot10k#object_260,źródło
+2000,http://purl.org/ontohgis#settlement_unit10,browar
+2001,http://purl.org/ontohgis#settlement_unit11,cegielnia
+2002,http://purl.org/ontohgis#settlement_unit12,cukrownia
+2004,http://purl.org/ontohgis#settlement_unit112,część przysiółka
+2005,http://purl.org/ontohgis#settlement_unit8,folwark
+2007,http://purl.org/ontohgis#settlement_unit18,gorzelnia
+2008,http://purl.org/ontohgis#settlement_unit102,grupa zabudowań
+2009,http://purl.org/ontohgis#settlement_unit113,gród
+2010,http://purl.org/ontohgis#settlement_unit80,holendry
+2011,http://purl.org/ontohgis#settlement_unit100,kaplica
+2012,http://purl.org/ontohgis#settlement_unit64,kolonia kolonii
+2013,http://purl.org/ontohgis#settlement_unit65,kolonia osady
+2014,http://purl.org/ontohgis#settlement_unit66,kolonia wsi
+2015,http://purl.org/ontohgis#settlement_unit22,koszary
+2016,http://purl.org/ontohgis#settlement_unit103,kościół
+2017,http://purl.org/ontohgis#settlement_unit23,latarnia morska
+2018,http://purl.org/ontohgis#settlement_unit25,letnisko
+2019,http://purl.org/ontohgis#settlement_unit28,miasteczko
+2020,http://purl.org/ontohgis#settlement_unit35,osada fabryczna
+2021,http://purl.org/ontohgis#settlement_unit21,osada górnicza
+2022,http://purl.org/ontohgis#settlement_unit127,osada hutnicza
+2023,http://purl.org/ontohgis#settlement_unit99,osada karczemna
+2024,http://purl.org/ontohgis#settlement_unit19,osada klasztorna
+2025,http://purl.org/ontohgis#settlement_unit68,osada kolonii
+2026,http://purl.org/ontohgis#settlement_unit125,osada kuźnicza
+2027,http://purl.org/ontohgis#settlement_unit69,osada leśna wsi
+2028,http://purl.org/ontohgis#settlement_unit37,osada miejska
+2029,http://purl.org/ontohgis#settlement_unit38,osada młyńska
+2030,http://purl.org/ontohgis#settlement_unit71,osada wsi
+2031,http://purl.org/ontohgis#settlement_unit72,osiedle wsi
+2032,http://purl.org/ontohgis#settlement_unit41,plebania
+2033,http://purl.org/ontohgis#settlement_unit82,port morski
+2034,http://purl.org/ontohgis#settlement_unit43,przedmieście
+2035,http://purl.org/ontohgis#settlement_unit73,przysiółek kolonii
+2036,http://purl.org/ontohgis#settlement_unit74,przysiółek osady
+2037,http://purl.org/ontohgis#settlement_unit75,przysiółek wsi
+2039,http://purl.org/ontohgis#settlement_unit106,rumunek
+2041,http://purl.org/ontohgis#settlement_unit47,smolarnia
+2043,http://purl.org/ontohgis#settlement_unit92,targ
+2044,http://purl.org/ontohgis#settlement_unit50,tartak
+2045,http://purl.org/ontohgis#settlement_unit51,torfiarnia
+2046,http://purl.org/ontohgis#settlement_unit52,twierdza
+2047,http://purl.org/ontohgis#settlement_unit53,uzdrowisko
+2048,http://purl.org/ontohgis#settlement_unit55,więzienie
+2049,http://purl.org/ontohgis#settlement_unit110,wójtostwo
+2050,http://purl.org/ontohgis#settlement_unit1,zamek
+2051,http://purl.org/ontohgis#settlement_unit56,zaścianek

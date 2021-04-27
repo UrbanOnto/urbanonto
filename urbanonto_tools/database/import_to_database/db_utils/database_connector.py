@@ -4,18 +4,17 @@ import logging
 from psycopg2._psycopg import cursor
 
 
-def connect_to_db()\
-    -> cursor:
+def connect_to_db(host: str, port: str, database: str, user: str, password: str) -> cursor:
     conn = None
     logging.info(msg='Trying to connect to database')
     try:
         conn = \
             psycopg2.connect(
-                host='localhost',
-                port='5433',
-                database='urbanonto',
-                user='postgres',
-                password='sagan1')
+                host=host,
+                port=port,
+                database=database,
+                user=user,
+                password=password)
 
         cur = conn.cursor()
     except (Exception, psycopg2.DatabaseError) as error:
@@ -23,5 +22,3 @@ def connect_to_db()\
     finally:
         if conn is not None:
             return cur
-
-connect_to_db()
