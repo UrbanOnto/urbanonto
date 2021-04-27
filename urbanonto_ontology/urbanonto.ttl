@@ -1,3 +1,4 @@
+@prefix : <http://purl.org/urbanonto#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -142,6 +143,10 @@ ontohgis:administrative_type_85 owl:equivalentClass <https://purl.org/bdot10k#ob
                                 skos:altLabel "der Staat"@de ,
                                               "state"@en ;
                                 skos:hiddenLabel "kraj"@pl .
+
+
+###  http://purl.org/ontohgis#settlement_unit132
+ontohgis:settlement_unit132 owl:equivalentClass urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 .
 
 
 ###  http://purl.org/ontohgis#settlement_unit55
@@ -2021,7 +2026,7 @@ urbanonto:object_type_606bc22a-6984-4aff-b96c-c20f19408004 rdf:type owl:Class ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
                                                            rdfs:comment "Koszary były lokowane w centrach miast, w tym w obrębie fortec, ale w XIX w. nastąpiła tendencja do stawiania całych \"miasteczek\" koszarowych dla wojska na peryferiach miast, zawsze jednak blisko ważnych dróg komunikacyjnych. Ich istnienie mogło być korzystne dla gospodarki małych miasteczek."@pl ;
                                                            rdfs:isDefinedBy "grupa budynków służących za mieszkania żołnierzy pełniących służbę wojskową"@pl ;
-                                                           rdfs:label "zabudowania koszarowe"@pl ;
+                                                           rdfs:label "koszary"@pl ;
                                                            rdfs:seeAlso "#SJP_1861: \"[koszara] 3) w lm. Domy osobne na mieszkanie dla żołnierzy przeznaczone, kazarmy\"; #SJP_1900-1927: \"2 t.: [koszary, kazarnie, kazernie, kazerny, kasarnia, kosarnia, kazarmy, kasiary] domy oddzielne, przeznaczone na mieszkanie dla wojska\"; #SJP_1978: \"1 t.: [koszara:] budynek lub zespół budynków przeznaczonych na kwatery dla żołnierzy w czasie pełnienia służby wojskowej lub w czasie ćwiczeń\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q131263"^^xsd:url ;
                                                            skos:altLabel "Kasernenkomplex"@de ,
@@ -5543,8 +5548,8 @@ urbanonto:object_type_f28683d3-bb10-4e88-8284-21a49e02b67b rdf:type owl:Class ;
                                                                              owl:hasValue ontohgis:object_400
                                                                            ] ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
-                                                           rdfs:comment "Budynki służące na potrzeby zamieszkania studentów i uczniów jako odrębne budynki pojawiły się wraz z początkiem uniwersytetów, pomieszczenia mieszkalne dla uczniów szkół innych niż wyższe ulokowane były do XIX w. w tym samym gmachu, co szkoły."@pl ;
-                                                           rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów lub studentów, prowadzony najczęściej przez szkołę lub uczelnię"@pl ;
+                                                           rdfs:comment "Budynki służące na potrzeby zamieszkania uczniów jako odrębne budynki pojawiły się wraz z początkiem szkół."@pl ;
+                                                           rdfs:isDefinedBy "budynek przeznaczony na zamieszkanie uczniów prowadzony najczęściej przez szkołę"@pl ;
                                                            rdfs:label "bursa szkolna"@pl ;
                                                            rdfs:seeAlso "#SJP_1861: \"2) życie wspólne, wspólnym kosztem, szczególniej, konwikt, kollegjum; 3) kupiecka, giełda\"; #SJP_1900-1927: \"1 t.: konwikt, stancja uczniów z fundacji rządu a. magnata\"; #SJP_1978: \"1 t.: zakład, w którym ucząca się młodzież otrzymuje mieszkanie i zwykle utrzymanie; internat\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q3153217"^^xsd:url ;
@@ -5723,7 +5728,8 @@ urbanonto:object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d rdf:type owl:Class ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
                                                            rdfs:comment "Domy jednorodzinne były najczęściej występującym rodzajem budynku istniejącego na przedmieściach miast, poza murami miejskimi. Ten typ budowli charakteryzował te miasta i części miast, które znajdowały się we wczesnym etapie rozwoju, np. kolonie rzemieślników w XIX w., np. tkaczy lnu w Okręgu Łódzkim pierwszych dekad XIX w., którzy mieli sami uprawiać swój surowiec. W ciągu XIX wieku d.j. stał się modelową formą mieszkalną w projektach rozszerzania miast i nowych osiedli przeznaczonych dla burżuazji i urzędników. Szczególnym rodzajem domu jednorodzinnego w Rzeczypospolitej był dworek szlachecki."@pl ;
                                                            rdfs:isDefinedBy "budynek przeznaczony do zamieszkania jednej rodziny"@pl ;
-                                                           rdfs:label "dom jednorodzinny"@pl ;
+                                                           rdfs:label "dom jednorodzinny"@pl ,
+                                                                      "single-family house"@en ;
                                                            rdfs:seeAlso "#SJP_1861: \"[dom]: budynek dla mieszkania ludzi wystawiony\"; #SJP_1900-1927: \"1 t.: [dom]: budynek mieszkalny\"; #SJP_1978: \"1 t.: [dom]: budynek przeznaczony na mieszkania, na pomieszczenia dla zakładów pracy, instytucji itp.\""@pl ,
                                                                         "https://www.wikidata.org/wiki/Q1307276"^^xsd:url ;
                                                            skos:altLabel "Einfamilienhaus"@de ,
@@ -5954,7 +5960,6 @@ urbanonto:object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620 rdf:type owl:Class ;
                                                                             "gymnasium"@pl ,
                                                                             "sala gimnastyczna"@pl ,
                                                                             "sports venue"@pl .
-
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
@@ -6463,6 +6468,10 @@ ontohgis:administrative_type_257 rdf:type owl:NamedIndividual .
 ontohgis:administrative_type_47 rdf:type owl:NamedIndividual .
 
 
+###  http://purl.org/ontohgis#function6
+ontohgis:function6 rdfs:isDefinedBy "dotyczy obiektów służacych zarządzaniu dużą organizacją z państwem na czele, w tym uznanych przez niego form autonomii lub samorządu, placówek zagranicznych, związków wyznaniowych, w tym też wyższych niż parafia jednostek organizacji kościelnej, a także instytucji, stowarzyszeń społecznych i gospodarczych, np. wszelkiego typu urzędy, towarzystwa ubezpieczeniowe, siedziby zarządu przedsiębiorstw"@pl .
+
+
 ###  http://purl.org/ontohgis#person_2
 ontohgis:person_2 rdf:type owl:NamedIndividual ;
                   <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0001-8208-4743"^^xsd:url .
@@ -6476,6 +6485,7 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
 ###  http://purl.org/urbanonto/function15
 urbanonto:function15 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                     rdfs:isDefinedBy "dotyczy obiektów-placówek szkolnictwa państwowego, miejskiego i prywatnego, szkolących dzieci w wieku ponadprzedszkolnym, młodzież i dorosłych"@pl ;
                      rdfs:label "funkcja edukacyjna"@pl .
 
 
@@ -6639,8 +6649,8 @@ urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-ontohgis:administrative_type_243 skos:altLabel "districtus"@la ;
-                                 dc:creator ontohgis:person_2 ;
+ontohgis:administrative_type_243 dc:creator ontohgis:person_2 ;
+                                 skos:altLabel "districtus"@la ;
                                  rdfs:comment "Granice powiatu rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy powiatowej lub pełnienie roli siedziby powiatu."@pl ;
                                  rdfs:isDefinedBy "jedna z podstawowych jednostek podziału administracyjnego i samorządowego, w Polsce przedrozbiorowej najniższego, a obecnie średniego szczebla"@pl ;
                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url .
@@ -6657,8 +6667,8 @@ ontohgis:administrative_type_257 dc:creator ontohgis:person_2 ;
 ontohgis:administrative_type_47 rdfs:isDefinedBy "podstawowa, zwykle najwyższa jednostka podziału terytorialnego państwa polskiego"@pl ;
                                 rdfs:comment "Granice województwa rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy wojewódzkiej lub pełnienie roli siedziby województwa."@pl ;
                                 dc:creator ontohgis:person_2 ;
-                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url ;
-                                skos:altLabel "palatinatus"@la .
+                                skos:altLabel "palatinatus"@la ;
+                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q5639312"^^xsd:url .
 
 
 ontohgis:person_4 <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0003-3025-6165"^^xsd:url .
