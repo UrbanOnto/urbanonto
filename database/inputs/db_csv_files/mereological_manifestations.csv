@@ -1,4 +1,4 @@
-starts_at,ends_at,whole_identifiers,part_identifiers,historical_evidences
+start_at,end_at,whole_identifier,part_identifier,historical_evidence
 1379,1560.0,1,1,1000
 1356,1400.0,3,4,3
 1356,1441.0,3,5,3

@@ -1,4 +1,4 @@
-topographic_object_identifiers,starts_at,ends_at,types,historical_evidences
+topographic_object_identifier,start_at,end_at,type,historical_evidence
 1,1379.0,1560.0,baszta,1
 2,1526.0,1839.0,budynek gospodarczy,3
 3,1356.0,1864.0,zespół sakralny lub klasztorny,3

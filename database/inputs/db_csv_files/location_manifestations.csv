@@ -1,4 +1,4 @@
-topographic_object_identifiers,starts_at,ends_at,location_identifiers,historical_evidences,location_link_type_names
+topographic_object_identifier,start_at,end_at,location_identifier,historical_evidence,location_link_type
 1,1379.0,1560.0,1,1000,dokładnie
 2,1525.0,1830.0,2,1,obok
 3,1356.0,1864.0,3,3,dokładnie

@@ -1,4 +1,4 @@
-topographic_object_identifiers,starts_at,ends_at,names,historical_evidences,name_link_types
+topographic_object_identifier,start_at,end_at,name,historical_evidence,name_link_type
 1,1379.0,1560.0,Baszta Biała,1000,nazwa podstawowa
 2,1525.0,1830.0,Kaplica św. Małgorzaty,1,nazwa podstawowa
 2,1769.0,,"baszta, w której antiquitates była kaplica, a teraz schowanie kuchenne",1,nazwa oboczna
