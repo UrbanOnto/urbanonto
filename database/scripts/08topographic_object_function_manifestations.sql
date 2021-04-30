@@ -2,13 +2,13 @@
 
 INSERT INTO ontology.topographic_object_function_manifestations
 SELECT
-	fm.identifiers			AS identifiers,
-	fm.topographic_object_identifiers AS topographic_object_identifiers,
-	TO_DATE(TO_CHAR(fm.starts_at,'0999'),'YYYY')	AS starts_at,
-	TO_DATE(TO_CHAR(fm.ends_at  ,'0999'),'YYYY')	AS ends_at,
-	f.identifiers			AS function_identifiers,
-	fm.historical_evidences		AS historical_evidence_identifiers
+	fm.identifier			AS identifier,
+	fm.topographic_object_identifier AS topographic_object_identifier,
+	TO_DATE(fm.start_at,'YYYY')	AS start_at,
+	TO_DATE(fm.end_at,'YYYY')	AS end_at,
+	f.identifier			AS function_identifier,
+	fm.historical_evidence		AS historical_evidence_identifier
 FROM ontology_sources.topographic_object_function_manifestations fm
- LEFT JOIN ontology.functions f		ON (fm.functions = f.names);
+ LEFT JOIN ontology.functions f		ON (fm.function = f.name);
 
 -- INSERT INTO ontology.topographic_object_function_manifestations SELECT * FROM ontology.topographic_object_function_manifestations_filled_func();

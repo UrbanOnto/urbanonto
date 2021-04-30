@@ -27,6 +27,7 @@ table_names_map = \
 
 def import_data_from_csv_files(cursor, manifestation_csv_files_folder_path: str):
     psycopg2.extensions.register_adapter(numpy.int64, psycopg2._psycopg.AsIs)
+    psycopg2.extensions.register_adapter(float, nan_to_null)
     for csv_file_name, db_table_name in table_names_map.items():
         import_data_from_csv_to_db_table(
             csv_file_path=os.path.join(manifestation_csv_files_folder_path,csv_file_name+'.csv'),
@@ -45,7 +46,10 @@ def import_data_from_csv_to_db_table(csv_file_path: str, cursor: cursor, table_n
         cursor.connection.rollback()
 
     dataframe = pandas.read_csv(csv_file_path)
-    dataframe.fillna('NULL', inplace=True)
+    if {'start_at_input', 'end_at_input'}.issubset(set(dataframe.columns)):
+        dataframe.drop(columns=['start_at_input', 'end_at_input'], inplace=True)
+    dataframe.dropna(axis = 0, how = 'all', inplace = True)
+
     original_tuples = [tuple(x) for x in dataframe.to_numpy()]
     cols = ','.join(list(dataframe.columns))
     success = True
@@ -66,3 +70,12 @@ def import_data_from_csv_to_db_table(csv_file_path: str, cursor: cursor, table_n
         logging.info(msg='Table %s was successfully imported' % table_name)
     else:
         logging.warning(msg='There were problems with importing table %s' % table_name)
+
+
+def nan_to_null(f,
+        _NULL=psycopg2.extensions.AsIs('NULL'),
+        _Float=psycopg2.extensions.Float):
+    if not numpy.isnan(f):
+        return _Float(f)
+    return _NULL
+

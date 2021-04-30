@@ -1,9 +1,9 @@
 INSERT INTO ontology.topographic_object_mereological_link_manifestations
 SELECT
-	ml.identifiers		AS identifiers,
-	TO_DATE(TO_CHAR(ml.starts_at,'0999'),'YYYY')	AS starts_at,
-	TO_DATE(TO_CHAR(ml.ends_at  ,'0999'),'YYYY')	AS ends_at,
-	ml.whole_identifiers	AS whole_identifiers,
-	ml.part_identifiers	AS part_identifiers,
-	ml.historical_evidences	AS historical_evidence_identifiers
+	ml.identifier		AS identifier,
+	TO_DATE(ml.start_at,'YYYY')	AS start_at,
+	TO_DATE(ml.end_at  ,'YYYY')	AS end_at,
+	ml.whole_identifier	AS whole_identifier,
+	ml.part_identifier	AS part_identifier,
+	ml.historical_evidence	AS historical_evidence_identifier
 FROM ontology_sources.topographic_object_mereological_link_manifestations ml;

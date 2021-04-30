@@ -1,7 +1,7 @@
 INSERT INTO ontology.topographic_object_provenances
 SELECT
-	o.identifiers		AS identifiers,
-	o.ancestor_identifiers	AS ancestor_identifiers,
-	o.predecessor_identifiers AS predecessor_identifiers,
-	o.historical_evidences	AS historical_evidence_identifiers
+	o.identifier		AS identifier,
+	o.ancestor_identifier	AS ancestor_identifier,
+	o.predecessor_identifier AS predecessor_identifier,
+	o.historical_evidence	AS historical_evidence_identifier
 FROM ontology_sources.topographic_object_provenances o
