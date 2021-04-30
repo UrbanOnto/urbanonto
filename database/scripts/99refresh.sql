@@ -1,0 +1,6 @@
+REFRESH MATERIALIZED VIEW ontology.topographic_object_function_manifestations_filled;
+REFRESH MATERIALIZED VIEW ontology.topographic_object_location_manifestations_filled;
+REFRESH MATERIALIZED VIEW ontology.topographic_object_name_manifestations_filled;
+REFRESH MATERIALIZED VIEW ontology.topographic_object_type_manifestations_filled;
+
+REFRESH MATERIALIZED VIEW ontology.geonode_topographic_object_manifestations;
