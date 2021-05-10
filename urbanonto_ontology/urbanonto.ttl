@@ -6548,7 +6548,7 @@ urbanonto:function32 rdf:type owl:NamedIndividual ,
 ###  http://purl.org/urbanonto/function33
 urbanonto:function33 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja bycia elementem środowiska przyrodniczego"@pl .
+                     rdfs:label "funkcja przyrodnicza"@pl .
 
 
 ###  http://purl.org/urbanonto/function34
