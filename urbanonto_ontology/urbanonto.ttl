@@ -129,10 +129,6 @@ ontohgis:administrative_type_85 owl:equivalentClass <https://purl.org/bdot10k#ob
                                                   owl:hasValue urbanonto:function18
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty ontohgis:hasImproperFunction ;
-                                                  owl:hasValue urbanonto:function25
-                                                ] ,
-                                                [ rdf:type owl:Restriction ;
                                                   owl:onProperty ontohgis:hasProperFunction ;
                                                   owl:hasValue urbanonto:function32
                                                 ] ;
@@ -717,10 +713,6 @@ urbanonto:object_type_16c35144-0a87-4e5f-9235-741e90a76bc5 rdf:type owl:Class ;
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:object_402
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
                                                                            ] ;
                                                            dc:creator ontohgis:person_2 ;
                                                            rdfs:comment "Rynek jest obiektem charakterystycznym przede wszystkim dla strefy miast lokacyjnych, o zaplanowanym z góry układzie przestrzennym, i ma w nich regularną formę: najczęściej prostokąta, rzadzej owalu lub trójkąta. W innych częściach Europy wskazanie jednego głównego placu może być trudne, a wyróżnikiem jest przede wszystkim rola miejsca wymiany i położenie w centrum miasta, bez związku z siedzibą władzy i manifestacją tejże. "@pl ;
@@ -1818,10 +1810,6 @@ urbanonto:object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a rdf:type owl:Class ;
                                                                              owl:hasValue ontohgis:function6
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                              owl:hasValue urbanonto:property_right_2
                                                                            ] ;
@@ -2302,10 +2290,6 @@ urbanonto:object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1 rdf:type owl:Class ;
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
                                                                              owl:someValuesFrom urbanonto:object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasImproperFunction ;
-                                                                             owl:hasValue urbanonto:function25
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
@@ -3287,10 +3271,6 @@ urbanonto:object_type_94baa37c-07ed-4159-8e62-0bd69515a313 rdf:type owl:Class ;
                                                                              owl:hasValue ontohgis:function6
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P104_is_subject_to ;
                                                                              owl:hasValue urbanonto:property_right_1
                                                                            ] ;
@@ -3447,10 +3427,6 @@ urbanonto:object_type_9d678687-6418-46af-9851-e69437bad487 rdf:type owl:Class ;
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:function6
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
                                                                            ] ;
                                                            dc:creator <https://orcid.org/0000-0002-4905-2093> ;
                                                            rdfs:comment "Jeśli za jedno z kryterium określenia budowli mianem zamku uznamy wykorzystywanie jako głównego budulca materiału twardszego niż drewno, czyli kamienia lub cegieł, wtedy należałoby uznać, że zamki pojawiały się w XI-XIV w. w różnych częściach Europy. Zamki stanowią element przestrzeni miejskiej, czy może szerzej: aglomeracji miejskiej, od momentu lokacji miast na prawie miejskim. Nie w każdym mieście znajdował się zamek, nie każdy zamek musiał być usytuowany w lub przy mieście. Usytuowanie zamków wobec miast w epoce przedindustrialnej było zróżnicowane. Część murów obwodowych zespołu zamkowego mogła być sprzężona z murami obronnymi miasta. Często założenie zamkowe stanowiło niezależną część przestrzeni miejskiej, oddzieloną od miasta fosą, wałem oraz murem obwodowym zespołu i choć przylegało ono do miasta, to było wyjęte spod jego jurysdykcji. Zespół zamkowy mógł znajdować się również w pewnej odległości od ośrodka miejskiego. Wraz z rozwojem przestrzennym miast w XIX i XX w. zamki i ich pozostałości włączano w granice administracyjne miast. Stulecia XIX i XX skutkowały również postępującym rozbieraniem założeń zamkowych - część z nich nie dotrwała w swojej formie i kształcie do początków XXI w."@pl ;
@@ -3735,10 +3711,6 @@ urbanonto:object_type_ab6e4665-8e6e-4e88-8198-413da99e6341 rdf:type owl:Class ;
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:object_400
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
                                                                            ] ;
                                                            dc:creator ontohgis:person_2 ;
                                                            rdfs:comment "Palatia znajdowały się w najważniejszych grodach monarchii i stanowiły ich centralny punkt, wskazywały na rangę danego ośrodka, który z czasem stawał się zazwyczaj dużym miastem."@pl ;
@@ -4042,10 +4014,6 @@ urbanonto:object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0 rdf:type owl:Class ;
 urbanonto:object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_242> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_50> ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasImproperFunction ;
-                                                                             owl:hasValue urbanonto:function25
-                                                                           ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:function3
@@ -4356,10 +4324,6 @@ urbanonto:object_type_c11cb20d-1a61-4312-a780-c45fa09951a0 rdf:type owl:Class ;
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:object_403
-                                                                           ] ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasProperFunction ;
-                                                                             owl:hasValue urbanonto:function25
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P104_is_subject_to ;
@@ -4819,10 +4783,6 @@ urbanonto:object_type_d61883a4-c2f9-4b56-b243-b62de3abef82 rdf:type owl:Class ;
 ###  http://purl.org/urbanonto/object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078
 urbanonto:object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty ontohgis:hasImproperFunction ;
-                                                                             owl:hasValue urbanonto:function25
-                                                                           ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
                                                                              owl:hasValue ontohgis:function3
@@ -6543,12 +6503,6 @@ urbanonto:function24 rdf:type owl:NamedIndividual ,
                      rdfs:label "funkcja bycia miejscem spotkań"@pl .
 
 
-###  http://purl.org/urbanonto/function25
-urbanonto:function25 rdf:type owl:NamedIndividual ,
-                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja reprezentacyjna"@pl .
-
-
 ###  http://purl.org/urbanonto/function26
 urbanonto:function26 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
@@ -6649,8 +6603,8 @@ urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-ontohgis:administrative_type_243 dc:creator ontohgis:person_2 ;
-                                 skos:altLabel "districtus"@la ;
+ontohgis:administrative_type_243 skos:altLabel "districtus"@la ;
+                                 dc:creator ontohgis:person_2 ;
                                  rdfs:comment "Granice powiatu rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy powiatowej lub pełnienie roli siedziby powiatu."@pl ;
                                  rdfs:isDefinedBy "jedna z podstawowych jednostek podziału administracyjnego i samorządowego, w Polsce przedrozbiorowej najniższego, a obecnie średniego szczebla"@pl ;
                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url .
