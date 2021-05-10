@@ -6575,6 +6575,13 @@ urbanonto:function34 rdf:type owl:NamedIndividual ,
                      skos:note "dotyczy obiektów działających za specjalnym pozwoleniem władzy publicznej i służące kontroli nad określoną sferą i jej regulacją, m.in. wejścia i wjazdu, np. bramy, furty, rogatki, przejścia graniczne; przepływu wody, np. jazy; handlu, np. komory celne"@pl .
 
 
+###  http://purl.org/urbanonto/function35
+urbanonto:function35 rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                     rdfs:label "funkcja upamiętniająca"@pl ;
+                     skos:note "dotyczy obiektów służących upamiętnianiu wydarzeń i osób, a także zabytków sztuki i architektury, niezależnie, czy były wpisane do rejestru i czy taki rejestr istniał, np. tablice pamiątkowe, dawne kościoły, pałace, zamki"@pl .
+
+
 ###  http://purl.org/urbanonto/property_right_1
 urbanonto:property_right_1 rdf:type owl:NamedIndividual ,
                                     cidoc_crm:E30_Right ;
@@ -6621,8 +6628,8 @@ urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-ontohgis:administrative_type_243 skos:altLabel "districtus"@la ;
-                                 dc:creator ontohgis:person_2 ;
+ontohgis:administrative_type_243 dc:creator ontohgis:person_2 ;
+                                 skos:altLabel "districtus"@la ;
                                  rdfs:comment "Granice powiatu rzadko przecinają miasto, ale jeśli taki podział jest, istotnie wpływa na przestrzeń miejską. Istotny wpływ na nią może mieć także sama bliskość granicy powiatowej lub pełnienie roli siedziby powiatu."@pl ;
                                  rdfs:isDefinedBy "jedna z podstawowych jednostek podziału administracyjnego i samorządowego, w Polsce przedrozbiorowej najniższego, a obecnie średniego szczebla"@pl ;
                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q247073"^^xsd:url .

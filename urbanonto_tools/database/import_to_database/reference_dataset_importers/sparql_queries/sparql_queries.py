@@ -8,6 +8,7 @@ WHERE
 {
 ?type rdfs:label ?label
 FILTER (CONTAINS(str(?type), "object_type"))
+FILTER (lang(?label) = "pl")
 }
 """
 
@@ -22,5 +23,6 @@ WHERE
 {
 ?function rdfs:label ?label .
 ?function a <http://purl.obolibrary.org/obo/BFO_0000034>
+FILTER (lang(?label) = "pl")
 }
 """
