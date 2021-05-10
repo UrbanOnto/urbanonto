@@ -21,9 +21,9 @@ from database.import_to_database.import_orchestrator import orchestrate_import
 #
 #     orchestrate_import(
 #         csv_files_folder_path=args.folder,
-#         host='localhost',
+#         host='hgis.ihpan.edu.pl',
 #         port='5432',
-#         database='urbanonto',
+#         database='house_work',
 #         user=args.user,
 #         password=args.password)
 
@@ -33,10 +33,10 @@ export_to_csv_files(
 
 orchestrate_import(
     csv_files_folder_path=r'D:\projects\ihpan\urbanonto\database\inputs\db_csv_files',
-    host='localhost',
+    host='hgis.ihpan.edu.pl',
     port='5432',
-    database='urbanonto',
-    user='postgres',
-    password='sagan1')
+    database='house_work',
+    user='garbacz',
+    password='Mereolog13')
 
 

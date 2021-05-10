@@ -1,6 +1,6 @@
 ('D:\\projects\\ihpan\\urbanonto\\urbanonto_tools\\database\\build\\import_from_excel_to_database\\setuptools-40.8.0-py3.6.egg',
  None,
- {'*.cp36-win_amd64.pyd', 'EGG-INFO', '*.py', '*.pyd', '*.pyc', '*.pyw'},
+ {'*.cp36-win_amd64.pyd', '*.py', '*.pyd', '*.pyc', 'EGG-INFO', '*.pyw'},
  'DATA',
  [('setuptools\\cli-32.exe',
    'D:\\projects\\ihpan\\urbanonto\\urbanonto_tools\\database\\build\\import_from_excel_to_database\\setuptools-40.8.0-py3.6.egg\\setuptools\\cli-32.exe',
