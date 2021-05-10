@@ -28,8 +28,8 @@ from database.import_to_database.import_orchestrator import orchestrate_import
 #         password=args.password)
 
 export_to_csv_files(
-    folder_name=r'D:\projects\ihpan\urbanonto\database\inputs\db_csv_files',
-    excel_file_name='urbanonto_inputs_202105071219.xlsx')
+    folder_name=r'***',
+    excel_file_name='***')
 
 orchestrate_import(
     csv_files_folder_path=r'D:\projects\ihpan\urbanonto\database\inputs\db_csv_files',

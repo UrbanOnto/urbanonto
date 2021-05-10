@@ -16,7 +16,7 @@ def import_data_from_ontology(ontology_iri: str, cursor):
         sparql_query=get_types_of_topographic_objects,
         ontology=ontology,
         cursor=cursor,
-        table_name='ontology_source.topographic_types',
+        table_name='ontology_sources.topographic_types',
         columns=['iri','name'],
         resolve_conflict=True)
 
@@ -24,6 +24,6 @@ def import_data_from_ontology(ontology_iri: str, cursor):
         sparql_query=get_functions_of_topographic_objects,
         ontology=ontology,
         cursor=cursor,
-        table_name='ontology_source.functions',
+        table_name='ontology_sources.functions',
         columns=['iri', 'name'],
         resolve_conflict=True)

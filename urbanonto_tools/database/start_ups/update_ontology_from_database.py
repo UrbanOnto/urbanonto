@@ -7,4 +7,4 @@ database_update_orchestrator(
     database='***',
     user='***',
     password='***',
-    ontology_iri='***')
+    ontology_iri='http://purl.org/urbanonto')

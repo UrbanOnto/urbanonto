@@ -22,13 +22,13 @@ def import_data_from_sparql_query_to_db_table(
     tuples = list()
     count=0
     for result in results:
-        tuple = [count]
+        tuple = list()
         for i in range(0, len(results.vars)):
             tuple.append(result[i])
         tuples.append(tuple)
         count += 1
     columns_string = ','.join(list(columns))
-    query = 'INSERT INTO %s(%s) VALUES(%%s,%%s,%%s)' % (table_name, columns_string)
+    query = 'INSERT INTO %s(%s) VALUES(%%s,%%s)' % (table_name, columns_string)
     if resolve_conflict:
         query += CONFLICT_CLAUSE
     try:
