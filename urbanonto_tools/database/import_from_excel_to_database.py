@@ -37,6 +37,6 @@ orchestrate_import(
     port='5432',
     database='house_work',
     user='garbacz',
-    password='Mereolog13')
+    password='******')
 
 
