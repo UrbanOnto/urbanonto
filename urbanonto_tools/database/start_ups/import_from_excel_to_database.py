@@ -32,7 +32,7 @@ export_to_csv_files(
     excel_file_name='***')
 
 orchestrate_import(
-    csv_files_folder_path=r'D:\projects\ihpan\urbanonto\database\inputs\db_csv_files',
+    csv_files_folder_path=r'***',
     host='***',
     port='***',
     database='***',

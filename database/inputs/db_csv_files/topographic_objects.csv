@@ -1,190 +1,322 @@
 identifier,default_name,author
-1,Baszta Biała,
-2,kaplica św. Małgorzaty,
-3,zespół klasztorny augustianów-eremitów w Starej Warszawie,
-4,kościół św. Marcina w Warszawie/Starej Warszawie,
-5,klasztor augustianów-eremitów w Warszawie/Starej Warszawie,
-6,cmentarz przy kościele św. Marcina w Starej Warszawie,
-7,kościół św. Marcina w Starej Warszawie,
-10,klasztor augustianów-eremitów w Starej Warszawie,
-11,kamienica stanowiąca część klasztoru augustianów-eremitów w Starej Warszawie,
-12,kuchnia przy klasztorze augustianów-eremitów w Starej Warszawie,
-13,stajnia przy klasztorze augustianów-eremitów w Starej Warszawie,
-14,nowicjat przy klasztorze augustianów-eremitów w Starej Warszawie,
-15,studnia na cmentarzu przy wejściu do kościoła św. Marcina,
-16,wozownia przy klasztorze augustianów-eremitów w Starej Warszawie,
-17,kościół św. Jerzego w Warszawie,
-18,kościół św. Jerzego w Warszawie,
-19,klasztor kanoników regularnych z Czerwińska przy kościele św. Jerzego w Warszawie,
-20,spichlerz zbożowy na Skaryszewie prawdopodobnie należący do Adama Kazanowskiego,
-21,Miejskie elewatory zbożowe - elewator 1,
-22,cegielnia miejska Starej Warszawy,
-23,przystań miejska Starej Warszawy,
-24,przeprawa łodziami w Starej Warszawie,
-25,Rogatka Grochowska I,
-26,Rogatka Grochowska II,
-27,Cmentarz Powązkowski,
-28,Furta koło Baszty Białej,
-29,"Gmach Towarzystwa Ubezpieczeń ""Rossya""",
-30,"Gmach Domu Mody ""Bogusław Herse""",
-31,Kościół p.w. św. Karola Boromeusza,
-32,Pałac Jakuba Janasza,
-33,Kamienica Jana Józefa Manzla przy ul. Chłodnej nr hip. 927B,
-34,Hala hurtowa na placu Witkowskiego/Kazimierza Wielkiego,
-35,"Ogród handlowy Ulrichów, nr hip. 1117",
-36,Kościół p.w. Wszystkich Świętych w Warszawie,
-37,Kościół p.w. św. Piotra i Pawła w Warszawie,
-38,Gmach giełdy warszawskiej,
-39,Ujeżdżalnia przy ul. Królewskiej,
-40,Gościnny Dwór,
-41,Hale Mirowskie,
-42,"Kamienica Bractwa Subiektów Handlowych, nr hip. 1414a",
-43,"Kamienica Braci Zambonich (neogotycka), nr hip. 1379",
-44,Dworzec Kaliski,
-45,Zajezdnia tramwajowa na Pradze,
-46,Dworzec Terespolski,
-47,dawny kościół św. Jerzego w Warszawie,
-48,kościół św. Michała Archanioła i Floriana,
-49,Rotunda przy Karowej,
-50,Mokotowska,
-51,"Kamienica zboru luterańskiego, nr hip. 1066J (Kredytowa 4)",
-52,"Dom parafialny zboru luterańskiego, nr hip. 1066J (Plac Ewangelicki)",
-53,"Ogród pomologiczny, nr hip. 1600A",
-54,"Pałac Szlenkierów, nr hip. 5294",
-55,"Rogatki jerozolimskie, nr hip. 1582F",
-56,Rotunda przy Karowej,
-57,Rotunda przy Karowej,
-58,Rotunda przy Karowej,
-59,Rotunda przy Karowej,
-60,Rotunda na Dynasach,
-61,Rotunda na Dynasach,
-62,Rotunda na Dynasach,
-63,Rotunda na Dynasach,
-64,Miejska Fabryka Betonu,
-65,Stacja Warszawa Stalowa,
-66,Bazylika na Kawęczyńskiej,
-67,Szkoła (ul. Otwocka),
-68,Katedralny Sobór św. Aleksandra Newskiego,
-69,kościół garnizonowy św. Henryka dwóch konfesji (rzymskokatolicki i ewangelicki),
-70,dawny Katedralny Sobór św. Aleksandra Newskiego,
-71,Cesarski Uniwersytet Warszawski,
-72,Szkoła Główna,
-73,Akademia Medyko-Chirurgiczna w Warszawie,
-74,Kursy Przygotowawcze w Instytucie Szlacheckim,
-75,Biblioteka Główna,
-76,Muzeum Starożytności,
-77,Szpital św. Ducha,
-78,Brama Nowomiejska,
-79,Kościół św. Ducha,
-80,Klasztor paulinów,
-81,Ulica Nowomiejska,
-82,Łaźnia przy Bramie Nowomiejskiej,
-83,Pierwsza linia murów miejskich,
-84,Druga linia murów miejskich,
-85,Barbakan,
-86,Szeroki Dunaj,
-87,Łaźnia wójtowska,
-88,Wąski Dunaj,
-89,Brama Poboczna,
-90,Krzywe Koło,
-91,Kościół św. Jacka,
-92,Klasztor dominikanów,
-93,Zespół klasztorny dominikanów,
-94,"Kamienica ""Pod świętą Anną""",
-95,"""Piwnica Gdańska""",
-96,Sierociniec dla chłopców Warszawskiego Towarzystwa Dobroczynnego,
-97,Freta,
-98,Freta Nowomiejskie,
-99,Północne przedmieście Starej Warszawy,
-100,Nowa Warszawa,
-101,Ulica tylna za południową pierzeją rynku Nowego Miasta,
-102,Rynek Nowego Miasta,
-103,Hala Świętojerska,
-104,Jurydyka Świętojerska,
-105,Jurydyka Parysowska,
-106,Plac Parysowski,
-107,Jurydyka Zadzikowska,
-108,Ulica Kapitulna,
-109,Arsenał Królewski w Warszawie,
-110,Zespół klasztorny brygidek,
-111,Pasaż Simmonsa,
-112,Klasztor brygidek,
-113,Kościół Św. Trójcy,
-114,Dworzec Gdański,
-115,Plac Broni,
-116,"Dom firmy Gebethner i Wolff, nr hip. 6391",
-117,"Kamienica Goldstanda, nr hip. 1066C",
-118,"Zakłady metalurgiczne Hantkego, nr hip. 1147K",
-119,"Browar Hermana Junga, nr hip. 849",
-120,Rogatki wolskie,
-121,Pawilon Łaźni,
-122,Pałac na Wodzie,
-123,cerkiew św. Aleksandra Newskiego,
-124,kaplica w skrzydle Pałacu na Wodzie,
-125,Fort Mierosławskiego,
-126,Cytadela Warszawska,
-127,Teatr Wielki,
-128,Teatr Letni,
-129,Marywil,
-130,Dom pod Kolumnami,
-131,Galeria Luxenburga,
-132,Pałac Pociejów,
-133,Targowisko Pociejów,
-134,Pociejów,
-135,Plac Pociejowski,
-136,Plac Aleksandrowski,
-137,Plac Teatralny,
-138,Pałac Jabłonowskich,
-139,Koszary po klasztorze brygidek,
-140,Nowolipie,
-141,Leszno (jurydyka),
-142,Tłomackie,
-143,Ratusz Leszna,
-144,Kamienica Jacobsona,
-145,Gruba Kaśka,
-146,Wielka Synagoga,
-147,Plac Tłomackie,
-148,Gmach Głównej Biblioteki Judaistycznej,
-149,Koszary Mirowskie,
-150,Plac Mirowski,
-151,Ogród Saski,
-152,Operalnia,
-153,Pałac Błękitny,
-154,Żelazna Brama,
-155,Miejskie elewatory zbożowe - elewator 2,
-156,Miejskie elewatory zbożowe - elewator 3,
-157,Ratusz Warszawy,
-158,Pałac Krasińskich,
-159,Pałac Rzeczypospolitej,
-160,Pałac Krasińskich,
-161,Pałac Sądów(?),
-162,Sąd Najwyższy,
-163,Pałac Badenich,
-164,Muzeum Przemysłu i Rolnictwa w Warszawie,
-165,Sąd Apelacyjny,
-166,Ogród Krasińskich,
-167,Plac Krasińskich,
-168,Założenie pałacowe Pałacu Krasińskich,
-169,Komora Celna,
-170,Archiwum Główne Królestwa Polskiego,
-171,Warszawskie Archiwum Główne Akt Dawnych Królestwa Polskiego,
-172,Archiwum Główne Akt Dawnych,
-173,Muzeum Przemysłu i Rolnictwa w Warszawie,
-174,Kościół pijarów pw. Matki Bożej Zwycięskiej,
-175,Kościół pijarów pw. Matki Bożej Zwycięskiej i św. św. Pryma i Felicjana,
-176,Sobór Trójcy Świętej,
-177,Kościół wojskowy,
-178,Katedra Polowa Wojska Polskiego,
-179,Teatr Narodowy,
-180,Teatr Narodowy,
-181,Kamienica Ryxa,
-182,Teatr Narodowy,
-183,Składy w budynku dawnego Teatru Narodowego,
-184,Kamienica Doby Nowińskiej,
-185,Ulica Nowiniarska,
-186,Ulica Nowiniarska,
-187,Ulica Nowiniarska,
-188,Ulica Nowiniarska,
-189,Północna oficyna pałacu Krasińskich,
-190,Sąd Okręgowy,
-191,Pomnik Jana Kilińskiego,
+1,Baszta Biała,KSZ
+2,kaplica św. Małgorzaty,KSZ
+3,zespół klasztorny augustianów-eremitów w Starej Warszawie,KSZ
+4,kościół św. Marcina w Warszawie/Starej Warszawie,KSZ
+5,klasztor augustianów-eremitów w Warszawie/Starej Warszawie,KSZ
+6,cmentarz przy kościele św. Marcina w Starej Warszawie,KSZ
+7,kościół św. Marcina w Starej Warszawie,KSZ
+10,klasztor augustianów-eremitów w Starej Warszawie,KSZ
+11,kamienica stanowiąca część klasztoru augustianów-eremitów w Starej Warszawie,KSZ
+12,kuchnia przy klasztorze augustianów-eremitów w Starej Warszawie,KSZ
+13,stajnia przy klasztorze augustianów-eremitów w Starej Warszawie,KSZ
+14,nowicjat przy klasztorze augustianów-eremitów w Starej Warszawie,KSZ
+15,studnia na cmentarzu przy wejściu do kościoła św. Marcina,KSZ
+16,wozownia przy klasztorze augustianów-eremitów w Starej Warszawie,KSZ
+17,kościół św. Jerzego w Warszawie,KSZ
+18,kościół św. Jerzego w Warszawie,KSZ
+19,klasztor kanoników regularnych z Czerwińska przy kościele św. Jerzego w Warszawie,KSZ
+20,spichlerz zbożowy na Skaryszewie prawdopodobnie należący do Adama Kazanowskiego,KSZ
+21,Miejskie elewatory zbożowe - elewator 1,KSZ
+22,cegielnia miejska Starej Warszawy,KSZ
+23,przystań miejska Starej Warszawy,KSZ
+24,przeprawa łodziami w Starej Warszawie,KSZ
+25,Rogatka Grochowska I,KSZ
+26,Rogatka Grochowska II,KSZ
+27,Cmentarz Powązkowski,MSM
+28,Furta koło Baszty Białej,APO
+29,"Gmach Towarzystwa Ubezpieczeń ""Rossya""",OLP
+30,"Gmach Domu Mody ""Bogusław Herse""",OLP
+31,Kościół p.w. św. Karola Boromeusza,OLP
+32,Pałac Jakuba Janasza,OLP
+33,Kamienica Jana Józefa Manzla przy ul. Chłodnej nr hip. 927B,OLP
+34,Hala hurtowa na placu Witkowskiego/Kazimierza Wielkiego,OLP
+35,"Ogród handlowy Ulrichów, nr hip. 1117",OLP
+36,Kościół p.w. Wszystkich Świętych w Warszawie,OLP
+37,Kościół p.w. św. Piotra i Pawła w Warszawie,OLP
+38,Gmach giełdy warszawskiej,OLP
+39,Ujeżdżalnia przy ul. Królewskiej,OLP
+40,Gościnny Dwór,OLP
+41,Hale Mirowskie,OLP
+42,"Kamienica Bractwa Subiektów Handlowych, nr hip. 1414a",OLP
+43,"Kamienica Braci Zambonich (neogotycka), nr hip. 1379",OLP
+44,Dworzec Kaliski,OLP
+45,Zajezdnia tramwajowa na Pradze,MSM
+46,Dworzec Terespolski,MSM
+47,dawny kościół św. Jerzego w Warszawie,KSZ
+48,kościół św. Michała Archanioła i Floriana,KSZ
+49,Rotunda przy Karowej,KSZ
+50,Mokotowska,APO
+51,"Kamienica zboru luterańskiego, nr hip. 1066J (Kredytowa 4)",OLP
+52,"Dom parafialny zboru luterańskiego, nr hip. 1066J (Plac Ewangelicki)",OLP
+53,"Ogród pomologiczny, nr hip. 1600A",OLP
+54,"Pałac Szlenkierów, nr hip. 5294",OLP
+55,"Rogatki jerozolimskie, nr hip. 1582F",OLP
+56,Rotunda przy Karowej,KSZ
+57,Rotunda przy Karowej,KSZ
+58,Rotunda przy Karowej,KSZ
+59,Rotunda przy Karowej,KSZ
+60,Rotunda na Dynasach,KSZ
+61,Rotunda na Dynasach,KSZ
+62,Rotunda na Dynasach,KSZ
+63,Rotunda na Dynasach,KSZ
+64,Miejska Fabryka Betonu,KSZ
+65,Stacja Warszawa Stalowa,MSM
+66,Bazylika na Kawęczyńskiej,MSM
+67,Szkoła (ul. Otwocka),MSM
+68,Katedralny Sobór św. Aleksandra Newskiego,KSZ
+69,kościół garnizonowy św. Henryka dwóch konfesji (rzymskokatolicki i ewangelicki),KSZ
+70,dawny Katedralny Sobór św. Aleksandra Newskiego,KSZ
+71,Cesarski Uniwersytet Warszawski,KSZ
+72,Szkoła Główna,KSZ
+73,Akademia Medyko-Chirurgiczna w Warszawie,KSZ
+74,Kursy Przygotowawcze w Instytucie Szlacheckim,KSZ
+75,Biblioteka Główna,KSZ
+76,Muzeum Starożytności,KSZ
+77,Szpital św. Ducha,MSM
+78,Brama Nowomiejska,MSM
+79,Kościół św. Ducha,MSM
+80,Klasztor paulinów,MSM
+81,Ulica Nowomiejska,MSM
+82,Łaźnia przy Bramie Nowomiejskiej,MSM
+83,Pierwsza linia murów miejskich,MSM
+84,Druga linia murów miejskich,MSM
+85,Barbakan,MSM
+86,Szeroki Dunaj,MSM
+87,Łaźnia wójtowska,MSM
+88,Wąski Dunaj,MSM
+89,Brama Poboczna,MSM
+90,Krzywe Koło,MSM
+91,Kościół św. Jacka,MSM
+92,Klasztor dominikanów,MSM
+93,Zespół klasztorny dominikanów,MSM
+94,"Kamienica ""Pod świętą Anną""",MSM
+95,"""Piwnica Gdańska""",MSM
+96,Sierociniec dla chłopców Warszawskiego Towarzystwa Dobroczynnego,MSM
+97,Freta,MSM
+98,Freta Nowomiejskie,MSM
+99,Północne przedmieście Starej Warszawy,MSM
+100,Nowa Warszawa,MSM
+101,Ulica tylna za południową pierzeją rynku Nowego Miasta,MSM
+102,Rynek Nowego Miasta,MSM
+103,Hala Świętojerska,MSM
+104,Jurydyka Świętojerska,MSM
+105,Jurydyka Parysowska,MSM
+106,Plac Parysowski,MSM
+107,Jurydyka Zadzikowska,MSM
+108,Ulica Kapitulna,MSM
+109,Arsenał Królewski w Warszawie,MSM
+110,Zespół klasztorny brygidek,MSM
+111,Pasaż Simmonsa,MSM
+112,Klasztor brygidek,MSM
+113,Kościół Św. Trójcy,MSM
+114,Dworzec Gdański,MSL
+115,Plac Broni,MSL
+116,"Dom firmy Gebethner i Wolff, nr hip. 6391",OLP
+117,"Kamienica Goldstanda, nr hip. 1066C",OLP
+118,"Zakłady metalurgiczne Hantkego, nr hip. 1147K",OLP
+119,"Browar Hermana Junga, nr hip. 849",OLP
+120,Rogatki wolskie,OLP
+121,Pawilon Łaźni,APO
+122,Pałac na Wodzie,APO
+123,cerkiew św. Aleksandra Newskiego,APO
+124,kaplica w skrzydle Pałacu na Wodzie,APO
+125,Fort Mierosławskiego,MSL
+126,Cytadela Warszawska,MSL
+127,Teatr Wielki,MSM
+128,Teatr Letni,MSM
+129,Marywil,MSM
+130,Dom pod Kolumnami,MSM
+131,Galeria Luxenburga,MSM
+132,Pałac Pociejów,MSM
+133,Targowisko Pociejów,MSM
+134,Pociejów,MSM
+135,Plac Pociejowski,MSM
+136,Plac Aleksandrowski,MSM
+137,Plac Teatralny,MSM
+138,Pałac Jabłonowskich,MSM
+139,Koszary po klasztorze brygidek,MSM
+140,Nowolipie,MSM
+141,Leszno (jurydyka),MSM
+142,Tłomackie,MSM
+143,Ratusz Leszna,MSM
+144,Kamienica Jacobsona,MSM
+145,Gruba Kaśka,MSM
+146,Wielka Synagoga,MSM
+147,Plac Tłomackie,MSM
+148,Gmach Głównej Biblioteki Judaistycznej,MSM
+149,Koszary Mirowskie,MSM
+150,Plac Mirowski,MSM
+151,Ogród Saski,MSM
+152,Operalnia,MSM
+153,Pałac Błękitny,MSM
+154,Żelazna Brama,MSM
+155,Miejskie elewatory zbożowe - elewator 2,KSZ
+156,Miejskie elewatory zbożowe - elewator 3,KSZ
+157,Ratusz Warszawy,MSM
+158,Pałac Krasińskich,MSM
+159,Pałac Rzeczypospolitej,MSM
+160,Pałac Krasińskich,MSM
+161,Pałac Sądów(?),MSM
+162,Sąd Najwyższy,MSM
+163,Pałac Badenich,MSM
+164,Muzeum Przemysłu i Rolnictwa w Warszawie,MSM
+165,Sąd Apelacyjny,MSM
+166,Ogród Krasińskich,MSM
+167,Plac Krasińskich,MSM
+168,Założenie pałacowe Pałacu Krasińskich,MSM
+169,Komora Celna,MSM
+170,Archiwum Główne Królestwa Polskiego,MSM
+171,Warszawskie Archiwum Główne Akt Dawnych Królestwa Polskiego,MSM
+172,Archiwum Główne Akt Dawnych,MSM
+173,Muzeum Przemysłu i Rolnictwa w Warszawie,MSM
+174,Kościół pijarów pw. Matki Bożej Zwycięskiej,MSM
+175,Kościół pijarów pw. Matki Bożej Zwycięskiej i św. św. Pryma i Felicjana,MSM
+176,Sobór Trójcy Świętej,MSM
+177,Kościół wojskowy,MSM
+178,Katedra Polowa Wojska Polskiego,MSM
+179,Teatr Narodowy,MSM
+180,Teatr Narodowy,MSM
+181,Kamienica Ryxa,MSM
+182,Teatr Narodowy,MSM
+183,Składy w budynku dawnego Teatru Narodowego,MSM
+184,Kamienica Doby Nowińskiej,MSM
+185,Ulica Nowiniarska,MSM
+186,Ulica Nowiniarska,MSM
+187,Ulica Nowiniarska,MSM
+188,Ulica Nowiniarska,MSM
+189,Północna oficyna pałacu Krasińskich,MSM
+190,Sąd Okręgowy,MSM
+191,Pomnik Jana Kilińskiego,MSM
+192,Pałac pod Czterema Wiatrami,MSM
+193,Kamienica Teppera,MSM
+194,Hotel Drezdeński,MSM
+195,"Pałac pod Czterema Wiatrami (Teppera, Dückerta)",MSM
+196,Ministerstwo Pracy i Opieki Społecznej,MSM
+197,Pałac Witosławskiego,MSM
+198,Hotel Polski,MSM
+199,"Wielki Salon (""Altana"")",MSM
+200,Fontanna w Ogrodzie Saskim,MSM
+201,Plac Bankowy,MSM
+202,"Fontanna (Krakowskie Przedmieście, Plac Bankowy)",MSM
+203,Ulica Rymarska,MSM
+204,Pałac przy późniejszym Pałacu Mniszchów,MSM
+205,Pałac Mniszchów,MSM
+206,Założenie pałacowe Pałacu Mniszchów,MSM
+207,Wschodnia oficyna Pałacu Mniszchów,MSM
+208,Zachodnia oficyna Pałacu Mniszchów,MSM
+209,Kamienica rodziny Seydel,MSM
+210,Ulica Miodowa,MSM
+211,Pałac Biskupów Krakowskich,MSM
+212,Kamienica czynszowa w dawnym Pałacu Biskupów Krakowskich,MSM
+213,Skład żupy solnej,MSM
+214,Więzienie Pawiak,MSM
+215,"Więzienie dla kobiet ""Serbia""",MSM
+216,Szpital św. Zofii,MSM
+217,Dzielnica północna,MSM
+218,Ulica Żydowska,MSM
+219,Synagoga średniowieczna,MSM
+220,Średniowieczna dzielnica żydowska,MSM
+221,Koszary Wołyńskie,MSM
+222,Więzienie wojskowe,MSM
+223,Fabryka Garbarska Temler i Szwede,MSM
+224,Wał Zygmuntowski,MSM
+225,Szpital Ewangelicki,MSM
+226,Szpital Ewangelicki,MSM
+227,Stary cmentarz ewangelicki,MSM
+228,"Fabryka mebli Zdzisława Szczerbińskiego, a później Leopolda Kamlera",MSM
+229,Ulica Wołyńska,MSM
+230,Kościół św. Augustyna,MSM
+231,Kościół ewangelicko-reformowany,MSM
+232,Pałac Działyńskich,MSM
+233,Dwór Leszczyńskich,MSM
+234,"Szkoła Wojewódzka Praktyczno-Pedagogiczna, potem Drugie Gimnazjum w Warszawie",MSM
+235,Pierwszy kościół ewangelicko-reformowany,MSM
+236,Dom Dysydentów (plebania ewangelicko-augsburska),MSM
+237,Wygon miejski,MSM
+238,Kaplica św. Trójcy,MSM
+239,Drukarnia Jana Rossowskiego i Jana Trelpińskiego,MSM
+240,Fusznica (topnia wosku) miejska,MSM
+241,Młyn kieratowy,MSM
+242,Jatki,MSM
+243,Ludwisarnia,MSM
+244,Ludwisarnia Daniela Tyma,MSM
+245,Działka na rogu Wąskiego Dunaju i Nowomiejskiej,MSM
+246,"Kamienica ""Pod Syreną""",MSM
+247,Postrzygalnia miejska,MSM
+248,Dom po fusznicy (hip. 137),MSM
+249,Kamienica (hip. 137),MSM
+250,Targ rybny na Szerokim Dunaju,MSM
+251,Targ warzywny i kwiatowy na Szerokim Dunaju,MSM
+252,Jatki na Szerokim Dunaju,MSM
+253,Łaźnia (koło Bramy Nowomiejskiej),MSM
+254,Kawiarnia Henryka Duvala,MSM
+255,Ulica Daniłowiczowska,MSM
+256,Pałac Daniłowiczowski,MSM
+257,Biblioteka Załuskich,MSM
+258,Magazyn mąki w budynku po Bibliotece Załuskich,MSM
+259,Ruina Biblioteki Załuskich,MSM
+260,Dom Pod Królami,MSM
+261,Ulica Hipoteczna,MSM
+262,Stara Niemiecka Synagoga,MSM
+263,Dom modlitwy na Daniłowiczowskiej,MSM
+264,Synagoga Niemiecka,MSM
+265,Teatr Mały,MSM
+266,"Fabryka mydła ""Fryderyk Puls""",MSM
+267,Areszt Centralny,MSM
+268,Teatr Nowości,MSM
+269,Kino Miejskie,MSM
+270,Gmach Towarzystwa Akcyjnego „Fabryki Płodów Chemicznych Ludwik Spiess i Syn”,MSM
+271,IV Gimnazjum Żeńskie,MSM
+272,Sąd Grodzki na Lesznie,MSM
+273,Hipoteka,MSM
+274,"Karczma ""Otwock""",OLP
+275,"Kamienica Izraela Białera, nr hip. 1553A",OLP
+276,Ulica Bielańska,MSM
+277,Gimnazjum im. Stefana Batorego,MSM
+278,Państwowe Gimnazjum Męskie im. T. Czackiego,MSM
+279,Pałac biskupa Teodora Potockiego,MSM
+280,"Szpital Św. Ducha wewnątrz murów - kompleks szpitalny ul. Piwna 13, hip. 112",KSZ
+281,dom drewniany szpitalny Szpitala Świętego Ducha wewnątrz murów,KSZ
+282,pierwszy dom szpitalny Szpitala Świętego Ducha wewnątrz murów,KSZ
+283,drugi dom szpitalny Szpitala Świętego Ducha wewnątrz murów,KSZ
+284,Kamienica Kapitulna należąca do Szpitala Świętego Ducha wewnątrz murów,KSZ
+285,budynek szpitalny z kaplicą Szpitala Świętego Ducha wewnątrz murów,KSZ
+286,klasztor żeński,KSZ
+287,"posesja ul. Piekarska 11, hip. 128",KSZ
+288,"""Kasztelanka"" Łazienka Jezierskiego",KSZ
+289,Mennica Królewska: biura i mieszkania pracowników,MSM
+290,Mennica Królewska,MSM
+291,Maneż przy pałacu biskupa Teodora Potockiego,MSM
+292,Mennica,MSM
+293,Nowy budynek mennicy,MSM
+294,Warsztaty wojskowe po dawnej mennicy,MSM
+295,Budynek mieszkalny dla pracowników mennicy,MSM
+296,Siedziba Naczelnika Warszawskiego Okręgu Żandarmów,MSM
+297,Bank Państwa,MSM
+298,Polska Krajowa Kasa Pożyczkowa,MSM
+299,Bank Polski,MSM
+300,Klasztor karmelitanek bosych,MSM
+301,Kościół karmelitanek bosych,MSM
+302,Pałac Stanisława Wierzbowskiego,MSM
+303,Hotel Pruski,MSM
+304,Hotel Angielski,MSM
+305,Droga do Św. Trójcy,MSM
+306,Ulica Wierzbowa,MSM
+307,Centrala Polskiej Akcyjnej Spółki Telefonicznej na Tłomackiem,MSM
+308,Dworek modrzewiowy dla mistrza kapeli króla Jana III Sobieskiego,MSM
+309,Kamienica Lolipopa,MSM
+310,Pracownia złotnicza Karola Lilpopa,MSM
+311,Hotel Lipski,MSM
+312,Kamienica po Hotelu Lipskim,MSM
+313,Tor Kolarski Warszawskiego Towarzystwa Cyklistów,KSZ
+314,Siedziba Warszawskiego Towarzystwa Cyklistów,KSZ
+315,Pałac Lubomirskich potem Gozdzkich,KSZ
+316,Pałac Gozdzkich - de Nassau,KSZ
+317,Ruiny pałacu Gozdzkich - de Nassau,KSZ
+318,Dynasy - ogrody przy Pałac Gozdzkich - de Nassau,KSZ
+319,"Targ ""Sewerynów""",KSZ
+320,"Targ ""Sewerynów"" - hala tarhowa",KSZ
+321,"Targ ""Sewerynów"" - jatki rzeźnicze",KSZ
+322,Figura Matki Bożej Pasawskiej,KSZ
+323,Pomnik Adama Mickiewicza,KSZ
