@@ -6452,109 +6452,127 @@ urbanonto:function15 rdf:type owl:NamedIndividual ,
 ###  http://purl.org/urbanonto/function16
 urbanonto:function16 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja budowlana"@pl .
+                     rdfs:label "funkcja budowlana"@pl ;
+                     skos:note "dotyczy obiektów związanych z procesem zabudowywania działek w mieście, stawiania budynków oraz zmiany form pokrycia terenu, np. budowy drogi"@pl .
 
 
 ###  http://purl.org/urbanonto/function17
 urbanonto:function17 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja wychowawcza"@pl .
+                     rdfs:label "funkcja wychowawcza"@pl ;
+                     skos:note "dotyczy obiektów służących działaniom opiekuńczym i edukacyjnym nakierowanym nie tyle na przekazywanie wiedzy czy konkretnych umiejętności, co na kształtowanie ogólnej postawy dziecka lub młodego człowieka"@pl .
 
 
 ###  http://purl.org/urbanonto/function18
 urbanonto:function18 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja opiekuńcza"@pl .
+                     rdfs:label "funkcja opiekuńcza"@pl ;
+                     skos:note "dotyczy obiektów realizujących opiekuńczą rolę państwa, gdzie opieką otacza się osoby niemogące w pełni zadbać o siebie same, jak dzieci, niepełnosprawni i osoby starsze, a także zwierzęta, np. żłobki, przedszkola, domy starców, instytuty niepełnosprawnych"@pl .
 
 
 ###  http://purl.org/urbanonto/function19
 urbanonto:function19 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja dobroczynna"@pl .
+                     rdfs:label "funkcja dobroczynna"@pl ;
+                     skos:note "dotyczy obiektów, które służyły celom dobroczynnym przed erą zorganizowanej państwowej opieki nad ubogimi, np. instytucje dobroczynne, niektóre zakony, szpitale w przednowoczesnym znaczeniu"@pl .
 
 
 ###  http://purl.org/urbanonto/function20
 urbanonto:function20 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja rozrywkowa"@pl .
+                     rdfs:label "funkcja rozrywkowa"@pl ;
+                     skos:note "dotyczy obiektów, służących dostarczeniu użytkownikom rozrywki i przyjemności, a także obiektów służących rekreacji, np. cyrki, kina, kabarety"@pl .
 
 
 ###  http://purl.org/urbanonto/function21
 urbanonto:function21 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja kulturalna"@pl .
+                     rdfs:label "funkcja kulturalna"@pl ;
+                     skos:note "dotyczy obiektów, służących kulturze i sztuce i nie mieszczą się w pojęciu gospodarki i polityki, np. teatry, opery, filharmonie, muzea"@pl .
 
 
 ###  http://purl.org/urbanonto/function22
 urbanonto:function22 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja magazynowa"@pl .
+                     rdfs:label "funkcja magazynowa"@pl ;
+                     skos:note "dotyczy obiektów służących do składowania różnego typu towarów, zwykle w większych ilościach, zadaszonych lub odkrytych, np. składy, hangary, magazyny, silosy"@pl .
 
 
 ###  http://purl.org/urbanonto/function23
 urbanonto:function23 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja estetyczna"@pl .
+                     rdfs:label "funkcja estetyczna"@pl ;
+                     skos:note "dotyczy obiektów-dzieł sztuki jako elementu przestrzeni miejskiej oraz obiektów, które służą wyłącznie jako upiększenie miasta, np. pomniki, zespoły pomnikowe, popiersia, rzeźby, instalacje, kwietniki, klomby, skwery"@pl .
 
 
 ###  http://purl.org/urbanonto/function24
 urbanonto:function24 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja bycia miejscem spotkań"@pl .
+                     rdfs:label "funkcja bycia miejscem spotkań"@pl ;
+                     skos:note "dotyczy obiektów zapewniających uczestnikom sprzyjające warunki do interakcji, które nie są ukierunkowane gospodarczo lub politycznie"@pl .
 
 
 ###  http://purl.org/urbanonto/function26
 urbanonto:function26 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja ochrony zdrowia"@pl .
+                     rdfs:label "funkcja ochrony zdrowia"@pl ;
+                     skos:note "dotyczy obiektów służących ochronie zdrowia czyli profilaktyce oraz aktywnemu leczeniu, a więc obiektów, do których ludzie się udają w świadomym celu dbania o zdrowie i w celu leczenia, np. szpitale, lecznice, kliniki, sanatoria, tężnie"@pl .
 
 
 ###  http://purl.org/urbanonto/function27
 urbanonto:function27 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja ochrony przyrody"@pl .
+                     rdfs:label "funkcja ochrony przyrody"@pl ;
+                     skos:note "dotyczy obiektów związanych z rezerwatami i miejscami chroniącymi pejzaż naturalny od skutków nadmiernego i niekorzystnego wpływu człowieka"@pl .
 
 
 ###  http://purl.org/urbanonto/function28
 urbanonto:function28 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja dokumentująca"@pl .
+                     rdfs:label "funkcja dokumentująca"@pl ;
+                     skos:note "dotyczy obiektów związanych z instytucjami zajmującymi się gromadzeniem i zarządzaniem szeroko pojętym archiwum, a także obiektów związanych z oznaczaniem w przestrzeni stanu formalno-prawnego i utrwalaniem tego przekazu"@pl .
 
 
 ###  http://purl.org/urbanonto/function29
 urbanonto:function29 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja informacyjna"@pl .
+                     rdfs:label "funkcja informacyjna"@pl ;
+                     skos:note "dotyczy obiektów służących przekazywaniu i rozpowszechnianiu informacji, np. tablice informacyjne, a także dzwonnice kościelne, wieże zegarowe, słupki z plakatami"@pl .
 
 
 ###  http://purl.org/urbanonto/function30
 urbanonto:function30 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja izolacyjna"@pl .
+                     rdfs:label "funkcja izolacyjna"@pl ;
+                     skos:note "dotyczy obiektów, których celem jest ograniczenie lub wyeliminowanie kontaktów między tym, co wewnątrz, i tym, co na zewnątrz, np. różnego typu mury, ściany, ogrodzenia, płoty, kraty, a także zakłady zamknięte"@pl .
 
 
 ###  http://purl.org/urbanonto/function31
 urbanonto:function31 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja ochronna"@pl .
+                     rdfs:label "funkcja ochronna"@pl ;
+                     skos:note "dotyczy obiektów służących zabezpieczeniu przed i zapobieganiu zagrożeniom typu klęski naturalne, np. wały przeciwpowodziowe"@pl .
 
 
 ###  http://purl.org/urbanonto/function32
 urbanonto:function32 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja polityczna"@pl .
+                     rdfs:label "funkcja polityczna"@pl ;
+                     skos:note "dotyczy obiektów związanych ze sferą sprawowania władzy, a które nie są urzędami"@pl .
 
 
 ###  http://purl.org/urbanonto/function33
 urbanonto:function33 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja przyrodnicza"@pl .
+                     rdfs:label "funkcja przyrodnicza"@pl ;
+                     skos:note "dotyczy obiektów naturalnych, które istnieją i zachowują tożsamość niezależnie od pożytków, jakie mogą mieć z nich ludzie"@pl .
 
 
 ###  http://purl.org/urbanonto/function34
 urbanonto:function34 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
-                     rdfs:label "funkcja kontrolna"@pl .
+                     rdfs:label "funkcja kontrolna"@pl ;
+                     skos:note "dotyczy obiektów działających za specjalnym pozwoleniem władzy publicznej i służące kontroli nad określoną sferą i jej regulacją, m.in. wejścia i wjazdu, np. bramy, furty, rogatki, przejścia graniczne; przepływu wody, np. jazy; handlu, np. komory celne"@pl .
 
 
 ###  http://purl.org/urbanonto/property_right_1
