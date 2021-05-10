@@ -36,7 +36,7 @@ orchestrate_import(
     host='hgis.ihpan.edu.pl',
     port='5432',
     database='house_work',
-    user='garbacz',
+    user='***',
     password='******')
 
 
