@@ -149,7 +149,7 @@ bdot10k:class_15 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_16
 bdot10k:class_16 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "roślinność trawiasta i uprawa rolna "@pl ;
+                 rdfs:label "roślinność trawiasta i uprawa rolna"@pl ;
                  bdot10k:hasBdot10kCode "PTTR"^^xsd:string .
 
 
@@ -170,7 +170,7 @@ bdot10k:class_18 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_19
 bdot10k:class_19 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "plac "@pl ;
+                 rdfs:label "plac"@pl ;
                  bdot10k:hasBdot10kCode "PTPL"^^xsd:string .
 
 
@@ -191,14 +191,14 @@ bdot10k:class_20 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_21
 bdot10k:class_21 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "składowisko odpadów "@pl ;
+                 rdfs:label "składowisko odpadów"@pl ;
                  bdot10k:hasBdot10kCode "PTSO"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_22
 bdot10k:class_22 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "wyrobisko i zwałowisko "@pl ;
+                 rdfs:label "wyrobisko i zwałowisko"@pl ;
                  bdot10k:hasBdot10kCode "PTWZ"^^xsd:string .
 
 
@@ -212,28 +212,28 @@ bdot10k:class_23 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_24
 bdot10k:class_24 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "obszar Natura 2000 "@pl ;
+                 rdfs:label "obszar Natura 2000"@pl ;
                  bdot10k:hasBdot10kCode "TCON"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_25
 bdot10k:class_25 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "park krajobrazowy "@pl ;
+                 rdfs:label "park krajobrazowy"@pl ;
                  bdot10k:hasBdot10kCode "TCPK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_26
 bdot10k:class_26 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "park narodowy "@pl ;
+                 rdfs:label "park narodowy"@pl ;
                  bdot10k:hasBdot10kCode "TCPN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_27
 bdot10k:class_27 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "rezerwat "@pl ;
+                 rdfs:label "rezerwat"@pl ;
                  bdot10k:hasBdot10kCode "TCRZ"^^xsd:string .
 
 
@@ -352,7 +352,7 @@ bdot10k:class_41 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_42
 bdot10k:class_42 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks mieszkaniowy "@pl ;
+                 rdfs:label "kompleks mieszkaniowy"@pl ;
                  bdot10k:hasBdot10kCode "KUMN"^^xsd:string .
 
 
