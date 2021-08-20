@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Arkusz2","startColumn":"A","endColumn":"B","startRow":"2","endRow":"+","comment":"","rule":"Class: @B*(rdf:ID\u003d@A* rdfs:label\u003d@B*)","active":true}]}
