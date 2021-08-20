@@ -12,7 +12,7 @@
                             rdfs:isDefinedBy "http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20112791642"^^xsd:anyURI ;
                             rdfs:label "klasyfikacja obiektów na trzech poziomach szczegółowości, z oznaczeniami kodowymi"@pl ,
                                        "ontology of BDOTk system"@en ;
-                            owl:versionInfo 1.0 .
+                            owl:versionInfo 2.0 .
 
 #################################################################
 #    Annotation properties
@@ -37,154 +37,176 @@ bdot10k:bdot10k_entity rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#category_1
 bdot10k:category_1 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "sieć wodna"@pl ;
+                   rdfs:label "sieć wodna"@pl ,
+                              "water network"@en ;
                    bdot10k:hasBdot10kCode "SW"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_2
 bdot10k:category_2 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "sieć komunikacyjna"@pl ;
+                   rdfs:label "communication network"@en ,
+                              "sieć komunikacyjna"@pl ;
                    bdot10k:hasBdot10kCode "SK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_3
 bdot10k:category_3 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "sieć uzbrojenia terenu"@pl ;
+                   rdfs:label "sieć uzbrojenia terenu"@pl ,
+                              "utility lines"@en ;
                    bdot10k:hasBdot10kCode "SU"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_4
 bdot10k:category_4 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "pokrycie terenu"@pl ;
+                   rdfs:label "land cover"@en ,
+                              "pokrycie terenu"@pl ;
                    bdot10k:hasBdot10kCode "PT"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_5
 bdot10k:category_5 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "tereny chronione"@pl ;
+                   rdfs:label "protected areas"@en ,
+                              "tereny chronione"@pl ;
                    bdot10k:hasBdot10kCode "TC"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_6
 bdot10k:category_6 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "jednostki podziału terytorialnego"@pl ;
+                   rdfs:label "administrative units"@en ,
+                              "jednostki podziału terytorialnego"@pl ;
                    bdot10k:hasBdot10kCode "AD"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_7
 bdot10k:category_7 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "budynki, budowle i urządzenia"@pl ;
+                   rdfs:label "budynki, budowle i urządzenia"@pl ,
+                              "buildings, structures and equipment"@en ;
                    bdot10k:hasBdot10kCode "BU"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_8
 bdot10k:category_8 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "kompleksy użytkowania terenu"@pl ;
+                   rdfs:label "kompleksy użytkowania terenu"@pl ,
+                              "land use"@en ;
                    bdot10k:hasBdot10kCode "KU"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#category_9
 bdot10k:category_9 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:bdot10k_entity ;
-                   rdfs:label "obiekty inne"@pl ;
+                   rdfs:label "obiekty inne"@pl ,
+                              "objects"@en ;
                    bdot10k:hasBdot10kCode "OI"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_1
 bdot10k:class_1 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_1 ;
-                rdfs:label "rzeka i strumień"@pl ;
+                rdfs:label "river and stream"@en ,
+                           "rzeka i strumień"@pl ;
                 bdot10k:hasBdot10kCode "SWRS"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_10
 bdot10k:class_10 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_3 ;
-                 rdfs:label "linia napowietrzna"@pl ;
+                 rdfs:label "linia napowietrzna"@pl ,
+                            "overhead line"@en ;
                  bdot10k:hasBdot10kCode "SULN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_11
 bdot10k:class_11 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_3 ;
-                 rdfs:label "przewód rurowy"@pl ;
+                 rdfs:label "pipelines"@en ,
+                            "przewód rurowy"@pl ;
                  bdot10k:hasBdot10kCode "SUPR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_12
 bdot10k:class_12 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "woda powierzchniowa"@pl ;
+                 rdfs:label "surface water"@en ,
+                            "woda powierzchniowa"@pl ;
                  bdot10k:hasBdot10kCode "PTWP"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_13
 bdot10k:class_13 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "zabudowa"@pl ;
+                 rdfs:label "development"@en ,
+                            "zabudowa"@pl ;
                  bdot10k:hasBdot10kCode "PTZB"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_14
 bdot10k:class_14 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "teren leśny i zadrzewiony"@pl ;
+                 rdfs:label "forest and wooded area"@en ,
+                            "teren leśny i zadrzewiony"@pl ;
                  bdot10k:hasBdot10kCode "PTLZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_15
 bdot10k:class_15 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "uprawa trwała"@pl ;
+                 rdfs:label "permanent crops"@en ,
+                            "uprawa trwała"@pl ;
                  bdot10k:hasBdot10kCode "PTUT"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_16
 bdot10k:class_16 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "roślinność trawiasta i uprawa rolna"@pl ;
+                 rdfs:label "grasses and crops"@en ,
+                            "roślinność trawiasta i uprawa rolna"@pl ;
                  bdot10k:hasBdot10kCode "PTTR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_17
 bdot10k:class_17 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "teren pod drogami kołowymi, szynowymi i lotniskowymi"@pl ;
+                 rdfs:label "area under roads, railroads and airport roads"@en ,
+                            "teren pod drogami kołowymi, szynowymi i lotniskowymi"@pl ;
                  bdot10k:hasBdot10kCode "PTKM"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_18
 bdot10k:class_18 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "grunt nieużytkowany"@pl ;
+                 rdfs:label "grunt nieużytkowany"@pl ,
+                            "unused land"@en ;
                  bdot10k:hasBdot10kCode "PTGN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_19
 bdot10k:class_19 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "plac"@pl ;
+                 rdfs:label "plac"@pl ,
+                            "square"@en ;
                  bdot10k:hasBdot10kCode "PTPL"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_2
 bdot10k:class_2 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_1 ;
-                rdfs:label "kanał"@pl ;
+                rdfs:label "canal"@en ,
+                           "kanał"@pl ;
                 bdot10k:hasBdot10kCode "SWKN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_20
 bdot10k:class_20 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "roślinność krzewiasta"@pl ;
+                 rdfs:label "roślinność krzewiasta"@pl ,
+                            "shrub"@en ;
                  bdot10k:hasBdot10kCode "PTRK"^^xsd:string .
 
 
@@ -198,1750 +220,2000 @@ bdot10k:class_21 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#class_22
 bdot10k:class_22 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "wyrobisko i zwałowisko"@pl ;
+                 rdfs:label "excavation and dumping ground"@en ,
+                            "wyrobisko i zwałowisko"@pl ;
                  bdot10k:hasBdot10kCode "PTWZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_23
 bdot10k:class_23 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_4 ;
-                 rdfs:label "pozostały teren niezabudowany"@pl ;
+                 rdfs:label "pozostały teren niezabudowany"@pl ,
+                            "remaining undeveloped area"@en ;
                  bdot10k:hasBdot10kCode "PTNZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_24
 bdot10k:class_24 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "obszar Natura 2000"@pl ;
+                 rdfs:label "Natura 2000 area"@en ,
+                            "obszar Natura 2000"@pl ;
                  bdot10k:hasBdot10kCode "TCON"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_25
 bdot10k:class_25 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "park krajobrazowy"@pl ;
+                 rdfs:label "landscape park"@en ,
+                            "park krajobrazowy"@pl ;
                  bdot10k:hasBdot10kCode "TCPK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_26
 bdot10k:class_26 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "park narodowy"@pl ;
+                 rdfs:label "national park"@en ,
+                            "park narodowy"@pl ;
                  bdot10k:hasBdot10kCode "TCPN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_27
 bdot10k:class_27 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_5 ;
-                 rdfs:label "rezerwat"@pl ;
+                 rdfs:label "reserve"@en ,
+                            "rezerwat"@pl ;
                  bdot10k:hasBdot10kCode "TCRZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_28
 bdot10k:class_28 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_6 ;
-                 rdfs:label "jednostka podziału administracyjnego"@pl ;
+                 rdfs:label "administrative division unit"@en ,
+                            "jednostka podziału administracyjnego"@pl ;
                  bdot10k:hasBdot10kCode "ADJA"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_29
 bdot10k:class_29 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_6 ;
-                 rdfs:label "miejscowość"@pl ;
+                 rdfs:label "locality"@en ,
+                            "miejscowość"@pl ;
                  bdot10k:hasBdot10kCode "ADMS"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_3
 bdot10k:class_3 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_1 ;
-                rdfs:label "rów melioracyjny"@pl ;
+                rdfs:label "drainage ditch"@en ,
+                           "rów melioracyjny"@pl ;
                 bdot10k:hasBdot10kCode "SWRM"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_30
 bdot10k:class_30 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budynek"@pl ;
+                 rdfs:label "budynek"@pl ,
+                            "building"@en ;
                  bdot10k:hasBdot10kCode "BUBD"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_31
 bdot10k:class_31 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla inżynierska"@pl ;
+                 rdfs:label "budowla inżynierska"@pl ,
+                            "engineering building"@en ;
                  bdot10k:hasBdot10kCode "BUIN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_32
 bdot10k:class_32 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla hydrotechniczna"@pl ;
+                 rdfs:label "budowla hydrotechniczna"@pl ,
+                            "hydrotechnical building"@en ;
                  bdot10k:hasBdot10kCode "BUHD"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_33
 bdot10k:class_33 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla sportowa"@pl ;
+                 rdfs:label "budowla sportowa"@pl ,
+                            "sports building"@en ;
                  bdot10k:hasBdot10kCode "BUSP"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_34
 bdot10k:class_34 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "wysoka budowla techniczna"@pl ;
+                 rdfs:label "high technical building"@en ,
+                            "wysoka budowla techniczna"@pl ;
                  bdot10k:hasBdot10kCode "BUWT"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_35
 bdot10k:class_35 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "zbiornik techniczny"@pl ;
+                 rdfs:label "technical tank"@en ,
+                            "zbiornik techniczny"@pl ;
                  bdot10k:hasBdot10kCode "BUZT"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_36
 bdot10k:class_36 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "umocnienie drogowe, kolejowe i wodne"@pl ;
+                 rdfs:label "road, rail and water reinforcment"@en ,
+                            "umocnienie drogowe, kolejowe i wodne"@pl ;
                  bdot10k:hasBdot10kCode "BUUO"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_37
 bdot10k:class_37 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla ziemna"@pl ;
+                 rdfs:label "budowla ziemna"@pl ,
+                            "earth structure"@en ;
                  bdot10k:hasBdot10kCode "BUZM"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_38
 bdot10k:class_38 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "urządzenie transportowe"@pl ;
+                 rdfs:label "transport equipment"@en ,
+                            "urządzenie transportowe"@pl ;
                  bdot10k:hasBdot10kCode "BUTR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_39
 bdot10k:class_39 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "inne urządzenie techniczne"@pl ;
+                 rdfs:label "inne urządzenie techniczne"@pl ,
+                            "other technical equipment"@en ;
                  bdot10k:hasBdot10kCode "BUIT"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_4
 bdot10k:class_4 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "jezdnia"@pl ;
+                rdfs:label "carriageway"@en ,
+                           "jezdnia"@pl ;
                 bdot10k:hasBdot10kCode "SKJZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_40
 bdot10k:class_40 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "budowla cmentarna"@pl ;
+                 rdfs:label "budowla cmentarna"@pl ,
+                            "cemetery structures"@en ;
                  bdot10k:hasBdot10kCode "BUCM"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_41
 bdot10k:class_41 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_7 ;
-                 rdfs:label "inna budowla"@pl ;
+                 rdfs:label "inna budowla"@pl ,
+                            "other structures"@en ;
                  bdot10k:hasBdot10kCode "BUIB"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_42
 bdot10k:class_42 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks mieszkaniowy"@pl ;
+                 rdfs:label "kompleks mieszkaniowy"@pl ,
+                            "residential complex"@en ;
                  bdot10k:hasBdot10kCode "KUMN"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_43
 bdot10k:class_43 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks przemysłowo-gospodarczy"@pl ;
+                 rdfs:label "industrial and economic complex"@en ,
+                            "kompleks przemysłowo-gospodarczy"@pl ;
                  bdot10k:hasBdot10kCode "KUPG"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_44
 bdot10k:class_44 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks handlowo-usługowy"@pl ;
+                 rdfs:label "commercial and service complex"@en ,
+                            "kompleks handlowo-usługowy"@pl ;
                  bdot10k:hasBdot10kCode "KUHU"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_45
 bdot10k:class_45 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks komunikacyjny"@pl ;
+                 rdfs:label "communications complex"@en ,
+                            "kompleks komunikacyjny"@pl ;
                  bdot10k:hasBdot10kCode "KUKO"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_46
 bdot10k:class_46 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks sportowy i rekreacyjny"@pl ;
+                 rdfs:label "kompleks sportowy i rekreacyjny"@pl ,
+                            "sports and recreation complex"@en ;
                  bdot10k:hasBdot10kCode "KUSK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_47
 bdot10k:class_47 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks usług hotelarskich"@pl ;
+                 rdfs:label "hotel service complex"@en ,
+                            "kompleks usług hotelarskich"@pl ;
                  bdot10k:hasBdot10kCode "KUHO"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_48
 bdot10k:class_48 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks oświatowy"@pl ;
+                 rdfs:label "educational complex"@en ,
+                            "kompleks oświatowy"@pl ;
                  bdot10k:hasBdot10kCode "KUOS"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_49
 bdot10k:class_49 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks ochrony zdrowia i opieki społecznej"@pl ;
+                 rdfs:label "health and social care complex"@en ,
+                            "kompleks ochrony zdrowia i opieki społecznej"@pl ;
                  bdot10k:hasBdot10kCode "KUOZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_5
 bdot10k:class_5 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "droga"@pl ;
+                rdfs:label "droga"@pl ,
+                           "road"@en ;
                 bdot10k:hasBdot10kCode "SKDR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_50
 bdot10k:class_50 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks zabytkowo-historyczny"@pl ;
+                 rdfs:label "kompleks zabytkowo-historyczny"@pl ,
+                            "monumental and historical complex"@en ;
                  bdot10k:hasBdot10kCode "KUZA"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_51
 bdot10k:class_51 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "kompleks sakralny i cmentarz"@pl ;
+                 rdfs:label "kompleks sakralny i cmentarz"@pl ,
+                            "sacred complex and cemetery"@en ;
                  bdot10k:hasBdot10kCode "KUSC"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_52
 bdot10k:class_52 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_8 ;
-                 rdfs:label "inny kompleks użytkowania terenu"@pl ;
+                 rdfs:label "another land use complex"@en ,
+                            "inny kompleks użytkowania terenu"@pl ;
                  bdot10k:hasBdot10kCode "KUIK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_53
 bdot10k:class_53 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "obiekt przyrodniczy"@pl ;
+                 rdfs:label "natural object"@en ,
+                            "obiekt przyrodniczy"@pl ;
                  bdot10k:hasBdot10kCode "OIPR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_54
 bdot10k:class_54 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "obiekt związany z komunikacją"@pl ;
+                 rdfs:label "obiekt związany z komunikacją"@pl ,
+                            "object connected with transport"@en ;
                  bdot10k:hasBdot10kCode "OIKM"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_55
 bdot10k:class_55 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "obiekt o znaczeniu orientacyjnym w terenie"@pl ;
+                 rdfs:label "landmark"@en ,
+                            "obiekt o znaczeniu orientacyjnym w terenie"@pl ;
                  bdot10k:hasBdot10kCode "OIOR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_56
 bdot10k:class_56 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "mokradło"@pl ;
+                 rdfs:label "mokradło"@pl ,
+                            "swamps"@en ;
                  bdot10k:hasBdot10kCode "OIMK"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_57
 bdot10k:class_57 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:category_9 ;
-                 rdfs:label "szuwary"@pl ;
+                 rdfs:label "reeds"@en ,
+                            "szuwary"@pl ;
                  bdot10k:hasBdot10kCode "OISZ"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_6
 bdot10k:class_6 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "rondo i węzeł drogowy"@pl ;
+                rdfs:label "rondo i węzeł drogowy"@pl ,
+                           "roundabout and traffic junction"@en ;
                 bdot10k:hasBdot10kCode "SKRW"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_7
 bdot10k:class_7 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "ciąg ruchu pieszego i rowerowego"@pl ;
+                rdfs:label "ciąg ruchu pieszego i rowerowego"@pl ,
+                           "route of pedestrian and bicycle traffic"@en ;
                 bdot10k:hasBdot10kCode "SKRP"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_8
 bdot10k:class_8 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "tor lub zespół torów"@pl ;
+                rdfs:label "tor lub zespół torów"@pl ,
+                           "track or complex of tracks "@en ;
                 bdot10k:hasBdot10kCode "SKTR"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#class_9
 bdot10k:class_9 rdf:type owl:Class ;
                 rdfs:subClassOf bdot10k:category_2 ;
-                rdfs:label "przeprawa"@pl ;
+                rdfs:label "crossing"@en ,
+                           "przeprawa"@pl ;
                 bdot10k:hasBdot10kCode "SKPP"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_1
 bdot10k:object_1 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_1 ;
-                 rdfs:label "rzeka"@pl ;
+                 rdfs:label "river"@en ,
+                            "rzeka"@pl ;
                  bdot10k:hasBdot10kCode "SWRS01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_10
 bdot10k:object_10 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_4 ;
-                  rdfs:label "jezdnia drogi zbiorczej"@pl ;
+                  rdfs:label "jezdnia drogi zbiorczej"@pl ,
+                             "roadway of the collective road"@en ;
                   bdot10k:hasBdot10kCode "SKJZ05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_100
 bdot10k:object_100 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "część osady"@pl ;
+                   rdfs:label "część osady"@pl ,
+                              "part of settlement"@en ;
                    bdot10k:hasBdot10kCode "ADMS08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_101
 bdot10k:object_101 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "osiedle"@pl ;
+                   rdfs:label "estate"@en ,
+                              "osiedle"@pl ;
                    bdot10k:hasBdot10kCode "ADMS09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_102
 bdot10k:object_102 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "przysiółek"@pl ;
+                   rdfs:label "hamlet"@en ,
+                              "przysiółek"@pl ;
                    bdot10k:hasBdot10kCode "ADMS10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_103
 bdot10k:object_103 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "leśniczówka"@pl ;
+                   rdfs:label "forester's lodge"@en ,
+                              "leśniczówka"@pl ;
                    bdot10k:hasBdot10kCode "ADMS11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_104
 bdot10k:object_104 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "gajówka"@pl ;
+                   rdfs:label "forest-guard's lodge"@en ,
+                              "gajówka"@pl ;
                    bdot10k:hasBdot10kCode "ADMS12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_105
 bdot10k:object_105 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_29 ;
-                   rdfs:label "inny obiekt"@pl ;
+                   rdfs:label "another object"@en ,
+                              "inny obiekt"@pl ;
                    bdot10k:hasBdot10kCode "ADMS13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_106
 bdot10k:object_106 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki mieszkalne jednorodzinne"@pl ;
+                   rdfs:label "budynki mieszkalne jednorodzinne"@pl ,
+                              "single-family residential buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_107
 bdot10k:object_107 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki o dwóch mieszkaniach"@pl ;
+                   rdfs:label "budynki o dwóch mieszkaniach"@pl ,
+                              "two-apartment buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_108
 bdot10k:object_108 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki o trzech i więcej mieszkaniach"@pl ;
+                   rdfs:label "budynki o trzech i więcej mieszkaniach"@pl ,
+                              "buildings of three and more apartments"@en ;
                    bdot10k:hasBdot10kCode "BUBD03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_109
 bdot10k:object_109 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki zbiorowego zamieszkania"@pl ;
+                   rdfs:label "budynki zbiorowego zamieszkania"@pl ,
+                              "collective residence buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_11
 bdot10k:object_11 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_4 ;
-                  rdfs:label "jezdnia drogi lokalnej"@pl ;
+                  rdfs:label "jezdnia drogi lokalnej"@pl ,
+                             "roadway of the local road"@en ;
                   bdot10k:hasBdot10kCode "SKJZ06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_110
 bdot10k:object_110 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki hoteli"@pl ;
+                   rdfs:label "budynki hoteli"@pl ,
+                              "hotel buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_111
 bdot10k:object_111 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki zakwaterowania turystycznego,pozostałe"@pl ;
+                   rdfs:label "budynki zakwaterowania turystycznego,pozostałe"@pl ,
+                              "tourist accommodation buildings, others"@en ;
                    bdot10k:hasBdot10kCode "BUBD06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_112
 bdot10k:object_112 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki biurowe"@pl ;
+                   rdfs:label "budynki biurowe"@pl ,
+                              "office buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_113
 bdot10k:object_113 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki handlowo-usługowe"@pl ;
+                   rdfs:label "budynki handlowo-usługowe"@pl ,
+                              "commercial and service buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_114
 bdot10k:object_114 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki łączności, dworców i terminali"@pl ;
+                   rdfs:label "budynki łączności, dworców i terminali"@pl ,
+                              "communication buildings, stations and terminals"@en ;
                    bdot10k:hasBdot10kCode "BUBD09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_115
 bdot10k:object_115 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki garaży"@pl ;
+                   rdfs:label "budynki garaży"@pl ,
+                              "garage buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_116
 bdot10k:object_116 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki przemysłowe"@pl ;
+                   rdfs:label "budynki przemysłowe"@pl ,
+                              "industrial buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_117
 bdot10k:object_117 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "zbiorniki, silosy i budynki magazynowe"@pl ;
+                   rdfs:label "tanks, silos and storage buildings"@en ,
+                              "zbiorniki, silosy i budynki magazynowe"@pl ;
                    bdot10k:hasBdot10kCode "BUBD12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_118
 bdot10k:object_118 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "ogólnodostępne obiekty kulturalne"@pl ;
+                   rdfs:label "ogólnodostępne obiekty kulturalne"@pl ,
+                              "publicly accessible cultural facilities"@en ;
                    bdot10k:hasBdot10kCode "BUBD13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_119
 bdot10k:object_119 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki muzeów i bibliotek"@pl ;
+                   rdfs:label "budynki muzeów i bibliotek"@pl ,
+                              "buildings of museums and libraries"@en ;
                    bdot10k:hasBdot10kCode "BUBD14"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_12
 bdot10k:object_12 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_4 ;
-                  rdfs:label "jezdnia drogi dojazdowej"@pl ;
+                  rdfs:label "jezdnia drogi dojazdowej"@pl ,
+                             "roadway of the access road"@en ;
                   bdot10k:hasBdot10kCode "SKJZ07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_120
 bdot10k:object_120 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki szkół i instytucji badawczych"@pl ;
+                   rdfs:label "budynki szkół i instytucji badawczych"@pl ,
+                              "buildings of schools and research institutions"@en ;
                    bdot10k:hasBdot10kCode "BUBD15"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_121
 bdot10k:object_121 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki szpitali i zakładów opieki medycznej"@pl ;
+                   rdfs:label "budynki szpitali i zakładów opieki medycznej"@pl ,
+                              "buildings of hospitals and medical care facilities"@en ;
                    bdot10k:hasBdot10kCode "BUBD16"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_122
 bdot10k:object_122 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki kultury fizycznej"@pl ;
+                   rdfs:label "budynki kultury fizycznej"@pl ,
+                              "buildings of physical education facilities"@en ;
                    bdot10k:hasBdot10kCode "BUBD17"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_123
 bdot10k:object_123 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki gospodarstw rolnych"@pl ;
+                   rdfs:label "budynki gospodarstw rolnych"@pl ,
+                              "farm buildings"@en ;
                    bdot10k:hasBdot10kCode "BUBD18"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_124
 bdot10k:object_124 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "budynki przeznaczone do sprawowania kultu religijnego i czynności religijnych"@pl ;
+                   rdfs:label "budynki przeznaczone do sprawowania kultu religijnego i czynności religijnych"@pl ,
+                              "buildings intended for religious worship and religious activities"@en ;
                    bdot10k:hasBdot10kCode "BUBD19"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_125
 bdot10k:object_125 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "obiekty budowlane wpisane do rejestru zabytków i objęte indywidualną ochroną konserwatorską oraz nieruchome, archeologiczne dobra kultury"@pl ;
+                   rdfs:label "building structures entered in the register of monuments and subject to individual conservation protection as well as immovable, archaeological cultural assets"@en ,
+                              "obiekty budowlane wpisane do rejestru zabytków i objęte indywidualną ochroną konserwatorską oraz nieruchome, archeologiczne dobra kultury"@pl ;
                    bdot10k:hasBdot10kCode "BUBD20"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_126
 bdot10k:object_126 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_30 ;
-                   rdfs:label "pozostałe budynki niemieszkalne, gdzie indziej nie wymienione"@pl ;
+                   rdfs:label "other non-residential buildings not mentioned elsewhere"@en ,
+                              "pozostałe budynki niemieszkalne, gdzie indziej nie wymienione"@pl ;
                    bdot10k:hasBdot10kCode "BUBD21"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_127
 bdot10k:object_127 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "estakada"@pl ;
+                   rdfs:label "estakada"@pl ,
+                              "overpass"@en ;
                    bdot10k:hasBdot10kCode "BUIN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_128
 bdot10k:object_128 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "kładka dla pieszych"@pl ;
+                   rdfs:label "footbridge"@en ,
+                              "kładka dla pieszych"@pl ;
                    bdot10k:hasBdot10kCode "BUIN02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_129
 bdot10k:object_129 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "most"@pl ;
+                   rdfs:label "bridge"@en ,
+                              "most"@pl ;
                    bdot10k:hasBdot10kCode "BUIN03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_13
 bdot10k:object_13 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_4 ;
-                  rdfs:label "jezdnia drogi innej"@pl ;
+                  rdfs:label "jezdnia drogi innej"@pl ,
+                             "roadway of another type of road"@en ;
                   bdot10k:hasBdot10kCode "SKJZ08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_130
 bdot10k:object_130 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "przejście podziemne dla pieszych"@pl ;
+                   rdfs:label "pedestrian underpass"@en ,
+                              "przejście podziemne dla pieszych"@pl ;
                    bdot10k:hasBdot10kCode "BUIN04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_131
 bdot10k:object_131 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "przepust"@pl ;
+                   rdfs:label "culvert"@en ,
+                              "przepust"@pl ;
                    bdot10k:hasBdot10kCode "BUIN05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_132
 bdot10k:object_132 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "tunel"@pl ;
+                   rdfs:label "tunel"@pl ,
+                              "tunnel"@en ;
                    bdot10k:hasBdot10kCode "BUIN06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_133
 bdot10k:object_133 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_31 ;
-                   rdfs:label "wiadukt"@pl ;
+                   rdfs:label "viaduct"@en ,
+                              "wiadukt"@pl ;
                    bdot10k:hasBdot10kCode "BUIN07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_134
 bdot10k:object_134 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_32 ;
-                   rdfs:label "jaz ruchomy lub zastawka piętrząca"@pl ;
+                   rdfs:label "jaz ruchomy lub zastawka piętrząca"@pl ,
+                              "mobile weir and floodgate"@en ;
                    bdot10k:hasBdot10kCode "BUHD01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_135
 bdot10k:object_135 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_32 ;
-                   rdfs:label "jaz stały"@pl ;
+                   rdfs:label "jaz stały"@pl ,
+                              "permanent weir"@en ;
                    bdot10k:hasBdot10kCode "BUHD02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_136
 bdot10k:object_136 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_32 ;
-                   rdfs:label "śluza"@pl ;
+                   rdfs:label "sluice"@en ,
+                              "śluza"@pl ;
                    bdot10k:hasBdot10kCode "BUHD03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_137
 bdot10k:object_137 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_32 ;
-                   rdfs:label "zapora"@pl ;
+                   rdfs:label "dam"@en ,
+                              "zapora"@pl ;
                    bdot10k:hasBdot10kCode "BUHD04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_138
 bdot10k:object_138 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "basen odkryty"@pl ;
+                   rdfs:label "basen odkryty"@pl ,
+                              "outdoor pool"@en ;
                    bdot10k:hasBdot10kCode "BUSP01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_139
 bdot10k:object_139 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "basen z czaszą foliową"@pl ;
+                   rdfs:label "basen z czaszą foliową"@pl ,
+                              "pool with a foil canopy"@en ;
                    bdot10k:hasBdot10kCode "BUSP02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_14
 bdot10k:object_14 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "autostrada"@pl ;
+                  rdfs:label "autostrada"@pl ,
+                             "highway"@en ;
                   bdot10k:hasBdot10kCode "SKDR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_140
 bdot10k:object_140 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "bieżnia"@pl ;
+                   rdfs:label "bieżnia"@pl ,
+                              "treadmill"@en ;
                    bdot10k:hasBdot10kCode "BUSP03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_141
 bdot10k:object_141 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "kort tenisowy"@pl ;
+                   rdfs:label "kort tenisowy"@pl ,
+                              "tennis court"@en ;
                    bdot10k:hasBdot10kCode "BUSP04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_142
 bdot10k:object_142 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "kort tenisowy z czaszą foliową"@pl ;
+                   rdfs:label "kort tenisowy z czaszą foliową"@pl ,
+                              "tennis court with a foil canopy"@en ;
                    bdot10k:hasBdot10kCode "BUSP05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_143
 bdot10k:object_143 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "plac gier i zabaw"@pl ;
+                   rdfs:label "plac gier i zabaw"@pl ,
+                              "playground"@en ;
                    bdot10k:hasBdot10kCode "BUSP06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_144
 bdot10k:object_144 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "plac sportowy"@pl ;
+                   rdfs:label "plac sportowy"@pl ,
+                              "sportsground"@en ;
                    bdot10k:hasBdot10kCode "BUSP07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_145
 bdot10k:object_145 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "skocznia narciarska"@pl ;
+                   rdfs:label "ski jump"@en ,
+                              "skocznia narciarska"@pl ;
                    bdot10k:hasBdot10kCode "BUSP08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_146
 bdot10k:object_146 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "stadion"@pl ;
+                   rdfs:label "stadion"@pl ,
+                              "stadium"@en ;
                    bdot10k:hasBdot10kCode "BUSP09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_147
 bdot10k:object_147 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "sztuczny stok"@pl ;
+                   rdfs:label "artificial slope"@en ,
+                              "sztuczny stok"@pl ;
                    bdot10k:hasBdot10kCode "BUSP10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_148
 bdot10k:object_148 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "tor samochodowy"@pl ;
+                   rdfs:label "car track"@en ,
+                              "tor samochodowy"@pl ;
                    bdot10k:hasBdot10kCode "BUSP11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_149
 bdot10k:object_149 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "tor saneczkowy"@pl ;
+                   rdfs:label "toboggan run"@en ,
+                              "tor saneczkowy"@pl ;
                    bdot10k:hasBdot10kCode "BUSP12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_15
 bdot10k:object_15 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga ekspresowa"@pl ;
+                  rdfs:label "droga ekspresowa"@pl ,
+                             "expressway"@en ;
                   bdot10k:hasBdot10kCode "SKDR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_150
 bdot10k:object_150 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_33 ;
-                   rdfs:label "tor żużlowy"@pl ;
+                   rdfs:label "speedway track"@en ,
+                              "tor żużlowy"@pl ;
                    bdot10k:hasBdot10kCode "BUSP13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_151
 bdot10k:object_151 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "chłodnia kominowa"@pl ;
+                   rdfs:label "chłodnia kominowa"@pl ,
+                              "cooling tower"@en ;
                    bdot10k:hasBdot10kCode "BUWT01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_152
 bdot10k:object_152 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "komin przemysłowy"@pl ;
+                   rdfs:label "industrial smokestack"@en ,
+                              "komin przemysłowy"@pl ;
                    bdot10k:hasBdot10kCode "BUWT02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_153
 bdot10k:object_153 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "maszt oświetleniowy"@pl ;
+                   rdfs:label "lighting mast"@en ,
+                              "maszt oświetleniowy"@pl ;
                    bdot10k:hasBdot10kCode "BUWT03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_154
 bdot10k:object_154 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "maszt telekomunikacyjny"@pl ;
+                   rdfs:label "maszt telekomunikacyjny"@pl ,
+                              "telecommunication mast"@en ;
                    bdot10k:hasBdot10kCode "BUWT04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_155
 bdot10k:object_155 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "turbina wiatrowa"@pl ;
+                   rdfs:label "turbina wiatrowa"@pl ,
+                              "wind turbine"@en ;
                    bdot10k:hasBdot10kCode "BUWT05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_156
 bdot10k:object_156 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "słup energetyczny"@pl ;
+                   rdfs:label "power pole"@en ,
+                              "słup energetyczny"@pl ;
                    bdot10k:hasBdot10kCode "BUWT06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_157
 bdot10k:object_157 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "podpora kolei linowej"@pl ;
+                   rdfs:label "cableway support"@en ,
+                              "podpora kolei linowej"@pl ;
                    bdot10k:hasBdot10kCode "BUWT07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_158
 bdot10k:object_158 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "wieża ciśnień"@pl ;
+                   rdfs:label "water tower"@en ,
+                              "wieża ciśnień"@pl ;
                    bdot10k:hasBdot10kCode "BUWT08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_159
 bdot10k:object_159 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "wieża przeciwpożarowa"@pl ;
+                   rdfs:label "fire tower"@en ,
+                              "wieża przeciwpożarowa"@pl ;
                    bdot10k:hasBdot10kCode "BUWT09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_16
 bdot10k:object_16 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga główna ruchu przyśpieszonego"@pl ;
+                  rdfs:label "droga główna ruchu przyśpieszonego"@pl ,
+                             "main road of accelerated traffic"@en ;
                   bdot10k:hasBdot10kCode "SKDR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_160
 bdot10k:object_160 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "wieża szybu kopalnianego"@pl ;
+                   rdfs:label "mine shaft tower"@en ,
+                              "wieża szybu kopalnianego"@pl ;
                    bdot10k:hasBdot10kCode "BUWT10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_161
 bdot10k:object_161 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "wieża telekomunikacyjna"@pl ;
+                   rdfs:label "telecomunications tower"@en ,
+                              "wieża telekomunikacyjna"@pl ;
                    bdot10k:hasBdot10kCode "BUWT11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_162
 bdot10k:object_162 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_34 ;
-                   rdfs:label "wieża widokowa"@pl ;
+                   rdfs:label "observation tower"@en ,
+                              "wieża widokowa"@pl ;
                    bdot10k:hasBdot10kCode "BUWT12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_163
 bdot10k:object_163 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_35 ;
-                   rdfs:label "osadnik"@pl ;
+                   rdfs:label "osadnik"@pl ,
+                              "settling tank"@en ;
                    bdot10k:hasBdot10kCode "BUZT01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_164
 bdot10k:object_164 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_35 ;
-                   rdfs:label "zbiornik na ciecz"@pl ;
+                   rdfs:label "liquid tank"@en ,
+                              "zbiornik na ciecz"@pl ;
                    bdot10k:hasBdot10kCode "BUZT02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_165
 bdot10k:object_165 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_35 ;
-                   rdfs:label "zbiornik na materiały pędne lub gaz"@pl ;
+                   rdfs:label "tank for propellants or gas"@en ,
+                              "zbiornik na materiały pędne lub gaz"@pl ;
                    bdot10k:hasBdot10kCode "BUZT03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_166
 bdot10k:object_166 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_35 ;
-                   rdfs:label "zbiornik na materiały sypkie"@pl ;
+                   rdfs:label "container for loose materials"@en ,
+                              "zbiornik na materiały sypkie"@pl ;
                    bdot10k:hasBdot10kCode "BUZT04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_167
 bdot10k:object_167 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_36 ;
-                   rdfs:label "falochron"@pl ;
+                   rdfs:label "breakwater"@en ,
+                              "falochron"@pl ;
                    bdot10k:hasBdot10kCode "BUUO01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_168
 bdot10k:object_168 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_36 ;
-                   rdfs:label "ostroga"@pl ;
+                   rdfs:label "ostroga"@pl ,
+                              "spur"@en ;
                    bdot10k:hasBdot10kCode "BUUO02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_169
 bdot10k:object_169 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_36 ;
-                   rdfs:label "ściana oporowa"@pl ;
+                   rdfs:label "retaining wall"@en ,
+                              "ściana oporowa"@pl ;
                    bdot10k:hasBdot10kCode "BUUO03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_17
 bdot10k:object_17 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga główna"@pl ;
+                  rdfs:label "droga główna"@pl ,
+                             "main road "@en ;
                   bdot10k:hasBdot10kCode "SKDR04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_170
 bdot10k:object_170 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_36 ;
-                   rdfs:label "umocnienie brzegu"@pl ;
+                   rdfs:label "bank revetments"@en ,
+                              "umocnienie brzegu"@pl ;
                    bdot10k:hasBdot10kCode "BUUO04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_171
 bdot10k:object_171 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_37 ;
-                   rdfs:label "fosa sucha i wykop"@pl ;
+                   rdfs:label "dry moat and trench"@en ,
+                              "fosa sucha i wykop"@pl ;
                    bdot10k:hasBdot10kCode "BUZM01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_172
 bdot10k:object_172 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_37 ;
-                   rdfs:label "nasyp"@pl ;
+                   rdfs:label "embankment"@en ,
+                              "nasyp"@pl ;
                    bdot10k:hasBdot10kCode "BUZM02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_173
 bdot10k:object_173 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_37 ;
-                   rdfs:label "wał przeciwpowodziowy lub grobla"@pl ;
+                   rdfs:label "flood bank or dike"@en ,
+                              "wał przeciwpowodziowy lub grobla"@pl ;
                    bdot10k:hasBdot10kCode "BUZM03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_174
 bdot10k:object_174 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_38 ;
-                   rdfs:label "kolej linowa"@pl ;
+                   rdfs:label "cableway"@en ,
+                              "kolej linowa"@pl ;
                    bdot10k:hasBdot10kCode "BUTR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_175
 bdot10k:object_175 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_38 ;
-                   rdfs:label "obrotnica kolejowa"@pl ;
+                   rdfs:label "obrotnica kolejowa"@pl ,
+                              "railway turntable"@en ;
                    bdot10k:hasBdot10kCode "BUTR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_176
 bdot10k:object_176 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_38 ;
-                   rdfs:label "suwnica"@pl ;
+                   rdfs:label "gantry"@en ,
+                              "suwnica"@pl ;
                    bdot10k:hasBdot10kCode "BUTR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_177
 bdot10k:object_177 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_38 ;
-                   rdfs:label "taśmociąg"@pl ;
+                   rdfs:label "conveyor belt"@en ,
+                              "taśmociąg"@pl ;
                    bdot10k:hasBdot10kCode "BUTR04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_178
 bdot10k:object_178 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_38 ;
-                   rdfs:label "wyciąg narciarski"@pl ;
+                   rdfs:label "ski lift"@en ,
+                              "wyciąg narciarski"@pl ;
                    bdot10k:hasBdot10kCode "BUTR05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_179
 bdot10k:object_179 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "szyb naftowy lub gazowy"@pl ;
+                   rdfs:label "oil well or gas well"@en ,
+                              "szyb naftowy lub gazowy"@pl ;
                    bdot10k:hasBdot10kCode "BUIT01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_18
 bdot10k:object_18 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga zbiorcza"@pl ;
+                  rdfs:label "collective road"@en ,
+                             "droga zbiorcza"@pl ;
                   bdot10k:hasBdot10kCode "SKDR05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_180
 bdot10k:object_180 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "ujęcie wody"@pl ;
+                   rdfs:label "ujęcie wody"@pl ,
+                              "water intake"@en ;
                    bdot10k:hasBdot10kCode "BUIT02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_181
 bdot10k:object_181 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "transformator"@pl ;
+                   rdfs:label "transformator"@pl ,
+                              "transformer"@en ;
                    bdot10k:hasBdot10kCode "BUIT03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_182
 bdot10k:object_182 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "zespół transformatorów"@pl ;
+                   rdfs:label "complex of transformers"@en ,
+                              "zespół transformatorów"@pl ;
                    bdot10k:hasBdot10kCode "BUIT04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_183
 bdot10k:object_183 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "zespół dystrybutorów paliwa"@pl ;
+                   rdfs:label "set of fuel dispensers"@en ,
+                              "zespół dystrybutorów paliwa"@pl ;
                    bdot10k:hasBdot10kCode "BUIT05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_184
 bdot10k:object_184 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "zespół urządzeń stacji meteorologicznej"@pl ;
+                   rdfs:label "set of devices of the meteorological station"@en ,
+                              "zespół urządzeń stacji meteorologicznej"@pl ;
                    bdot10k:hasBdot10kCode "BUIT06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_185
 bdot10k:object_185 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_39 ;
-                   rdfs:label "zespół urządzeń terminalu ropy naftowej lub materiałów ropopochodnych"@pl ;
+                   rdfs:label "crude oil or petroleum materials terminal equipment group"@en ,
+                              "zespół urządzeń terminalu ropy naftowej lub materiałów ropopochodnych"@pl ;
                    bdot10k:hasBdot10kCode "BUIT07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_186
 bdot10k:object_186 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_40 ;
-                   rdfs:label "zespół nagrobków cmentarnych"@pl ;
+                   rdfs:label "complex of cemetery tombstones"@en ,
+                              "zespół nagrobków cmentarnych"@pl ;
                    bdot10k:hasBdot10kCode "BUCM01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_187
 bdot10k:object_187 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "estrada"@pl ;
+                   rdfs:label "estrada"@pl ,
+                              "stage"@en ;
                    bdot10k:hasBdot10kCode "BUIB01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_188
 bdot10k:object_188 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "ogrodzenie trwałe"@pl ;
+                   rdfs:label "ogrodzenie trwałe"@pl ,
+                              "permanent fence"@en ;
                    bdot10k:hasBdot10kCode "BUIB02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_189
 bdot10k:object_189 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "peron kolejowy"@pl ;
+                   rdfs:label "peron kolejowy"@pl ,
+                              "railway platform"@en ;
                    bdot10k:hasBdot10kCode "BUIB03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_19
 bdot10k:object_19 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga lokalna"@pl ;
+                  rdfs:label "droga lokalna"@pl ,
+                             "local road"@en ;
                   bdot10k:hasBdot10kCode "SKDR06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_190
 bdot10k:object_190 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "platforma widokowa"@pl ;
+                   rdfs:label "platforma widokowa"@pl ,
+                              "viewing platform"@en ;
                    bdot10k:hasBdot10kCode "BUIB04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_191
 bdot10k:object_191 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "rampa"@pl ;
+                   rdfs:label "ramp"@en ,
+                              "rampa"@pl ;
                    bdot10k:hasBdot10kCode "BUIB05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_192
 bdot10k:object_192 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_41 ;
-                   rdfs:label "trybuna"@pl ;
+                   rdfs:label "stand"@en ,
+                              "trybuna"@pl ;
                    bdot10k:hasBdot10kCode "BUIB06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_193
 bdot10k:object_193 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_42 ;
-                   rdfs:label "osiedle mieszkaniowe"@pl ;
+                   rdfs:label "housing estate"@en ,
+                              "osiedle mieszkaniowe"@pl ;
                    bdot10k:hasBdot10kCode "KUMN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_194
 bdot10k:object_194 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_42 ;
-                   rdfs:label "posesja"@pl ;
+                   rdfs:label "posesja"@pl ,
+                              "property"@en ;
                    bdot10k:hasBdot10kCode "KUMN02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_195
 bdot10k:object_195 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "elektrociepłownia"@pl ;
+                   rdfs:label "elektrociepłownia"@pl ,
+                              "heat and power generating plant "@en ;
                    bdot10k:hasBdot10kCode "KUPG01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_196
 bdot10k:object_196 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "elektrownia"@pl ;
+                   rdfs:label "elektrownia"@pl ,
+                              "power station"@en ;
                    bdot10k:hasBdot10kCode "KUPG02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_197
 bdot10k:object_197 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "gazownia"@pl ;
+                   rdfs:label "gasworks"@en ,
+                              "gazownia"@pl ;
                    bdot10k:hasBdot10kCode "KUPG03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_198
 bdot10k:object_198 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "gospodarstwo hodowlane"@pl ;
+                   rdfs:label "gospodarstwo hodowlane"@pl ,
+                              "livestock farm"@en ;
                    bdot10k:hasBdot10kCode "KUPG04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_199
 bdot10k:object_199 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "huta"@pl ;
+                   rdfs:label "huta"@pl ,
+                              "ironworks"@en ;
                    bdot10k:hasBdot10kCode "KUPG05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_2
 bdot10k:object_2 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_1 ;
-                 rdfs:label "strumień, potok lub struga"@pl ;
+                 rdfs:label "stream, torrent or creek"@en ,
+                            "strumień, potok lub struga"@pl ;
                  bdot10k:hasBdot10kCode "SWRS02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_20
 bdot10k:object_20 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga dojazdowa"@pl ;
+                  rdfs:label "access road"@en ,
+                             "droga dojazdowa"@pl ;
                   bdot10k:hasBdot10kCode "SKDR07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_200
 bdot10k:object_200 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "kopalnia"@pl ;
+                   rdfs:label "kopalnia"@pl ,
+                              "mine"@en ;
                    bdot10k:hasBdot10kCode "KUPG06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_201
 bdot10k:object_201 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "oczyszczalnia ścieków"@pl ;
+                   rdfs:label "oczyszczalnia ścieków"@pl ,
+                              "sewage treatment plant"@en ;
                    bdot10k:hasBdot10kCode "KUPG07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_202
 bdot10k:object_202 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "podstacja elektroenergetyczna"@pl ;
+                   rdfs:label "podstacja elektroenergetyczna"@pl ,
+                              "power substation"@en ;
                    bdot10k:hasBdot10kCode "KUPG08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_203
 bdot10k:object_203 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "przepompownia"@pl ;
+                   rdfs:label "pre-pumping station"@en ,
+                              "przepompownia"@pl ;
                    bdot10k:hasBdot10kCode "KUPG09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_204
 bdot10k:object_204 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "rafineria"@pl ;
+                   rdfs:label "rafineria"@pl ,
+                              "refinery"@en ;
                    bdot10k:hasBdot10kCode "KUPG10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_205
 bdot10k:object_205 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "składowisko odpadów"@pl ;
+                   rdfs:label "landfill dump"@en ,
+                              "składowisko odpadów"@pl ;
                    bdot10k:hasBdot10kCode "KUPG11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_206
 bdot10k:object_206 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "teren ujęcia wody"@pl ;
+                   rdfs:label "teren ujęcia wody"@pl ,
+                              "water intake area"@en ;
                    bdot10k:hasBdot10kCode "KUPG12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_207
 bdot10k:object_207 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "zakład metalurgiczny"@pl ;
+                   rdfs:label "metallurgical plant"@en ,
+                              "zakład metalurgiczny"@pl ;
                    bdot10k:hasBdot10kCode "KUPG13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_208
 bdot10k:object_208 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "zakład produkcyjny, usługowy lub remontowy"@pl ;
+                   rdfs:label "a production, service or repair facility"@en ,
+                              "zakład produkcyjny, usługowy lub remontowy"@pl ;
                    bdot10k:hasBdot10kCode "KUPG14"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_209
 bdot10k:object_209 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "zakład utylizacji"@pl ;
+                   rdfs:label "reprocessing plant"@en ,
+                              "zakład utylizacji"@pl ;
                    bdot10k:hasBdot10kCode "KUPG15"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_21
 bdot10k:object_21 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_5 ;
-                  rdfs:label "droga inna"@pl ;
+                  rdfs:label "another road"@en ,
+                             "droga inna"@pl ;
                   bdot10k:hasBdot10kCode "SKDR08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_210
 bdot10k:object_210 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_43 ;
-                   rdfs:label "zakład wodociągowy"@pl ;
+                   rdfs:label "waterworks"@en ,
+                              "zakład wodociągowy"@pl ;
                    bdot10k:hasBdot10kCode "KUPG16"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_211
 bdot10k:object_211 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_44 ;
-                   rdfs:label "centrum handlowo‐usługowe"@pl ;
+                   rdfs:label "centrum handlowo‐usługowe"@pl ,
+                              "commercial and service centre"@en ;
                    bdot10k:hasBdot10kCode "KUHU01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_212
 bdot10k:object_212 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_44 ;
-                   rdfs:label "targowisko lub bazar"@pl ;
+                   rdfs:label "market or bazaar"@en ,
+                              "targowisko lub bazar"@pl ;
                    bdot10k:hasBdot10kCode "KUHU02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_213
 bdot10k:object_213 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "dworzec autobusowy"@pl ;
+                   rdfs:label "bus station"@en ,
+                              "dworzec autobusowy"@pl ;
                    bdot10k:hasBdot10kCode "KUKO01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_214
 bdot10k:object_214 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "lotnisko lub lądowisko"@pl ;
+                   rdfs:label "airport"@en ,
+                              "lotnisko lub lądowisko"@pl ;
                    bdot10k:hasBdot10kCode "KUKO02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_215
 bdot10k:object_215 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "miejsce obsługi podróżnych"@pl ;
+                   rdfs:label "miejsce obsługi podróżnych"@pl ,
+                              "rest area"@en ;
                    bdot10k:hasBdot10kCode "KUKO03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_216
 bdot10k:object_216 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "parking"@pl ;
+                   rdfs:label "parking"@pl ,
+                              "parking lot"@en ;
                    bdot10k:hasBdot10kCode "KUKO04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_217
 bdot10k:object_217 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "port wodny lub przystań"@pl ;
+                   rdfs:label "port wodny lub przystań"@pl ,
+                              "water port or marina"@en ;
                    bdot10k:hasBdot10kCode "KUKO05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_218
 bdot10k:object_218 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "stacja kolejowa"@pl ;
+                   rdfs:label "railway station"@en ,
+                              "stacja kolejowa"@pl ;
                    bdot10k:hasBdot10kCode "KUKO06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_219
 bdot10k:object_219 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "stacja metra"@pl ;
+                   rdfs:label "metro station"@en ,
+                              "stacja metra"@pl ;
                    bdot10k:hasBdot10kCode "KUKO07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_22
 bdot10k:object_22 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_6 ;
-                  rdfs:label "rondo"@pl ;
+                  rdfs:label "rondo"@pl ,
+                             "roundabout"@en ;
                   bdot10k:hasBdot10kCode "SKRW01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_220
 bdot10k:object_220 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "stacja paliw"@pl ;
+                   rdfs:label "petrol station"@en ,
+                              "stacja paliw"@pl ;
                    bdot10k:hasBdot10kCode "KUKO08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_221
 bdot10k:object_221 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "teren kolejowy"@pl ;
+                   rdfs:label "railway area"@en ,
+                              "teren kolejowy"@pl ;
                    bdot10k:hasBdot10kCode "KUKO09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_222
 bdot10k:object_222 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_45 ;
-                   rdfs:label "zajezdnia lub baza transportowa"@pl ;
+                   rdfs:label "depot or transport base"@en ,
+                              "zajezdnia lub baza transportowa"@pl ;
                    bdot10k:hasBdot10kCode "KUKO10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_223
 bdot10k:object_223 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_46 ;
-                   rdfs:label "ogród botaniczny"@pl ;
+                   rdfs:label "botanical garden"@en ,
+                              "ogród botaniczny"@pl ;
                    bdot10k:hasBdot10kCode "KUSK01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_224
 bdot10k:object_224 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_46 ;
-                   rdfs:label "ogród zoologiczny"@pl ;
+                   rdfs:label "ogród zoologiczny"@pl ,
+                              "zoological garden"@en ;
                    bdot10k:hasBdot10kCode "KUSK02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_225
 bdot10k:object_225 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_46 ;
-                   rdfs:label "ośrodek sportowo‐rekreacyjny"@pl ;
+                   rdfs:label "ośrodek sportowo‐rekreacyjny"@pl ,
+                              "sports and recreational centre"@en ;
                    bdot10k:hasBdot10kCode "KUSK03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_226
 bdot10k:object_226 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_46 ;
-                   rdfs:label "park"@pl ;
+                   rdfs:label "park"@en ,
+                              "park"@pl ;
                    bdot10k:hasBdot10kCode "KUSK04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_227
 bdot10k:object_227 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_46 ;
-                   rdfs:label "zespół domów letniskowych"@pl ;
+                   rdfs:label "complex of holiday homes"@en ,
+                              "zespół domów letniskowych"@pl ;
                    bdot10k:hasBdot10kCode "KUSK05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_228
 bdot10k:object_228 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_47 ;
-                   rdfs:label "hotel lub motel"@pl ;
+                   rdfs:label "hotel lub motel"@pl ,
+                              "hotel or motel"@en ;
                    bdot10k:hasBdot10kCode "KUHO01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_229
 bdot10k:object_229 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_47 ;
-                   rdfs:label "kemping"@pl ;
+                   rdfs:label "camping site"@en ,
+                              "kemping"@pl ;
                    bdot10k:hasBdot10kCode "KUHO02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_23
 bdot10k:object_23 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_6 ;
-                  rdfs:label "węzeł drogowy"@pl ;
+                  rdfs:label "traffic junction"@en ,
+                             "węzeł drogowy"@pl ;
                   bdot10k:hasBdot10kCode "SKRW02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_230
 bdot10k:object_230 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_47 ;
-                   rdfs:label "ośrodek wypoczynkowy"@pl ;
+                   rdfs:label "holiday resort"@en ,
+                              "ośrodek wypoczynkowy"@pl ;
                    bdot10k:hasBdot10kCode "KUHO03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_231
 bdot10k:object_231 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_47 ;
-                   rdfs:label "schronisko turystyczne"@pl ;
+                   rdfs:label "schronisko turystyczne"@pl ,
+                              "tourist hostel"@en ;
                    bdot10k:hasBdot10kCode "KUHO04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_232
 bdot10k:object_232 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_48 ;
-                   rdfs:label "ośrodek naukowo‐badawczy"@pl ;
+                   rdfs:label "ośrodek naukowo‐badawczy"@pl ,
+                              "research and development center"@en ;
                    bdot10k:hasBdot10kCode "KUOS01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_233
 bdot10k:object_233 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_48 ;
-                   rdfs:label "przedszkole lub żłobek"@pl ;
+                   rdfs:label "kindergarten or nursery"@en ,
+                              "przedszkole lub żłobek"@pl ;
                    bdot10k:hasBdot10kCode "KUOS02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_234
 bdot10k:object_234 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_48 ;
-                   rdfs:label "szkoła lub zespół szkół"@pl ;
+                   rdfs:label "school or school complex"@en ,
+                              "szkoła lub zespół szkół"@pl ;
                    bdot10k:hasBdot10kCode "KUOS03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_235
 bdot10k:object_235 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_48 ;
-                   rdfs:label "szkoła wyższa"@pl ;
+                   rdfs:label "higher education facility"@en ,
+                              "szkoła wyższa"@pl ;
                    bdot10k:hasBdot10kCode "KUOS04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_236
 bdot10k:object_236 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_49 ;
-                   rdfs:label "zakład opieki socjalnej lub dom dziecka"@pl ;
+                   rdfs:label "a social care institution or an orphanage"@en ,
+                              "zakład opieki socjalnej lub dom dziecka"@pl ;
                    bdot10k:hasBdot10kCode "KUOZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_237
 bdot10k:object_237 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_49 ;
-                   rdfs:label "zespół szpitalny lub sanatoryjny"@pl ;
+                   rdfs:label "hospital or sanatorium complex"@en ,
+                              "zespół szpitalny lub sanatoryjny"@pl ;
                    bdot10k:hasBdot10kCode "KUOZ02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_238
 bdot10k:object_238 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "miejsce pamięci narodowej"@pl ;
+                   rdfs:label "a place of national remembrance"@en ,
+                              "miejsce pamięci narodowej"@pl ;
                    bdot10k:hasBdot10kCode "KUZA01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_239
 bdot10k:object_239 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "skansen"@pl ;
+                   rdfs:label "open-air museum"@en ,
+                              "skansen"@pl ;
                    bdot10k:hasBdot10kCode "KUZA02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_24
 bdot10k:object_24 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_7 ;
-                  rdfs:label "alejka"@pl ;
+                  rdfs:label "alejka"@pl ,
+                             "alley"@en ;
                   bdot10k:hasBdot10kCode "SKRP01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_240
 bdot10k:object_240 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "twierdza lub forteca"@pl ;
+                   rdfs:label "fortress"@en ,
+                              "twierdza lub forteca"@pl ;
                    bdot10k:hasBdot10kCode "KUZA03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_241
 bdot10k:object_241 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "zespół muzealny"@pl ;
+                   rdfs:label "museum complex"@en ,
+                              "zespół muzealny"@pl ;
                    bdot10k:hasBdot10kCode "KUZA04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_242
 bdot10k:object_242 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "zespół pałacowy"@pl ;
+                   rdfs:label "palace complex"@en ,
+                              "zespół pałacowy"@pl ;
                    bdot10k:hasBdot10kCode "KUZA05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_243
 bdot10k:object_243 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_50 ;
-                   rdfs:label "zespół zamkowy"@pl ;
+                   rdfs:label "castle complex"@en ,
+                              "zespół zamkowy"@pl ;
                    bdot10k:hasBdot10kCode "KUZA06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_244
 bdot10k:object_244 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_51 ;
-                   rdfs:label "cmentarz"@pl ;
+                   rdfs:label "cemetery"@en ,
+                              "cmentarz"@pl ;
                    bdot10k:hasBdot10kCode "KUSC01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_245
 bdot10k:object_245 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_51 ;
-                   rdfs:label "zespół sakralny lub klasztorny"@pl ;
+                   rdfs:label "sacred complex or monastery"@en ,
+                              "zespół sakralny lub klasztorny"@pl ;
                    bdot10k:hasBdot10kCode "KUSC02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_246
 bdot10k:object_246 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_52 ;
-                   rdfs:label "poligon wojskowy"@pl ;
+                   rdfs:label "military training field"@en ,
+                              "poligon wojskowy"@pl ;
                    bdot10k:hasBdot10kCode "KUIK01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_247
 bdot10k:object_247 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_52 ;
-                   rdfs:label "zakład specjalny"@pl ;
+                   rdfs:label "special care facility"@en ,
+                              "zakład specjalny"@pl ;
                    bdot10k:hasBdot10kCode "KUIK02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_248
 bdot10k:object_248 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "drzewo lub grupa drzew"@pl ;
+                   rdfs:label "drzewo lub grupa drzew"@pl ,
+                              "tree or a group of trees"@en ;
                    bdot10k:hasBdot10kCode "OIPR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_249
 bdot10k:object_249 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "głaz narzutowy lub grupa głazów"@pl ;
+                   rdfs:label "erratic boulder or group of boulders"@en ,
+                              "głaz narzutowy lub grupa głazów"@pl ;
                    bdot10k:hasBdot10kCode "OIPR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_25
 bdot10k:object_25 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_7 ;
-                  rdfs:label "pasaż"@pl ;
+                  rdfs:label "arcade"@en ,
+                             "pasaż"@pl ;
                   bdot10k:hasBdot10kCode "SKRP02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_250
 bdot10k:object_250 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "kępa krzewów"@pl ;
+                   rdfs:label "kępa krzewów"@pl ,
+                              "shrubbery"@en ;
                    bdot10k:hasBdot10kCode "OIPR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_251
 bdot10k:object_251 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "kępa kosodrzewiny"@pl ;
+                   rdfs:label "kępa kosodrzewiny"@pl ,
+                              "mountain pine clump"@en ;
                    bdot10k:hasBdot10kCode "OIPR04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_252
 bdot10k:object_252 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "linia oddziałowa"@pl ;
+                   rdfs:label "department line"@en ,
+                              "linia oddziałowa"@pl ;
                    bdot10k:hasBdot10kCode "OIPR05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_253
 bdot10k:object_253 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "mały las"@pl ;
+                   rdfs:label "mały las"@pl ,
+                              "small forest"@en ;
                    bdot10k:hasBdot10kCode "OIPR06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_254
 bdot10k:object_254 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "odosobniona skała"@pl ;
+                   rdfs:label "isolated rock"@en ,
+                              "odosobniona skała"@pl ;
                    bdot10k:hasBdot10kCode "OIPR07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_255
 bdot10k:object_255 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "pas krzewów lub żywopłot"@pl ;
+                   rdfs:label "a strip of shrubs or a hedge"@en ,
+                              "pas krzewów lub żywopłot"@pl ;
                    bdot10k:hasBdot10kCode "OIPR08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_256
 bdot10k:object_256 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "próg skalny"@pl ;
+                   rdfs:label "próg skalny"@pl ,
+                              "rock threshold"@en ;
                    bdot10k:hasBdot10kCode "OIPR09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_257
 bdot10k:object_257 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "rząd drzew"@pl ;
+                   rdfs:label "row of trees"@en ,
+                              "rząd drzew"@pl ;
                    bdot10k:hasBdot10kCode "OIPR10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_258
 bdot10k:object_258 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "wejście do jaskini"@pl ;
+                   rdfs:label "entrance to the cave"@en ,
+                              "wejście do jaskini"@pl ;
                    bdot10k:hasBdot10kCode "OIPR11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_259
 bdot10k:object_259 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "wodospad"@pl ;
+                   rdfs:label "waterfall"@en ,
+                              "wodospad"@pl ;
                    bdot10k:hasBdot10kCode "OIPR12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_26
 bdot10k:object_26 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_7 ;
-                  rdfs:label "ścieżka"@pl ;
+                  rdfs:label "pathway"@en ,
+                             "ścieżka"@pl ;
                   bdot10k:hasBdot10kCode "SKRP03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_260
 bdot10k:object_260 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_53 ;
-                   rdfs:label "źródło"@pl ;
+                   rdfs:label "spring"@en ,
+                              "źródło"@pl ;
                    bdot10k:hasBdot10kCode "OIPR13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_261
 bdot10k:object_261 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "ekran akustyczny"@pl ;
+                   rdfs:label "ekran akustyczny"@pl ,
+                              "noise barrier"@en ;
                    bdot10k:hasBdot10kCode "OIKM01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_262
 bdot10k:object_262 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "pas startowy"@pl ;
+                   rdfs:label "pas startowy"@pl ,
+                              "runway"@en ;
                    bdot10k:hasBdot10kCode "OIKM02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_263
 bdot10k:object_263 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "przejście graniczne"@pl ;
+                   rdfs:label "border crossing"@en ,
+                              "przejście graniczne"@pl ;
                    bdot10k:hasBdot10kCode "OIKM03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_264
 bdot10k:object_264 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "przystanek autobusowy lub tramwajowy"@pl ;
+                   rdfs:label "bus or tram stop"@en ,
+                              "przystanek autobusowy lub tramwajowy"@pl ;
                    bdot10k:hasBdot10kCode "OIKM04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_265
 bdot10k:object_265 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "przystanek kolejowy"@pl ;
+                   rdfs:label "przystanek kolejowy"@pl ,
+                              "railway station"@en ;
                    bdot10k:hasBdot10kCode "OIKM05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_266
 bdot10k:object_266 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "schody"@pl ;
+                   rdfs:label "schody"@pl ,
+                              "stairs"@en ;
                    bdot10k:hasBdot10kCode "OIKM06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_267
 bdot10k:object_267 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "sygnalizator świetlny"@pl ;
+                   rdfs:label "sygnalizator świetlny"@pl ,
+                              "traffic light"@en ;
                    bdot10k:hasBdot10kCode "OIKM07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_268
 bdot10k:object_268 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "wejście do stacji metra"@pl ;
+                   rdfs:label "entrance to the metro station"@en ,
+                              "wejście do stacji metra"@pl ;
                    bdot10k:hasBdot10kCode "OIKM08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_269
 bdot10k:object_269 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_54 ;
-                   rdfs:label "miejsce poboru opłat"@pl ;
+                   rdfs:label "miejsce poboru opłat"@pl ,
+                              "toll station"@en ;
                    bdot10k:hasBdot10kCode "OIKM09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_27
 bdot10k:object_27 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_8 ;
-                  rdfs:label "tor kolejowy"@pl ;
+                  rdfs:label "railway track"@en ,
+                             "tor kolejowy"@pl ;
                   bdot10k:hasBdot10kCode "SKTR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_270
 bdot10k:object_270 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "bunkier lub schron"@pl ;
+                   rdfs:label "bunker or shelter"@en ,
+                              "bunkier lub schron"@pl ;
                    bdot10k:hasBdot10kCode "OIOR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_271
 bdot10k:object_271 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "figura, kapliczka lub krzyż przydrożny"@pl ;
+                   rdfs:label "a figure, a shrine or a roadside cross "@en ,
+                              "figura, kapliczka lub krzyż przydrożny"@pl ;
                    bdot10k:hasBdot10kCode "OIOR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_272
 bdot10k:object_272 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "fontanna"@pl ;
+                   rdfs:label "fontanna"@pl ,
+                              "fountain"@en ;
                    bdot10k:hasBdot10kCode "OIOR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_273
 bdot10k:object_273 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "mur historyczny"@pl ;
+                   rdfs:label "historic wall"@en ,
+                              "mur historyczny"@pl ;
                    bdot10k:hasBdot10kCode "OIOR04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_274
 bdot10k:object_274 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "odosobniona mogiła"@pl ;
+                   rdfs:label "isolated grave"@en ,
+                              "odosobniona mogiła"@pl ;
                    bdot10k:hasBdot10kCode "OIOR05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_275
 bdot10k:object_275 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "pomnik"@pl ;
+                   rdfs:label "pomnik"@pl ,
+                              "statue"@en ;
                    bdot10k:hasBdot10kCode "OIOR06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_276
 bdot10k:object_276 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "pomost lub molo"@pl ;
+                   rdfs:label "jetty or pier"@en ,
+                              "pomost lub molo"@pl ;
                    bdot10k:hasBdot10kCode "OIOR07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_277
 bdot10k:object_277 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "ruina zabytkowa"@pl ;
+                   rdfs:label "historic ruins"@en ,
+                              "ruina zabytkowa"@pl ;
                    bdot10k:hasBdot10kCode "OIOR08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_278
 bdot10k:object_278 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "studnia głębinowa"@pl ;
+                   rdfs:label "deep well"@en ,
+                              "studnia głębinowa"@pl ;
                    bdot10k:hasBdot10kCode "OIOR09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_279
 bdot10k:object_279 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "szklarnia (niebędąca budynkiem)"@pl ;
+                   rdfs:label "greenhouse (other than a building)"@en ,
+                              "szklarnia (niebędąca budynkiem)"@pl ;
                    bdot10k:hasBdot10kCode "OIOR10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_28
 bdot10k:object_28 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_8 ;
-                  rdfs:label "tor metra"@pl ;
+                  rdfs:label "tor metra"@pl ,
+                             "underground track"@en ;
                   bdot10k:hasBdot10kCode "SKTR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_280
 bdot10k:object_280 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "wiata lub altana"@pl ;
+                   rdfs:label "shed or gazebo"@en ,
+                              "wiata lub altana"@pl ;
                    bdot10k:hasBdot10kCode "OIOR11"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_281
 bdot10k:object_281 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "wiatrak (niebędący budynkiem)"@pl ;
+                   rdfs:label "wiatrak (niebędący budynkiem)"@pl ,
+                              "windmill (other than a building)"@en ;
                    bdot10k:hasBdot10kCode "OIOR12"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_282
 bdot10k:object_282 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "wieża obserwacyjna"@pl ;
+                   rdfs:label "observation tower"@en ,
+                              "wieża obserwacyjna"@pl ;
                    bdot10k:hasBdot10kCode "OIOR13"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_283
 bdot10k:object_283 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_55 ;
-                   rdfs:label "wodowskaz"@pl ;
+                   rdfs:label "water gauge"@en ,
+                              "wodowskaz"@pl ;
                    bdot10k:hasBdot10kCode "OIOR14"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_284
 bdot10k:object_284 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_56 ;
-                   rdfs:label "bagno"@pl ;
+                   rdfs:label "bagno"@pl ,
+                              "marsh"@en ;
                    bdot10k:hasBdot10kCode "OIMK01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_285
 bdot10k:object_285 rdf:type owl:Class ;
                    rdfs:subClassOf bdot10k:class_56 ;
-                   rdfs:label "teren podmokły"@pl ;
+                   rdfs:label "teren podmokły"@pl ,
+                              "wetland"@en ;
                    bdot10k:hasBdot10kCode "OIMK02"^^xsd:string .
 
 
@@ -1955,546 +2227,624 @@ bdot10k:object_286 rdf:type owl:Class ;
 ###  https://purl.org/bdot10k#object_29
 bdot10k:object_29 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_8 ;
-                  rdfs:label "tor tramwajowy"@pl ;
+                  rdfs:label "tor tramwajowy"@pl ,
+                             "tramway track"@en ;
                   bdot10k:hasBdot10kCode "SKTR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_3
 bdot10k:object_3 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_2 ;
-                 rdfs:label "kanał"@pl ;
+                 rdfs:label "canal"@en ,
+                            "kanał"@pl ;
                  bdot10k:hasBdot10kCode "SWKN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_30
 bdot10k:object_30 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_9 ;
-                  rdfs:label "bród"@pl ;
+                  rdfs:label "bród"@pl ,
+                             "ford"@en ;
                   bdot10k:hasBdot10kCode "SKPP01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_31
 bdot10k:object_31 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_9 ;
-                  rdfs:label "przeprawa łodziami"@pl ;
+                  rdfs:label "boat crossing"@en ,
+                             "przeprawa łodziami"@pl ;
                   bdot10k:hasBdot10kCode "SKPP02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_32
 bdot10k:object_32 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_9 ;
-                  rdfs:label "przeprawa promowa"@pl ;
+                  rdfs:label "ferry crossing"@en ,
+                             "przeprawa promowa"@pl ;
                   bdot10k:hasBdot10kCode "SKPP03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_33
 bdot10k:object_33 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_10 ;
-                  rdfs:label "linia elektroenergetyczna najwyższego napięcia"@pl ;
+                  rdfs:label "highest voltage power line"@en ,
+                             "linia elektroenergetyczna najwyższego napięcia"@pl ;
                   bdot10k:hasBdot10kCode "SULN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_34
 bdot10k:object_34 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_10 ;
-                  rdfs:label "linia elektroenergetyczna wysokiego napięcia"@pl ;
+                  rdfs:label "high voltage power line"@en ,
+                             "linia elektroenergetyczna wysokiego napięcia"@pl ;
                   bdot10k:hasBdot10kCode "SULN02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_35
 bdot10k:object_35 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_10 ;
-                  rdfs:label "linia elektroenergetyczna średniego napięcia"@pl ;
+                  rdfs:label "linia elektroenergetyczna średniego napięcia"@pl ,
+                             "medium voltage power line"@en ;
                   bdot10k:hasBdot10kCode "SULN03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_36
 bdot10k:object_36 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_10 ;
-                  rdfs:label "linia elektroenergetyczna niskiego napięcia"@pl ;
+                  rdfs:label "linia elektroenergetyczna niskiego napięcia"@pl ,
+                             "low voltage power line"@en ;
                   bdot10k:hasBdot10kCode "SULN04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_37
 bdot10k:object_37 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_10 ;
-                  rdfs:label "linia telekomunikacyjna"@pl ;
+                  rdfs:label "linia telekomunikacyjna"@pl ,
+                             "telecommunications line"@en ;
                   bdot10k:hasBdot10kCode "SULN05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_38
 bdot10k:object_38 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "benzynowy"@pl ;
+                  rdfs:label "benzynowy"@pl ,
+                             "petrol"@en ;
                   bdot10k:hasBdot10kCode "SUPR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_39
 bdot10k:object_39 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "ciepłowniczy"@pl ;
+                  rdfs:label "ciepłowniczy"@pl ,
+                             "heating"@en ;
                   bdot10k:hasBdot10kCode "SUPR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_4
 bdot10k:object_4 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_3 ;
-                 rdfs:label "rów melioracyjny zbiorczy"@pl ;
+                 rdfs:label "collective drainage ditch"@en ,
+                            "rów melioracyjny zbiorczy"@pl ;
                  bdot10k:hasBdot10kCode "SWRM01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_40
 bdot10k:object_40 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "gazowy"@pl ;
+                  rdfs:label "gas"@en ,
+                             "gazowy"@pl ;
                   bdot10k:hasBdot10kCode "SUPR03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_41
 bdot10k:object_41 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "kanalizacyjny"@pl ;
+                  rdfs:label "kanalizacyjny"@pl ,
+                             "sewage"@en ;
                   bdot10k:hasBdot10kCode "SUPR04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_42
 bdot10k:object_42 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "naftowy"@pl ;
+                  rdfs:label "naftowy"@pl ,
+                             "oil"@en ;
                   bdot10k:hasBdot10kCode "SUPR05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_43
 bdot10k:object_43 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_11 ;
-                  rdfs:label "wodociągowy"@pl ;
+                  rdfs:label "water supply"@en ,
+                             "wodociągowy"@pl ;
                   bdot10k:hasBdot10kCode "SUPR06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_44
 bdot10k:object_44 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_12 ;
-                  rdfs:label "woda morska"@pl ;
+                  rdfs:label "sea water"@en ,
+                             "woda morska"@pl ;
                   bdot10k:hasBdot10kCode "PTWP01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_45
 bdot10k:object_45 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_12 ;
-                  rdfs:label "woda płynąca"@pl ;
+                  rdfs:label "flowing water"@en ,
+                             "woda płynąca"@pl ;
                   bdot10k:hasBdot10kCode "PTWP02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_46
 bdot10k:object_46 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_12 ;
-                  rdfs:label "woda stojąca"@pl ;
+                  rdfs:label "stagnant water"@en ,
+                             "woda stojąca"@pl ;
                   bdot10k:hasBdot10kCode "PTWP03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_47
 bdot10k:object_47 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_13 ;
-                  rdfs:label "zabudowa wielorodzinna"@pl ;
+                  rdfs:label "multi-family housing"@en ,
+                             "zabudowa wielorodzinna"@pl ;
                   bdot10k:hasBdot10kCode "PTZB01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_48
 bdot10k:object_48 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_13 ;
-                  rdfs:label "zabudowa jednorodzinna"@pl ;
+                  rdfs:label "one-family housing"@en ,
+                             "zabudowa jednorodzinna"@pl ;
                   bdot10k:hasBdot10kCode "PTZB02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_49
 bdot10k:object_49 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_13 ;
-                  rdfs:label "zabudowa przemysłowo‐składowa"@pl ;
+                  rdfs:label "industrial and warehouse buildings"@en ,
+                             "zabudowa przemysłowo‐składowa"@pl ;
                   bdot10k:hasBdot10kCode "PTZB03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_5
 bdot10k:object_5 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_3 ;
-                 rdfs:label "rów melioracyjny zwykły"@pl ;
+                 rdfs:label "ordinary drainage ditch"@en ,
+                            "rów melioracyjny zwykły"@pl ;
                  bdot10k:hasBdot10kCode "SWRM02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_50
 bdot10k:object_50 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_13 ;
-                  rdfs:label "zabudowa handlowo‐usługowa"@pl ;
+                  rdfs:label "commercial and service buildings"@en ,
+                             "zabudowa handlowo‐usługowa"@pl ;
                   bdot10k:hasBdot10kCode "PTZB04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_51
 bdot10k:object_51 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_13 ;
-                  rdfs:label "pozostała zabudowa"@pl ;
+                  rdfs:label "other buildings"@en ,
+                             "pozostała zabudowa"@pl ;
                   bdot10k:hasBdot10kCode "PTZB05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_52
 bdot10k:object_52 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_14 ;
-                  rdfs:label "las"@pl ;
+                  rdfs:label "forest"@en ,
+                             "las"@pl ;
                   bdot10k:hasBdot10kCode "PTLZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_53
 bdot10k:object_53 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_14 ;
-                  rdfs:label "zagajnik"@pl ;
+                  rdfs:label "grove"@en ,
+                             "zagajnik"@pl ;
                   bdot10k:hasBdot10kCode "PTLZ02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_54
 bdot10k:object_54 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_14 ;
-                  rdfs:label "zadrzewienie"@pl ;
+                  rdfs:label "trees"@en ,
+                             "zadrzewienie"@pl ;
                   bdot10k:hasBdot10kCode "PTLZ03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_55
 bdot10k:object_55 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_20 ;
-                  rdfs:label "kosodrzewina"@pl ;
+                  rdfs:label "kosodrzewina"@pl ,
+                             "mountain pine"@en ;
                   bdot10k:hasBdot10kCode "PTRK01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_56
 bdot10k:object_56 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_20 ;
-                  rdfs:label "krzewy"@pl ;
+                  rdfs:label "krzewy"@pl ,
+                             "shrub"@en ;
                   bdot10k:hasBdot10kCode "PTRK02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_57
 bdot10k:object_57 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_15 ;
-                  rdfs:label "ogród działkowy"@pl ;
+                  rdfs:label "garden allotment"@en ,
+                             "ogród działkowy"@pl ;
                   bdot10k:hasBdot10kCode "PTUT01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_58
 bdot10k:object_58 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_15 ;
-                  rdfs:label "plantacja"@pl ;
+                  rdfs:label "plantacja"@pl ,
+                             "plantation"@en ;
                   bdot10k:hasBdot10kCode "PTUT02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_59
 bdot10k:object_59 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_15 ;
-                  rdfs:label "sad"@pl ;
+                  rdfs:label "orchard"@en ,
+                             "sad"@pl ;
                   bdot10k:hasBdot10kCode "PTUT03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_6
 bdot10k:object_6 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_4 ;
-                 rdfs:label "jezdnia autostrady"@pl ;
+                 rdfs:label "jezdnia autostrady"@pl ,
+                            "roadway of the highway"@en ;
                  bdot10k:hasBdot10kCode "SKJZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_60
 bdot10k:object_60 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_15 ;
-                  rdfs:label "szkółka leśna"@pl ;
+                  rdfs:label "forest nursery"@en ,
+                             "szkółka leśna"@pl ;
                   bdot10k:hasBdot10kCode "PTUT04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_61
 bdot10k:object_61 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_15 ;
-                  rdfs:label "szkółka roślin ozdobnych"@pl ;
+                  rdfs:label "nursery of ornamental plants"@en ,
+                             "szkółka roślin ozdobnych"@pl ;
                   bdot10k:hasBdot10kCode "PTUT05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_62
 bdot10k:object_62 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_16 ;
-                  rdfs:label "roślinność trawiasta"@pl ;
+                  rdfs:label "grass"@en ,
+                             "roślinność trawiasta"@pl ;
                   bdot10k:hasBdot10kCode "PTTR01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_63
 bdot10k:object_63 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_16 ;
-                  rdfs:label "uprawa na gruntach ornych"@pl ;
+                  rdfs:label "cultivation on arable land"@en ,
+                             "uprawa na gruntach ornych"@pl ;
                   bdot10k:hasBdot10kCode "PTTR02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_64
 bdot10k:object_64 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_17 ;
-                  rdfs:label "teren pod drogą kołową"@pl ;
+                  rdfs:label "area under roads of wheeled vehicles"@en ,
+                             "teren pod drogą kołową"@pl ;
                   bdot10k:hasBdot10kCode "PTKM01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_65
 bdot10k:object_65 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_17 ;
-                  rdfs:label "teren pod torowiskiem"@pl ;
+                  rdfs:label "area under railroads"@en ,
+                             "teren pod torowiskiem"@pl ;
                   bdot10k:hasBdot10kCode "PTKM02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_66
 bdot10k:object_66 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_17 ;
-                  rdfs:label "teren pod drogą kołową i torowiskiem"@pl ;
+                  rdfs:label "area under roads and railroads"@en ,
+                             "teren pod drogą kołową i torowiskiem"@pl ;
                   bdot10k:hasBdot10kCode "PTKM03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_67
 bdot10k:object_67 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_17 ;
-                  rdfs:label "teren pod drogą lotniskową"@pl ;
+                  rdfs:label "area under airport roads"@en ,
+                             "teren pod drogą lotniskową"@pl ;
                   bdot10k:hasBdot10kCode "PTKM04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_68
 bdot10k:object_68 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_18 ;
-                  rdfs:label "piarg, usypisko lub rumowisko skalne"@pl ;
+                  rdfs:label "piarg, usypisko lub rumowisko skalne"@pl ,
+                             "scree, mound or rock debris"@en ;
                   bdot10k:hasBdot10kCode "PTGN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_69
 bdot10k:object_69 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_18 ;
-                  rdfs:label "teren kamienisty"@pl ;
+                  rdfs:label "rocky ground"@en ,
+                             "teren kamienisty"@pl ;
                   bdot10k:hasBdot10kCode "PTGN02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_7
 bdot10k:object_7 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_4 ;
-                 rdfs:label "jezdnia drogi ekspresowej"@pl ;
+                 rdfs:label "jezdnia drogi ekspresowej"@pl ,
+                            "roadway of the expressway"@en ;
                  bdot10k:hasBdot10kCode "SKJZ02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_70
 bdot10k:object_70 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_18 ;
-                  rdfs:label "teren piaszczysty lub żwirowy"@pl ;
+                  rdfs:label "sandy or gravel ground"@en ,
+                             "teren piaszczysty lub żwirowy"@pl ;
                   bdot10k:hasBdot10kCode "PTGN03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_71
 bdot10k:object_71 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_18 ;
-                  rdfs:label "pozostały grunt nieużytkowany"@pl ;
+                  rdfs:label "pozostały grunt nieużytkowany"@pl ,
+                             "the remaining unused land"@en ;
                   bdot10k:hasBdot10kCode "PTGN04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_72
 bdot10k:object_72 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_19 ;
-                  rdfs:label "plac"@pl ;
+                  rdfs:label "plac"@pl ,
+                             "square"@en ;
                   bdot10k:hasBdot10kCode "PTPL01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_73
 bdot10k:object_73 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_21 ;
-                  rdfs:label "teren składowania odpadów komunalnych"@pl ;
+                  rdfs:label "municipal waste storage area"@en ,
+                             "teren składowania odpadów komunalnych"@pl ;
                   bdot10k:hasBdot10kCode "PTSO01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_74
 bdot10k:object_74 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_21 ;
-                  rdfs:label "teren składowania odpadów przemysłowych"@pl ;
+                  rdfs:label "industrial waste storage area"@en ,
+                             "teren składowania odpadów przemysłowych"@pl ;
                   bdot10k:hasBdot10kCode "PTSO02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_75
 bdot10k:object_75 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_22 ;
-                  rdfs:label "wyrobisko"@pl ;
+                  rdfs:label "excavation"@en ,
+                             "wyrobisko"@pl ;
                   bdot10k:hasBdot10kCode "PTWZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_76
 bdot10k:object_76 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_22 ;
-                  rdfs:label "zwałowisko"@pl ;
+                  rdfs:label "dumping ground"@en ,
+                             "zwałowisko"@pl ;
                   bdot10k:hasBdot10kCode "PTWZ02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_77
 bdot10k:object_77 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_23 ;
-                  rdfs:label "teren pod urządzeniami technicznymi lub budowlami"@pl ;
+                  rdfs:label "area under technical or construction equipment"@en ,
+                             "teren pod urządzeniami technicznymi lub budowlami"@pl ;
                   bdot10k:hasBdot10kCode "PTNZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_78
 bdot10k:object_78 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_23 ;
-                  rdfs:label "teren przemysłowo‐składowy"@pl ;
+                  rdfs:label "industrial and storage area"@en ,
+                             "teren przemysłowo‐składowy"@pl ;
                   bdot10k:hasBdot10kCode "PTNZ02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_79
 bdot10k:object_79 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_24 ;
-                  rdfs:label "obszar Natura 2000"@pl ;
+                  rdfs:label "Natura 2000 area"@en ,
+                             "obszar Natura 2000"@pl ;
                   bdot10k:hasBdot10kCode "TCON01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_8
 bdot10k:object_8 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_4 ;
-                 rdfs:label "jezdnia drogi głównej ruchu przyśpieszonego"@pl ;
+                 rdfs:label "jezdnia drogi głównej ruchu przyśpieszonego"@pl ,
+                            "roadway of the main road of accelerated traffic"@en ;
                  bdot10k:hasBdot10kCode "SKJZ03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_80
 bdot10k:object_80 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_25 ;
-                  rdfs:label "park krajobrazowy"@pl ;
+                  rdfs:label "landscape park"@en ,
+                             "park krajobrazowy"@pl ;
                   bdot10k:hasBdot10kCode "TCPK01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_81
 bdot10k:object_81 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_26 ;
-                  rdfs:label "park narodowy"@pl ;
+                  rdfs:label "national park"@en ,
+                             "park narodowy"@pl ;
                   bdot10k:hasBdot10kCode "TCPN01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_82
 bdot10k:object_82 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_27 ;
-                  rdfs:label "rezerwat"@pl ;
+                  rdfs:label "reserve"@en ,
+                             "rezerwat"@pl ;
                   bdot10k:hasBdot10kCode "TCRZ01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_83
 bdot10k:object_83 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "państwo"@pl ;
+                  rdfs:label "państwo"@pl ,
+                             "state"@en ;
                   bdot10k:hasBdot10kCode "ADJA01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_84
 bdot10k:object_84 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "województwo"@pl ;
+                  rdfs:label "voivodeship"@en ,
+                             "województwo"@pl ;
                   bdot10k:hasBdot10kCode "ADJA02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_85
 bdot10k:object_85 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "powiat"@pl ;
+                  rdfs:label "county"@en ,
+                             "powiat"@pl ;
                   bdot10k:hasBdot10kCode "ADJA03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_86
 bdot10k:object_86 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "gmina miejska"@pl ;
+                  rdfs:label "gmina miejska"@pl ,
+                             "municipal commune"@en ;
                   bdot10k:hasBdot10kCode "ADJA04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_87
 bdot10k:object_87 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "gmina wiejska"@pl ;
+                  rdfs:label "gmina wiejska"@pl ,
+                             "rural commune"@en ;
                   bdot10k:hasBdot10kCode "ADJA05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_88
 bdot10k:object_88 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "gmina miejsko‐wiejska"@pl ;
+                  rdfs:label "gmina miejsko‐wiejska"@pl ,
+                             "municipal-rural commune"@en ;
                   bdot10k:hasBdot10kCode "ADJA06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_89
 bdot10k:object_89 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "miasto w gminie miejsko‐wiejskiej"@pl ;
+                  rdfs:label "miasto w gminie miejsko‐wiejskiej"@pl ,
+                             "town in a municipal-rural commune"@en ;
                   bdot10k:hasBdot10kCode "ADJA07"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_9
 bdot10k:object_9 rdf:type owl:Class ;
                  rdfs:subClassOf bdot10k:class_4 ;
-                 rdfs:label "jezdnia drogi głównej"@pl ;
+                 rdfs:label "jezdnia drogi głównej"@pl ,
+                            "roadway of the main road"@en ;
                  bdot10k:hasBdot10kCode "SKJZ04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_90
 bdot10k:object_90 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "obszar wiejski w gminie miejsko‐wiejskiej"@pl ;
+                  rdfs:label "obszar wiejski w gminie miejsko‐wiejskiej"@pl ,
+                             "rural area in a municipal-rural commune"@en ;
                   bdot10k:hasBdot10kCode "ADJA08"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_91
 bdot10k:object_91 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "dzielnica"@pl ;
+                  rdfs:label "district"@en ,
+                             "dzielnica"@pl ;
                   bdot10k:hasBdot10kCode "ADJA09"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_92
 bdot10k:object_92 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_28 ;
-                  rdfs:label "delegatura"@pl ;
+                  rdfs:label "branch"@en ,
+                             "delegatura"@pl ;
                   bdot10k:hasBdot10kCode "ADJA 10"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_93
 bdot10k:object_93 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "miasto"@pl ;
+                  rdfs:label "miasto"@pl ,
+                             "town/city"@en ;
                   bdot10k:hasBdot10kCode "ADMS01"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_94
 bdot10k:object_94 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "część miasta"@pl ;
+                  rdfs:label "część miasta"@pl ,
+                             "part of town/city"@en ;
                   bdot10k:hasBdot10kCode "ADMS02"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_95
 bdot10k:object_95 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "wieś"@pl ;
+                  rdfs:label "village"@en ,
+                             "wieś"@pl ;
                   bdot10k:hasBdot10kCode "ADMS03"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_96
 bdot10k:object_96 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "część wsi"@pl ;
+                  rdfs:label "część wsi"@pl ,
+                             "part of village"@en ;
                   bdot10k:hasBdot10kCode "ADMS04"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_97
 bdot10k:object_97 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "kolonia"@pl ;
+                  rdfs:label "colony"@en ,
+                             "kolonia"@pl ;
                   bdot10k:hasBdot10kCode "ADMS05"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_98
 bdot10k:object_98 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "część kolonii"@pl ;
+                  rdfs:label "część kolonii"@pl ,
+                             "part of colony"@en ;
                   bdot10k:hasBdot10kCode "ADMS06"^^xsd:string .
 
 
 ###  https://purl.org/bdot10k#object_99
 bdot10k:object_99 rdf:type owl:Class ;
                   rdfs:subClassOf bdot10k:class_29 ;
-                  rdfs:label "osada"@pl ;
+                  rdfs:label "osada"@pl ,
+                             "settlement"@en ;
                   bdot10k:hasBdot10kCode "ADMS07"^^xsd:string .
 
 
