@@ -1,3 +1,0 @@
--- ALTER TABLE ontology_sources.locations_refined ALTER COLUMN the_geom TYPE geometry(Geometry,4326);
--- DELETE FROM ontology_sources.locations_refined;
-WITH locations_geo AS (SELECT l.identifier,(regexp_matches(l."the_geom_X_Y",'^\s*([0-9]{1,2}(?:\.[0-9]+))\s*\,\s*([0-9]{1,2}(?:\.[0-9]+))\s*$')) AS geo,l.name,ld.identifier AS location_dataset_identifers FROM ontology_sources.locations_raw l LEFT JOIN ontology.location_datasets ld ON (l.location_dataset_identifers = ld.name) ORDER BY identifier) INSERT INTO ontology.locations SELECT identifier, ST_SetSRID(ST_Point(geo[2]::double precision,geo[1]::double precision),4326) AS the_geom, name, location_dataset_identifers FROM locations_geo;
