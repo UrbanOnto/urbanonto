@@ -20,6 +20,6 @@ class Register:
 
     @staticmethod
     def update_register_from_ontology(ontology: Graph):
-        for subject, predicate, object in ontology:
+        for subject, predicate, complement in ontology:
             if predicate == RDFS.label:
-                Register.labels_to_iris_map.update({object: subject})
+                Register.labels_to_iris_map.update({complement: subject})

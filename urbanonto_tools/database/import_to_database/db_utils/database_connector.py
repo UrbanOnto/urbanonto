@@ -1,6 +1,6 @@
-import psycopg2
 import logging
 
+import psycopg2
 from psycopg2._psycopg import cursor
 
 

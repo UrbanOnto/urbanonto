@@ -1,9 +1,5 @@
-import argparse
-import logging
-
 from database.export_from_excel.excel_exporter import export_to_csv_files
 from database.import_to_database.import_orchestrator import orchestrate_import
-
 
 # if __name__ == "__main__":
 #     parser = argparse.ArgumentParser(description='Export data from Excel to postgres database')
@@ -38,5 +34,3 @@ orchestrate_import(
     database='***',
     user='***',
     password='***')
-
-

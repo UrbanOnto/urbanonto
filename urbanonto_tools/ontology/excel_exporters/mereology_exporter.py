@@ -15,6 +15,7 @@ def add_parts_to_entity(excel_sheet_name: str, parts_string: str, entity: URIRef
                                                                   value=part, ontology=ontology)
         ontology.add((entity, RDFS.subClassOf, some_values_restriction))
 
+
 def add_wholes_to_entity(excel_sheet_name: str, wholes_string: str, entity: URIRef, ontology: Graph):
     whole_strings = wholes_string.split(',')
     for whole_string in whole_strings:

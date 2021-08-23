@@ -1,10 +1,8 @@
-import pandas
-import psycopg2
-import psycopg2.extras as extras
-import rdflib
-from psycopg2._psycopg import cursor
 import logging
 
+import psycopg2
+import psycopg2.extras as extras
+from psycopg2._psycopg import cursor
 from rdflib import Graph
 
 CONFLICT_CLAUSE = \
@@ -20,7 +18,7 @@ def import_data_from_sparql_query_to_db_table(
         resolve_conflict=False):
     results = ontology.query(sparql_query)
     tuples = list()
-    count=0
+    count = 0
     for result in results:
         tuple = list()
         for i in range(0, len(results.vars)):

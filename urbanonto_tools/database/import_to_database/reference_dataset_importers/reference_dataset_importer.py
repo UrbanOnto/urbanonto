@@ -1,4 +1,4 @@
-from database.importers.reference_dataset_importers.ontology_data_importer import import_data_from_ontology
+from database.import_to_database.reference_dataset_importers.ontology_data_importer import import_data_from_ontology
 
 
 def import_reference_data(cursor, ontology_iri: str):

@@ -1,7 +1,7 @@
 from rdflib import Literal, XSD
 
 
-def create_literal_with_lang(literal_string: str, lang='pl'):
+def create_literal_with_lang(literal_string: str):
     literal = Literal(literal_string, lang='pl')
     return literal
 

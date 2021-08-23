@@ -22,7 +22,7 @@ def import_data_from_ontology(ontology_iri: str, cursor):
         ontology=ontology,
         cursor=cursor,
         table_name='ontology_sources.topographic_types',
-        columns=['iri','name'],
+        columns=['iri', 'name'],
         resolve_conflict=True)
 
     import_data_from_sparql_query_to_db_table(
