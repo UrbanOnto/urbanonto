@@ -19059,6 +19059,13 @@ ontohgis:function10 rdf:type owl:NamedIndividual ,
                                "funkcja obsługi kuracjuszy"@pl .
 
 
+###  http://purl.org/ontohgis#function100
+ontohgis:function100 rdf:type owl:NamedIndividual ,
+                              obo:BFO_0000034 ;
+                     rdfs:label "TEST" ;
+                     owl:deprecated "true"^^xsd:boolean .
+
+
 ###  http://purl.org/ontohgis#function11
 ontohgis:function11 rdf:type owl:NamedIndividual ,
                              obo:BFO_0000034 ;
@@ -19088,13 +19095,6 @@ ontohgis:function14 rdf:type owl:NamedIndividual ,
                     rdfs:label "accomodation"@en ,
                                "funkcja hotelowa"@pl ;
                     <http://www.w3.org/2004/02/skos/core#note> "dotyczy obiektów służących czasowemu zamieszkaniu i zaspokojeniu innych potrzeb gości, np. zajazdy, traktiernie, pensjonaty, hotele"@pl .
-
-
-###  http://purl.org/ontohgis#function15
-ontohgis:function15 rdf:type owl:NamedIndividual ,
-                             obo:BFO_0000034 ;
-                    rdfs:label "TEST" ;
-                    owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://purl.org/ontohgis#function2
