@@ -15,13 +15,13 @@ def import_data_from_ontology(ontology_iri: str, cursor):
     ontology = \
         add_recursively_owl_imports_to_ontology(
             ontology=ontology,
-            ontology_iri=URIRef('http://purl.org/urbanonto'))
+            ontology_iri=URIRef(ontology_iri))
 
     import_data_from_sparql_query_to_db_table(
         sparql_query=get_types_of_topographic_objects,
         ontology=ontology,
         cursor=cursor,
-        table_name='ontology_sources.topographic_types',
+        table_name='test.topographic_types',
         columns=['iri', 'name'],
         resolve_conflict=True)
 
@@ -29,6 +29,6 @@ def import_data_from_ontology(ontology_iri: str, cursor):
         sparql_query=get_functions_of_topographic_objects,
         ontology=ontology,
         cursor=cursor,
-        table_name='ontology_sources.functions',
+        table_name='test.functions',
         columns=['iri', 'name'],
         resolve_conflict=True)
