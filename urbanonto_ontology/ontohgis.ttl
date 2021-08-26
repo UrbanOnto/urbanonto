@@ -19059,13 +19059,6 @@ ontohgis:function10 rdf:type owl:NamedIndividual ,
                                "funkcja obsługi kuracjuszy"@pl .
 
 
-###  http://purl.org/ontohgis#function100
-ontohgis:function100 rdf:type owl:NamedIndividual ,
-                              obo:BFO_0000034 ;
-                     rdfs:label "TEST"@pl ;
-                     owl:deprecated "true"^^xsd:boolean .
-
-
 ###  http://purl.org/ontohgis#function11
 ontohgis:function11 rdf:type owl:NamedIndividual ,
                              obo:BFO_0000034 ;
