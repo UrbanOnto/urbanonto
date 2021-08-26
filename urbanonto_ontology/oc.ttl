@@ -1,0 +1,145 @@
+@prefix : <http://ontologies.makolab.com/oc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ontologies.makolab.com/oc/> a owl:Ontology ;
+	rdfs:comment """Following \"K. Fine (1999). Things and their parts\" this ontology of change (OC) divides all entities into: 
+- variable entities, i.e. the entities that have different manifestations at different times, and 
+- non-variable entities that do not have different manifestations as different objects at dif- ferent times. 
+
+Among non-variable entities are manifestations of variable entities. Each such manifestation has its time stamp (being its beginning of existence). The following assumptions introduced by Kit Fine and generalized by \"F. Moltmann (2016). Variable Objects and Truth-Making\" have been adopted in CO:
+- Each variable entity (e.g. legal entity) has its last (or current if the entity exists) manifestation.
+- If a variable entity is manifested at time t by some entity manifestation m, then it exists at t, takes a geographical location of m and has all properties possessed by m in t.
+- If all manifestations of a variable entity have some property, then the variable entity possesses the property necessarily (technically speaking the property can be directly attributed to the variable entity)."""@en , """Created by MakoLab S.A.
+
+Contact:
+Robert Trypuz (robert.trypuz@makolab.com)"""@en ;
+	rdfs:label "Ontology of change with manifestations"@en ;
+	owl:versionInfo "version 1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+
+skos:scopeNote a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologies.makolab.com/oc/hasLastManifestation
+
+:hasLastManifestation a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasManifestation ;
+	owl:inverseOf :isLastManifestationOf ;
+	rdfs:label "has last manifestation"@en ;
+	skos:definition "The property assigns the last manifestation to a variable entity."@en .
+# 
+# http://ontologies.makolab.com/oc/hasManifestation
+
+:hasManifestation a owl:ObjectProperty ;
+	owl:inverseOf :isManifestationOf ;
+	rdfs:domain :VariableEntity ;
+	rdfs:range :VariableEntityManifestation ;
+	rdfs:label "has manifestation"@en ;
+	skos:definition "The property assigns a manifestation to a variable entity."@en .
+# 
+# http://ontologies.makolab.com/oc/hasPredecessorEntityManifestation
+
+:hasPredecessorEntityManifestation a owl:ObjectProperty ;
+	owl:inverseOf :isPredecessorEntityManifestationOf ;
+	a owl:TransitiveProperty ;
+	rdfs:domain :VariableEntityManifestation ;
+	rdfs:range :VariableEntityManifestation ;
+	rdfs:label "has predecessor entity manifestation"@en ;
+	skos:definition "The property establishes the temporal linear order of the manifestations of an entity."@en .
+# 
+# http://ontologies.makolab.com/oc/isLastManifestationOf
+
+:isLastManifestationOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :isManifestationOf ;
+	rdfs:label "is last manifestation of"@en ;
+	skos:definition "The property indicates which manifestations of a variable entities are last."@en .
+# 
+# http://ontologies.makolab.com/oc/isManifestationOf
+
+:isManifestationOf a owl:ObjectProperty ;
+	rdfs:domain :VariableEntityManifestation ;
+	rdfs:range :VariableEntity ;
+	rdfs:label "is manifestation of"@en ;
+	skos:definition "The property indicates to each manifestation the variable entity it is a manifestation of."@en .
+# 
+# http://ontologies.makolab.com/oc/isPredecessorEntityManifestationOf
+
+:isPredecessorEntityManifestationOf a owl:ObjectProperty , owl:TransitiveProperty ;
+	rdfs:domain :VariableEntityManifestation ;
+	rdfs:range :VariableEntityManifestation ;
+	rdfs:label "is predecessor entity manifestation of"@en ;
+	skos:definition "The property establishes the temporal linear order of the manifestations of an entity."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ontologies.makolab.com/oc/NonVariableEntity
+
+:NonVariableEntity a owl:Class ;
+	owl:disjointWith :VariableEntity ;
+	rdfs:label "non-variable entity"@en ;
+	skos:definition "Non-variable entities are entities that do not have different manifestations as different objects at different times and in different worlds or situations."@en .
+# 
+# http://ontologies.makolab.com/oc/VariableEntity
+
+:VariableEntity a owl:Class ;
+	rdfs:subClassOf _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :hasManifestation ;
+	owl:someValuesFrom :VariableEntityManifestation .
+
+:VariableEntity rdfs:comment """If a variable entity e is manifested at time t by some variable entity manifestation m, then e exists at t, takes a geographical location of m and has all qualities possessed by m in t. 
+
+A variable entity possesses a quality q (without temporal reference) if all of its manifestations have this quality q."""@en ;
+	rdfs:label "variable entity"@en ;
+	skos:definition "Variable entities are independent continuants that have different manifestations as different objects at different times and in different worlds or situations."@en .
+# 
+# http://ontologies.makolab.com/oc/VariableEntityManifestation
+
+:VariableEntityManifestation a owl:Class ;
+	rdfs:subClassOf :NonVariableEntity , _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :isManifestationOf ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass :VariableEntity .
+
+:VariableEntityManifestation rdfs:label "manifestation of variable entity"@en ;
+	skos:definition """It is a manifestation of variable entity in particular time and space with a particular collection of qualities.
+
+By itself manifestations are entities that do not have different manifestations as different objects at different times and in different worlds or situations."""@en .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
