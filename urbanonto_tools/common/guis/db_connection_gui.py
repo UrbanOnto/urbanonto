@@ -19,7 +19,7 @@ class DbGuiConnections:
         db_host_label.grid(row=0, column=0)
         self.__db_host_entry.grid(row=0, column=1)
 
-        db_port_label = tkinter.Label(text="Post:")
+        db_port_label = tkinter.Label(text="Port:")
         self.__db_port_entry = tkinter.Entry()
         db_port_label.grid(row=1, column=0)
         self.__db_port_entry.grid(row=1, column=1)
