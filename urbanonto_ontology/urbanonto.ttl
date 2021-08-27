@@ -6442,13 +6442,6 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                   <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-0489-3171"^^xsd:url .
 
 
-###  http://purl.org/urbanonto#function100
-:function100 rdf:type owl:NamedIndividual ,
-                      <http://purl.obolibrary.org/obo/BFO_0000034> ;
-             rdfs:label "TEST"@pl ;
-             owl:deprecated "true"^^xsd:boolean .
-
-
 ###  http://purl.org/urbanonto/function15
 urbanonto:function15 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
@@ -6644,9 +6637,9 @@ ontohgis:administrative_type_243 dc:creator ontohgis:person_2 ;
 
 ontohgis:administrative_type_257 dc:creator ontohgis:person_2 ;
                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q15284"^^xsd:url ;
+                                 skos:altLabel "municipality"@en ;
                                  rdfs:isDefinedBy "podstawowa, najcęściej najniższa jednostka podziału administracyjnego i samorządu terytorialnego"@pl ;
-                                 skos:altLabel "municipality"@en ,
-                                               "die Gemeinde"@de ;
+                                 skos:altLabel "die Gemeinde"@de ;
                                  rdfs:comment "Miasto zazwyczaj stanowiło jedną gminę i jej zasięg wyznaczał pod pewnymi względami granice miasta. "@pl .
 
 
