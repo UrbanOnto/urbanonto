@@ -30,7 +30,6 @@ urbanonto:geonode_topographic_object_manifestations a d2rq:ClassMap;
 	d2rq:dataStorage urbanonto:db;
 	d2rq:class manifestation:VariableEntityManifestation;
     	d2rq:uriPattern "http://purl.org/urbanonto#manifestation_@@ontology.geonode_topographic_object_manifestations.identifier@@";
-    	d2rq:classDefinitionLabel "VariableEntityManifestation";
 .
 
 map:manifestation_labels a d2rq:PropertyBridge;
@@ -56,7 +55,7 @@ map:manifestation_end_at a d2rq:PropertyBridge;
 map:manifestation_function a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap urbanonto:geonode_topographic_object_manifestations;
 	d2rq:uriColumn "ontology.geonode_topographic_object_manifestations.function_iri";
-	d2rq:property ontohgis:hasProperFunction;
+	d2rq:property ontohgis:hasImproperFunction;
 .
 
 map:manifestation_type a d2rq:PropertyBridge;
@@ -83,6 +82,5 @@ urbanonto:topographic_objects a d2rq:ClassMap;
 	d2rq:dataStorage urbanonto:db;
 	d2rq:class manifestation:VariableEntity;
     	d2rq:uriPattern "http://purl.org/urbanonto#variable_object_@@ontology.topographic_objects.identifier@@";
-	d2rq:classDefinitionLabel "VariableEntity";
 .
 	
