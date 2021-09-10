@@ -3,7 +3,7 @@
 # Namespace of the ontology
 @prefix urbanonto:<http://purl.org/urbanonto#> .
 
-@prefix map:<file://map>.
+@prefix map:<http://purl.org/urbanonto/map#>.
 
 # Other namespaces
 @prefix dc: <http://purl.org/dc/terms/> .
