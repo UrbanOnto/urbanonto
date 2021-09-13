@@ -16,7 +16,7 @@ INSERT INTO ontology.historical_evidences SELECT * FROM ontology_sources.histori
 --LOCATION REFERENCE DATA
 --REFRESH MATERIALIZED VIEW ontology.topographic_object_function_manifestations_filled;
 INSERT INTO ontology.location_datasets SELECT ROW_NUMBER() OVER () AS identifier,name FROM ontology_sources.location_datasets;
-INSERT INTO ontology.location_link_types SELECT ROW_NUMBER() OVER () AS identifier,name,postgis_function FROM ontology_sources.location_link_types;
+INSERT INTO ontology.location_link_types SELECT ROW_NUMBER() OVER () AS identifier,name FROM ontology_sources.location_link_types;
 INSERT INTO ontology.locations SELECT DISTINCT lrr.identifier,lrr.the_geom FROM ontology_sources.locations_refined_raw lrr ORDER BY identifier;
 
 --NAME REFERENCE DATA
