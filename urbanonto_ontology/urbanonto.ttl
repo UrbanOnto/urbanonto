@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/urbanonto#> .
+@prefix : <https://purl.org/urbanonto#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,8 +12,8 @@
 @base <http://purl.org/urbanonto> .
 
 <http://purl.org/urbanonto> rdf:type owl:Ontology ;
-                             owl:imports <http://purl.org/bdot10k> ,
-                                         <http://purl.org/ontohgis> ;
+                             owl:imports <https://purl.org/bdot10k> ,
+                                         <https://purl.org/ontohgis> ;
                              rdfs:comment "Ontologia została stworzona na potrzeby projektu \"Historical Ontology of Urban Space\"."@pl ,
                                           "This ontology was developed in \"Historical Ontology of Urban Space\" project."@en ;
                              rdfs:label "UrbanOnto" ;
@@ -141,12 +141,12 @@ ontohgis:administrative_type_85 owl:equivalentClass <https://purl.org/bdot10k#ob
                                 skos:hiddenLabel "kraj"@pl .
 
 
-###  http://purl.org/ontohgis#settlement_unit132
-ontohgis:settlement_unit132 owl:equivalentClass urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 .
+###  http://purl.org/ontohgis#settlement_unit_132
+ontohgis:settlement_unit_132 owl:equivalentClass urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 .
 
 
-###  http://purl.org/ontohgis#settlement_unit55
-ontohgis:settlement_unit55 rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
+###  http://purl.org/ontohgis#settlement_unit_55
+ontohgis:settlement_unit_55 rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty ontohgis:hasProperFunction ;
                                              owl:hasValue ontohgis:object_400
@@ -249,7 +249,7 @@ urbanonto:object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasImproperFunction ;
@@ -765,7 +765,7 @@ urbanonto:object_type_18e149fe-1b19-452d-b230-781dcdee378b rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
@@ -1246,7 +1246,7 @@ urbanonto:object_type_38b9b000-aee9-4d98-aee8-315a89689a87 rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46_is_composed_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit100
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_100
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46_is_composed_of ;
@@ -1688,7 +1688,7 @@ urbanonto:object_type_5083acfb-3f36-4587-83d3-6c27f1412381 rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit52
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_52
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
@@ -2031,7 +2031,7 @@ urbanonto:object_type_6076fcc5-3de4-4034-95e7-b582bb684634 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_245> ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46_is_composed_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit103
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_103
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46_is_composed_of ;
@@ -2816,7 +2816,7 @@ urbanonto:object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasImproperFunction ;
@@ -3702,7 +3702,7 @@ urbanonto:object_type_ab6e4665-8e6e-4e88-8198-413da99e6341 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit113
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_113
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasImproperFunction ;
@@ -3725,7 +3725,7 @@ urbanonto:object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_52> ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46_is_composed_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit55
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_55
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
@@ -3947,7 +3947,7 @@ urbanonto:object_type_b4293a32-e17d-4159-bbe7-117f71ab946c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_37> ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit52
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_52
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
@@ -4181,7 +4181,7 @@ urbanonto:object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_94> ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
@@ -4854,7 +4854,7 @@ urbanonto:object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasImproperFunction ;
@@ -5117,7 +5117,7 @@ urbanonto:object_type_e73317ef-21fc-441c-919a-925844d2950d rdf:type owl:Class ;
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty cidoc_crm:P46i_forms_part_of ;
-                                                                             owl:someValuesFrom ontohgis:settlement_unit3
+                                                                             owl:someValuesFrom ontohgis:settlement_unit_3
                                                                            ] ,
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty ontohgis:hasProperFunction ;
