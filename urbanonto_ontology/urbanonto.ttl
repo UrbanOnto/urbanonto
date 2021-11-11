@@ -8,10 +8,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ontohgis: <http://purl.org/ontohgis#> .
 @prefix cidoc_crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix urbanonto: <http://purl.org/urbanonto/> .
-@base <http://purl.org/urbanonto> .
+@prefix urbanonto: <https://purl.org/urbanonto/> .
+@base <https://purl.org/urbanonto> .
 
-<http://purl.org/urbanonto> rdf:type owl:Ontology ;
+<https://purl.org/urbanonto> rdf:type owl:Ontology ;
                              owl:imports <https://purl.org/bdot10k> ,
                                          <https://purl.org/ontohgis> ;
                              rdfs:comment "Ontologia została stworzona na potrzeby projektu \"Historical Ontology of Urban Space\"."@pl ,
@@ -25,7 +25,7 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/urbanonto/isAlsoDefinedBy
+###  https://purl.org/urbanonto/isAlsoDefinedBy
 urbanonto:isAlsoDefinedBy rdf:type owl:AnnotationProperty ;
                           rdfs:label "is also defined in"@en ,
                                      "jest również zdefiniowany przez"@pl ;
@@ -164,13 +164,13 @@ ontohgis:settlement_unit_55 rdfs:subClassOf <https://purl.org/bdot10k#object_109
                                          "prison"@en .
 
 
-###  http://purl.org/urbanonto/multipolygon
+###  https://purl.org/urbanonto/multipolygon
 urbanonto:multipolygon rdf:type owl:Class ;
                        rdfs:subClassOf <http://www.opengis.net/ont/gml#MultiSurface> ;
                        rdfs:label "multipoligon"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_00dde5ae-0004-499f-bccd-251870d4006c
+###  https://purl.org/urbanonto/object_type_00dde5ae-0004-499f-bccd-251870d4006c
 urbanonto:object_type_00dde5ae-0004-499f-bccd-251870d4006c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_28> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -195,7 +195,7 @@ urbanonto:object_type_00dde5ae-0004-499f-bccd-251870d4006c rdf:type owl:Class ;
                                                            rdfs:label "rozmierzenie lokacyjne"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_02332631-d6e9-43f2-87d9-eb411e79317f
+###  https://purl.org/urbanonto/object_type_02332631-d6e9-43f2-87d9-eb411e79317f
 urbanonto:object_type_02332631-d6e9-43f2-87d9-eb411e79317f rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_205> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -212,7 +212,7 @@ urbanonto:object_type_02332631-d6e9-43f2-87d9-eb411e79317f rdf:type owl:Class ;
                                                                             "zwałowisko"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0
+###  https://purl.org/urbanonto/object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0
 urbanonto:object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0 rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E18_Physical_Thing ,
                                                                            [ rdf:type owl:Restriction ;
@@ -232,7 +232,7 @@ urbanonto:object_type_0233a2a4-5a1d-442c-b59d-0728dd0981b0 rdf:type owl:Class ;
                                                                          "milestone"@en .
 
 
-###  http://purl.org/urbanonto/object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b
+###  https://purl.org/urbanonto/object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b
 urbanonto:object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_217> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -298,7 +298,7 @@ urbanonto:object_type_046dbc93-7f3a-4da6-a37b-2eef43c9071b rdf:type owl:Class ;
                                                                             "stanica żeglarska"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_05373902-6260-4373-96f9-685cee4f414a
+###  https://purl.org/urbanonto/object_type_05373902-6260-4373-96f9-685cee4f414a
 urbanonto:object_type_05373902-6260-4373-96f9-685cee4f414a rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_284> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_56> ,
@@ -331,7 +331,7 @@ urbanonto:object_type_05373902-6260-4373-96f9-685cee4f414a rdf:type owl:Class ;
                                                                             "trzęsawisko"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0616e71f-f911-4b5b-8ddf-8e076b5e2ec2
+###  https://purl.org/urbanonto/object_type_0616e71f-f911-4b5b-8ddf-8e076b5e2ec2
 urbanonto:object_type_0616e71f-f911-4b5b-8ddf-8e076b5e2ec2 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_46> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -370,7 +370,7 @@ urbanonto:object_type_0616e71f-f911-4b5b-8ddf-8e076b5e2ec2 rdf:type owl:Class ;
                                                                          "озеро"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_07078b2a-5f06-4a53-af73-ce15ca4c2ddb
+###  https://purl.org/urbanonto/object_type_07078b2a-5f06-4a53-af73-ce15ca4c2ddb
 urbanonto:object_type_07078b2a-5f06-4a53-af73-ce15ca4c2ddb rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_133> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
@@ -384,7 +384,7 @@ urbanonto:object_type_07078b2a-5f06-4a53-af73-ce15ca4c2ddb rdf:type owl:Class ;
                                                            rdfs:label "wiadukt"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0944c025-a8e5-48c0-8311-e7955821f889
+###  https://purl.org/urbanonto/object_type_0944c025-a8e5-48c0-8311-e7955821f889
 urbanonto:object_type_0944c025-a8e5-48c0-8311-e7955821f889 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_112> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -410,7 +410,7 @@ urbanonto:object_type_0944c025-a8e5-48c0-8311-e7955821f889 rdf:type owl:Class ;
                                                                          "суд"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_0c9034c3-77a1-47d9-9067-a0e080ecfa43
+###  https://purl.org/urbanonto/object_type_0c9034c3-77a1-47d9-9067-a0e080ecfa43
 urbanonto:object_type_0c9034c3-77a1-47d9-9067-a0e080ecfa43 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -458,7 +458,7 @@ urbanonto:object_type_0c9034c3-77a1-47d9-9067-a0e080ecfa43 rdf:type owl:Class ;
                                                                             "zakład poprawczy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0d1690ae-e388-41d4-aff2-31bf937cc373
+###  https://purl.org/urbanonto/object_type_0d1690ae-e388-41d4-aff2-31bf937cc373
 urbanonto:object_type_0d1690ae-e388-41d4-aff2-31bf937cc373 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -471,7 +471,7 @@ urbanonto:object_type_0d1690ae-e388-41d4-aff2-31bf937cc373 rdf:type owl:Class ;
                                                            rdfs:label "przejście podziemne"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0f482fa3-04a0-423b-ab1f-4cdfad888b52
+###  https://purl.org/urbanonto/object_type_0f482fa3-04a0-423b-ab1f-4cdfad888b52
 urbanonto:object_type_0f482fa3-04a0-423b-ab1f-4cdfad888b52 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_167> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_36> ,
@@ -502,7 +502,7 @@ urbanonto:object_type_0f482fa3-04a0-423b-ab1f-4cdfad888b52 rdf:type owl:Class ;
                                                            skos:hiddenLabel "ostroga"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_0f4926a1-a1ee-44b9-a09b-03c0bc396802
+###  https://purl.org/urbanonto/object_type_0f4926a1-a1ee-44b9-a09b-03c0bc396802
 urbanonto:object_type_0f4926a1-a1ee-44b9-a09b-03c0bc396802 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_117> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -538,7 +538,7 @@ urbanonto:object_type_0f4926a1-a1ee-44b9-a09b-03c0bc396802 rdf:type owl:Class ;
                                                                             "magazyn"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_10cfedcb-03fa-4a62-adee-bb39ff3ead43
+###  https://purl.org/urbanonto/object_type_10cfedcb-03fa-4a62-adee-bb39ff3ead43
 urbanonto:object_type_10cfedcb-03fa-4a62-adee-bb39ff3ead43 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_126> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -566,7 +566,7 @@ urbanonto:object_type_10cfedcb-03fa-4a62-adee-bb39ff3ead43 rdf:type owl:Class ;
                                                                             "posterunek wartowniczy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_11f78853-134a-45d0-8090-efd8f28965bf
+###  https://purl.org/urbanonto/object_type_11f78853-134a-45d0-8090-efd8f28965bf
 urbanonto:object_type_11f78853-134a-45d0-8090-efd8f28965bf rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                            dc:creator <https://orcid.org/0000-0003-3669-0018> ;
@@ -587,7 +587,7 @@ urbanonto:object_type_11f78853-134a-45d0-8090-efd8f28965bf rdf:type owl:Class ;
                                                                          "уча́сток"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_1315a9b9-2fe9-4668-8b4c-311dbbb54c97
+###  https://purl.org/urbanonto/object_type_1315a9b9-2fe9-4668-8b4c-311dbbb54c97
 urbanonto:object_type_1315a9b9-2fe9-4668-8b4c-311dbbb54c97 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_120> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -618,7 +618,7 @@ urbanonto:object_type_1315a9b9-2fe9-4668-8b4c-311dbbb54c97 rdf:type owl:Class ;
                                                                          "метеостанция"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_1441eb43-4105-4f33-813c-31f459a2528b
+###  https://purl.org/urbanonto/object_type_1441eb43-4105-4f33-813c-31f459a2528b
 urbanonto:object_type_1441eb43-4105-4f33-813c-31f459a2528b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -663,7 +663,7 @@ urbanonto:object_type_1441eb43-4105-4f33-813c-31f459a2528b rdf:type owl:Class ;
                                                            skos:hiddenLabel "schronisko"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_1466742f-15b9-4426-8ab8-f21c4b304d4f
+###  https://purl.org/urbanonto/object_type_1466742f-15b9-4426-8ab8-f21c4b304d4f
 urbanonto:object_type_1466742f-15b9-4426-8ab8-f21c4b304d4f rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_168> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_36> ,
@@ -699,7 +699,7 @@ urbanonto:object_type_1466742f-15b9-4426-8ab8-f21c4b304d4f rdf:type owl:Class ;
                                                            skos:hiddenLabel "falochron"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_16c35144-0a87-4e5f-9235-741e90a76bc5
+###  https://purl.org/urbanonto/object_type_16c35144-0a87-4e5f-9235-741e90a76bc5
 urbanonto:object_type_16c35144-0a87-4e5f-9235-741e90a76bc5 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_72> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -722,7 +722,7 @@ urbanonto:object_type_16c35144-0a87-4e5f-9235-741e90a76bc5 rdf:type owl:Class ;
                                                                             "plac targowy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_1825216a-68dd-4ae7-b53c-4736713f7f45
+###  https://purl.org/urbanonto/object_type_1825216a-68dd-4ae7-b53c-4736713f7f45
 urbanonto:object_type_1825216a-68dd-4ae7-b53c-4736713f7f45 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_30> ,
                                                                            <https://purl.org/bdot10k#object_126> ,
@@ -756,7 +756,7 @@ urbanonto:object_type_1825216a-68dd-4ae7-b53c-4736713f7f45 rdf:type owl:Class ;
                                                                             "zakład poprawczy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_18e149fe-1b19-452d-b230-781dcdee378b
+###  https://purl.org/urbanonto/object_type_18e149fe-1b19-452d-b230-781dcdee378b
 urbanonto:object_type_18e149fe-1b19-452d-b230-781dcdee378b rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_11f78853-134a-45d0-8090-efd8f28965bf ,
                                                                            [ rdf:type owl:Restriction ;
@@ -780,7 +780,7 @@ urbanonto:object_type_18e149fe-1b19-452d-b230-781dcdee378b rdf:type owl:Class ;
                                                                          "urban plot"@en .
 
 
-###  http://purl.org/urbanonto/object_type_1a276b47-16bd-4b07-a642-e76acabe34d9
+###  https://purl.org/urbanonto/object_type_1a276b47-16bd-4b07-a642-e76acabe34d9
 urbanonto:object_type_1a276b47-16bd-4b07-a642-e76acabe34d9 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_275> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
@@ -808,7 +808,7 @@ urbanonto:object_type_1a276b47-16bd-4b07-a642-e76acabe34d9 rdf:type owl:Class ;
                                                            skos:hiddenLabel "rzeźba"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_1ac81bf3-defc-4dd0-ab89-38cc0635eeac
+###  https://purl.org/urbanonto/object_type_1ac81bf3-defc-4dd0-ab89-38cc0635eeac
 urbanonto:object_type_1ac81bf3-defc-4dd0-ab89-38cc0635eeac rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_108> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -834,7 +834,7 @@ urbanonto:object_type_1ac81bf3-defc-4dd0-ab89-38cc0635eeac rdf:type owl:Class ;
                                                                          "флигель"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_1b9fe3b6-652b-4397-8f0c-998b585e4e87
+###  https://purl.org/urbanonto/object_type_1b9fe3b6-652b-4397-8f0c-998b585e4e87
 urbanonto:object_type_1b9fe3b6-652b-4397-8f0c-998b585e4e87 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_273> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -862,7 +862,7 @@ urbanonto:object_type_1b9fe3b6-652b-4397-8f0c-998b585e4e87 rdf:type owl:Class ;
                                                                          "оборонительная башня"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_1c6cc03a-8ae3-4e42-95d1-adfcb0c702b5
+###  https://purl.org/urbanonto/object_type_1c6cc03a-8ae3-4e42-95d1-adfcb0c702b5
 urbanonto:object_type_1c6cc03a-8ae3-4e42-95d1-adfcb0c702b5 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_45> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_12> ,
@@ -892,7 +892,7 @@ urbanonto:object_type_1c6cc03a-8ae3-4e42-95d1-adfcb0c702b5 rdf:type owl:Class ;
                                                                          "natürliches Fließgewässer"@de .
 
 
-###  http://purl.org/urbanonto/object_type_1f7aca78-5242-408b-add8-7d5438a1fefc
+###  https://purl.org/urbanonto/object_type_1f7aca78-5242-408b-add8-7d5438a1fefc
 urbanonto:object_type_1f7aca78-5242-408b-add8-7d5438a1fefc rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_245> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -913,7 +913,7 @@ urbanonto:object_type_1f7aca78-5242-408b-add8-7d5438a1fefc rdf:type owl:Class ;
                                                            rdfs:label "zespół sakralny lub klasztorny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_201bdb3b-da22-43c4-9490-2b43e3fb136c
+###  https://purl.org/urbanonto/object_type_201bdb3b-da22-43c4-9490-2b43e3fb136c
 urbanonto:object_type_201bdb3b-da22-43c4-9490-2b43e3fb136c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -936,7 +936,7 @@ urbanonto:object_type_201bdb3b-da22-43c4-9490-2b43e3fb136c rdf:type owl:Class ;
                                                                             "domki budnicze"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_2130ef99-e232-48f5-bc0c-4b9ab7a6590d
+###  https://purl.org/urbanonto/object_type_2130ef99-e232-48f5-bc0c-4b9ab7a6590d
 urbanonto:object_type_2130ef99-e232-48f5-bc0c-4b9ab7a6590d rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -977,7 +977,7 @@ urbanonto:object_type_2130ef99-e232-48f5-bc0c-4b9ab7a6590d rdf:type owl:Class ;
                                                                             "zakład karny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_23aeb250-4d72-42b1-b9a0-3e387f676563
+###  https://purl.org/urbanonto/object_type_23aeb250-4d72-42b1-b9a0-3e387f676563
 urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1016,7 +1016,7 @@ urbanonto:object_type_23aeb250-4d72-42b1-b9a0-3e387f676563 rdf:type owl:Class ;
                                                                             "opactwo"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_2429ab72-0013-4f2a-ac34-0a9c363c42e7
+###  https://purl.org/urbanonto/object_type_2429ab72-0013-4f2a-ac34-0a9c363c42e7
 urbanonto:object_type_2429ab72-0013-4f2a-ac34-0a9c363c42e7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1039,7 +1039,7 @@ urbanonto:object_type_2429ab72-0013-4f2a-ac34-0a9c363c42e7 rdf:type owl:Class ;
                                                                          "salle de recueillement"@fr .
 
 
-###  http://purl.org/urbanonto/object_type_256ce112-40b9-4dfd-a357-0648e04bf76d
+###  https://purl.org/urbanonto/object_type_256ce112-40b9-4dfd-a357-0648e04bf76d
 urbanonto:object_type_256ce112-40b9-4dfd-a357-0648e04bf76d rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_2> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_1> ,
@@ -1065,7 +1065,7 @@ urbanonto:object_type_256ce112-40b9-4dfd-a357-0648e04bf76d rdf:type owl:Class ;
                                                                          "поток"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_290ba842-d297-43b3-8df2-12a4c0f2fcdd
+###  https://purl.org/urbanonto/object_type_290ba842-d297-43b3-8df2-12a4c0f2fcdd
 urbanonto:object_type_290ba842-d297-43b3-8df2-12a4c0f2fcdd rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_134> ;
                                                            rdfs:subClassOf urbanonto:object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e ,
@@ -1103,7 +1103,7 @@ urbanonto:object_type_290ba842-d297-43b3-8df2-12a4c0f2fcdd rdf:type owl:Class ;
                                                                          "Водоспуск"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_30fc0b77-30ec-4697-9e8d-1f2cf40eef50
+###  https://purl.org/urbanonto/object_type_30fc0b77-30ec-4697-9e8d-1f2cf40eef50
 urbanonto:object_type_30fc0b77-30ec-4697-9e8d-1f2cf40eef50 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_266> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
@@ -1129,7 +1129,7 @@ urbanonto:object_type_30fc0b77-30ec-4697-9e8d-1f2cf40eef50 rdf:type owl:Class ;
                                                                          "лестница"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_31b9b0e9-68bc-46c0-bb6c-6ba3f85f10c3
+###  https://purl.org/urbanonto/object_type_31b9b0e9-68bc-46c0-bb6c-6ba3f85f10c3
 urbanonto:object_type_31b9b0e9-68bc-46c0-bb6c-6ba3f85f10c3 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_110> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1163,19 +1163,19 @@ urbanonto:object_type_31b9b0e9-68bc-46c0-bb6c-6ba3f85f10c3 rdf:type owl:Class ;
                                                                             "szynk"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_32815407-9ac8-488f-8414-cccae56e9913
+###  https://purl.org/urbanonto/object_type_32815407-9ac8-488f-8414-cccae56e9913
 urbanonto:object_type_32815407-9ac8-488f-8414-cccae56e9913 rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_b2c135a0-216c-4270-84a9-98552c4398c0 ;
                                                            rdfs:label "cytadela"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_331f9036-04b2-4125-bd35-adb38e5f073b
+###  https://purl.org/urbanonto/object_type_331f9036-04b2-4125-bd35-adb38e5f073b
 urbanonto:object_type_331f9036-04b2-4125-bd35-adb38e5f073b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_40> ;
                                                            rdfs:label "grób"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af
+###  https://purl.org/urbanonto/object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af
 urbanonto:object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_269> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
@@ -1209,7 +1209,7 @@ urbanonto:object_type_34ed19dc-7a2b-4742-afe3-cbd800c865af rdf:type owl:Class ;
                                                                          "toll house"@en .
 
 
-###  http://purl.org/urbanonto/object_type_36983569-cabe-4309-8f18-107316903411
+###  https://purl.org/urbanonto/object_type_36983569-cabe-4309-8f18-107316903411
 urbanonto:object_type_36983569-cabe-4309-8f18-107316903411 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1241,7 +1241,7 @@ urbanonto:object_type_36983569-cabe-4309-8f18-107316903411 rdf:type owl:Class ;
                                                            rdfs:label "budynek ogrodu zoologicznego lub botanicznego"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_38b9b000-aee9-4d98-aee8-315a89689a87
+###  https://purl.org/urbanonto/object_type_38b9b000-aee9-4d98-aee8-315a89689a87
 urbanonto:object_type_38b9b000-aee9-4d98-aee8-315a89689a87 rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1284,7 +1284,7 @@ urbanonto:object_type_38b9b000-aee9-4d98-aee8-315a89689a87 rdf:type owl:Class ;
                                                                             "uniwersytet"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_38da8ae6-c644-4b33-a311-29e7da8b6805
+###  https://purl.org/urbanonto/object_type_38da8ae6-c644-4b33-a311-29e7da8b6805
 urbanonto:object_type_38da8ae6-c644-4b33-a311-29e7da8b6805 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1313,7 +1313,7 @@ urbanonto:object_type_38da8ae6-c644-4b33-a311-29e7da8b6805 rdf:type owl:Class ;
                                                                             "gorzelnia"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_397b780a-e5fe-464b-8f45-610a265c75ab
+###  https://purl.org/urbanonto/object_type_397b780a-e5fe-464b-8f45-610a265c75ab
 urbanonto:object_type_397b780a-e5fe-464b-8f45-610a265c75ab rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_46> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1344,19 +1344,19 @@ urbanonto:object_type_397b780a-e5fe-464b-8f45-610a265c75ab rdf:type owl:Class ;
                                                                             "sadzawka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1
+###  https://purl.org/urbanonto/object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1
 urbanonto:object_type_3ab8e3ca-5ab2-4134-83de-661777db85b1 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_2> ;
                                                            rdfs:label "linia metra"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2
+###  https://purl.org/urbanonto/object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2
 urbanonto:object_type_3b34975a-f1cb-4b37-ae68-74f0052adad2 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                            rdfs:label "basen"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_3e00cb4c-a6c0-4394-b5b4-4ff577a15376
+###  https://purl.org/urbanonto/object_type_3e00cb4c-a6c0-4394-b5b4-4ff577a15376
 urbanonto:object_type_3e00cb4c-a6c0-4394-b5b4-4ff577a15376 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_117> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1390,7 +1390,7 @@ urbanonto:object_type_3e00cb4c-a6c0-4394-b5b4-4ff577a15376 rdf:type owl:Class ;
                                                                          "арсенал"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad
+###  https://purl.org/urbanonto/object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad
 urbanonto:object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_146> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_33> ,
@@ -1417,7 +1417,7 @@ urbanonto:object_type_3fbc4842-0936-4ea2-b89d-299a7cda71ad rdf:type owl:Class ;
                                                                          "стадион"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_41963db6-b35f-4aaa-8040-a059b388900f
+###  https://purl.org/urbanonto/object_type_41963db6-b35f-4aaa-8040-a059b388900f
 urbanonto:object_type_41963db6-b35f-4aaa-8040-a059b388900f rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_117> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1477,7 +1477,7 @@ urbanonto:object_type_41963db6-b35f-4aaa-8040-a059b388900f rdf:type owl:Class ;
                                                                             "stodoła"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_4768086f-2542-429f-8c3a-e3644a5ce11a
+###  https://purl.org/urbanonto/object_type_4768086f-2542-429f-8c3a-e3644a5ce11a
 urbanonto:object_type_4768086f-2542-429f-8c3a-e3644a5ce11a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_121> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1505,7 +1505,7 @@ urbanonto:object_type_4768086f-2542-429f-8c3a-e3644a5ce11a rdf:type owl:Class ;
                                                                          "госпиталь"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_48187b44-8d1c-4cb0-98f5-eeb6a0a68ecb
+###  https://purl.org/urbanonto/object_type_48187b44-8d1c-4cb0-98f5-eeb6a0a68ecb
 urbanonto:object_type_48187b44-8d1c-4cb0-98f5-eeb6a0a68ecb rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_43> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1526,7 +1526,7 @@ urbanonto:object_type_48187b44-8d1c-4cb0-98f5-eeb6a0a68ecb rdf:type owl:Class ;
                                                                          "хлев"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_488f8944-e0bd-47dd-8230-610fdc15d49d
+###  https://purl.org/urbanonto/object_type_488f8944-e0bd-47dd-8230-610fdc15d49d
 urbanonto:object_type_488f8944-e0bd-47dd-8230-610fdc15d49d rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_246> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_52> ,
@@ -1554,7 +1554,7 @@ urbanonto:object_type_488f8944-e0bd-47dd-8230-610fdc15d49d rdf:type owl:Class ;
                                                                          "военный полигон"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_4b2f4d68-7662-4205-bfc8-66c1fc921819
+###  https://purl.org/urbanonto/object_type_4b2f4d68-7662-4205-bfc8-66c1fc921819
 urbanonto:object_type_4b2f4d68-7662-4205-bfc8-66c1fc921819 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_272> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1592,7 +1592,7 @@ urbanonto:object_type_4b2f4d68-7662-4205-bfc8-66c1fc921819 rdf:type owl:Class ;
                                                                             "źródło"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_4b313ab4-5059-46a7-b62e-000c7f813666
+###  https://purl.org/urbanonto/object_type_4b313ab4-5059-46a7-b62e-000c7f813666
 urbanonto:object_type_4b313ab4-5059-46a7-b62e-000c7f813666 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_123> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1622,7 +1622,7 @@ urbanonto:object_type_4b313ab4-5059-46a7-b62e-000c7f813666 rdf:type owl:Class ;
                                                                          "конюшня"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_4bd6e285-753f-459e-9b5b-1a1657291685
+###  https://purl.org/urbanonto/object_type_4bd6e285-753f-459e-9b5b-1a1657291685
 urbanonto:object_type_4bd6e285-753f-459e-9b5b-1a1657291685 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_43> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1643,7 +1643,7 @@ urbanonto:object_type_4bd6e285-753f-459e-9b5b-1a1657291685 rdf:type owl:Class ;
                                                                          "knackery"@en .
 
 
-###  http://purl.org/urbanonto/object_type_4d5b12d9-19b6-4397-891e-c476ea81b139
+###  https://purl.org/urbanonto/object_type_4d5b12d9-19b6-4397-891e-c476ea81b139
 urbanonto:object_type_4d5b12d9-19b6-4397-891e-c476ea81b139 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_119> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1679,7 +1679,7 @@ urbanonto:object_type_4d5b12d9-19b6-4397-891e-c476ea81b139 rdf:type owl:Class ;
                                                                             "pinakoteka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_5083acfb-3f36-4587-83d3-6c27f1412381
+###  https://purl.org/urbanonto/object_type_5083acfb-3f36-4587-83d3-6c27f1412381
 urbanonto:object_type_5083acfb-3f36-4587-83d3-6c27f1412381 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_8> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1724,13 +1724,13 @@ urbanonto:object_type_5083acfb-3f36-4587-83d3-6c27f1412381 rdf:type owl:Class ;
                                                                          "przedpole twierdzy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7
+###  https://purl.org/urbanonto/object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7
 urbanonto:object_type_51b2b48a-fbcc-4adf-a0a9-fd90c2066bd7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ;
                                                            rdfs:label "brama"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_55033dcd-e6fe-443f-b615-1ea420555c92
+###  https://purl.org/urbanonto/object_type_55033dcd-e6fe-443f-b615-1ea420555c92
 urbanonto:object_type_55033dcd-e6fe-443f-b615-1ea420555c92 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_233> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1758,7 +1758,7 @@ urbanonto:object_type_55033dcd-e6fe-443f-b615-1ea420555c92 rdf:type owl:Class ;
                                                            skos:hiddenLabel "żłobek"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_58008b80-aa5a-4cb2-bab0-0af4921f5ff7
+###  https://purl.org/urbanonto/object_type_58008b80-aa5a-4cb2-bab0-0af4921f5ff7
 urbanonto:object_type_58008b80-aa5a-4cb2-bab0-0af4921f5ff7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1790,7 +1790,7 @@ urbanonto:object_type_58008b80-aa5a-4cb2-bab0-0af4921f5ff7 rdf:type owl:Class ;
                                                                          "казино"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a
+###  https://purl.org/urbanonto/object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a
 urbanonto:object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1831,7 +1831,7 @@ urbanonto:object_type_59e9a63d-a1e6-43ef-bfcf-ed895159b97a rdf:type owl:Class ;
                                                                             "rezydencja prezydencka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_5b9cd873-3972-4aa9-9e76-51e6dab898bf
+###  https://purl.org/urbanonto/object_type_5b9cd873-3972-4aa9-9e76-51e6dab898bf
 urbanonto:object_type_5b9cd873-3972-4aa9-9e76-51e6dab898bf rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1857,7 +1857,7 @@ urbanonto:object_type_5b9cd873-3972-4aa9-9e76-51e6dab898bf rdf:type owl:Class ;
                                                                          "зрительно-спортивный зал"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_5d4c1dcf-d7d4-441c-a931-7503ae4b43eb
+###  https://purl.org/urbanonto/object_type_5d4c1dcf-d7d4-441c-a931-7503ae4b43eb
 urbanonto:object_type_5d4c1dcf-d7d4-441c-a931-7503ae4b43eb rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1893,7 +1893,7 @@ urbanonto:object_type_5d4c1dcf-d7d4-441c-a931-7503ae4b43eb rdf:type owl:Class ;
                                                                             "teatr"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb
+###  https://purl.org/urbanonto/object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb
 urbanonto:object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1910,13 +1910,13 @@ urbanonto:object_type_5dfec8a3-84f9-4aac-b687-1cbd030f4dbb rdf:type owl:Class ;
                                                            rdfs:label "podgrodzie"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_5e55b798-5e07-470b-bab7-b84e718a5baa
+###  https://purl.org/urbanonto/object_type_5e55b798-5e07-470b-bab7-b84e718a5baa
 urbanonto:object_type_5e55b798-5e07-470b-bab7-b84e718a5baa rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                            rdfs:label "boisko"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_5ec5f208-d56f-421c-9e83-93776dd0119e
+###  https://purl.org/urbanonto/object_type_5ec5f208-d56f-421c-9e83-93776dd0119e
 urbanonto:object_type_5ec5f208-d56f-421c-9e83-93776dd0119e rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_1> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_1> ,
@@ -1946,7 +1946,7 @@ urbanonto:object_type_5ec5f208-d56f-421c-9e83-93776dd0119e rdf:type owl:Class ;
                                                                          "river"@en .
 
 
-###  http://purl.org/urbanonto/object_type_5f621828-99bb-4747-99d6-6242dcb669fb
+###  https://purl.org/urbanonto/object_type_5f621828-99bb-4747-99d6-6242dcb669fb
 urbanonto:object_type_5f621828-99bb-4747-99d6-6242dcb669fb rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_269> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -1988,7 +1988,7 @@ urbanonto:object_type_5f621828-99bb-4747-99d6-6242dcb669fb rdf:type owl:Class ;
                                                            skos:hiddenLabel "brama miejska"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_606bc22a-6984-4aff-b96c-c20f19408004
+###  https://purl.org/urbanonto/object_type_606bc22a-6984-4aff-b96c-c20f19408004
 urbanonto:object_type_606bc22a-6984-4aff-b96c-c20f19408004 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_126> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2026,7 +2026,7 @@ urbanonto:object_type_606bc22a-6984-4aff-b96c-c20f19408004 rdf:type owl:Class ;
                                                                          "казарменный комплекс"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_6076fcc5-3de4-4034-95e7-b582bb684634
+###  https://purl.org/urbanonto/object_type_6076fcc5-3de4-4034-95e7-b582bb684634
 urbanonto:object_type_6076fcc5-3de4-4034-95e7-b582bb684634 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_245> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2078,14 +2078,14 @@ urbanonto:object_type_6076fcc5-3de4-4034-95e7-b582bb684634 rdf:type owl:Class ;
                                                                          "аббатство"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33
+###  https://purl.org/urbanonto/object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33
 urbanonto:object_type_60a698e6-6a31-4bdd-bf9c-1aaa277d8f33 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_143> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_33> ;
                                                            rdfs:label "plac zabaw"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_632d5c8c-f305-4cbe-996d-ad321c2b09ec
+###  https://purl.org/urbanonto/object_type_632d5c8c-f305-4cbe-996d-ad321c2b09ec
 urbanonto:object_type_632d5c8c-f305-4cbe-996d-ad321c2b09ec rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_32> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_9> ,
@@ -2127,7 +2127,7 @@ urbanonto:object_type_632d5c8c-f305-4cbe-996d-ad321c2b09ec rdf:type owl:Class ;
                                                                             "przeprawa łodziami"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_65810a6e-2526-4cc8-9a2d-c733569c228a
+###  https://purl.org/urbanonto/object_type_65810a6e-2526-4cc8-9a2d-c733569c228a
 urbanonto:object_type_65810a6e-2526-4cc8-9a2d-c733569c228a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_222> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2141,7 +2141,7 @@ urbanonto:object_type_65810a6e-2526-4cc8-9a2d-c733569c228a rdf:type owl:Class ;
                                                            rdfs:seeAlso "#BDOT10k: \"s. 154: Zespół pomieszczeń i urządzeń, służących do przechowywania i obsługi pojazdów komunikacji miejskiej (tramwajów, autobusów) - zajezdnia, lub pojazdó samochodowych służących do transportu towarów - baza transportowa\"; #ActLaw_2013_transport: \"poz. 567, s. 1: baza eksploatacyjna – miejsce wyposażone w odpowiedni sprzęt techniczny i urządzenia techniczne umożliwiające prowadzenie działalności transportowej w sposób zorganizowany i ciągły, w skład której wchodzi co najmniej jeden z następujących elementów: miejsce postojowe, miejsce załadunku, rozładunku lub łączenia ładunków, miejsce konserwacji lub naprawy pojazdów\"; #WikiPL: \"Baza eksploatacyjna – miejsce wyposażone w odpowiedni sprzęt techniczny i urządzenia techniczne umożliwiające prowadzenie działalności transportowej, w skład której wchodzi co najmniej jeden z następujących elementów: miejsce postojowe, miejsce załadunku, rozładunku lub łączenia ładunków, miejsce konserwacji lub naprawy pojazdów\""@pl .
 
 
-###  http://purl.org/urbanonto/object_type_67c791d9-5864-4b3b-89e5-ee80389ab761
+###  https://purl.org/urbanonto/object_type_67c791d9-5864-4b3b-89e5-ee80389ab761
 urbanonto:object_type_67c791d9-5864-4b3b-89e5-ee80389ab761 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_120> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2162,7 +2162,7 @@ urbanonto:object_type_67c791d9-5864-4b3b-89e5-ee80389ab761 rdf:type owl:Class ;
                                                                          "научно-исследовательский институт"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_697a8778-030b-4d2e-9b4c-27041e61661c
+###  https://purl.org/urbanonto/object_type_697a8778-030b-4d2e-9b4c-27041e61661c
 urbanonto:object_type_697a8778-030b-4d2e-9b4c-27041e61661c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_271> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2180,7 +2180,7 @@ urbanonto:object_type_697a8778-030b-4d2e-9b4c-27041e61661c rdf:type owl:Class ;
                                                            skos:hiddenLabel "shrine"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_69b23a38-e994-4b30-bf29-a685aeef3154
+###  https://purl.org/urbanonto/object_type_69b23a38-e994-4b30-bf29-a685aeef3154
 urbanonto:object_type_69b23a38-e994-4b30-bf29-a685aeef3154 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
                                                                            <https://purl.org/bdot10k#object_280> ,
@@ -2220,7 +2220,7 @@ urbanonto:object_type_69b23a38-e994-4b30-bf29-a685aeef3154 rdf:type owl:Class ;
                                                                             "wiata"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_6a76d684-39d1-4d14-92cd-ce80a9ef063a
+###  https://purl.org/urbanonto/object_type_6a76d684-39d1-4d14-92cd-ce80a9ef063a
 urbanonto:object_type_6a76d684-39d1-4d14-92cd-ce80a9ef063a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2253,7 +2253,7 @@ urbanonto:object_type_6a76d684-39d1-4d14-92cd-ce80a9ef063a rdf:type owl:Class ;
                                                                          "Универсальный магазин"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_6d39053a-c3f0-47a3-96d2-2cf7f0a4742d
+###  https://purl.org/urbanonto/object_type_6d39053a-c3f0-47a3-96d2-2cf7f0a4742d
 urbanonto:object_type_6d39053a-c3f0-47a3-96d2-2cf7f0a4742d rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_94> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2274,13 +2274,13 @@ urbanonto:object_type_6d39053a-c3f0-47a3-96d2-2cf7f0a4742d rdf:type owl:Class ;
                                                            rdfs:label "gmina kupiecka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_6e66c5e3-4652-4ccf-a626-492169a1122b
+###  https://purl.org/urbanonto/object_type_6e66c5e3-4652-4ccf-a626-492169a1122b
 urbanonto:object_type_6e66c5e3-4652-4ccf-a626-492169a1122b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_240> ;
                                                            rdfs:label "forteca"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1
+###  https://purl.org/urbanonto/object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1
 urbanonto:object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1 rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2301,7 +2301,7 @@ urbanonto:object_type_704aafb3-2bce-4597-8258-62ba38c9a1a1 rdf:type owl:Class ;
                                                            rdfs:label "pierzeja"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_71b46985-b115-496b-a175-fc55a0ac5175
+###  https://purl.org/urbanonto/object_type_71b46985-b115-496b-a175-fc55a0ac5175
 urbanonto:object_type_71b46985-b115-496b-a175-fc55a0ac5175 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
                                                                            <https://purl.org/bdot10k#object_271> ,
@@ -2328,7 +2328,7 @@ urbanonto:object_type_71b46985-b115-496b-a175-fc55a0ac5175 rdf:type owl:Class ;
                                                                          "придорожный крест"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6
+###  https://purl.org/urbanonto/object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6
 urbanonto:object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2348,7 +2348,7 @@ urbanonto:object_type_74c7a3cf-61fb-43b5-8d9a-5d7a1c4afca6 rdf:type owl:Class ;
                                                                          "mensa carnifiucium"@la .
 
 
-###  http://purl.org/urbanonto/object_type_74eff5a9-f958-4033-a6d0-e4fb63ce33a8
+###  https://purl.org/urbanonto/object_type_74eff5a9-f958-4033-a6d0-e4fb63ce33a8
 urbanonto:object_type_74eff5a9-f958-4033-a6d0-e4fb63ce33a8 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_41> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_11> ,
@@ -2366,7 +2366,7 @@ urbanonto:object_type_74eff5a9-f958-4033-a6d0-e4fb63ce33a8 rdf:type owl:Class ;
                                                            skos:altLabel "kanalizacyjny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_77ce613a-c3b3-4727-8bc1-75df777e5ff4
+###  https://purl.org/urbanonto/object_type_77ce613a-c3b3-4727-8bc1-75df777e5ff4
 urbanonto:object_type_77ce613a-c3b3-4727-8bc1-75df777e5ff4 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_201> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_43> ,
@@ -2386,7 +2386,7 @@ urbanonto:object_type_77ce613a-c3b3-4727-8bc1-75df777e5ff4 rdf:type owl:Class ;
                                                                          "wastewater treatment plant"@en .
 
 
-###  http://purl.org/urbanonto/object_type_7a898e45-2e35-487c-9629-89e6789d5055
+###  https://purl.org/urbanonto/object_type_7a898e45-2e35-487c-9629-89e6789d5055
 urbanonto:object_type_7a898e45-2e35-487c-9629-89e6789d5055 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2412,7 +2412,7 @@ urbanonto:object_type_7a898e45-2e35-487c-9629-89e6789d5055 rdf:type owl:Class ;
                                                            skos:hiddenLabel "znak graniczny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_7aba2cf5-9d79-4e1d-ac7d-46a8aa3ad7fd
+###  https://purl.org/urbanonto/object_type_7aba2cf5-9d79-4e1d-ac7d-46a8aa3ad7fd
 urbanonto:object_type_7aba2cf5-9d79-4e1d-ac7d-46a8aa3ad7fd rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_122> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2436,7 +2436,7 @@ urbanonto:object_type_7aba2cf5-9d79-4e1d-ac7d-46a8aa3ad7fd rdf:type owl:Class ;
                                                                          "Тир (стрельбище)"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_7bd3ee64-e701-48f8-ab7e-f5788cf0163c
+###  https://purl.org/urbanonto/object_type_7bd3ee64-e701-48f8-ab7e-f5788cf0163c
 urbanonto:object_type_7bd3ee64-e701-48f8-ab7e-f5788cf0163c rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_136> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_32> ,
@@ -2468,7 +2468,7 @@ urbanonto:object_type_7bd3ee64-e701-48f8-ab7e-f5788cf0163c rdf:type owl:Class ;
                                                                          "шлюз"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_7d38c51a-72e0-43b0-a380-222a72f32d49
+###  https://purl.org/urbanonto/object_type_7d38c51a-72e0-43b0-a380-222a72f32d49
 urbanonto:object_type_7d38c51a-72e0-43b0-a380-222a72f32d49 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_45> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2505,7 +2505,7 @@ urbanonto:object_type_7d38c51a-72e0-43b0-a380-222a72f32d49 rdf:type owl:Class ;
                                                                          "станция подземки"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_7da67352-7841-46a2-9be0-663de41b9198
+###  https://purl.org/urbanonto/object_type_7da67352-7841-46a2-9be0-663de41b9198
 urbanonto:object_type_7da67352-7841-46a2-9be0-663de41b9198 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2532,7 +2532,7 @@ urbanonto:object_type_7da67352-7841-46a2-9be0-663de41b9198 rdf:type owl:Class ;
                                                                          "калитка"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_7dfd403b-e0e1-4ea2-bb4a-3bb91c04ac57
+###  https://purl.org/urbanonto/object_type_7dfd403b-e0e1-4ea2-bb4a-3bb91c04ac57
 urbanonto:object_type_7dfd403b-e0e1-4ea2-bb4a-3bb91c04ac57 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_49> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2554,7 +2554,7 @@ urbanonto:object_type_7dfd403b-e0e1-4ea2-bb4a-3bb91c04ac57 rdf:type owl:Class ;
                                                            skos:hiddenLabel "osada trędowatych"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_7e689c7a-2810-4911-916f-b57dfb26ad53
+###  https://purl.org/urbanonto/object_type_7e689c7a-2810-4911-916f-b57dfb26ad53
 urbanonto:object_type_7e689c7a-2810-4911-916f-b57dfb26ad53 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2582,7 +2582,7 @@ urbanonto:object_type_7e689c7a-2810-4911-916f-b57dfb26ad53 rdf:type owl:Class ;
                                                                          "публичный дом"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4
+###  https://purl.org/urbanonto/object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4
 urbanonto:object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2615,13 +2615,13 @@ urbanonto:object_type_7f9933d6-facf-498a-8cab-b21a4eb4aae4 rdf:type owl:Class ;
                                                                          "городские ворота"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_81d08218-f988-46ba-a0b1-924cbb26abb5
+###  https://purl.org/urbanonto/object_type_81d08218-f988-46ba-a0b1-924cbb26abb5
 urbanonto:object_type_81d08218-f988-46ba-a0b1-924cbb26abb5 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ;
                                                            rdfs:label "furta"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_824432d0-3ccc-46df-81ec-7b54d0509262
+###  https://purl.org/urbanonto/object_type_824432d0-3ccc-46df-81ec-7b54d0509262
 urbanonto:object_type_824432d0-3ccc-46df-81ec-7b54d0509262 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2659,7 +2659,7 @@ urbanonto:object_type_824432d0-3ccc-46df-81ec-7b54d0509262 rdf:type owl:Class ;
                                                            skos:hiddenLabel "kombinat"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_838abf8a-3981-4eab-86f3-42ac9b5600b2
+###  https://purl.org/urbanonto/object_type_838abf8a-3981-4eab-86f3-42ac9b5600b2
 urbanonto:object_type_838abf8a-3981-4eab-86f3-42ac9b5600b2 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_121> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2691,7 +2691,7 @@ urbanonto:object_type_838abf8a-3981-4eab-86f3-42ac9b5600b2 rdf:type owl:Class ;
                                                            skos:hiddenLabel "ochronka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_83ae40c8-4d52-40e1-a11e-82a1a94ac610
+###  https://purl.org/urbanonto/object_type_83ae40c8-4d52-40e1-a11e-82a1a94ac610
 urbanonto:object_type_83ae40c8-4d52-40e1-a11e-82a1a94ac610 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_117> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2754,7 +2754,7 @@ urbanonto:object_type_83ae40c8-4d52-40e1-a11e-82a1a94ac610 rdf:type owl:Class ;
                                                                             "wiata"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_884f8bff-26cc-47df-9361-d27da38cd102
+###  https://purl.org/urbanonto/object_type_884f8bff-26cc-47df-9361-d27da38cd102
 urbanonto:object_type_884f8bff-26cc-47df-9361-d27da38cd102 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2807,7 +2807,7 @@ urbanonto:object_type_884f8bff-26cc-47df-9361-d27da38cd102 rdf:type owl:Class ;
                                                                             "wikariatka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f
+###  https://purl.org/urbanonto/object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f
 urbanonto:object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_52> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2836,13 +2836,13 @@ urbanonto:object_type_8862f8fa-fe60-4649-bcf8-45c98fdd9e1f rdf:type owl:Class ;
                                                            skos:hiddenLabel "kwartał zabudowy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0
+###  https://purl.org/urbanonto/object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0
 urbanonto:object_type_88ddadf7-708d-4ce2-87a2-7692fb4401f0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_8> ;
                                                            rdfs:label "założenie pałacowe"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_897b9a9c-459f-4199-911e-2f25d56c9514
+###  https://purl.org/urbanonto/object_type_897b9a9c-459f-4199-911e-2f25d56c9514
 urbanonto:object_type_897b9a9c-459f-4199-911e-2f25d56c9514 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2875,13 +2875,13 @@ urbanonto:object_type_897b9a9c-459f-4199-911e-2f25d56c9514 rdf:type owl:Class ;
                                                                          "выставочный павильон"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_8a287e70-01a2-454d-8e28-85f356330169
+###  https://purl.org/urbanonto/object_type_8a287e70-01a2-454d-8e28-85f356330169
 urbanonto:object_type_8a287e70-01a2-454d-8e28-85f356330169 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_48> ;
                                                            rdfs:label "szkoła-kompleks"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8a7aec41-061d-4dbe-96d4-ba85a0d0c4e4
+###  https://purl.org/urbanonto/object_type_8a7aec41-061d-4dbe-96d4-ba85a0d0c4e4
 urbanonto:object_type_8a7aec41-061d-4dbe-96d4-ba85a0d0c4e4 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_173> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_37> ,
@@ -2906,7 +2906,7 @@ urbanonto:object_type_8a7aec41-061d-4dbe-96d4-ba85a0d0c4e4 rdf:type owl:Class ;
                                                                          "дамба"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_8b3ac720-b349-4d3b-92c4-48527594d39b
+###  https://purl.org/urbanonto/object_type_8b3ac720-b349-4d3b-92c4-48527594d39b
 urbanonto:object_type_8b3ac720-b349-4d3b-92c4-48527594d39b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2941,7 +2941,7 @@ urbanonto:object_type_8b3ac720-b349-4d3b-92c4-48527594d39b rdf:type owl:Class ;
                                                                             "szpital przednowożytny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8b69df44-0b5c-4287-be30-8b7e1c8c8918
+###  https://purl.org/urbanonto/object_type_8b69df44-0b5c-4287-be30-8b7e1c8c8918
 urbanonto:object_type_8b69df44-0b5c-4287-be30-8b7e1c8c8918 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2957,7 +2957,7 @@ urbanonto:object_type_8b69df44-0b5c-4287-be30-8b7e1c8c8918 rdf:type owl:Class ;
                                                                          "footbridge"@en .
 
 
-###  http://purl.org/urbanonto/object_type_8bff2978-7a4b-49d3-b94d-a393ad30f914
+###  https://purl.org/urbanonto/object_type_8bff2978-7a4b-49d3-b94d-a393ad30f914
 urbanonto:object_type_8bff2978-7a4b-49d3-b94d-a393ad30f914 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_123> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -2971,7 +2971,7 @@ urbanonto:object_type_8bff2978-7a4b-49d3-b94d-a393ad30f914 rdf:type owl:Class ;
                                                            rdfs:seeAlso "#LawAct_2002_buildings: \"Dział I Przepisy ogólne, §3 Objaśnienie pojęć. Ilekroć mowa o [...] pkt 8 budynku gospodarczym - należy przez to rozumieć budynek przeznaczony do niezawodowego wykonywania prac warsztatowych oraz do przechowywania materiałów, narzędzi, sprzętu i płodów rolnych służących mieszkańcom budynku mieszkalnego, budynku zamieszkania zbiorowego, budynku rekreacji indywidualnej, a także ich otoczenia, a w zabudowie zagrodowej przeznaczony również do przechowywania środków produkcji rolnej i sprzętu oraz płodów rolnych\""@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d
+###  https://purl.org/urbanonto/object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d
 urbanonto:object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_30> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_9> ,
@@ -2992,7 +2992,7 @@ urbanonto:object_type_8c55d74c-fac9-4cd5-bb7f-bb01064e9a4d rdf:type owl:Class ;
                                                                          "ford"@en .
 
 
-###  http://purl.org/urbanonto/object_type_8ca9ab1b-c79c-4bb9-b500-4da2bf350312
+###  https://purl.org/urbanonto/object_type_8ca9ab1b-c79c-4bb9-b500-4da2bf350312
 urbanonto:object_type_8ca9ab1b-c79c-4bb9-b500-4da2bf350312 rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E24_Physical_Man-Made_Thing ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3008,7 +3008,7 @@ urbanonto:object_type_8ca9ab1b-c79c-4bb9-b500-4da2bf350312 rdf:type owl:Class ;
                                                                          "hoard"@en .
 
 
-###  http://purl.org/urbanonto/object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b
+###  https://purl.org/urbanonto/object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b
 urbanonto:object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_277> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ;
@@ -3028,7 +3028,7 @@ urbanonto:object_type_8d82a136-413f-453c-a096-2b6a2ffaa32b rdf:type owl:Class ;
                                                            skos:hiddenLabel "gruzowisko"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea
+###  https://purl.org/urbanonto/object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea
 urbanonto:object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3081,7 +3081,7 @@ urbanonto:object_type_8ee8e450-074b-4c22-a215-77cc9fa4b6ea rdf:type owl:Class ;
                                                                             "stancja"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_8f04af49-8661-4738-9aa1-452f068525db
+###  https://purl.org/urbanonto/object_type_8f04af49-8661-4738-9aa1-452f068525db
 urbanonto:object_type_8f04af49-8661-4738-9aa1-452f068525db rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3124,7 +3124,7 @@ urbanonto:object_type_8f04af49-8661-4738-9aa1-452f068525db rdf:type owl:Class ;
                                                                             "stancja"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_92391a0e-941b-42e1-a499-ce45065592c1
+###  https://purl.org/urbanonto/object_type_92391a0e-941b-42e1-a499-ce45065592c1
 urbanonto:object_type_92391a0e-941b-42e1-a499-ce45065592c1 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_126> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3167,7 +3167,7 @@ urbanonto:object_type_92391a0e-941b-42e1-a499-ce45065592c1 rdf:type owl:Class ;
                                                                             "wieża zegarowa"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_93c8cca0-8c87-414b-839a-992f2a538da1
+###  https://purl.org/urbanonto/object_type_93c8cca0-8c87-414b-839a-992f2a538da1
 urbanonto:object_type_93c8cca0-8c87-414b-839a-992f2a538da1 rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3187,7 +3187,7 @@ urbanonto:object_type_93c8cca0-8c87-414b-839a-992f2a538da1 rdf:type owl:Class ;
                                                                          "square"@en .
 
 
-###  http://purl.org/urbanonto/object_type_93d03b33-4643-46c0-916c-e5b9af97e7ae
+###  https://purl.org/urbanonto/object_type_93d03b33-4643-46c0-916c-e5b9af97e7ae
 urbanonto:object_type_93d03b33-4643-46c0-916c-e5b9af97e7ae rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3213,7 +3213,7 @@ urbanonto:object_type_93d03b33-4643-46c0-916c-e5b9af97e7ae rdf:type owl:Class ;
                                                                             "kościółek"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_941cfb75-1e17-47dc-8770-b83d7b6d93d6
+###  https://purl.org/urbanonto/object_type_941cfb75-1e17-47dc-8770-b83d7b6d93d6
 urbanonto:object_type_941cfb75-1e17-47dc-8770-b83d7b6d93d6 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_158> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_34> ,
@@ -3251,7 +3251,7 @@ urbanonto:object_type_941cfb75-1e17-47dc-8770-b83d7b6d93d6 rdf:type owl:Class ;
                                                            skos:hiddenLabel "stacja pomp"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_94baa37c-07ed-4159-8e62-0bd69515a313
+###  https://purl.org/urbanonto/object_type_94baa37c-07ed-4159-8e62-0bd69515a313
 urbanonto:object_type_94baa37c-07ed-4159-8e62-0bd69515a313 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3291,7 +3291,7 @@ urbanonto:object_type_94baa37c-07ed-4159-8e62-0bd69515a313 rdf:type owl:Class ;
                                                                             "rezydencja królewska"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_963423b9-952e-42ea-9937-8399bec3d890
+###  https://purl.org/urbanonto/object_type_963423b9-952e-42ea-9937-8399bec3d890
 urbanonto:object_type_963423b9-952e-42ea-9937-8399bec3d890 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3327,7 +3327,7 @@ urbanonto:object_type_963423b9-952e-42ea-9937-8399bec3d890 rdf:type owl:Class ;
                                                                             "kinoteatr"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_99c5ed94-8a14-485c-8b18-542786dd08b1
+###  https://purl.org/urbanonto/object_type_99c5ed94-8a14-485c-8b18-542786dd08b1
 urbanonto:object_type_99c5ed94-8a14-485c-8b18-542786dd08b1 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#class_2> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_1> ,
@@ -3353,7 +3353,7 @@ urbanonto:object_type_99c5ed94-8a14-485c-8b18-542786dd08b1 rdf:type owl:Class ;
                                                                          "канал"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_99f0f5af-ae0e-4b88-a3c9-6f51d1106dc4
+###  https://purl.org/urbanonto/object_type_99f0f5af-ae0e-4b88-a3c9-6f51d1106dc4
 urbanonto:object_type_99f0f5af-ae0e-4b88-a3c9-6f51d1106dc4 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_114> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3375,7 +3375,7 @@ urbanonto:object_type_99f0f5af-ae0e-4b88-a3c9-6f51d1106dc4 rdf:type owl:Class ;
                                                                          "автобусный парк"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_9a254e82-8067-4730-8dfd-cdecab5e86a3
+###  https://purl.org/urbanonto/object_type_9a254e82-8067-4730-8dfd-cdecab5e86a3
 urbanonto:object_type_9a254e82-8067-4730-8dfd-cdecab5e86a3 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_286> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_57> ,
@@ -3400,7 +3400,7 @@ urbanonto:object_type_9a254e82-8067-4730-8dfd-cdecab5e86a3 rdf:type owl:Class ;
                                                                          "Плавни"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_9d678687-6418-46af-9851-e69437bad487
+###  https://purl.org/urbanonto/object_type_9d678687-6418-46af-9851-e69437bad487
 urbanonto:object_type_9d678687-6418-46af-9851-e69437bad487 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_243> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_50> ,
@@ -3444,7 +3444,7 @@ urbanonto:object_type_9d678687-6418-46af-9851-e69437bad487 rdf:type owl:Class ;
                                                            skos:hiddenLabel "die Burg"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_9fec63be-9676-4208-94cb-b99f0010b365
+###  https://purl.org/urbanonto/object_type_9fec63be-9676-4208-94cb-b99f0010b365
 urbanonto:object_type_9fec63be-9676-4208-94cb-b99f0010b365 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_132> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
@@ -3461,7 +3461,7 @@ urbanonto:object_type_9fec63be-9676-4208-94cb-b99f0010b365 rdf:type owl:Class ;
                                                                          "tunnel"@en .
 
 
-###  http://purl.org/urbanonto/object_type_a0c1f8ff-4e16-4bd2-8816-3e5e7d5f9cb4
+###  https://purl.org/urbanonto/object_type_a0c1f8ff-4e16-4bd2-8816-3e5e7d5f9cb4
 urbanonto:object_type_a0c1f8ff-4e16-4bd2-8816-3e5e7d5f9cb4 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3488,7 +3488,7 @@ urbanonto:object_type_a0c1f8ff-4e16-4bd2-8816-3e5e7d5f9cb4 rdf:type owl:Class ;
                                                            skos:hiddenLabel "atelier"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a1b65f34-6349-4f88-8f33-2a0441e46203
+###  https://purl.org/urbanonto/object_type_a1b65f34-6349-4f88-8f33-2a0441e46203
 urbanonto:object_type_a1b65f34-6349-4f88-8f33-2a0441e46203 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_105> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3518,7 +3518,7 @@ urbanonto:object_type_a1b65f34-6349-4f88-8f33-2a0441e46203 rdf:type owl:Class ;
                                                                             "osada"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a2025e3d-976a-4c3d-95e3-e74184efd88f
+###  https://purl.org/urbanonto/object_type_a2025e3d-976a-4c3d-95e3-e74184efd88f
 urbanonto:object_type_a2025e3d-976a-4c3d-95e3-e74184efd88f rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3563,7 +3563,7 @@ urbanonto:object_type_a2025e3d-976a-4c3d-95e3-e74184efd88f rdf:type owl:Class ;
                                                                          "мечеть"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_a2e81396-a1cd-47dc-97d0-6634e02ba079
+###  https://purl.org/urbanonto/object_type_a2e81396-a1cd-47dc-97d0-6634e02ba079
 urbanonto:object_type_a2e81396-a1cd-47dc-97d0-6634e02ba079 rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3602,7 +3602,7 @@ urbanonto:object_type_a2e81396-a1cd-47dc-97d0-6634e02ba079 rdf:type owl:Class ;
                                                                             "szkoła"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a333898b-73f1-4ba7-8078-e34e35019f60
+###  https://purl.org/urbanonto/object_type_a333898b-73f1-4ba7-8078-e34e35019f60
 urbanonto:object_type_a333898b-73f1-4ba7-8078-e34e35019f60 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_31> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_9> ,
@@ -3630,19 +3630,19 @@ urbanonto:object_type_a333898b-73f1-4ba7-8078-e34e35019f60 rdf:type owl:Class ;
                                                                             "przeprawa promowa"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265
+###  https://purl.org/urbanonto/object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265
 urbanonto:object_type_a6144c18-5df4-4be9-9b8e-4e2f55159265 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_2> ;
                                                            rdfs:label "sieć kolejowa"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a8dc449a-b349-4738-9c02-d6676469550b
+###  https://purl.org/urbanonto/object_type_a8dc449a-b349-4738-9c02-d6676469550b
 urbanonto:object_type_a8dc449a-b349-4738-9c02-d6676469550b rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                            rdfs:label "teren zabudowany"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e
+###  https://purl.org/urbanonto/object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e
 urbanonto:object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_32> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3673,7 +3673,7 @@ urbanonto:object_type_a9d9bb77-753f-44f2-a5d8-51a50eb3300e rdf:type owl:Class ;
                                                                          "запруда"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_ab4e294f-7a2d-43be-8310-d3eca632042a
+###  https://purl.org/urbanonto/object_type_ab4e294f-7a2d-43be-8310-d3eca632042a
 urbanonto:object_type_ab4e294f-7a2d-43be-8310-d3eca632042a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_280> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3697,7 +3697,7 @@ urbanonto:object_type_ab4e294f-7a2d-43be-8310-d3eca632042a rdf:type owl:Class ;
                                                            skos:hiddenLabel "altana"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ab6e4665-8e6e-4e88-8198-413da99e6341
+###  https://purl.org/urbanonto/object_type_ab6e4665-8e6e-4e88-8198-413da99e6341
 urbanonto:object_type_ab6e4665-8e6e-4e88-8198-413da99e6341 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3720,7 +3720,7 @@ urbanonto:object_type_ab6e4665-8e6e-4e88-8198-413da99e6341 rdf:type owl:Class ;
                                                                          "palatium"@la .
 
 
-###  http://purl.org/urbanonto/object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9
+###  https://purl.org/urbanonto/object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9
 urbanonto:object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_52> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3745,7 +3745,7 @@ urbanonto:object_type_afb82a6a-5a23-42a7-a32c-5a0fc425daa9 rdf:type owl:Class ;
                                                            rdfs:label "zakład karny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_aff2095e-7ba5-4ce5-be60-1e408f4b80d7
+###  https://purl.org/urbanonto/object_type_aff2095e-7ba5-4ce5-be60-1e408f4b80d7
 urbanonto:object_type_aff2095e-7ba5-4ce5-be60-1e408f4b80d7 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_244> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_51> ,
@@ -3784,7 +3784,7 @@ urbanonto:object_type_aff2095e-7ba5-4ce5-be60-1e408f4b80d7 rdf:type owl:Class ;
                                                                             "nekropolia"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b08cee61-c162-4cb8-98fd-03a0508ab11e
+###  https://purl.org/urbanonto/object_type_b08cee61-c162-4cb8-98fd-03a0508ab11e
 urbanonto:object_type_b08cee61-c162-4cb8-98fd-03a0508ab11e rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_7> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3835,7 +3835,7 @@ urbanonto:object_type_b08cee61-c162-4cb8-98fd-03a0508ab11e rdf:type owl:Class ;
                                                            skos:hiddenLabel "stacja kolejowa"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3
+###  https://purl.org/urbanonto/object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3
 urbanonto:object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_276> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_55> ,
@@ -3871,7 +3871,7 @@ urbanonto:object_type_b1c02f41-b3f1-40e9-9793-c730b56cf7f3 rdf:type owl:Class ;
                                                                          "пирс"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_b1e40e54-a8ec-446d-9385-7b3f30e7d569
+###  https://purl.org/urbanonto/object_type_b1e40e54-a8ec-446d-9385-7b3f30e7d569
 urbanonto:object_type_b1e40e54-a8ec-446d-9385-7b3f30e7d569 rdf:type owl:Class ;
                                                            rdfs:subClassOf urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3902,7 +3902,7 @@ urbanonto:object_type_b1e40e54-a8ec-446d-9385-7b3f30e7d569 rdf:type owl:Class ;
                                                                             "szkoła-kompleks"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b25af316-d50a-4761-832c-6d967f745b9e
+###  https://purl.org/urbanonto/object_type_b25af316-d50a-4761-832c-6d967f745b9e
 urbanonto:object_type_b25af316-d50a-4761-832c-6d967f745b9e rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_119> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3933,7 +3933,7 @@ urbanonto:object_type_b25af316-d50a-4761-832c-6d967f745b9e rdf:type owl:Class ;
                                                            skos:hiddenLabel "muzeum"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b2c135a0-216c-4270-84a9-98552c4398c0
+###  https://purl.org/urbanonto/object_type_b2c135a0-216c-4270-84a9-98552c4398c0
 urbanonto:object_type_b2c135a0-216c-4270-84a9-98552c4398c0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_9> ;
                                                            dc:creator ontohgis:person_2 ;
@@ -3942,7 +3942,7 @@ urbanonto:object_type_b2c135a0-216c-4270-84a9-98552c4398c0 rdf:type owl:Class ;
                                                            rdfs:label "obiekt o znaczeniu historycznym"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b4293a32-e17d-4159-bbe7-117f71ab946c
+###  https://purl.org/urbanonto/object_type_b4293a32-e17d-4159-bbe7-117f71ab946c
 urbanonto:object_type_b4293a32-e17d-4159-bbe7-117f71ab946c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_37> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -3971,13 +3971,13 @@ urbanonto:object_type_b4293a32-e17d-4159-bbe7-117f71ab946c rdf:type owl:Class ;
                                                                          "ров"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b
+###  https://purl.org/urbanonto/object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b
 urbanonto:object_type_b43c3dec-2187-4ca3-9b5f-85accf59ac5b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#category_8> ;
                                                            rdfs:label "ogród"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0
+###  https://purl.org/urbanonto/object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0
 urbanonto:object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_119> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4010,7 +4010,7 @@ urbanonto:object_type_b4a41d80-d378-4adb-becb-8a7fab1d46b0 rdf:type owl:Class ;
                                                            skos:hiddenLabel "księgarnia"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c
+###  https://purl.org/urbanonto/object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c
 urbanonto:object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_242> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_50> ,
@@ -4039,7 +4039,7 @@ urbanonto:object_type_b5f8193a-7aa4-450b-bdaf-6a28b8c99b6c rdf:type owl:Class ;
                                                                          "дворцовый комплекс"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_b8354224-3b8c-41cb-9b2b-855bea6a0e5c
+###  https://purl.org/urbanonto/object_type_b8354224-3b8c-41cb-9b2b-855bea6a0e5c
 urbanonto:object_type_b8354224-3b8c-41cb-9b2b-855bea6a0e5c rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_41> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4065,7 +4065,7 @@ urbanonto:object_type_b8354224-3b8c-41cb-9b2b-855bea6a0e5c rdf:type owl:Class ;
                                                                          "позорный столб"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_b86f5c8e-6c96-45cc-9e16-0ad58bc97a37
+###  https://purl.org/urbanonto/object_type_b86f5c8e-6c96-45cc-9e16-0ad58bc97a37
 urbanonto:object_type_b86f5c8e-6c96-45cc-9e16-0ad58bc97a37 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_198> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_43> ,
@@ -4095,7 +4095,7 @@ urbanonto:object_type_b86f5c8e-6c96-45cc-9e16-0ad58bc97a37 rdf:type owl:Class ;
                                                                          "Ферма"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_b9b7e14a-8aa7-4b36-8622-e3928471bda3
+###  https://purl.org/urbanonto/object_type_b9b7e14a-8aa7-4b36-8622-e3928471bda3
 urbanonto:object_type_b9b7e14a-8aa7-4b36-8622-e3928471bda3 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_119> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4146,7 +4146,7 @@ urbanonto:object_type_b9b7e14a-8aa7-4b36-8622-e3928471bda3 rdf:type owl:Class ;
                                                                             "muzeum"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca
+###  https://purl.org/urbanonto/object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca
 urbanonto:object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_137> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_32> ,
@@ -4176,7 +4176,7 @@ urbanonto:object_type_ba7c2dc2-0855-4c45-819d-3da8922ca7ca rdf:type owl:Class ;
                                                            skos:hiddenLabel "tama"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6
+###  https://purl.org/urbanonto/object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6
 urbanonto:object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_94> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4193,7 +4193,7 @@ urbanonto:object_type_bbab1b1a-ec1a-405d-a0a9-f540e368a7a6 rdf:type owl:Class ;
                                                            rdfs:label "kwartał podatkowy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_bcb1ecf1-8ebe-49ec-8a98-1b7e34a10e11
+###  https://purl.org/urbanonto/object_type_bcb1ecf1-8ebe-49ec-8a98-1b7e34a10e11
 urbanonto:object_type_bcb1ecf1-8ebe-49ec-8a98-1b7e34a10e11 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_5> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4236,7 +4236,7 @@ urbanonto:object_type_bcb1ecf1-8ebe-49ec-8a98-1b7e34a10e11 rdf:type owl:Class ;
                                                                             "ścieżka"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_bdbb9fe6-963f-4b98-9e94-73be11c8bfdd
+###  https://purl.org/urbanonto/object_type_bdbb9fe6-963f-4b98-9e94-73be11c8bfdd
 urbanonto:object_type_bdbb9fe6-963f-4b98-9e94-73be11c8bfdd rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_46> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4279,7 +4279,7 @@ urbanonto:object_type_bdbb9fe6-963f-4b98-9e94-73be11c8bfdd rdf:type owl:Class ;
                                                                          "дамбовое водохранилище"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_bf299d66-61ed-4b3b-9340-811737a1dbf6
+###  https://purl.org/urbanonto/object_type_bf299d66-61ed-4b3b-9340-811737a1dbf6
 urbanonto:object_type_bf299d66-61ed-4b3b-9340-811737a1dbf6 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_220> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_45> ,
@@ -4310,7 +4310,7 @@ urbanonto:object_type_bf299d66-61ed-4b3b-9340-811737a1dbf6 rdf:type owl:Class ;
                                                                          "автомобильная заправочная станция"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_c11cb20d-1a61-4312-a780-c45fa09951a0
+###  https://purl.org/urbanonto/object_type_c11cb20d-1a61-4312-a780-c45fa09951a0
 urbanonto:object_type_c11cb20d-1a61-4312-a780-c45fa09951a0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4344,7 +4344,7 @@ urbanonto:object_type_c11cb20d-1a61-4312-a780-c45fa09951a0 rdf:type owl:Class ;
                                                                             "konsulat"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_c14f0fef-4ea1-4713-865e-9b1d99c5a6de
+###  https://purl.org/urbanonto/object_type_c14f0fef-4ea1-4713-865e-9b1d99c5a6de
 urbanonto:object_type_c14f0fef-4ea1-4713-865e-9b1d99c5a6de rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_122> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4375,7 +4375,7 @@ urbanonto:object_type_c14f0fef-4ea1-4713-865e-9b1d99c5a6de rdf:type owl:Class ;
                                                                             "sports venue"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_c33318ac-c375-4821-a0c1-af7a63cd8ffb
+###  https://purl.org/urbanonto/object_type_c33318ac-c375-4821-a0c1-af7a63cd8ffb
 urbanonto:object_type_c33318ac-c375-4821-a0c1-af7a63cd8ffb rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4406,7 +4406,7 @@ urbanonto:object_type_c33318ac-c375-4821-a0c1-af7a63cd8ffb rdf:type owl:Class ;
                                                                             "targ"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_c792cd5f-83ca-4582-b0e3-10fdffcf95ab
+###  https://purl.org/urbanonto/object_type_c792cd5f-83ca-4582-b0e3-10fdffcf95ab
 urbanonto:object_type_c792cd5f-83ca-4582-b0e3-10fdffcf95ab rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4427,7 +4427,7 @@ urbanonto:object_type_c792cd5f-83ca-4582-b0e3-10fdffcf95ab rdf:type owl:Class ;
                                                                          "molendinum"@la .
 
 
-###  http://purl.org/urbanonto/object_type_c95a340c-2e28-4ca9-8f13-5349a1b4c46b
+###  https://purl.org/urbanonto/object_type_c95a340c-2e28-4ca9-8f13-5349a1b4c46b
 urbanonto:object_type_c95a340c-2e28-4ca9-8f13-5349a1b4c46b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4458,13 +4458,13 @@ urbanonto:object_type_c95a340c-2e28-4ca9-8f13-5349a1b4c46b rdf:type owl:Class ;
                                                                             "opactwo"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_cace123e-7364-43b7-b756-eebe60ac4c0f
+###  https://purl.org/urbanonto/object_type_cace123e-7364-43b7-b756-eebe60ac4c0f
 urbanonto:object_type_cace123e-7364-43b7-b756-eebe60ac4c0f rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                            rdfs:label "parcela"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_cb053831-abf1-4007-b84c-a3bb6d807392
+###  https://purl.org/urbanonto/object_type_cb053831-abf1-4007-b84c-a3bb6d807392
 urbanonto:object_type_cb053831-abf1-4007-b84c-a3bb6d807392 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4507,7 +4507,7 @@ urbanonto:object_type_cb053831-abf1-4007-b84c-a3bb6d807392 rdf:type owl:Class ;
                                                                          "синагога"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_cc2c53be-6de4-4094-ada0-b64ef0ae5290
+###  https://purl.org/urbanonto/object_type_cc2c53be-6de4-4094-ada0-b64ef0ae5290
 urbanonto:object_type_cc2c53be-6de4-4094-ada0-b64ef0ae5290 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_120> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4531,13 +4531,13 @@ urbanonto:object_type_cc2c53be-6de4-4094-ada0-b64ef0ae5290 rdf:type owl:Class ;
                                                                          "обсерватория"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_cdc73205-dd22-4341-a13a-b358492ff9ce
+###  https://purl.org/urbanonto/object_type_cdc73205-dd22-4341-a13a-b358492ff9ce
 urbanonto:object_type_cdc73205-dd22-4341-a13a-b358492ff9ce rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_39> ;
                                                            rdfs:label "dok"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ce2166ef-bf8f-48f3-953a-cd110d8fb7ce
+###  https://purl.org/urbanonto/object_type_ce2166ef-bf8f-48f3-953a-cd110d8fb7ce
 urbanonto:object_type_ce2166ef-bf8f-48f3-953a-cd110d8fb7ce rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_45> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4560,7 +4560,7 @@ urbanonto:object_type_ce2166ef-bf8f-48f3-953a-cd110d8fb7ce rdf:type owl:Class ;
                                                                          "парковка"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_cf52d40b-be95-4124-8e06-296e97cf499e
+###  https://purl.org/urbanonto/object_type_cf52d40b-be95-4124-8e06-296e97cf499e
 urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_120> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4590,7 +4590,7 @@ urbanonto:object_type_cf52d40b-be95-4124-8e06-296e97cf499e rdf:type owl:Class ;
                                                                             "uniwersytet"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d0008f3a-5765-4541-a619-636f66883974
+###  https://purl.org/urbanonto/object_type_d0008f3a-5765-4541-a619-636f66883974
 urbanonto:object_type_d0008f3a-5765-4541-a619-636f66883974 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_235> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4637,7 +4637,7 @@ urbanonto:object_type_d0008f3a-5765-4541-a619-636f66883974 rdf:type owl:Class ;
                                                                             "szkoła"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d0a27d3e-2799-4636-8124-fb376f29b7a7
+###  https://purl.org/urbanonto/object_type_d0a27d3e-2799-4636-8124-fb376f29b7a7
 urbanonto:object_type_d0a27d3e-2799-4636-8124-fb376f29b7a7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_49> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4656,7 +4656,7 @@ urbanonto:object_type_d0a27d3e-2799-4636-8124-fb376f29b7a7 rdf:type owl:Class ;
                                                                          "больничный комплекс"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_d0b5eb87-17c1-45ef-9bcd-b39adb85cba0
+###  https://purl.org/urbanonto/object_type_d0b5eb87-17c1-45ef-9bcd-b39adb85cba0
 urbanonto:object_type_d0b5eb87-17c1-45ef-9bcd-b39adb85cba0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_121> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4683,7 +4683,7 @@ urbanonto:object_type_d0b5eb87-17c1-45ef-9bcd-b39adb85cba0 rdf:type owl:Class ;
                                                                             "zespół szpitalny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d2abb593-b436-4f8e-963d-333e470aad7c
+###  https://purl.org/urbanonto/object_type_d2abb593-b436-4f8e-963d-333e470aad7c
 urbanonto:object_type_d2abb593-b436-4f8e-963d-333e470aad7c rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_40> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_11> ,
@@ -4710,7 +4710,7 @@ urbanonto:object_type_d2abb593-b436-4f8e-963d-333e470aad7c rdf:type owl:Class ;
                                                                          "gazowy"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d2b7a392-1cab-49e6-a022-2297d55c23bb
+###  https://purl.org/urbanonto/object_type_d2b7a392-1cab-49e6-a022-2297d55c23bb
 urbanonto:object_type_d2b7a392-1cab-49e6-a022-2297d55c23bb rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_129> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
@@ -4727,7 +4727,7 @@ urbanonto:object_type_d2b7a392-1cab-49e6-a022-2297d55c23bb rdf:type owl:Class ;
                                                                          "pons"@la .
 
 
-###  http://purl.org/urbanonto/object_type_d2dd4918-bb62-4dfc-9a4c-c7054718a419
+###  https://purl.org/urbanonto/object_type_d2dd4918-bb62-4dfc-9a4c-c7054718a419
 urbanonto:object_type_d2dd4918-bb62-4dfc-9a4c-c7054718a419 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_52> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4755,7 +4755,7 @@ urbanonto:object_type_d2dd4918-bb62-4dfc-9a4c-c7054718a419 rdf:type owl:Class ;
                                                                          "места казней"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_d61883a4-c2f9-4b56-b243-b62de3abef82
+###  https://purl.org/urbanonto/object_type_d61883a4-c2f9-4b56-b243-b62de3abef82
 urbanonto:object_type_d61883a4-c2f9-4b56-b243-b62de3abef82 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_110> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4780,7 +4780,7 @@ urbanonto:object_type_d61883a4-c2f9-4b56-b243-b62de3abef82 rdf:type owl:Class ;
                                                                          "Пансионат"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078
+###  https://purl.org/urbanonto/object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078
 urbanonto:object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4806,7 +4806,7 @@ urbanonto:object_type_d67cf313-5537-45e2-ae74-7b4ba44e3078 rdf:type owl:Class ;
                                                            skos:hiddenLabel "zamek"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d871b6fe-5868-42e7-aa78-e07a766a5044
+###  https://purl.org/urbanonto/object_type_d871b6fe-5868-42e7-aa78-e07a766a5044
 urbanonto:object_type_d871b6fe-5868-42e7-aa78-e07a766a5044 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4845,7 +4845,7 @@ urbanonto:object_type_d871b6fe-5868-42e7-aa78-e07a766a5044 rdf:type owl:Class ;
                                                                             "szpital przednowożytny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc
+###  https://purl.org/urbanonto/object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc
 urbanonto:object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_94> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4870,7 +4870,7 @@ urbanonto:object_type_d873fdcf-acfb-4c52-9d84-e8fc55b0dfbc rdf:type owl:Class ;
                                                            rdfs:label "garbary"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_d91808d7-cbc7-4575-848c-15a876b9fc95
+###  https://purl.org/urbanonto/object_type_d91808d7-cbc7-4575-848c-15a876b9fc95
 urbanonto:object_type_d91808d7-cbc7-4575-848c-15a876b9fc95 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_114> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4891,7 +4891,7 @@ urbanonto:object_type_d91808d7-cbc7-4575-848c-15a876b9fc95 rdf:type owl:Class ;
                                                                          "tram shed"@en .
 
 
-###  http://purl.org/urbanonto/object_type_d9ebb9bd-da35-41e7-8bd6-eebf4ed49e02
+###  https://purl.org/urbanonto/object_type_d9ebb9bd-da35-41e7-8bd6-eebf4ed49e02
 urbanonto:object_type_d9ebb9bd-da35-41e7-8bd6-eebf4ed49e02 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_38> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4917,7 +4917,7 @@ urbanonto:object_type_d9ebb9bd-da35-41e7-8bd6-eebf4ed49e02 rdf:type owl:Class ;
                                                                          "Кран"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_db09afe5-a9f2-4ad4-82ca-143b0f26f525
+###  https://purl.org/urbanonto/object_type_db09afe5-a9f2-4ad4-82ca-143b0f26f525
 urbanonto:object_type_db09afe5-a9f2-4ad4-82ca-143b0f26f525 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4950,7 +4950,7 @@ urbanonto:object_type_db09afe5-a9f2-4ad4-82ca-143b0f26f525 rdf:type owl:Class ;
                                                                          "Барбакан"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_ddf57aca-9884-4d25-b1b1-d3a6efb64074
+###  https://purl.org/urbanonto/object_type_ddf57aca-9884-4d25-b1b1-d3a6efb64074
 urbanonto:object_type_ddf57aca-9884-4d25-b1b1-d3a6efb64074 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -4971,7 +4971,7 @@ urbanonto:object_type_ddf57aca-9884-4d25-b1b1-d3a6efb64074 rdf:type owl:Class ;
                                                                          "Крематорий"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_df211709-40b8-4feb-a6ac-1993ac18842f
+###  https://purl.org/urbanonto/object_type_df211709-40b8-4feb-a6ac-1993ac18842f
 urbanonto:object_type_df211709-40b8-4feb-a6ac-1993ac18842f rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_172> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_37> ,
@@ -4995,13 +4995,13 @@ urbanonto:object_type_df211709-40b8-4feb-a6ac-1993ac18842f rdf:type owl:Class ;
                                                                          "насыпь"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34
+###  https://purl.org/urbanonto/object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34
 urbanonto:object_type_df3e96d3-6c4d-49f8-8e04-67dcbf9c9b34 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_39> ;
                                                            rdfs:label "molo"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_e0f1a553-9560-48d7-9998-89bff76410e5
+###  https://purl.org/urbanonto/object_type_e0f1a553-9560-48d7-9998-89bff76410e5
 urbanonto:object_type_e0f1a553-9560-48d7-9998-89bff76410e5 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_205> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5031,7 +5031,7 @@ urbanonto:object_type_e0f1a553-9560-48d7-9998-89bff76410e5 rdf:type owl:Class ;
                                                            skos:hiddenLabel "latryna"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_e63f65ef-61a0-4602-be34-90e52a067c70
+###  https://purl.org/urbanonto/object_type_e63f65ef-61a0-4602-be34-90e52a067c70
 urbanonto:object_type_e63f65ef-61a0-4602-be34-90e52a067c70 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_124> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5061,7 +5061,7 @@ urbanonto:object_type_e63f65ef-61a0-4602-be34-90e52a067c70 rdf:type owl:Class ;
                                                                          "церковь"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_e676bd90-924a-4cc4-ae60-f1e14458b793
+###  https://purl.org/urbanonto/object_type_e676bd90-924a-4cc4-ae60-f1e14458b793
 urbanonto:object_type_e676bd90-924a-4cc4-ae60-f1e14458b793 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_126> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5091,7 +5091,7 @@ urbanonto:object_type_e676bd90-924a-4cc4-ae60-f1e14458b793 rdf:type owl:Class ;
                                                                          "Насосная станция"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_e6f87ce4-9177-4f06-bb36-a74f90982ad7
+###  https://purl.org/urbanonto/object_type_e6f87ce4-9177-4f06-bb36-a74f90982ad7
 urbanonto:object_type_e6f87ce4-9177-4f06-bb36-a74f90982ad7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_114> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5108,7 +5108,7 @@ urbanonto:object_type_e6f87ce4-9177-4f06-bb36-a74f90982ad7 rdf:type owl:Class ;
                                                                          "trolley shed"@en .
 
 
-###  http://purl.org/urbanonto/object_type_e73317ef-21fc-441c-919a-925844d2950d
+###  https://purl.org/urbanonto/object_type_e73317ef-21fc-441c-919a-925844d2950d
 urbanonto:object_type_e73317ef-21fc-441c-919a-925844d2950d rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_94> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5130,7 +5130,7 @@ urbanonto:object_type_e73317ef-21fc-441c-919a-925844d2950d rdf:type owl:Class ;
                                                            skos:altLabel "die Stadterweiterung"@de .
 
 
-###  http://purl.org/urbanonto/object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d
+###  https://purl.org/urbanonto/object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d
 urbanonto:object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_5> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5166,7 +5166,7 @@ urbanonto:object_type_eabbcd66-5bb1-40c7-9e76-11ca4baa799d rdf:type owl:Class ;
                                                                          "waterway"@en .
 
 
-###  http://purl.org/urbanonto/object_type_ebb07674-ca92-49a0-9da3-90f840122383
+###  https://purl.org/urbanonto/object_type_ebb07674-ca92-49a0-9da3-90f840122383
 urbanonto:object_type_ebb07674-ca92-49a0-9da3-90f840122383 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_226> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_46> ,
@@ -5228,7 +5228,7 @@ urbanonto:object_type_ebb07674-ca92-49a0-9da3-90f840122383 rdf:type owl:Class ;
                                                                             "zieleniec"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ec9130a7-541f-4128-a892-c9bd391811f6
+###  https://purl.org/urbanonto/object_type_ec9130a7-541f-4128-a892-c9bd391811f6
 urbanonto:object_type_ec9130a7-541f-4128-a892-c9bd391811f6 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_112> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5249,7 +5249,7 @@ urbanonto:object_type_ec9130a7-541f-4128-a892-c9bd391811f6 rdf:type owl:Class ;
                                                                          "банк"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_eca60c6f-b783-450a-9404-ee82f5710573
+###  https://purl.org/urbanonto/object_type_eca60c6f-b783-450a-9404-ee82f5710573
 urbanonto:object_type_eca60c6f-b783-450a-9404-ee82f5710573 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_43> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_11> ,
@@ -5275,7 +5275,7 @@ urbanonto:object_type_eca60c6f-b783-450a-9404-ee82f5710573 rdf:type owl:Class ;
                                                            skos:hiddenLabel "akwedukt"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ed4a36df-dc84-4dab-bebe-8542138bffc8
+###  https://purl.org/urbanonto/object_type_ed4a36df-dc84-4dab-bebe-8542138bffc8
 urbanonto:object_type_ed4a36df-dc84-4dab-bebe-8542138bffc8 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_41> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5309,13 +5309,13 @@ urbanonto:object_type_ed4a36df-dc84-4dab-bebe-8542138bffc8 rdf:type owl:Class ;
                                                            skos:hiddenLabel "szlemię"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf
+###  https://purl.org/urbanonto/object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf
 urbanonto:object_type_ed6625b1-dbe2-4e50-9792-abb26dde60bf rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                            rdfs:label "otulina wokół miasta"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ee09c17f-1029-40e9-a2ef-f8989ee51ed1
+###  https://purl.org/urbanonto/object_type_ee09c17f-1029-40e9-a2ef-f8989ee51ed1
 urbanonto:object_type_ee09c17f-1029-40e9-a2ef-f8989ee51ed1 rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_127> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_31> ,
@@ -5330,7 +5330,7 @@ urbanonto:object_type_ee09c17f-1029-40e9-a2ef-f8989ee51ed1 rdf:type owl:Class ;
                                                            rdfs:seeAlso "https://www.wikidata.org/wiki/Q1571667"^^xsd:url .
 
 
-###  http://purl.org/urbanonto/object_type_ee761b98-ba78-434f-8cd7-2b2a97a325e0
+###  https://purl.org/urbanonto/object_type_ee761b98-ba78-434f-8cd7-2b2a97a325e0
 urbanonto:object_type_ee761b98-ba78-434f-8cd7-2b2a97a325e0 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_116> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5358,7 +5358,7 @@ urbanonto:object_type_ee761b98-ba78-434f-8cd7-2b2a97a325e0 rdf:type owl:Class ;
                                                            skos:hiddenLabel "pracownia"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ee995979-23be-4441-9c9c-40382dc12698
+###  https://purl.org/urbanonto/object_type_ee995979-23be-4441-9c9c-40382dc12698
 urbanonto:object_type_ee995979-23be-4441-9c9c-40382dc12698 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5395,13 +5395,13 @@ urbanonto:object_type_ee995979-23be-4441-9c9c-40382dc12698 rdf:type owl:Class ;
                                                                             "schronisko młodzieżowe"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25
+###  https://purl.org/urbanonto/object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25
 urbanonto:object_type_ef25d27e-e146-48ad-bd4b-8454ae28bb25 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_50> ;
                                                            rdfs:label "bastion"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb
+###  https://purl.org/urbanonto/object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb
 urbanonto:object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_125> ;
                                                            dc:creator <https://orcid.org/0000-0002-7568-7455> ;
@@ -5417,7 +5417,7 @@ urbanonto:object_type_ef771798-bbf8-4085-b150-70c3be4d3bfb rdf:type owl:Class ;
                                                                          "исторический памятник"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_f02e5f79-8a07-482f-b284-7873fd5f1b1a
+###  https://purl.org/urbanonto/object_type_f02e5f79-8a07-482f-b284-7873fd5f1b1a
 urbanonto:object_type_f02e5f79-8a07-482f-b284-7873fd5f1b1a rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5451,13 +5451,13 @@ urbanonto:object_type_f02e5f79-8a07-482f-b284-7873fd5f1b1a rdf:type owl:Class ;
                                                                          "театр"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08
+###  https://purl.org/urbanonto/object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08
 urbanonto:object_type_f0ada8e8-043a-487f-bcd8-b6f393161e08 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_54> ;
                                                            rdfs:label "peron"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f18f587f-e4d9-42cb-aca6-363a3a58738b
+###  https://purl.org/urbanonto/object_type_f18f587f-e4d9-42cb-aca6-363a3a58738b
 urbanonto:object_type_f18f587f-e4d9-42cb-aca6-363a3a58738b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_118> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5492,7 +5492,7 @@ urbanonto:object_type_f18f587f-e4d9-42cb-aca6-363a3a58738b rdf:type owl:Class ;
                                                                             "teatr muzyczny"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f28683d3-bb10-4e88-8284-21a49e02b67b
+###  https://purl.org/urbanonto/object_type_f28683d3-bb10-4e88-8284-21a49e02b67b
 urbanonto:object_type_f28683d3-bb10-4e88-8284-21a49e02b67b rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5528,7 +5528,7 @@ urbanonto:object_type_f28683d3-bb10-4e88-8284-21a49e02b67b rdf:type owl:Class ;
                                                                             "szkoła z internatem"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f47316c0-1c09-488a-9b19-0063d480ff87
+###  https://purl.org/urbanonto/object_type_f47316c0-1c09-488a-9b19-0063d480ff87
 urbanonto:object_type_f47316c0-1c09-488a-9b19-0063d480ff87 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_109> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5575,7 +5575,7 @@ urbanonto:object_type_f47316c0-1c09-488a-9b19-0063d480ff87 rdf:type owl:Class ;
                                                                             "przytułek"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f4bb30da-bd08-477d-bae8-8b36f22d38be
+###  https://purl.org/urbanonto/object_type_f4bb30da-bd08-477d-bae8-8b36f22d38be
 urbanonto:object_type_f4bb30da-bd08-477d-bae8-8b36f22d38be rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_48> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5629,7 +5629,7 @@ urbanonto:object_type_f4bb30da-bd08-477d-bae8-8b36f22d38be rdf:type owl:Class ;
                                                                             "zespół szkół"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f5804075-2f0d-46b3-a25e-c92739d33920
+###  https://purl.org/urbanonto/object_type_f5804075-2f0d-46b3-a25e-c92739d33920
 urbanonto:object_type_f5804075-2f0d-46b3-a25e-c92739d33920 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_228> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5670,7 +5670,7 @@ urbanonto:object_type_f5804075-2f0d-46b3-a25e-c92739d33920 rdf:type owl:Class ;
                                                                             "traktiernia"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d
+###  https://purl.org/urbanonto/object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d
 urbanonto:object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_106> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5702,7 +5702,7 @@ urbanonto:object_type_f73326e1-216a-4bc9-8894-cbbd00112e1d rdf:type owl:Class ;
                                                            skos:hiddenLabel "willa"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_f78faf6d-0612-490b-b0d9-8cbe13f7dbb7
+###  https://purl.org/urbanonto/object_type_f78faf6d-0612-490b-b0d9-8cbe13f7dbb7
 urbanonto:object_type_f78faf6d-0612-490b-b0d9-8cbe13f7dbb7 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_112> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5747,7 +5747,7 @@ urbanonto:object_type_f78faf6d-0612-490b-b0d9-8cbe13f7dbb7 rdf:type owl:Class ;
                                                                          "пожарная станция"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_f7c6e7fe-157b-4fbd-88ca-dbb5cff42b2b
+###  https://purl.org/urbanonto/object_type_f7c6e7fe-157b-4fbd-88ca-dbb5cff42b2b
 urbanonto:object_type_f7c6e7fe-157b-4fbd-88ca-dbb5cff42b2b rdf:type owl:Class ;
                                                            owl:equivalentClass <https://purl.org/bdot10k#object_196> ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#class_43> ,
@@ -5774,7 +5774,7 @@ urbanonto:object_type_f7c6e7fe-157b-4fbd-88ca-dbb5cff42b2b rdf:type owl:Class ;
                                                                          "электростанция"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_f92d1dbd-7de9-47e9-8bf9-b78f27363604
+###  https://purl.org/urbanonto/object_type_f92d1dbd-7de9-47e9-8bf9-b78f27363604
 urbanonto:object_type_f92d1dbd-7de9-47e9-8bf9-b78f27363604 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_106> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5802,13 +5802,13 @@ urbanonto:object_type_f92d1dbd-7de9-47e9-8bf9-b78f27363604 rdf:type owl:Class ;
                                                                             "kamienica"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f
+###  https://purl.org/urbanonto/object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f
 urbanonto:object_type_fa269f67-4b0c-42c9-b9ef-d719a5a3957f rdf:type owl:Class ;
                                                            rdfs:subClassOf cidoc_crm:E25_Man-Made_Feature ;
                                                            rdfs:label "posesja"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_fa60ddfe-78ff-45fd-ba24-51010f9236b6
+###  https://purl.org/urbanonto/object_type_fa60ddfe-78ff-45fd-ba24-51010f9236b6
 urbanonto:object_type_fa60ddfe-78ff-45fd-ba24-51010f9236b6 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_273> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5837,7 +5837,7 @@ urbanonto:object_type_fa60ddfe-78ff-45fd-ba24-51010f9236b6 rdf:type owl:Class ;
                                                                          "mury miejskie"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_fd67ba75-80e0-40ef-b56e-638f83e28c98
+###  https://purl.org/urbanonto/object_type_fd67ba75-80e0-40ef-b56e-638f83e28c98
 urbanonto:object_type_fd67ba75-80e0-40ef-b56e-638f83e28c98 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_112> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5862,7 +5862,7 @@ urbanonto:object_type_fd67ba75-80e0-40ef-b56e-638f83e28c98 rdf:type owl:Class ;
                                                                          "почтамт"@ru .
 
 
-###  http://purl.org/urbanonto/object_type_fd7ae0ff-63fb-459a-b535-58a428511747
+###  https://purl.org/urbanonto/object_type_fd7ae0ff-63fb-459a-b535-58a428511747
 urbanonto:object_type_fd7ae0ff-63fb-459a-b535-58a428511747 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_226> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -5885,13 +5885,13 @@ urbanonto:object_type_fd7ae0ff-63fb-459a-b535-58a428511747 rdf:type owl:Class ;
                                                            skos:altLabel "promenada"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f
+###  https://purl.org/urbanonto/object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f
 urbanonto:object_type_ff051b75-7b62-44d6-aa04-2c97fa75662f rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_113> ;
                                                            rdfs:label "pawilon"@pl .
 
 
-###  http://purl.org/urbanonto/object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620
+###  https://purl.org/urbanonto/object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620
 urbanonto:object_type_ff500912-4b0f-41b3-a2cd-9a3d164c8620 rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://purl.org/bdot10k#object_122> ,
                                                                            [ rdf:type owl:Restriction ;
@@ -6442,154 +6442,154 @@ ontohgis:person_9 rdf:type owl:NamedIndividual ;
                   <http://purl.org/dc/elements/1.1/identifier> "https://orcid.org/0000-0002-0489-3171"^^xsd:url .
 
 
-###  http://purl.org/urbanonto/function15
+###  https://purl.org/urbanonto/function15
 urbanonto:function15 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:isDefinedBy "dotyczy obiektów-placówek szkolnictwa państwowego, miejskiego i prywatnego, szkolących dzieci w wieku ponadprzedszkolnym, młodzież i dorosłych"@pl ;
                      rdfs:label "funkcja edukacyjna"@pl .
 
 
-###  http://purl.org/urbanonto/function16
+###  https://purl.org/urbanonto/function16
 urbanonto:function16 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja budowlana"@pl ;
                      skos:note "dotyczy obiektów związanych z procesem zabudowywania działek w mieście, stawiania budynków oraz zmiany form pokrycia terenu, np. budowy drogi"@pl .
 
 
-###  http://purl.org/urbanonto/function17
+###  https://purl.org/urbanonto/function17
 urbanonto:function17 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja wychowawcza"@pl ;
                      skos:note "dotyczy obiektów służących działaniom opiekuńczym i edukacyjnym nakierowanym nie tyle na przekazywanie wiedzy czy konkretnych umiejętności, co na kształtowanie ogólnej postawy dziecka lub młodego człowieka"@pl .
 
 
-###  http://purl.org/urbanonto/function18
+###  https://purl.org/urbanonto/function18
 urbanonto:function18 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja opiekuńcza"@pl ;
                      skos:note "dotyczy obiektów realizujących opiekuńczą rolę państwa, gdzie opieką otacza się osoby niemogące w pełni zadbać o siebie same, jak dzieci, niepełnosprawni i osoby starsze, a także zwierzęta, np. żłobki, przedszkola, domy starców, instytuty niepełnosprawnych"@pl .
 
 
-###  http://purl.org/urbanonto/function19
+###  https://purl.org/urbanonto/function19
 urbanonto:function19 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja dobroczynna"@pl ;
                      skos:note "dotyczy obiektów, które służyły celom dobroczynnym przed erą zorganizowanej państwowej opieki nad ubogimi, np. instytucje dobroczynne, niektóre zakony, szpitale w przednowoczesnym znaczeniu"@pl .
 
 
-###  http://purl.org/urbanonto/function20
+###  https://purl.org/urbanonto/function20
 urbanonto:function20 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja rozrywkowa"@pl ;
                      skos:note "dotyczy obiektów, służących dostarczeniu użytkownikom rozrywki i przyjemności, a także obiektów służących rekreacji, np. cyrki, kina, kabarety"@pl .
 
 
-###  http://purl.org/urbanonto/function21
+###  https://purl.org/urbanonto/function21
 urbanonto:function21 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja kulturalna"@pl ;
                      skos:note "dotyczy obiektów, służących kulturze i sztuce i nie mieszczą się w pojęciu gospodarki i polityki, np. teatry, opery, filharmonie, muzea"@pl .
 
 
-###  http://purl.org/urbanonto/function22
+###  https://purl.org/urbanonto/function22
 urbanonto:function22 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja magazynowa"@pl ;
                      skos:note "dotyczy obiektów służących do składowania różnego typu towarów, zwykle w większych ilościach, zadaszonych lub odkrytych, np. składy, hangary, magazyny, silosy"@pl .
 
 
-###  http://purl.org/urbanonto/function23
+###  https://purl.org/urbanonto/function23
 urbanonto:function23 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja estetyczna"@pl ;
                      skos:note "dotyczy obiektów-dzieł sztuki jako elementu przestrzeni miejskiej oraz obiektów, które służą wyłącznie jako upiększenie miasta, np. pomniki, zespoły pomnikowe, popiersia, rzeźby, instalacje, kwietniki, klomby, skwery"@pl .
 
 
-###  http://purl.org/urbanonto/function24
+###  https://purl.org/urbanonto/function24
 urbanonto:function24 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja bycia miejscem spotkań"@pl ;
                      skos:note "dotyczy obiektów zapewniających uczestnikom sprzyjające warunki do interakcji, które nie są ukierunkowane gospodarczo lub politycznie"@pl .
 
 
-###  http://purl.org/urbanonto/function26
+###  https://purl.org/urbanonto/function26
 urbanonto:function26 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja ochrony zdrowia"@pl ;
                      skos:note "dotyczy obiektów służących ochronie zdrowia czyli profilaktyce oraz aktywnemu leczeniu, a więc obiektów, do których ludzie się udają w świadomym celu dbania o zdrowie i w celu leczenia, np. szpitale, lecznice, kliniki, sanatoria, tężnie"@pl .
 
 
-###  http://purl.org/urbanonto/function27
+###  https://purl.org/urbanonto/function27
 urbanonto:function27 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja ochrony przyrody"@pl ;
                      skos:note "dotyczy obiektów związanych z rezerwatami i miejscami chroniącymi pejzaż naturalny od skutków nadmiernego i niekorzystnego wpływu człowieka"@pl .
 
 
-###  http://purl.org/urbanonto/function28
+###  https://purl.org/urbanonto/function28
 urbanonto:function28 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja dokumentująca"@pl ;
                      skos:note "dotyczy obiektów związanych z instytucjami zajmującymi się gromadzeniem i zarządzaniem szeroko pojętym archiwum, a także obiektów związanych z oznaczaniem w przestrzeni stanu formalno-prawnego i utrwalaniem tego przekazu"@pl .
 
 
-###  http://purl.org/urbanonto/function29
+###  https://purl.org/urbanonto/function29
 urbanonto:function29 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja informacyjna"@pl ;
                      skos:note "dotyczy obiektów służących przekazywaniu i rozpowszechnianiu informacji, np. tablice informacyjne, a także dzwonnice kościelne, wieże zegarowe, słupki z plakatami"@pl .
 
 
-###  http://purl.org/urbanonto/function30
+###  https://purl.org/urbanonto/function30
 urbanonto:function30 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja izolacyjna"@pl ;
                      skos:note "dotyczy obiektów, których celem jest ograniczenie lub wyeliminowanie kontaktów między tym, co wewnątrz, i tym, co na zewnątrz, np. różnego typu mury, ściany, ogrodzenia, płoty, kraty, a także zakłady zamknięte"@pl .
 
 
-###  http://purl.org/urbanonto/function31
+###  https://purl.org/urbanonto/function31
 urbanonto:function31 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja ochronna"@pl ;
                      skos:note "dotyczy obiektów służących zabezpieczeniu przed i zapobieganiu zagrożeniom typu klęski naturalne, np. wały przeciwpowodziowe"@pl .
 
 
-###  http://purl.org/urbanonto/function32
+###  https://purl.org/urbanonto/function32
 urbanonto:function32 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja polityczna"@pl ;
                      skos:note "dotyczy obiektów związanych ze sferą sprawowania władzy, a które nie są urzędami"@pl .
 
 
-###  http://purl.org/urbanonto/function33
+###  https://purl.org/urbanonto/function33
 urbanonto:function33 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja przyrodnicza"@pl ;
                      skos:note "dotyczy obiektów naturalnych, które istnieją i zachowują tożsamość niezależnie od pożytków, jakie mogą mieć z nich ludzie"@pl .
 
 
-###  http://purl.org/urbanonto/function34
+###  https://purl.org/urbanonto/function34
 urbanonto:function34 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja kontrolna"@pl ;
                      skos:note "dotyczy obiektów działających za specjalnym pozwoleniem władzy publicznej i służące kontroli nad określoną sferą i jej regulacją, m.in. wejścia i wjazdu, np. bramy, furty, rogatki, przejścia graniczne; przepływu wody, np. jazy; handlu, np. komory celne"@pl .
 
 
-###  http://purl.org/urbanonto/function35
+###  https://purl.org/urbanonto/function35
 urbanonto:function35 rdf:type owl:NamedIndividual ,
                               <http://purl.obolibrary.org/obo/BFO_0000034> ;
                      rdfs:label "funkcja upamiętniająca"@pl ;
                      skos:note "dotyczy obiektów służących upamiętnianiu wydarzeń i osób, a także zabytków sztuki i architektury, niezależnie, czy były wpisane do rejestru i czy taki rejestr istniał, np. tablice pamiątkowe, dawne kościoły, pałace, zamki"@pl .
 
 
-###  http://purl.org/urbanonto/property_right_1
+###  https://purl.org/urbanonto/property_right_1
 urbanonto:property_right_1 rdf:type owl:NamedIndividual ,
                                     cidoc_crm:E30_Right ;
                            rdfs:isDefinedBy "przestrzeń i obiekty dostępne dla wielu użytkowników (osób fizycznych), nie tylko będących właścicielami obiektu lub przestrzeni"@pl ;
                            rdfs:label "własność publiczna"@pl .
 
 
-###  http://purl.org/urbanonto/property_right_2
+###  https://purl.org/urbanonto/property_right_2
 urbanonto:property_right_2 rdf:type owl:NamedIndividual ,
                                     cidoc_crm:E30_Right ;
                            rdfs:isDefinedBy "przestrzeń i obiekty dostępne dla ograniczonej liczby użytkowników (osób fizycznych), będących właścicielami obiektu lub przestrzeni"@pl ;
